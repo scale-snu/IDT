@@ -1,0 +1,125 @@
+/usr/bin/gcc   -m64   -std=c11 -c -o filters/analyze.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  filters/analyze.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/client.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/client.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/animate.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/animate.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/cipher.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/cipher.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/accelerate.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/accelerate.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/artifact.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/artifact.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/cache-view.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/cache-view.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/colormap.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/colormap.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/coder.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/coder.c
+/usr/bin/gcc   -m64   -std=c11 -c -o coders/tga.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  coders/tga.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/delegate.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/delegate.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/display.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/display.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/channel.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/channel.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/configure.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/configure.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/attribute.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/attribute.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/distribute-cache.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/distribute-cache.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/annotate.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/annotate.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/constitute.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/constitute.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/compress.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/compress.c
+magick/compress.c:993:3: note: loop turned into non-loop; it never loops.
+magick/compress.c:993:3: note: loop with 2 iterations completely unrolled
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/color.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/color.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/exception.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/exception.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/blob.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/blob.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/fourier.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/fourier.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/compare.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/compare.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/geometry.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/geometry.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/hashmap.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/hashmap.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/gem.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/gem.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/cache.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/cache.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/histogram.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/histogram.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/colorspace.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/colorspace.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/decorate.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/decorate.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/log.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/log.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/list.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/list.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/locale.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/locale.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/memory.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/memory.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/distort.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/distort.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/magic.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/magic.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/module.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/module.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/magick.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/magick.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/identify.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/identify.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/layer.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/layer.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/monitor.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/monitor.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/matrix.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/matrix.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/composite.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/composite.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/mime.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/mime.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/prepress.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/prepress.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/feature.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/feature.c
+magick/feature.c: In function 'HoughLineImage':
+magick/feature.c:1938:3: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+   (void) write(file,message,strlen(message));
+   ^
+magick/feature.c:1941:3: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+   (void) write(file,message,strlen(message));
+   ^
+magick/feature.c:2024:11: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+           (void) write(file,message,strlen(message));
+           ^
+magick/feature.c:373:9: note: loop turned into non-loop; it never loops.
+magick/feature.c:373:9: note: loop with 2 iterations completely unrolled
+magick/feature.c:368:7: note: loop turned into non-loop; it never loops.
+magick/feature.c:368:7: note: loop with 2 iterations completely unrolled
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/policy.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/policy.c
+magick/policy.c:195:3: note: loop turned into non-loop; it never loops.
+magick/policy.c:195:3: note: loop with 2 iterations completely unrolled
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/option.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/option.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/montage.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/montage.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/image.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/image.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/profile.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/profile.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/quantum.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/quantum.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/registry.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/registry.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/paint.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/paint.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/random.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/random.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/effect.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/effect.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/semaphore.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/semaphore.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/resample.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/resample.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/resource.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/resource.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/static.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/static.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/signature.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/signature.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/fx.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/fx.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/enhance.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/enhance.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/property.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/property.c
+magick/property.c:536:3: note: loop turned into non-loop; it never loops.
+magick/property.c:536:3: note: loop with 2 iterations completely unrolled
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/timer.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/timer.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/segment.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/segment.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/splay-tree.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/splay-tree.c
+magick/splay-tree.c:1044:15: note: converting indirect call in IterateOverSplayTree.isra.1.constprop to direct call to SplayTreeToNodeArray
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/quantize.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/quantize.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/version.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/version.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/string.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/string.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/type.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/type.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/stream.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/stream.c
+/usr/bin/gcc   -m64   -std=c11 -c -o utilities/convert.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  utilities/convert.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/resize.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/resize.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/threshold.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/threshold.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/utility.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/utility.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/shear.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/shear.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/morphology.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/morphology.c
+/usr/bin/gcc   -m64   -std=c11 -c -o wand/magick-wand.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  wand/magick-wand.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/transform.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/transform.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/pixel.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/pixel.c
+/usr/bin/gcc   -m64   -std=c11 -c -o wand/wand.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  wand/wand.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/token.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/token.c
+/usr/bin/gcc   -m64   -std=c11 -c -o wand/pixel-iterator.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  wand/pixel-iterator.c
+/usr/bin/gcc   -m64   -std=c11 -c -o wand/pixel-wand.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  wand/pixel-wand.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/statistic.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/statistic.c
+/usr/bin/gcc   -m64   -std=c11 -c -o wand/magick-property.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  wand/magick-property.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/draw.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/draw.c
+magick/draw.c:1811:7: note: loop turned into non-loop; it never loops.
+magick/draw.c:1811:7: note: loop with 2 iterations completely unrolled
+magick/draw.c:5583:11: note: loop turned into non-loop; it never loops.
+magick/draw.c:5583:11: note: loop with 2 iterations completely unrolled
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/xml-tree.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/xml-tree.c
+/usr/bin/gcc   -m64   -std=c11 -c -o wand/drawing-wand.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  wand/drawing-wand.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/deprecate.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/deprecate.c
+magick/deprecate.c:3686:7: note: loop turned into non-loop; it never loops.
+magick/deprecate.c:3686:7: note: loop with 4 iterations completely unrolled
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/quantum-export.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/quantum-export.c
+/usr/bin/gcc   -m64   -std=c11 -c -o wand/magick-image.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  wand/magick-image.c
+/usr/bin/gcc   -m64   -std=c11 -c -o magick/quantum-import.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  magick/quantum-import.c
+/usr/bin/gcc   -m64   -std=c11 -c -o wand/convert.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  wand/convert.c
+/usr/bin/gcc   -m64   -std=c11 -c -o wand/mogrify.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  wand/mogrify.c
+/usr/bin/gcc   -m64   -std=c11      -g -O2 -fopt-info        -fopenmp -DSPEC_OPENMP  coders/tga.o filters/analyze.o magick/accelerate.o magick/animate.o magick/annotate.o magick/artifact.o magick/attribute.o magick/blob.o magick/cache-view.o magick/cache.o magick/channel.o magick/cipher.o magick/client.o magick/coder.o magick/color.o magick/colormap.o magick/colorspace.o magick/compare.o magick/composite.o magick/compress.o magick/configure.o magick/constitute.o magick/decorate.o magick/delegate.o magick/display.o magick/distort.o magick/distribute-cache.o magick/draw.o magick/effect.o magick/enhance.o magick/exception.o magick/feature.o magick/fourier.o magick/fx.o magick/gem.o magick/geometry.o magick/hashmap.o magick/histogram.o magick/identify.o magick/image.o magick/layer.o magick/list.o magick/locale.o magick/log.o magick/magic.o magick/magick.o magick/matrix.o magick/memory.o magick/mime.o magick/module.o magick/monitor.o magick/montage.o magick/morphology.o magick/option.o magick/paint.o magick/pixel.o magick/policy.o magick/prepress.o magick/profile.o magick/property.o magick/quantize.o magick/quantum-export.o magick/quantum-import.o magick/quantum.o magick/random.o magick/registry.o magick/resample.o magick/resize.o magick/resource.o magick/segment.o magick/semaphore.o magick/shear.o magick/signature.o magick/splay-tree.o magick/static.o magick/statistic.o magick/stream.o magick/string.o magick/threshold.o magick/timer.o magick/token.o magick/transform.o magick/type.o magick/utility.o magick/version.o magick/xml-tree.o utilities/convert.o wand/convert.o wand/drawing-wand.o wand/magick-image.o wand/magick-wand.o wand/mogrify.o wand/pixel-wand.o wand/magick-property.o wand/pixel-iterator.o wand/wand.o magick/deprecate.o             -lm       -L/scale/cal1/home/ybmoon/research/numa_autofdo/maphea_open/install/lib -lmemkind -L/scale/cal1/home/ybmoon/research/numa_autofdo/maphea_open/install/lib -lmaphea   -o imagick_s  

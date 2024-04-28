@@ -1,0 +1,3019 @@
+ Process Information:
+
+ Process Information:
+ Process Information:
+ Process Information:
+ Process Information:
+
+ Process Information:
+
+
+
+ Process Information:
+ Process Information:
+
+
+
+
+
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+
+                          
+
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+ -----------------------------------------------------------------------------
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+
+
+                          
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+
+                          
+                          
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+ -----------------------------------------------------------------------------
+                          
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+ -----------------------------------------------------------------------------
+                          
+ -----------------------------------------------------------------------------
+                          
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+                          
+ -----------------------------------------------------------------------------
+
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+ Version adapted for spec, built without netcdf
+
+ Operating system : 
+ CPU/hardware     : 
+ Compiler system  : 
+
+
+ Compiler command : 
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+ Compiler flags   : 
+ Version adapted for spec, built without netcdf
+ Version adapted for spec, built without netcdf
+
+
+
+
+
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+ Operating system : 
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+ SVN Revision  : 405M
+ CPU/hardware     : 
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+
+ Operating system : 
+ Compiler system  : 
+
+ Local Root    : 
+ CPU/hardware     : 
+ Version adapted for spec, built without netcdf
+
+ Version adapted for spec, built without netcdf
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+ Compiler command : 
+ Header Dir    : 
+ Compiler system  : 
+
+ Header file   : benchmark.h
+ Compiler command : 
+
+ Operating system : 
+ Compiler flags   : 
+ Version adapted for spec, built without netcdf
+
+ CPU/hardware     : 
+
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+ Compiler flags   : 
+ Operating system : 
+ Version adapted for spec, built without netcdf
+ SVN Revision  : 405M
+
+ Analytical Dir: 
+ Operating system : 
+ Compiler system  : 
+
+ CPU/hardware     : 
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+ Compiler command : 
+
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+ Version adapted for spec, built without netcdf
+ Compiler flags   : 
+ CPU/hardware     : 
+
+
+
+ Compiler system  : 
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+ SVN Revision  : 405M
+ Compiler system  : 
+ Operating system : 
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+ Compiler command : 
+ CPU/hardware     : 
+
+ SVN Revision  : 405M
+ Local Root    : 
+
+ Operating system : 
+ Compiler command : 
+ Local Root    : 
+ CPU/hardware     : 
+
+ Compiler flags   : 
+ Compiler system  : 
+
+
+ Header Dir    : 
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+ Compiler flags   : 
+ Header Dir    : 
+ SVN Revision  : 405M
+
+ Compiler system  : 
+ Local Root    : 
+ Compiler command : 
+
+ Header Dir    : 
+ Header file   : benchmark.h
+
+ Header file   : benchmark.h
+ Header file   : benchmark.h
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+ Compiler command : 
+ Compiler flags   : 
+ SVN Revision  : 405M
+
+ Physical Parameters, Grid: 01
+
+ Analytical Dir: 
+ Local Root    : 
+ Local Root    : 
+ Analytical Dir: 
+ Analytical Dir: 
+ Header Dir    : 
+ Compiler flags   : 
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+ Header file   : benchmark.h
+ =============================
+ SVN Revision  : 405M
+ Header Dir    : 
+
+
+
+
+
+ Analytical Dir: 
+
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+ Header file   : benchmark.h
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+ Local Root    : 
+        100  ntimes          Number of timesteps for 3-D equations.
+ Analytical Dir: 
+ SVN Revision  : 405M
+
+
+
+ Header Dir    : 
+
+
+ Header file   : benchmark.h
+
+
+ Local Root    : 
+ Analytical Dir: 
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+
+ Header Dir    : 
+ Physical Parameters, Grid: 01
+
+ Physical Parameters, Grid: 01
+ =============================
+ Header file   : benchmark.h
+ =============================
+
+ Physical Parameters, Grid: 01
+ Analytical Dir: 
+
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+
+
+
+ =============================
+ Physical Parameters, Grid: 01
+        100  ntimes          Number of timesteps for 3-D equations.
+
+ =============================
+
+
+        100  ntimes          Number of timesteps for 3-D equations.
+
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+
+        100  ntimes          Number of timesteps for 3-D equations.
+ Physical Parameters, Grid: 01
+        100  ntimes          Number of timesteps for 3-D equations.
+ =============================
+
+
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+
+ Physical Parameters, Grid: 01
+ =============================
+
+        100  ntimes          Number of timesteps for 3-D equations.
+
+
+ Physical Parameters, Grid: 01
+        100  ntimes          Number of timesteps for 3-D equations.
+ =============================
+
+        100  ntimes          Number of timesteps for 3-D equations.
+     50.000  dt              Timestep size (s) for 3-D equations.
+     50.000  dt              Timestep size (s) for 3-D equations.
+     50.000  dt              Timestep size (s) for 3-D equations.
+         20  ndtfast         Number of timesteps for 2-D equations between
+         20  ndtfast         Number of timesteps for 2-D equations between
+                               each 3D timestep.
+         20  ndtfast         Number of timesteps for 2-D equations between
+     50.000  dt              Timestep size (s) for 3-D equations.
+     50.000  dt              Timestep size (s) for 3-D equations.
+     50.000  dt              Timestep size (s) for 3-D equations.
+                               each 3D timestep.
+          1  ERstr           Starting ensemble/perturbation run number.
+                               each 3D timestep.
+     50.000  dt              Timestep size (s) for 3-D equations.
+          1  ERend           Ending ensemble/perturbation run number.
+          1  ERstr           Starting ensemble/perturbation run number.
+          1  ERstr           Starting ensemble/perturbation run number.
+          0  nrrec           Number of restart records to read from disk.
+          1  ERend           Ending ensemble/perturbation run number.
+     50.000  dt              Timestep size (s) for 3-D equations.
+          1  ERend           Ending ensemble/perturbation run number.
+          0  nrrec           Number of restart records to read from disk.
+         20  ndtfast         Number of timesteps for 2-D equations between
+         20  ndtfast         Number of timesteps for 2-D equations between
+         20  ndtfast         Number of timesteps for 2-D equations between
+                               each 3D timestep.
+                               each 3D timestep.
+          0  nrrec           Number of restart records to read from disk.
+                               each 3D timestep.
+         20  ndtfast         Number of timesteps for 2-D equations between
+          1  ERstr           Starting ensemble/perturbation run number.
+          1  ERstr           Starting ensemble/perturbation run number.
+          T  LcycleRST       Switch to recycle time-records in restart file.
+                               each 3D timestep.
+          1  ERstr           Starting ensemble/perturbation run number.
+          1  ERend           Ending ensemble/perturbation run number.
+         20  ndtfast         Number of timesteps for 2-D equations between
+          1  ERend           Ending ensemble/perturbation run number.
+       1000  nRST            Number of timesteps between the writing of data
+          1  ERstr           Starting ensemble/perturbation run number.
+          1  ERend           Ending ensemble/perturbation run number.
+                               each 3D timestep.
+                               into restart fields.
+          0  nrrec           Number of restart records to read from disk.
+          T  LcycleRST       Switch to recycle time-records in restart file.
+          T  LcycleRST       Switch to recycle time-records in restart file.
+          0  nrrec           Number of restart records to read from disk.
+          1  ERstr           Starting ensemble/perturbation run number.
+          1  ERend           Ending ensemble/perturbation run number.
+          0  nrrec           Number of restart records to read from disk.
+       1000  nRST            Number of timesteps between the writing of data
+          1  ninfo           Number of timesteps between print of information
+          1  ERend           Ending ensemble/perturbation run number.
+       1000  nRST            Number of timesteps between the writing of data
+                               to standard output.
+          0  nrrec           Number of restart records to read from disk.
+                               into restart fields.
+          T  LcycleRST       Switch to recycle time-records in restart file.
+          T  ldefout         Switch to create a new output NetCDF file(s).
+          0  nrrec           Number of restart records to read from disk.
+                               into restart fields.
+          T  LcycleRST       Switch to recycle time-records in restart file.
+       1000  nRST            Number of timesteps between the writing of data
+       1000  nHIS            Number of timesteps between the writing fields
+          1  ninfo           Number of timesteps between print of information
+                               into restart fields.
+                               into history file.
+          1  ninfo           Number of timesteps between print of information
+          T  LcycleRST       Switch to recycle time-records in restart file.
+       1000  nRST            Number of timesteps between the writing of data
+                               to standard output.
+          T  LcycleRST       Switch to recycle time-records in restart file.
+                               into restart fields.
+          1  ninfo           Number of timesteps between print of information
+          T  LcycleRST       Switch to recycle time-records in restart file.
+                               to standard output.
+       1000  nRST            Number of timesteps between the writing of data
+          1  ninfo           Number of timesteps between print of information
+          T  ldefout         Switch to create a new output NetCDF file(s).
+                               into restart fields.
+       1000  nRST            Number of timesteps between the writing of data
+                               to standard output.
+       1000  nRST            Number of timesteps between the writing of data
+                               to standard output.
+          1  ninfo           Number of timesteps between print of information
+          T  ldefout         Switch to create a new output NetCDF file(s).
+          T  ldefout         Switch to create a new output NetCDF file(s).
+                               to standard output.
+          T  ldefout         Switch to create a new output NetCDF file(s).
+                               into restart fields.
+       1000  nHIS            Number of timesteps between the writing fields
+       1000  nHIS            Number of timesteps between the writing fields
+       1000  nHIS            Number of timesteps between the writing fields
+       1000  nHIS            Number of timesteps between the writing fields
+                               into history file.
+                               into history file.
+                               into history file.
+                               into restart fields.
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+          T  ldefout         Switch to create a new output NetCDF file(s).
+                               into history file.
+          1  ninfo           Number of timesteps between print of information
+          1  ninfo           Number of timesteps between print of information
+                               to standard output.
+                               to standard output.
+                               for tracer 01: temp
+       1000  nHIS            Number of timesteps between the writing fields
+          T  ldefout         Switch to create a new output NetCDF file(s).
+          T  ldefout         Switch to create a new output NetCDF file(s).
+                               into history file.
+       1000  nHIS            Number of timesteps between the writing fields
+       1000  nHIS            Number of timesteps between the writing fields
+                               into history file.
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+                               into history file.
+                               for tracer 02: salt
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 01: temp
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 01: temp
+                               for momentum.
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 01: temp
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 01: temp
+                               for tracer 02: salt
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 01: temp
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 01: temp
+                               for tracer 02: salt
+                               for tracer 01: temp
+                               for tracer 02: salt
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+                               for tracer 01: temp
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 02: salt
+                               for momentum.
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 02: salt
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 02: salt
+                               for momentum.
+                               for tracer 02: salt
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+                               for momentum.
+                               for tracer 02: salt
+                               for momentum.
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+                               for momentum.
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+                               for momentum.
+                               for tracer 01: temp
+                               for momentum.
+                               for tracer 01: temp
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+                               for momentum.
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+                               for tracer 01: temp
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+                               for tracer 01: temp
+                               for tracer 02: salt
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+                               for tracer 01: temp
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+                               for tracer 02: salt
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+                               for tracer 01: temp
+                               for tracer 02: salt
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+                               for momentum.
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+                               for tracer 01: temp
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+                               for tracer 02: salt
+                               for tracer 02: salt
+                               for momentum.
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+ 2.0000E-02  Zob             Bottom roughness (m).
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+                               for tracer 02: salt
+                               for momentum.
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+                               for tracer 02: salt
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+                               for momentum.
+                               for momentum.
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+                               for momentum.
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+                               for momentum.
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+ 2.0000E-02  Zob             Bottom roughness (m).
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+ 2.0000E-02  Zob             Bottom roughness (m).
+          1  lmd_Jwt         Jerlov water type.
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+          1  Vtransform      S-coordinate transformation equation.
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 2.0000E-02  Zob             Bottom roughness (m).
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+ 2.0000E-02  Zob             Bottom roughness (m).
+          1  Vstretching     S-coordinate stretching function.
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+ 2.0000E-02  Zob             Bottom roughness (m).
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+ 2.0000E-02  Zob             Bottom roughness (m).
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+          1  lmd_Jwt         Jerlov water type.
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+          1  lmd_Jwt         Jerlov water type.
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+          1  Vtransform      S-coordinate transformation equation.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+          1  lmd_Jwt         Jerlov water type.
+ 2.0000E-02  Zob             Bottom roughness (m).
+          1  Vtransform      S-coordinate transformation equation.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+          1  Vtransform      S-coordinate transformation equation.
+          1  Vstretching     S-coordinate stretching function.
+          1  lmd_Jwt         Jerlov water type.
+          1  Vstretching     S-coordinate stretching function.
+          1  lmd_Jwt         Jerlov water type.
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+          1  Vstretching     S-coordinate stretching function.
+          1  lmd_Jwt         Jerlov water type.
+                               in vertical coordinate stretching.
+          1  Vtransform      S-coordinate transformation equation.
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+          1  Vtransform      S-coordinate transformation equation.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+          1  Vstretching     S-coordinate stretching function.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+          1  Vstretching     S-coordinate stretching function.
+          1  Vtransform      S-coordinate transformation equation.
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+          1  lmd_Jwt         Jerlov water type.
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+          1  Vstretching     S-coordinate stretching function.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+          1  Vtransform      S-coordinate transformation equation.
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+                               in vertical coordinate stretching.
+          1  Vstretching     S-coordinate stretching function.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+                               in vertical coordinate stretching.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+                               in vertical coordinate stretching.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+                               in vertical coordinate stretching.
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+                               in vertical coordinate stretching.
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+                               for tracer 01: temp
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+                               in vertical coordinate stretching.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+                               for tracer 02: salt
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+                               in vertical coordinate stretching.
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+                               for free-surface.
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+                               for 2D momentum.
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+                               for tracer 01: temp
+                               for tracer 01: temp
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+                               for tracer 01: temp
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+                               for 3D momentum.
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+                               for tracer 02: salt
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+                               for tracer 01: temp
+                               for tracer 01: temp
+                               for tracer 02: salt
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+                               for tracer 02: salt
+ 0.0000E+00  obcfac          Factor between passive and active
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+                               open boundary conditions.
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+                               for free-surface.
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+                               for free-surface.
+     10.000  T0              Background potential temperature (C) constant.
+                               for free-surface.
+                               for tracer 02: salt
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+                               for tracer 01: temp
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+                               for tracer 02: salt
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+                               for 2D momentum.
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+                               for free-surface.
+                               for 2D momentum.
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+                               for tracer 02: salt
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+     35.000  S0              Background salinity (PSU) constant.
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+                               for tracer 01: temp
+                               for 3D momentum.
+                               for 2D momentum.
+                               for free-surface.
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+                               for 3D momentum.
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+                               for 2D momentum.
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+                               for free-surface.
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+ 0.0000E+00  obcfac          Factor between passive and active
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+ 0.0000E+00  obcfac          Factor between passive and active
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+                               open boundary conditions.
+                               for 2D momentum.
+                               for tracer 02: salt
+                               for 2D momentum.
+                                                    no-slip (-1.0).
+                               open boundary conditions.
+                               for 3D momentum.
+                               for 3D momentum.
+     10.000  T0              Background potential temperature (C) constant.
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+                               for 3D momentum.
+ 0.0000E+00  obcfac          Factor between passive and active
+ 0.0000E+00  obcfac          Factor between passive and active
+                               for 3D momentum.
+                               open boundary conditions.
+
+ 0.0000E+00  obcfac          Factor between passive and active
+     10.000  T0              Background potential temperature (C) constant.
+ 0.0000E+00  obcfac          Factor between passive and active
+                               open boundary conditions.
+                               for free-surface.
+                               open boundary conditions.
+     35.000  S0              Background salinity (PSU) constant.
+                               open boundary conditions.
+     35.000  S0              Background salinity (PSU) constant.
+ Output/Input Files:
+     10.000  T0              Background potential temperature (C) constant.
+     10.000  T0              Background potential temperature (C) constant.
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+     10.000  T0              Background potential temperature (C) constant.
+     35.000  S0              Background salinity (PSU) constant.
+     35.000  S0              Background salinity (PSU) constant.
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+     10.000  T0              Background potential temperature (C) constant.
+     35.000  S0              Background salinity (PSU) constant.
+                                                    no-slip (-1.0).
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+
+                               for 2D momentum.
+                                                    no-slip (-1.0).
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+                                                    no-slip (-1.0).
+     35.000  S0              Background salinity (PSU) constant.
+
+                                                    no-slip (-1.0).
+                                                    no-slip (-1.0).
+ Output/Input Files:
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+             Output Restart File:  ocean_rst.nc
+                               for 3D momentum.
+
+                                                    no-slip (-1.0).
+
+ Output/Input Files:
+
+ 0.0000E+00  obcfac          Factor between passive and active
+
+
+
+ Output/Input Files:
+
+ Output/Input Files:
+
+ Output/Input Files:
+
+                               open boundary conditions.
+ Output/Input Files:
+             Output Restart File:  ocean_rst.nc
+
+
+     10.000  T0              Background potential temperature (C) constant.
+             Output Restart File:  ocean_rst.nc
+             Output Restart File:  ocean_rst.nc
+     35.000  S0              Background salinity (PSU) constant.
+             Output Restart File:  ocean_rst.nc
+             Output Restart File:  ocean_rst.nc
+             Output Restart File:  ocean_rst.nc
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+                                                    no-slip (-1.0).
+
+ Output/Input Files:
+
+             Output Restart File:  ocean_rst.nc
+
+ Activated C-preprocessing Options:
+
+
+
+ Activated C-preprocessing Options:
+ Activated C-preprocessing Options:
+
+
+
+
+ Activated C-preprocessing Options:
+
+ Activated C-preprocessing Options:
+
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ Activated C-preprocessing Options:
+
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ ALBEDO              Shortwave radiation from albedo equation.
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ ALBEDO              Shortwave radiation from albedo equation.
+
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ Activated C-preprocessing Options:
+ ALBEDO              Shortwave radiation from albedo equation.
+
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ ALBEDO              Shortwave radiation from albedo equation.
+ ALBEDO              Shortwave radiation from albedo equation.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ ALBEDO              Shortwave radiation from albedo equation.
+ Activated C-preprocessing Options:
+ ANA_GRID            Analytical grid set-up.
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+
+ ANA_GRID            Analytical grid set-up.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ALBEDO              Shortwave radiation from albedo equation.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_INITIAL         Analytical initial conditions.
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_GRID            Analytical grid set-up.
+ ANA_PAIR            Analytical surface air pressure.
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ANA_GRID            Analytical grid set-up.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ANA_RAIN            Analytical rain fall rate.
+ ANA_GRID            Analytical grid set-up.
+ ANA_GRID            Analytical grid set-up.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ANA_INITIAL         Analytical initial conditions.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ ALBEDO              Shortwave radiation from albedo equation.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ ANA_INITIAL         Analytical initial conditions.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ANA_INITIAL         Analytical initial conditions.
+ ANA_WINDS           Analytical surface wind components.
+ ANA_PAIR            Analytical surface air pressure.
+ ANA_PAIR            Analytical surface air pressure.
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ ANA_RAIN            Analytical rain fall rate.
+ ANA_INITIAL         Analytical initial conditions.
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_INITIAL         Analytical initial conditions.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ ANA_PAIR            Analytical surface air pressure.
+ ANA_PAIR            Analytical surface air pressure.
+ ANA_RAIN            Analytical rain fall rate.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ ANA_RAIN            Analytical rain fall rate.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+ ANA_RAIN            Analytical rain fall rate.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_PAIR            Analytical surface air pressure.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ ANA_GRID            Analytical grid set-up.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ ANA_RAIN            Analytical rain fall rate.
+ ANA_WINDS           Analytical surface wind components.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ CURVGRID            Orthogonal curvilinear grid.
+ ANA_GRID            Analytical grid set-up.
+ ANA_WINDS           Analytical surface wind components.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ ANA_WINDS           Analytical surface wind components.
+ ANA_INITIAL         Analytical initial conditions.
+ ANA_WINDS           Analytical surface wind components.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ ANA_INITIAL         Analytical initial conditions.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ ANA_WINDS           Analytical surface wind components.
+ ANA_PAIR            Analytical surface air pressure.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ ANA_PAIR            Analytical surface air pressure.
+ CURVGRID            Orthogonal curvilinear grid.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ ANA_RAIN            Analytical rain fall rate.
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ CURVGRID            Orthogonal curvilinear grid.
+ CURVGRID            Orthogonal curvilinear grid.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ CURVGRID            Orthogonal curvilinear grid.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ EW_PERIODIC         East-West periodic boundaries.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ EW_PERIODIC         East-West periodic boundaries.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ ANA_RAIN            Analytical rain fall rate.
+ EW_PERIODIC         East-West periodic boundaries.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ CURVGRID            Orthogonal curvilinear grid.
+ EW_PERIODIC         East-West periodic boundaries.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ ANA_WINDS           Analytical surface wind components.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ ANA_WINDS           Analytical surface wind components.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ EW_PERIODIC         East-West periodic boundaries.
+ LMD_SKPP            KPP surface boundary layer mixing.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ EW_PERIODIC         East-West periodic boundaries.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ LONGWAVE            Compute net longwave radiation internally.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ CURVGRID            Orthogonal curvilinear grid.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ LMD_SKPP            KPP surface boundary layer mixing.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ CURVGRID            Orthogonal curvilinear grid.
+ LONGWAVE            Compute net longwave radiation internally.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ LMD_SKPP            KPP surface boundary layer mixing.
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ LONGWAVE            Compute net longwave radiation internally.
+ NONLINEAR           Nonlinear Model.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ EW_PERIODIC         East-West periodic boundaries.
+ NONLINEAR           Nonlinear Model.
+ LMD_SKPP            KPP surface boundary layer mixing.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ LMD_SKPP            KPP surface boundary layer mixing.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ LONGWAVE            Compute net longwave radiation internally.
+ EW_PERIODIC         East-West periodic boundaries.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ LMD_SKPP            KPP surface boundary layer mixing.
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ LONGWAVE            Compute net longwave radiation internally.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ NONLINEAR           Nonlinear Model.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ LONGWAVE            Compute net longwave radiation internally.
+ PROFILE             Time profiling activated .
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ NONLINEAR           Nonlinear Model.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ NONLINEAR           Nonlinear Model.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ PROFILE             Time profiling activated .
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ SALINITY            Using salinity.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ NONLINEAR           Nonlinear Model.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ SALINITY            Using salinity.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ LMD_SKPP            KPP surface boundary layer mixing.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ LONGWAVE            Compute net longwave radiation internally.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ SOLVE3D             Solving 3D Primitive Equations.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ PROFILE             Time profiling activated .
+ LMD_SKPP            KPP surface boundary layer mixing.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ PROFILE             Time profiling activated .
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ LONGWAVE            Compute net longwave radiation internally.
+ SPLINES             Conservative parabolic spline reconstruction.
+ SOLVE3D             Solving 3D Primitive Equations.
+ SALINITY            Using salinity.
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ PROFILE             Time profiling activated .
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ PROFILE             Time profiling activated .
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ SPLINES             Conservative parabolic spline reconstruction.
+ SOLVE3D             Solving 3D Primitive Equations.
+ SALINITY            Using salinity.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ NONLINEAR           Nonlinear Model.
+ SPHERICAL           Spherical grid configuration.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ SPHERICAL           Spherical grid configuration.
+ SALINITY            Using salinity.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ NONLINEAR           Nonlinear Model.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ SOLVE3D             Solving 3D Primitive Equations.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ TS_DIF2             Harmonic mixing of tracers.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ TS_DIF2             Harmonic mixing of tracers.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ PROFILE             Time profiling activated .
+ UV_ADV              Advection of momentum.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ SPLINES             Conservative parabolic spline reconstruction.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ UV_COR              Coriolis term.
+ SPLINES             Conservative parabolic spline reconstruction.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ SOLVE3D             Solving 3D Primitive Equations.
+ SALINITY            Using salinity.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ SPHERICAL           Spherical grid configuration.
+ SALINITY            Using salinity.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ UV_ADV              Advection of momentum.
+ SPHERICAL           Spherical grid configuration.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ SPLINES             Conservative parabolic spline reconstruction.
+ TS_DIF2             Harmonic mixing of tracers.
+ UV_QDRAG            Quadratic bottom stress.
+ SOLVE3D             Solving 3D Primitive Equations.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ UV_COR              Coriolis term.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ UV_VIS2             Harmonic mixing of momentum.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ SOLVE3D             Solving 3D Primitive Equations.
+ VAR_RHO_2D          Variable density barotropic mode.
+ SPHERICAL           Spherical grid configuration.
+ UV_ADV              Advection of momentum.
+ PROFILE             Time profiling activated .
+ SPLINES             Conservative parabolic spline reconstruction.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ UV_COR              Coriolis term.
+ TS_DIF2             Harmonic mixing of tracers.
+ SPHERICAL           Spherical grid configuration.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ UV_ADV              Advection of momentum.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ UV_QDRAG            Quadratic bottom stress.
+ SPLINES             Conservative parabolic spline reconstruction.
+ UV_COR              Coriolis term.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ UV_VIS2             Harmonic mixing of momentum.
+ SPHERICAL           Spherical grid configuration.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ SALINITY            Using salinity.
+ TS_DIF2             Harmonic mixing of tracers.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ VAR_RHO_2D          Variable density barotropic mode.
+ UV_QDRAG            Quadratic bottom stress.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ SOLVE3D             Solving 3D Primitive Equations.
+ UV_QDRAG            Quadratic bottom stress.
+ UV_VIS2             Harmonic mixing of momentum.
+ UV_ADV              Advection of momentum.
+ TS_DIF2             Harmonic mixing of tracers.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ VAR_RHO_2D          Variable density barotropic mode.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ UV_VIS2             Harmonic mixing of momentum.
+ UV_COR              Coriolis term.
+ UV_ADV              Advection of momentum.
+ TS_DIF2             Harmonic mixing of tracers.
+ SPLINES             Conservative parabolic spline reconstruction.
+ VAR_RHO_2D          Variable density barotropic mode.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ UV_ADV              Advection of momentum.
+ UV_COR              Coriolis term.
+ SPHERICAL           Spherical grid configuration.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ UV_COR              Coriolis term.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ UV_QDRAG            Quadratic bottom stress.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ UV_VIS2             Harmonic mixing of momentum.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ UV_QDRAG            Quadratic bottom stress.
+ TS_DIF2             Harmonic mixing of tracers.
+ VAR_RHO_2D          Variable density barotropic mode.
+ UV_QDRAG            Quadratic bottom stress.
+ UV_VIS2             Harmonic mixing of momentum.
+ UV_ADV              Advection of momentum.
+ UV_VIS2             Harmonic mixing of momentum.
+ VAR_RHO_2D          Variable density barotropic mode.
+ UV_COR              Coriolis term.
+ VAR_RHO_2D          Variable density barotropic mode.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ UV_QDRAG            Quadratic bottom stress.
+ UV_VIS2             Harmonic mixing of momentum.
+ VAR_RHO_2D          Variable density barotropic mode.
+
+ INITIAL: Configuring and initializing forward nonlinear model ...
+
+
+ Vertical S-coordinate System: 
+
+ level   S-coord     Cs-curve          at_hmin  over_slope     at_hmax
+
+    40   0.0000000  -0.0000000          -0.000      -0.000      -0.000
+    39  -0.0250000  -0.0017775          -5.533      -8.644     -11.754
+    38  -0.0500000  -0.0037835         -11.135     -17.756     -24.377
+    37  -0.0750000  -0.0060921         -16.828     -27.489     -38.150
+    36  -0.1000000  -0.0087922         -22.638     -38.024     -53.410
+    35  -0.1250000  -0.0119914         -28.597     -49.582     -70.567
+    34  -0.1500000  -0.0158197         -34.746     -62.430     -90.115
+    33  -0.1750000  -0.0204330         -41.130     -76.888    -112.646
+    32  -0.2000000  -0.0260168         -47.805     -93.334    -138.864
+    31  -0.2250000  -0.0327879         -54.836    -112.215    -169.594
+    30  -0.2500000  -0.0409944         -62.298    -134.039    -205.779
+    29  -0.2750000  -0.0509117         -70.274    -159.369    -248.465
+    28  -0.3000000  -0.0628318         -78.850    -188.805    -298.761
+    27  -0.3250000  -0.0770446         -88.113    -222.941    -357.769
+    26  -0.3500000  -0.0938098         -98.143    -262.310    -426.477
+    25  -0.3750000  -0.1133185        -108.996    -307.303    -505.610
+    24  -0.4000000  -0.1356491        -120.695    -358.081    -595.466
+    23  -0.4250000  -0.1607245        -133.217    -414.485    -695.753
+    22  -0.4500000  -0.1882840        -146.485    -475.982    -805.479
+    21  -0.4750000  -0.2178817        -160.365    -541.658    -922.951
+    20  -0.5000000  -0.2489214        -174.676    -610.289   -1045.901
+    19  -0.5250000  -0.2807264        -189.218    -680.489   -1171.760
+    18  -0.5500000  -0.3126323        -203.790    -750.896   -1298.003
+    17  -0.5750000  -0.3440788        -218.224    -820.362   -1422.499
+    16  -0.6000000  -0.3746809        -232.404    -888.096   -1543.788
+    15  -0.6250000  -0.4042644        -246.279    -953.742   -1661.205
+    14  -0.6500000  -0.4328656        -259.860   -1017.374   -1774.889
+    13  -0.6750000  -0.4607052        -273.212   -1079.446   -1885.680
+    12  -0.7000000  -0.4881475        -286.444   -1140.702   -1994.960
+    11  -0.7250000  -0.5156591        -299.698   -1202.101   -2104.505
+    10  -0.7500000  -0.5437741        -313.132   -1264.737   -2216.342
+     9  -0.7750000  -0.5730691        -326.921   -1329.792   -2332.663
+     8  -0.8000000  -0.6041494        -341.245   -1398.506   -2455.768
+     7  -0.8250000  -0.6376434        -356.293   -1472.169   -2588.045
+     6  -0.8500000  -0.6742046        -372.261   -1552.119   -2731.978
+     5  -0.8750000  -0.7145184        -389.356   -1639.763   -2890.170
+     4  -0.9000000  -0.7593114        -407.793   -1736.588   -3065.383
+     3  -0.9250000  -0.8093643        -427.809   -1844.197   -3260.585
+     2  -0.9500000  -0.8655258        -449.658   -1964.328   -3478.998
+     1  -0.9750000  -0.9287272        -473.618   -2098.891   -3724.163
+     0  -1.0000000  -1.0000000        -500.000   -2250.000   -4000.000
+
+ Time Splitting Weights: ndtfast =  20    nfast =  29
+
+    Primary            Secondary            Accumulated to Current Step
+
+  1 -0.0009651193358779  0.0500000000000000 -0.0009651193358779  0.0500000000000000
+  2 -0.0013488780126037  0.0500482559667939 -0.0023139973484816  0.1000482559667939
+  3 -0.0011514592651645  0.0501156998674241 -0.0034654566136460  0.1501639558342179
+  4 -0.0003735756740661  0.0501732728306823 -0.0038390322877122  0.2003372286649002
+  5  0.0009829200513762  0.0501919516143856 -0.0028561122363360  0.2505291802792858
+  6  0.0029141799764308  0.0501428056118168  0.0000580677400948  0.3006719858911026
+  7  0.0054132615310267  0.0499970966129952  0.0054713292711215  0.3506690825040978
+  8  0.0084687837865132  0.0497264335364439  0.0139401130576347  0.4003955160405417
+  9  0.0120633394191050  0.0493029943471183  0.0260034524767397  0.4496985103876600
+ 10  0.0161716623600090  0.0486998273761630  0.0421751148367486  0.4983983377638230
+ 11  0.0207585511322367  0.0478912442581626  0.0629336659689853  0.5462895820219856
+ 12  0.0257765478740990  0.0468533167015507  0.0887102138430843  0.5931428987235363
+ 13  0.0311633730493853  0.0455644893078458  0.1198735868924696  0.6387073880313821
+ 14  0.0368391158442262  0.0440063206553765  0.1567127027366958  0.6827137086867585
+ 15  0.0427031802506397  0.0421643648631652  0.1994158829873354  0.7248780735499237
+ 16  0.0486309868367616  0.0400292058506332  0.2480468698240970  0.7649072794005569
+ 17  0.0544704302037591  0.0375976565087951  0.3025173000278562  0.8025049359093520
+ 18  0.0600380921294285  0.0348741349986072  0.3625553921572847  0.8373790709079592
+ 19  0.0651152103984763  0.0318722303921358  0.4276706025557610  0.8692513013000949
+ 20  0.0694434033194839  0.0286164698722119  0.4971140058752449  0.8978677711723068
+ 21  0.0727201499285569  0.0251442997062377  0.5698341558038018  0.9230120708785445
+ 22  0.0745940258796570  0.0215082922098099  0.6444281816834588  0.9445203630883544
+ 23  0.0746596950216180  0.0177785909158270  0.7190878767050768  0.9622989540041814
+ 24  0.0724526566618460  0.0140456061647461  0.7915405333669228  0.9763445601689276
+ 25  0.0674437485167025  0.0104229733316538  0.8589842818836253  0.9867675335005814
+ 26  0.0590334053485720  0.0070507859058187  0.9180176872321973  0.9938183194064002
+ 27  0.0465456732896125  0.0040991156383901  0.9645633605218099  0.9979174350447904
+ 28  0.0292219798521905  0.0017718319739095  0.9937853403740005  0.9996892670186999
+ 29  0.0062146596259994  0.0003107329813000  0.9999999999999999  0.9999999999999999
+
+ ndtfast, nfast =   20  29   nfast/ndtfast = 1.45000
+
+ Centers of gravity and integrals (values must be 1, 1, approx 1/2, 1, 1):
+
+    1.000000000000 1.060707743385 0.530353871693 1.000000000000 1.000000000000
+
+ Power filter parameters, Fgamma, gamma =  0.28400   0.14200
+
+ INITIAL: Configuring and initializing forward nonlinear model ...
+
+
+ INITIAL: Configuring and initializing forward nonlinear model ...
+
+
+ INITIAL: Configuring and initializing forward nonlinear model ...
+
+
+ Vertical S-coordinate System: 
+
+ level   S-coord     Cs-curve          at_hmin  over_slope     at_hmax
+
+    40   0.0000000  -0.0000000          -0.000      -0.000      -0.000
+    39  -0.0250000  -0.0017775          -5.533      -8.644     -11.754
+    38  -0.0500000  -0.0037835         -11.135     -17.756     -24.377
+    37  -0.0750000  -0.0060921         -16.828     -27.489     -38.150
+    36  -0.1000000  -0.0087922         -22.638     -38.024     -53.410
+    35  -0.1250000  -0.0119914         -28.597     -49.582     -70.567
+    34  -0.1500000  -0.0158197         -34.746     -62.430     -90.115
+    33  -0.1750000  -0.0204330         -41.130     -76.888    -112.646
+    32  -0.2000000  -0.0260168         -47.805     -93.334    -138.864
+    31  -0.2250000  -0.0327879         -54.836    -112.215    -169.594
+    30  -0.2500000  -0.0409944         -62.298    -134.039    -205.779
+    29  -0.2750000  -0.0509117         -70.274    -159.369    -248.465
+    28  -0.3000000  -0.0628318         -78.850    -188.805    -298.761
+    27  -0.3250000  -0.0770446         -88.113    -222.941    -357.769
+    26  -0.3500000  -0.0938098         -98.143    -262.310    -426.477
+    25  -0.3750000  -0.1133185        -108.996    -307.303    -505.610
+    24  -0.4000000  -0.1356491        -120.695    -358.081    -595.466
+    23  -0.4250000  -0.1607245        -133.217    -414.485    -695.753
+    22  -0.4500000  -0.1882840        -146.485    -475.982    -805.479
+    21  -0.4750000  -0.2178817        -160.365    -541.658    -922.951
+    20  -0.5000000  -0.2489214        -174.676    -610.289   -1045.901
+    19  -0.5250000  -0.2807264        -189.218    -680.489   -1171.760
+    18  -0.5500000  -0.3126323        -203.790    -750.896   -1298.003
+    17  -0.5750000  -0.3440788        -218.224    -820.362   -1422.499
+    16  -0.6000000  -0.3746809        -232.404    -888.096   -1543.788
+    15  -0.6250000  -0.4042644        -246.279    -953.742   -1661.205
+    14  -0.6500000  -0.4328656        -259.860   -1017.374   -1774.889
+    13  -0.6750000  -0.4607052        -273.212   -1079.446   -1885.680
+    12  -0.7000000  -0.4881475        -286.444   -1140.702   -1994.960
+    11  -0.7250000  -0.5156591        -299.698   -1202.101   -2104.505
+    10  -0.7500000  -0.5437741        -313.132   -1264.737   -2216.342
+     9  -0.7750000  -0.5730691        -326.921   -1329.792   -2332.663
+     8  -0.8000000  -0.6041494        -341.245   -1398.506   -2455.768
+     7  -0.8250000  -0.6376434        -356.293   -1472.169   -2588.045
+     6  -0.8500000  -0.6742046        -372.261   -1552.119   -2731.978
+     5  -0.8750000  -0.7145184        -389.356   -1639.763   -2890.170
+     4  -0.9000000  -0.7593114        -407.793   -1736.588   -3065.383
+     3  -0.9250000  -0.8093643        -427.809   -1844.197   -3260.585
+     2  -0.9500000  -0.8655258        -449.658   -1964.328   -3478.998
+     1  -0.9750000  -0.9287272        -473.618   -2098.891   -3724.163
+     0  -1.0000000  -1.0000000        -500.000   -2250.000   -4000.000
+
+ Time Splitting Weights: ndtfast =  20    nfast =  29
+
+    Primary            Secondary            Accumulated to Current Step
+
+  1 -0.0009651193358779  0.0500000000000000 -0.0009651193358779  0.0500000000000000
+  2 -0.0013488780126037  0.0500482559667939 -0.0023139973484816  0.1000482559667939
+  3 -0.0011514592651645  0.0501156998674241 -0.0034654566136460  0.1501639558342179
+  4 -0.0003735756740661  0.0501732728306823 -0.0038390322877122  0.2003372286649002
+  5  0.0009829200513762  0.0501919516143856 -0.0028561122363360  0.2505291802792858
+  6  0.0029141799764308  0.0501428056118168  0.0000580677400948  0.3006719858911026
+  7  0.0054132615310267  0.0499970966129952  0.0054713292711215  0.3506690825040978
+  8  0.0084687837865132  0.0497264335364439  0.0139401130576347  0.4003955160405417
+  9  0.0120633394191050  0.0493029943471183  0.0260034524767397  0.4496985103876600
+ 10  0.0161716623600090  0.0486998273761630  0.0421751148367486  0.4983983377638230
+ 11  0.0207585511322367  0.0478912442581626  0.0629336659689853  0.5462895820219856
+ 12  0.0257765478740990  0.0468533167015507  0.0887102138430843  0.5931428987235363
+ 13  0.0311633730493853  0.0455644893078458  0.1198735868924696  0.6387073880313821
+ 14  0.0368391158442262  0.0440063206553765  0.1567127027366958  0.6827137086867585
+ 15  0.0427031802506397  0.0421643648631652  0.1994158829873354  0.7248780735499237
+ 16  0.0486309868367616  0.0400292058506332  0.2480468698240970  0.7649072794005569
+ 17  0.0544704302037591  0.0375976565087951  0.3025173000278562  0.8025049359093520
+ 18  0.0600380921294285  0.0348741349986072  0.3625553921572847  0.8373790709079592
+ 19  0.0651152103984763  0.0318722303921358  0.4276706025557610  0.8692513013000949
+ 20  0.0694434033194839  0.0286164698722119  0.4971140058752449  0.8978677711723068
+ 21  0.0727201499285569  0.0251442997062377  0.5698341558038018  0.9230120708785445
+ 22  0.0745940258796570  0.0215082922098099  0.6444281816834588  0.9445203630883544
+ 23  0.0746596950216180  0.0177785909158270  0.7190878767050768  0.9622989540041814
+ 24  0.0724526566618460  0.0140456061647461  0.7915405333669228  0.9763445601689276
+ 25  0.0674437485167025  0.0104229733316538  0.8589842818836253  0.9867675335005814
+ 26  0.0590334053485720  0.0070507859058187  0.9180176872321973  0.9938183194064002
+ 27  0.0465456732896125  0.0040991156383901  0.9645633605218099  0.9979174350447904
+ 28  0.0292219798521905  0.0017718319739095  0.9937853403740005  0.9996892670186999
+ 29  0.0062146596259994  0.0003107329813000  0.9999999999999999  0.9999999999999999
+
+ ndtfast, nfast =   20  29   nfast/ndtfast = 1.45000
+
+ Centers of gravity and integrals (values must be 1, 1, approx 1/2, 1, 1):
+
+    1.000000000000 1.060707743385 0.530353871693 1.000000000000 1.000000000000
+
+ Power filter parameters, Fgamma, gamma =  0.28400   0.14200
+
+ Vertical S-coordinate System: 
+
+ level   S-coord     Cs-curve          at_hmin  over_slope     at_hmax
+
+    40   0.0000000  -0.0000000          -0.000      -0.000      -0.000
+    39  -0.0250000  -0.0017775          -5.533      -8.644     -11.754
+    38  -0.0500000  -0.0037835         -11.135     -17.756     -24.377
+    37  -0.0750000  -0.0060921         -16.828     -27.489     -38.150
+    36  -0.1000000  -0.0087922         -22.638     -38.024     -53.410
+    35  -0.1250000  -0.0119914         -28.597     -49.582     -70.567
+    34  -0.1500000  -0.0158197         -34.746     -62.430     -90.115
+    33  -0.1750000  -0.0204330         -41.130     -76.888    -112.646
+    32  -0.2000000  -0.0260168         -47.805     -93.334    -138.864
+    31  -0.2250000  -0.0327879         -54.836    -112.215    -169.594
+    30  -0.2500000  -0.0409944         -62.298    -134.039    -205.779
+    29  -0.2750000  -0.0509117         -70.274    -159.369    -248.465
+    28  -0.3000000  -0.0628318         -78.850    -188.805    -298.761
+    27  -0.3250000  -0.0770446         -88.113    -222.941    -357.769
+    26  -0.3500000  -0.0938098         -98.143    -262.310    -426.477
+    25  -0.3750000  -0.1133185        -108.996    -307.303    -505.610
+    24  -0.4000000  -0.1356491        -120.695    -358.081    -595.466
+    23  -0.4250000  -0.1607245        -133.217    -414.485    -695.753
+    22  -0.4500000  -0.1882840        -146.485    -475.982    -805.479
+    21  -0.4750000  -0.2178817        -160.365    -541.658    -922.951
+    20  -0.5000000  -0.2489214        -174.676    -610.289   -1045.901
+    19  -0.5250000  -0.2807264        -189.218    -680.489   -1171.760
+    18  -0.5500000  -0.3126323        -203.790    -750.896   -1298.003
+    17  -0.5750000  -0.3440788        -218.224    -820.362   -1422.499
+    16  -0.6000000  -0.3746809        -232.404    -888.096   -1543.788
+    15  -0.6250000  -0.4042644        -246.279    -953.742   -1661.205
+    14  -0.6500000  -0.4328656        -259.860   -1017.374   -1774.889
+    13  -0.6750000  -0.4607052        -273.212   -1079.446   -1885.680
+    12  -0.7000000  -0.4881475        -286.444   -1140.702   -1994.960
+    11  -0.7250000  -0.5156591        -299.698   -1202.101   -2104.505
+    10  -0.7500000  -0.5437741        -313.132   -1264.737   -2216.342
+     9  -0.7750000  -0.5730691        -326.921   -1329.792   -2332.663
+     8  -0.8000000  -0.6041494        -341.245   -1398.506   -2455.768
+     7  -0.8250000  -0.6376434        -356.293   -1472.169   -2588.045
+     6  -0.8500000  -0.6742046        -372.261   -1552.119   -2731.978
+     5  -0.8750000  -0.7145184        -389.356   -1639.763   -2890.170
+     4  -0.9000000  -0.7593114        -407.793   -1736.588   -3065.383
+     3  -0.9250000  -0.8093643        -427.809   -1844.197   -3260.585
+     2  -0.9500000  -0.8655258        -449.658   -1964.328   -3478.998
+     1  -0.9750000  -0.9287272        -473.618   -2098.891   -3724.163
+     0  -1.0000000  -1.0000000        -500.000   -2250.000   -4000.000
+
+ Time Splitting Weights: ndtfast =  20    nfast =  29
+
+    Primary            Secondary            Accumulated to Current Step
+
+  1 -0.0009651193358779  0.0500000000000000 -0.0009651193358779  0.0500000000000000
+  2 -0.0013488780126037  0.0500482559667939 -0.0023139973484816  0.1000482559667939
+  3 -0.0011514592651645  0.0501156998674241 -0.0034654566136460  0.1501639558342179
+  4 -0.0003735756740661  0.0501732728306823 -0.0038390322877122  0.2003372286649002
+  5  0.0009829200513762  0.0501919516143856 -0.0028561122363360  0.2505291802792858
+  6  0.0029141799764308  0.0501428056118168  0.0000580677400948  0.3006719858911026
+  7  0.0054132615310267  0.0499970966129952  0.0054713292711215  0.3506690825040978
+  8  0.0084687837865132  0.0497264335364439  0.0139401130576347  0.4003955160405417
+  9  0.0120633394191050  0.0493029943471183  0.0260034524767397  0.4496985103876600
+ 10  0.0161716623600090  0.0486998273761630  0.0421751148367486  0.4983983377638230
+ 11  0.0207585511322367  0.0478912442581626  0.0629336659689853  0.5462895820219856
+ 12  0.0257765478740990  0.0468533167015507  0.0887102138430843  0.5931428987235363
+ 13  0.0311633730493853  0.0455644893078458  0.1198735868924696  0.6387073880313821
+ 14  0.0368391158442262  0.0440063206553765  0.1567127027366958  0.6827137086867585
+ 15  0.0427031802506397  0.0421643648631652  0.1994158829873354  0.7248780735499237
+ 16  0.0486309868367616  0.0400292058506332  0.2480468698240970  0.7649072794005569
+ 17  0.0544704302037591  0.0375976565087951  0.3025173000278562  0.8025049359093520
+ 18  0.0600380921294285  0.0348741349986072  0.3625553921572847  0.8373790709079592
+ 19  0.0651152103984763  0.0318722303921358  0.4276706025557610  0.8692513013000949
+ 20  0.0694434033194839  0.0286164698722119  0.4971140058752449  0.8978677711723068
+ 21  0.0727201499285569  0.0251442997062377  0.5698341558038018  0.9230120708785445
+ 22  0.0745940258796570  0.0215082922098099  0.6444281816834588  0.9445203630883544
+ 23  0.0746596950216180  0.0177785909158270  0.7190878767050768  0.9622989540041814
+ 24  0.0724526566618460  0.0140456061647461  0.7915405333669228  0.9763445601689276
+ 25  0.0674437485167025  0.0104229733316538  0.8589842818836253  0.9867675335005814
+ 26  0.0590334053485720  0.0070507859058187  0.9180176872321973  0.9938183194064002
+ 27  0.0465456732896125  0.0040991156383901  0.9645633605218099  0.9979174350447904
+ 28  0.0292219798521905  0.0017718319739095  0.9937853403740005  0.9996892670186999
+ 29  0.0062146596259994  0.0003107329813000  0.9999999999999999  0.9999999999999999
+
+ ndtfast, nfast =   20  29   nfast/ndtfast = 1.45000
+
+ Centers of gravity and integrals (values must be 1, 1, approx 1/2, 1, 1):
+
+    1.000000000000 1.060707743385 0.530353871693 1.000000000000 1.000000000000
+
+ Power filter parameters, Fgamma, gamma =  0.28400   0.14200
+
+ Vertical S-coordinate System: 
+
+ level   S-coord     Cs-curve          at_hmin  over_slope     at_hmax
+
+    40   0.0000000  -0.0000000          -0.000      -0.000      -0.000
+    39  -0.0250000  -0.0017775          -5.533      -8.644     -11.754
+    38  -0.0500000  -0.0037835         -11.135     -17.756     -24.377
+    37  -0.0750000  -0.0060921         -16.828     -27.489     -38.150
+    36  -0.1000000  -0.0087922         -22.638     -38.024     -53.410
+    35  -0.1250000  -0.0119914         -28.597     -49.582     -70.567
+    34  -0.1500000  -0.0158197         -34.746     -62.430     -90.115
+    33  -0.1750000  -0.0204330         -41.130     -76.888    -112.646
+    32  -0.2000000  -0.0260168         -47.805     -93.334    -138.864
+    31  -0.2250000  -0.0327879         -54.836    -112.215    -169.594
+    30  -0.2500000  -0.0409944         -62.298    -134.039    -205.779
+    29  -0.2750000  -0.0509117         -70.274    -159.369    -248.465
+    28  -0.3000000  -0.0628318         -78.850    -188.805    -298.761
+    27  -0.3250000  -0.0770446         -88.113    -222.941    -357.769
+    26  -0.3500000  -0.0938098         -98.143    -262.310    -426.477
+    25  -0.3750000  -0.1133185        -108.996    -307.303    -505.610
+    24  -0.4000000  -0.1356491        -120.695    -358.081    -595.466
+    23  -0.4250000  -0.1607245        -133.217    -414.485    -695.753
+    22  -0.4500000  -0.1882840        -146.485    -475.982    -805.479
+    21  -0.4750000  -0.2178817        -160.365    -541.658    -922.951
+    20  -0.5000000  -0.2489214        -174.676    -610.289   -1045.901
+    19  -0.5250000  -0.2807264        -189.218    -680.489   -1171.760
+    18  -0.5500000  -0.3126323        -203.790    -750.896   -1298.003
+    17  -0.5750000  -0.3440788        -218.224    -820.362   -1422.499
+    16  -0.6000000  -0.3746809        -232.404    -888.096   -1543.788
+    15  -0.6250000  -0.4042644        -246.279    -953.742   -1661.205
+    14  -0.6500000  -0.4328656        -259.860   -1017.374   -1774.889
+    13  -0.6750000  -0.4607052        -273.212   -1079.446   -1885.680
+    12  -0.7000000  -0.4881475        -286.444   -1140.702   -1994.960
+    11  -0.7250000  -0.5156591        -299.698   -1202.101   -2104.505
+    10  -0.7500000  -0.5437741        -313.132   -1264.737   -2216.342
+     9  -0.7750000  -0.5730691        -326.921   -1329.792   -2332.663
+     8  -0.8000000  -0.6041494        -341.245   -1398.506   -2455.768
+     7  -0.8250000  -0.6376434        -356.293   -1472.169   -2588.045
+     6  -0.8500000  -0.6742046        -372.261   -1552.119   -2731.978
+     5  -0.8750000  -0.7145184        -389.356   -1639.763   -2890.170
+     4  -0.9000000  -0.7593114        -407.793   -1736.588   -3065.383
+     3  -0.9250000  -0.8093643        -427.809   -1844.197   -3260.585
+     2  -0.9500000  -0.8655258        -449.658   -1964.328   -3478.998
+     1  -0.9750000  -0.9287272        -473.618   -2098.891   -3724.163
+     0  -1.0000000  -1.0000000        -500.000   -2250.000   -4000.000
+
+ Time Splitting Weights: ndtfast =  20    nfast =  29
+
+    Primary            Secondary            Accumulated to Current Step
+
+  1 -0.0009651193358779  0.0500000000000000 -0.0009651193358779  0.0500000000000000
+  2 -0.0013488780126037  0.0500482559667939 -0.0023139973484816  0.1000482559667939
+  3 -0.0011514592651645  0.0501156998674241 -0.0034654566136460  0.1501639558342179
+  4 -0.0003735756740661  0.0501732728306823 -0.0038390322877122  0.2003372286649002
+  5  0.0009829200513762  0.0501919516143856 -0.0028561122363360  0.2505291802792858
+  6  0.0029141799764308  0.0501428056118168  0.0000580677400948  0.3006719858911026
+  7  0.0054132615310267  0.0499970966129952  0.0054713292711215  0.3506690825040978
+  8  0.0084687837865132  0.0497264335364439  0.0139401130576347  0.4003955160405417
+  9  0.0120633394191050  0.0493029943471183  0.0260034524767397  0.4496985103876600
+ 10  0.0161716623600090  0.0486998273761630  0.0421751148367486  0.4983983377638230
+ 11  0.0207585511322367  0.0478912442581626  0.0629336659689853  0.5462895820219856
+ 12  0.0257765478740990  0.0468533167015507  0.0887102138430843  0.5931428987235363
+ 13  0.0311633730493853  0.0455644893078458  0.1198735868924696  0.6387073880313821
+ 14  0.0368391158442262  0.0440063206553765  0.1567127027366958  0.6827137086867585
+ 15  0.0427031802506397  0.0421643648631652  0.1994158829873354  0.7248780735499237
+ 16  0.0486309868367616  0.0400292058506332  0.2480468698240970  0.7649072794005569
+ 17  0.0544704302037591  0.0375976565087951  0.3025173000278562  0.8025049359093520
+ 18  0.0600380921294285  0.0348741349986072  0.3625553921572847  0.8373790709079592
+ 19  0.0651152103984763  0.0318722303921358  0.4276706025557610  0.8692513013000949
+ 20  0.0694434033194839  0.0286164698722119  0.4971140058752449  0.8978677711723068
+ 21  0.0727201499285569  0.0251442997062377  0.5698341558038018  0.9230120708785445
+ 22  0.0745940258796570  0.0215082922098099  0.6444281816834588  0.9445203630883544
+ 23  0.0746596950216180  0.0177785909158270  0.7190878767050768  0.9622989540041814
+ 24  0.0724526566618460  0.0140456061647461  0.7915405333669228  0.9763445601689276
+ 25  0.0674437485167025  0.0104229733316538  0.8589842818836253  0.9867675335005814
+ 26  0.0590334053485720  0.0070507859058187  0.9180176872321973  0.9938183194064002
+ 27  0.0465456732896125  0.0040991156383901  0.9645633605218099  0.9979174350447904
+ 28  0.0292219798521905  0.0017718319739095  0.9937853403740005  0.9996892670186999
+ 29  0.0062146596259994  0.0003107329813000  0.9999999999999999  0.9999999999999999
+
+ ndtfast, nfast =   20  29   nfast/ndtfast = 1.45000
+
+ Centers of gravity and integrals (values must be 1, 1, approx 1/2, 1, 1):
+
+    1.000000000000 1.060707743385 0.530353871693 1.000000000000 1.000000000000
+
+ Power filter parameters, Fgamma, gamma =  0.28400   0.14200
+
+ INITIAL: Configuring and initializing forward nonlinear model ...
+
+
+ Minimum X-grid spacing, DXmin =  6.67918871E+00 km
+ Maximum X-grid spacing, DXmax =  1.25696406E+01 km
+ Minimum Y-grid spacing, DYmin =  4.34376658E+00 km
+ Maximum Y-grid spacing, DYmax =  4.34376658E+00 km
+ Minimum Z-grid spacing, DZmin =  5.53323611E+00 m
+ Maximum Z-grid spacing, DZmax =  2.75836519E+02 m
+
+ Minimum barotropic Courant Number =  4.69783444E-02
+ Maximum barotropic Courant Number =  1.32301112E-01
+ Maximum Coriolis   Courant Number =  6.85319684E-03
+
+
+ INITIAL: Configuring and initializing forward nonlinear model ...
+
+
+ Vertical S-coordinate System: 
+
+ level   S-coord     Cs-curve          at_hmin  over_slope     at_hmax
+
+    40   0.0000000  -0.0000000          -0.000      -0.000      -0.000
+    39  -0.0250000  -0.0017775          -5.533      -8.644     -11.754
+    38  -0.0500000  -0.0037835         -11.135     -17.756     -24.377
+    37  -0.0750000  -0.0060921         -16.828     -27.489     -38.150
+    36  -0.1000000  -0.0087922         -22.638     -38.024     -53.410
+    35  -0.1250000  -0.0119914         -28.597     -49.582     -70.567
+    34  -0.1500000  -0.0158197         -34.746     -62.430     -90.115
+    33  -0.1750000  -0.0204330         -41.130     -76.888    -112.646
+    32  -0.2000000  -0.0260168         -47.805     -93.334    -138.864
+    31  -0.2250000  -0.0327879         -54.836    -112.215    -169.594
+    30  -0.2500000  -0.0409944         -62.298    -134.039    -205.779
+    29  -0.2750000  -0.0509117         -70.274    -159.369    -248.465
+    28  -0.3000000  -0.0628318         -78.850    -188.805    -298.761
+    27  -0.3250000  -0.0770446         -88.113    -222.941    -357.769
+    26  -0.3500000  -0.0938098         -98.143    -262.310    -426.477
+    25  -0.3750000  -0.1133185        -108.996    -307.303    -505.610
+    24  -0.4000000  -0.1356491        -120.695    -358.081    -595.466
+    23  -0.4250000  -0.1607245        -133.217    -414.485    -695.753
+    22  -0.4500000  -0.1882840        -146.485    -475.982    -805.479
+    21  -0.4750000  -0.2178817        -160.365    -541.658    -922.951
+    20  -0.5000000  -0.2489214        -174.676    -610.289   -1045.901
+    19  -0.5250000  -0.2807264        -189.218    -680.489   -1171.760
+    18  -0.5500000  -0.3126323        -203.790    -750.896   -1298.003
+    17  -0.5750000  -0.3440788        -218.224    -820.362   -1422.499
+    16  -0.6000000  -0.3746809        -232.404    -888.096   -1543.788
+    15  -0.6250000  -0.4042644        -246.279    -953.742   -1661.205
+    14  -0.6500000  -0.4328656        -259.860   -1017.374   -1774.889
+    13  -0.6750000  -0.4607052        -273.212   -1079.446   -1885.680
+    12  -0.7000000  -0.4881475        -286.444   -1140.702   -1994.960
+    11  -0.7250000  -0.5156591        -299.698   -1202.101   -2104.505
+    10  -0.7500000  -0.5437741        -313.132   -1264.737   -2216.342
+     9  -0.7750000  -0.5730691        -326.921   -1329.792   -2332.663
+     8  -0.8000000  -0.6041494        -341.245   -1398.506   -2455.768
+     7  -0.8250000  -0.6376434        -356.293   -1472.169   -2588.045
+     6  -0.8500000  -0.6742046        -372.261   -1552.119   -2731.978
+     5  -0.8750000  -0.7145184        -389.356   -1639.763   -2890.170
+     4  -0.9000000  -0.7593114        -407.793   -1736.588   -3065.383
+     3  -0.9250000  -0.8093643        -427.809   -1844.197   -3260.585
+     2  -0.9500000  -0.8655258        -449.658   -1964.328   -3478.998
+     1  -0.9750000  -0.9287272        -473.618   -2098.891   -3724.163
+     0  -1.0000000  -1.0000000        -500.000   -2250.000   -4000.000
+
+ Time Splitting Weights: ndtfast =  20    nfast =  29
+
+    Primary            Secondary            Accumulated to Current Step
+
+  1 -0.0009651193358779  0.0500000000000000 -0.0009651193358779  0.0500000000000000
+  2 -0.0013488780126037  0.0500482559667939 -0.0023139973484816  0.1000482559667939
+  3 -0.0011514592651645  0.0501156998674241 -0.0034654566136460  0.1501639558342179
+  4 -0.0003735756740661  0.0501732728306823 -0.0038390322877122  0.2003372286649002
+  5  0.0009829200513762  0.0501919516143856 -0.0028561122363360  0.2505291802792858
+  6  0.0029141799764308  0.0501428056118168  0.0000580677400948  0.3006719858911026
+  7  0.0054132615310267  0.0499970966129952  0.0054713292711215  0.3506690825040978
+  8  0.0084687837865132  0.0497264335364439  0.0139401130576347  0.4003955160405417
+  9  0.0120633394191050  0.0493029943471183  0.0260034524767397  0.4496985103876600
+ 10  0.0161716623600090  0.0486998273761630  0.0421751148367486  0.4983983377638230
+ 11  0.0207585511322367  0.0478912442581626  0.0629336659689853  0.5462895820219856
+ 12  0.0257765478740990  0.0468533167015507  0.0887102138430843  0.5931428987235363
+ 13  0.0311633730493853  0.0455644893078458  0.1198735868924696  0.6387073880313821
+ 14  0.0368391158442262  0.0440063206553765  0.1567127027366958  0.6827137086867585
+ 15  0.0427031802506397  0.0421643648631652  0.1994158829873354  0.7248780735499237
+ 16  0.0486309868367616  0.0400292058506332  0.2480468698240970  0.7649072794005569
+ 17  0.0544704302037591  0.0375976565087951  0.3025173000278562  0.8025049359093520
+ 18  0.0600380921294285  0.0348741349986072  0.3625553921572847  0.8373790709079592
+ 19  0.0651152103984763  0.0318722303921358  0.4276706025557610  0.8692513013000949
+ 20  0.0694434033194839  0.0286164698722119  0.4971140058752449  0.8978677711723068
+ 21  0.0727201499285569  0.0251442997062377  0.5698341558038018  0.9230120708785445
+ 22  0.0745940258796570  0.0215082922098099  0.6444281816834588  0.9445203630883544
+ 23  0.0746596950216180  0.0177785909158270  0.7190878767050768  0.9622989540041814
+ 24  0.0724526566618460  0.0140456061647461  0.7915405333669228  0.9763445601689276
+ 25  0.0674437485167025  0.0104229733316538  0.8589842818836253  0.9867675335005814
+ 26  0.0590334053485720  0.0070507859058187  0.9180176872321973  0.9938183194064002
+ 27  0.0465456732896125  0.0040991156383901  0.9645633605218099  0.9979174350447904
+ 28  0.0292219798521905  0.0017718319739095  0.9937853403740005  0.9996892670186999
+ 29  0.0062146596259994  0.0003107329813000  0.9999999999999999  0.9999999999999999
+
+ ndtfast, nfast =   20  29   nfast/ndtfast = 1.45000
+
+ Centers of gravity and integrals (values must be 1, 1, approx 1/2, 1, 1):
+
+    1.000000000000 1.060707743385 0.530353871693 1.000000000000 1.000000000000
+
+ Power filter parameters, Fgamma, gamma =  0.28400   0.14200
+
+ Vertical S-coordinate System: 
+
+ level   S-coord     Cs-curve          at_hmin  over_slope     at_hmax
+
+    40   0.0000000  -0.0000000          -0.000      -0.000      -0.000
+    39  -0.0250000  -0.0017775          -5.533      -8.644     -11.754
+    38  -0.0500000  -0.0037835         -11.135     -17.756     -24.377
+    37  -0.0750000  -0.0060921         -16.828     -27.489     -38.150
+    36  -0.1000000  -0.0087922         -22.638     -38.024     -53.410
+    35  -0.1250000  -0.0119914         -28.597     -49.582     -70.567
+    34  -0.1500000  -0.0158197         -34.746     -62.430     -90.115
+    33  -0.1750000  -0.0204330         -41.130     -76.888    -112.646
+    32  -0.2000000  -0.0260168         -47.805     -93.334    -138.864
+    31  -0.2250000  -0.0327879         -54.836    -112.215    -169.594
+    30  -0.2500000  -0.0409944         -62.298    -134.039    -205.779
+    29  -0.2750000  -0.0509117         -70.274    -159.369    -248.465
+    28  -0.3000000  -0.0628318         -78.850    -188.805    -298.761
+    27  -0.3250000  -0.0770446         -88.113    -222.941    -357.769
+    26  -0.3500000  -0.0938098         -98.143    -262.310    -426.477
+    25  -0.3750000  -0.1133185        -108.996    -307.303    -505.610
+    24  -0.4000000  -0.1356491        -120.695    -358.081    -595.466
+    23  -0.4250000  -0.1607245        -133.217    -414.485    -695.753
+    22  -0.4500000  -0.1882840        -146.485    -475.982    -805.479
+    21  -0.4750000  -0.2178817        -160.365    -541.658    -922.951
+    20  -0.5000000  -0.2489214        -174.676    -610.289   -1045.901
+    19  -0.5250000  -0.2807264        -189.218    -680.489   -1171.760
+    18  -0.5500000  -0.3126323        -203.790    -750.896   -1298.003
+    17  -0.5750000  -0.3440788        -218.224    -820.362   -1422.499
+    16  -0.6000000  -0.3746809        -232.404    -888.096   -1543.788
+    15  -0.6250000  -0.4042644        -246.279    -953.742   -1661.205
+    14  -0.6500000  -0.4328656        -259.860   -1017.374   -1774.889
+    13  -0.6750000  -0.4607052        -273.212   -1079.446   -1885.680
+    12  -0.7000000  -0.4881475        -286.444   -1140.702   -1994.960
+    11  -0.7250000  -0.5156591        -299.698   -1202.101   -2104.505
+    10  -0.7500000  -0.5437741        -313.132   -1264.737   -2216.342
+     9  -0.7750000  -0.5730691        -326.921   -1329.792   -2332.663
+     8  -0.8000000  -0.6041494        -341.245   -1398.506   -2455.768
+     7  -0.8250000  -0.6376434        -356.293   -1472.169   -2588.045
+     6  -0.8500000  -0.6742046        -372.261   -1552.119   -2731.978
+     5  -0.8750000  -0.7145184        -389.356   -1639.763   -2890.170
+     4  -0.9000000  -0.7593114        -407.793   -1736.588   -3065.383
+     3  -0.9250000  -0.8093643        -427.809   -1844.197   -3260.585
+     2  -0.9500000  -0.8655258        -449.658   -1964.328   -3478.998
+     1  -0.9750000  -0.9287272        -473.618   -2098.891   -3724.163
+     0  -1.0000000  -1.0000000        -500.000   -2250.000   -4000.000
+
+ Time Splitting Weights: ndtfast =  20    nfast =  29
+
+    Primary            Secondary            Accumulated to Current Step
+
+  1 -0.0009651193358779  0.0500000000000000 -0.0009651193358779  0.0500000000000000
+  2 -0.0013488780126037  0.0500482559667939 -0.0023139973484816  0.1000482559667939
+  3 -0.0011514592651645  0.0501156998674241 -0.0034654566136460  0.1501639558342179
+  4 -0.0003735756740661  0.0501732728306823 -0.0038390322877122  0.2003372286649002
+  5  0.0009829200513762  0.0501919516143856 -0.0028561122363360  0.2505291802792858
+  6  0.0029141799764308  0.0501428056118168  0.0000580677400948  0.3006719858911026
+  7  0.0054132615310267  0.0499970966129952  0.0054713292711215  0.3506690825040978
+  8  0.0084687837865132  0.0497264335364439  0.0139401130576347  0.4003955160405417
+  9  0.0120633394191050  0.0493029943471183  0.0260034524767397  0.4496985103876600
+ 10  0.0161716623600090  0.0486998273761630  0.0421751148367486  0.4983983377638230
+ 11  0.0207585511322367  0.0478912442581626  0.0629336659689853  0.5462895820219856
+ 12  0.0257765478740990  0.0468533167015507  0.0887102138430843  0.5931428987235363
+ 13  0.0311633730493853  0.0455644893078458  0.1198735868924696  0.6387073880313821
+ 14  0.0368391158442262  0.0440063206553765  0.1567127027366958  0.6827137086867585
+ 15  0.0427031802506397  0.0421643648631652  0.1994158829873354  0.7248780735499237
+ 16  0.0486309868367616  0.0400292058506332  0.2480468698240970  0.7649072794005569
+ 17  0.0544704302037591  0.0375976565087951  0.3025173000278562  0.8025049359093520
+ 18  0.0600380921294285  0.0348741349986072  0.3625553921572847  0.8373790709079592
+ 19  0.0651152103984763  0.0318722303921358  0.4276706025557610  0.8692513013000949
+ 20  0.0694434033194839  0.0286164698722119  0.4971140058752449  0.8978677711723068
+ 21  0.0727201499285569  0.0251442997062377  0.5698341558038018  0.9230120708785445
+ 22  0.0745940258796570  0.0215082922098099  0.6444281816834588  0.9445203630883544
+ 23  0.0746596950216180  0.0177785909158270  0.7190878767050768  0.9622989540041814
+ 24  0.0724526566618460  0.0140456061647461  0.7915405333669228  0.9763445601689276
+ 25  0.0674437485167025  0.0104229733316538  0.8589842818836253  0.9867675335005814
+ 26  0.0590334053485720  0.0070507859058187  0.9180176872321973  0.9938183194064002
+ 27  0.0465456732896125  0.0040991156383901  0.9645633605218099  0.9979174350447904
+ 28  0.0292219798521905  0.0017718319739095  0.9937853403740005  0.9996892670186999
+ 29  0.0062146596259994  0.0003107329813000  0.9999999999999999  0.9999999999999999
+
+ ndtfast, nfast =   20  29   nfast/ndtfast = 1.45000
+
+ Centers of gravity and integrals (values must be 1, 1, approx 1/2, 1, 1):
+
+    1.000000000000 1.060707743385 0.530353871693 1.000000000000 1.000000000000
+
+ Power filter parameters, Fgamma, gamma =  0.28400   0.14200
+
+ Minimum X-grid spacing, DXmin =  6.67918871E+00 km
+ Maximum X-grid spacing, DXmax =  1.25696406E+01 km
+ Minimum Y-grid spacing, DYmin =  4.34376658E+00 km
+ Maximum Y-grid spacing, DYmax =  4.34376658E+00 km
+ Minimum Z-grid spacing, DZmin =  5.53323611E+00 m
+ Maximum Z-grid spacing, DZmax =  2.75836519E+02 m
+
+ Minimum barotropic Courant Number =  4.69783444E-02
+ Maximum barotropic Courant Number =  1.32301112E-01
+ Maximum Coriolis   Courant Number =  6.85319684E-03
+
+
+ Minimum X-grid spacing, DXmin =  6.67918871E+00 km
+ Maximum X-grid spacing, DXmax =  1.25696406E+01 km
+ Minimum Y-grid spacing, DYmin =  4.34376658E+00 km
+ Maximum Y-grid spacing, DYmax =  4.34376658E+00 km
+ Minimum Z-grid spacing, DZmin =  5.53323611E+00 m
+ Maximum Z-grid spacing, DZmax =  2.75836519E+02 m
+
+ Minimum barotropic Courant Number =  4.69783444E-02
+ Maximum barotropic Courant Number =  1.32301112E-01
+ Maximum Coriolis   Courant Number =  6.85319684E-03
+
+
+ Minimum X-grid spacing, DXmin =  6.67918871E+00 km
+ Maximum X-grid spacing, DXmax =  1.25696406E+01 km
+ Minimum Y-grid spacing, DYmin =  4.34376658E+00 km
+ Maximum Y-grid spacing, DYmax =  4.34376658E+00 km
+ Minimum Z-grid spacing, DZmin =  5.53323611E+00 m
+ Maximum Z-grid spacing, DZmax =  2.75836519E+02 m
+
+ Minimum barotropic Courant Number =  4.69783444E-02
+ Maximum barotropic Courant Number =  1.32301112E-01
+ Maximum Coriolis   Courant Number =  6.85319684E-03
+
+
+ INITIAL: Configuring and initializing forward nonlinear model ...
+
+
+ Vertical S-coordinate System: 
+
+ level   S-coord     Cs-curve          at_hmin  over_slope     at_hmax
+
+    40   0.0000000  -0.0000000          -0.000      -0.000      -0.000
+    39  -0.0250000  -0.0017775          -5.533      -8.644     -11.754
+    38  -0.0500000  -0.0037835         -11.135     -17.756     -24.377
+    37  -0.0750000  -0.0060921         -16.828     -27.489     -38.150
+    36  -0.1000000  -0.0087922         -22.638     -38.024     -53.410
+    35  -0.1250000  -0.0119914         -28.597     -49.582     -70.567
+    34  -0.1500000  -0.0158197         -34.746     -62.430     -90.115
+    33  -0.1750000  -0.0204330         -41.130     -76.888    -112.646
+    32  -0.2000000  -0.0260168         -47.805     -93.334    -138.864
+    31  -0.2250000  -0.0327879         -54.836    -112.215    -169.594
+    30  -0.2500000  -0.0409944         -62.298    -134.039    -205.779
+    29  -0.2750000  -0.0509117         -70.274    -159.369    -248.465
+    28  -0.3000000  -0.0628318         -78.850    -188.805    -298.761
+    27  -0.3250000  -0.0770446         -88.113    -222.941    -357.769
+    26  -0.3500000  -0.0938098         -98.143    -262.310    -426.477
+    25  -0.3750000  -0.1133185        -108.996    -307.303    -505.610
+    24  -0.4000000  -0.1356491        -120.695    -358.081    -595.466
+    23  -0.4250000  -0.1607245        -133.217    -414.485    -695.753
+    22  -0.4500000  -0.1882840        -146.485    -475.982    -805.479
+    21  -0.4750000  -0.2178817        -160.365    -541.658    -922.951
+    20  -0.5000000  -0.2489214        -174.676    -610.289   -1045.901
+    19  -0.5250000  -0.2807264        -189.218    -680.489   -1171.760
+    18  -0.5500000  -0.3126323        -203.790    -750.896   -1298.003
+    17  -0.5750000  -0.3440788        -218.224    -820.362   -1422.499
+    16  -0.6000000  -0.3746809        -232.404    -888.096   -1543.788
+    15  -0.6250000  -0.4042644        -246.279    -953.742   -1661.205
+    14  -0.6500000  -0.4328656        -259.860   -1017.374   -1774.889
+    13  -0.6750000  -0.4607052        -273.212   -1079.446   -1885.680
+    12  -0.7000000  -0.4881475        -286.444   -1140.702   -1994.960
+    11  -0.7250000  -0.5156591        -299.698   -1202.101   -2104.505
+    10  -0.7500000  -0.5437741        -313.132   -1264.737   -2216.342
+     9  -0.7750000  -0.5730691        -326.921   -1329.792   -2332.663
+     8  -0.8000000  -0.6041494        -341.245   -1398.506   -2455.768
+     7  -0.8250000  -0.6376434        -356.293   -1472.169   -2588.045
+     6  -0.8500000  -0.6742046        -372.261   -1552.119   -2731.978
+     5  -0.8750000  -0.7145184        -389.356   -1639.763   -2890.170
+     4  -0.9000000  -0.7593114        -407.793   -1736.588   -3065.383
+     3  -0.9250000  -0.8093643        -427.809   -1844.197   -3260.585
+     2  -0.9500000  -0.8655258        -449.658   -1964.328   -3478.998
+     1  -0.9750000  -0.9287272        -473.618   -2098.891   -3724.163
+     0  -1.0000000  -1.0000000        -500.000   -2250.000   -4000.000
+
+ Time Splitting Weights: ndtfast =  20    nfast =  29
+
+    Primary            Secondary            Accumulated to Current Step
+
+  1 -0.0009651193358779  0.0500000000000000 -0.0009651193358779  0.0500000000000000
+  2 -0.0013488780126037  0.0500482559667939 -0.0023139973484816  0.1000482559667939
+  3 -0.0011514592651645  0.0501156998674241 -0.0034654566136460  0.1501639558342179
+  4 -0.0003735756740661  0.0501732728306823 -0.0038390322877122  0.2003372286649002
+  5  0.0009829200513762  0.0501919516143856 -0.0028561122363360  0.2505291802792858
+  6  0.0029141799764308  0.0501428056118168  0.0000580677400948  0.3006719858911026
+  7  0.0054132615310267  0.0499970966129952  0.0054713292711215  0.3506690825040978
+  8  0.0084687837865132  0.0497264335364439  0.0139401130576347  0.4003955160405417
+  9  0.0120633394191050  0.0493029943471183  0.0260034524767397  0.4496985103876600
+ 10  0.0161716623600090  0.0486998273761630  0.0421751148367486  0.4983983377638230
+ 11  0.0207585511322367  0.0478912442581626  0.0629336659689853  0.5462895820219856
+ 12  0.0257765478740990  0.0468533167015507  0.0887102138430843  0.5931428987235363
+ 13  0.0311633730493853  0.0455644893078458  0.1198735868924696  0.6387073880313821
+ 14  0.0368391158442262  0.0440063206553765  0.1567127027366958  0.6827137086867585
+ 15  0.0427031802506397  0.0421643648631652  0.1994158829873354  0.7248780735499237
+ 16  0.0486309868367616  0.0400292058506332  0.2480468698240970  0.7649072794005569
+ 17  0.0544704302037591  0.0375976565087951  0.3025173000278562  0.8025049359093520
+ 18  0.0600380921294285  0.0348741349986072  0.3625553921572847  0.8373790709079592
+ 19  0.0651152103984763  0.0318722303921358  0.4276706025557610  0.8692513013000949
+ 20  0.0694434033194839  0.0286164698722119  0.4971140058752449  0.8978677711723068
+ 21  0.0727201499285569  0.0251442997062377  0.5698341558038018  0.9230120708785445
+ 22  0.0745940258796570  0.0215082922098099  0.6444281816834588  0.9445203630883544
+ 23  0.0746596950216180  0.0177785909158270  0.7190878767050768  0.9622989540041814
+ 24  0.0724526566618460  0.0140456061647461  0.7915405333669228  0.9763445601689276
+ 25  0.0674437485167025  0.0104229733316538  0.8589842818836253  0.9867675335005814
+ 26  0.0590334053485720  0.0070507859058187  0.9180176872321973  0.9938183194064002
+ 27  0.0465456732896125  0.0040991156383901  0.9645633605218099  0.9979174350447904
+ 28  0.0292219798521905  0.0017718319739095  0.9937853403740005  0.9996892670186999
+ 29  0.0062146596259994  0.0003107329813000  0.9999999999999999  0.9999999999999999
+
+ ndtfast, nfast =   20  29   nfast/ndtfast = 1.45000
+
+ Centers of gravity and integrals (values must be 1, 1, approx 1/2, 1, 1):
+
+    1.000000000000 1.060707743385 0.530353871693 1.000000000000 1.000000000000
+
+ Power filter parameters, Fgamma, gamma =  0.28400   0.14200
+
+ Minimum X-grid spacing, DXmin =  6.67918871E+00 km
+ Maximum X-grid spacing, DXmax =  1.25696406E+01 km
+ Minimum Y-grid spacing, DYmin =  4.34376658E+00 km
+ Maximum Y-grid spacing, DYmax =  4.34376658E+00 km
+ Minimum Z-grid spacing, DZmin =  5.53323611E+00 m
+ Maximum Z-grid spacing, DZmax =  2.75836519E+02 m
+
+ Minimum barotropic Courant Number =  4.69783444E-02
+ Maximum barotropic Courant Number =  1.32301112E-01
+ Maximum Coriolis   Courant Number =  6.85319684E-03
+
+
+ Minimum X-grid spacing, DXmin =  6.67918871E+00 km
+ Maximum X-grid spacing, DXmax =  1.25696406E+01 km
+ Minimum Y-grid spacing, DYmin =  4.34376658E+00 km
+ Maximum Y-grid spacing, DYmax =  4.34376658E+00 km
+ Minimum Z-grid spacing, DZmin =  5.53323611E+00 m
+ Maximum Z-grid spacing, DZmax =  2.75836519E+02 m
+
+ Minimum barotropic Courant Number =  4.69783444E-02
+ Maximum barotropic Courant Number =  1.32301112E-01
+ Maximum Coriolis   Courant Number =  6.85319684E-03
+
+
+ Minimum X-grid spacing, DXmin =  6.67918871E+00 km
+ Maximum X-grid spacing, DXmax =  1.25696406E+01 km
+ Minimum Y-grid spacing, DYmin =  4.34376658E+00 km
+ Maximum Y-grid spacing, DYmax =  4.34376658E+00 km
+ Minimum Z-grid spacing, DZmin =  5.53323611E+00 m
+ Maximum Z-grid spacing, DZmax =  2.75836519E+02 m
+
+ Minimum barotropic Courant Number =  4.69783444E-02
+ Maximum barotropic Courant Number =  1.32301112E-01
+ Maximum Coriolis   Courant Number =  6.85319684E-03
+
+
+ INITIAL: Configuring and initializing forward nonlinear model ...
+
+
+ Vertical S-coordinate System: 
+
+ level   S-coord     Cs-curve          at_hmin  over_slope     at_hmax
+
+    40   0.0000000  -0.0000000          -0.000      -0.000      -0.000
+    39  -0.0250000  -0.0017775          -5.533      -8.644     -11.754
+    38  -0.0500000  -0.0037835         -11.135     -17.756     -24.377
+    37  -0.0750000  -0.0060921         -16.828     -27.489     -38.150
+    36  -0.1000000  -0.0087922         -22.638     -38.024     -53.410
+    35  -0.1250000  -0.0119914         -28.597     -49.582     -70.567
+    34  -0.1500000  -0.0158197         -34.746     -62.430     -90.115
+    33  -0.1750000  -0.0204330         -41.130     -76.888    -112.646
+    32  -0.2000000  -0.0260168         -47.805     -93.334    -138.864
+    31  -0.2250000  -0.0327879         -54.836    -112.215    -169.594
+    30  -0.2500000  -0.0409944         -62.298    -134.039    -205.779
+    29  -0.2750000  -0.0509117         -70.274    -159.369    -248.465
+    28  -0.3000000  -0.0628318         -78.850    -188.805    -298.761
+    27  -0.3250000  -0.0770446         -88.113    -222.941    -357.769
+    26  -0.3500000  -0.0938098         -98.143    -262.310    -426.477
+    25  -0.3750000  -0.1133185        -108.996    -307.303    -505.610
+    24  -0.4000000  -0.1356491        -120.695    -358.081    -595.466
+    23  -0.4250000  -0.1607245        -133.217    -414.485    -695.753
+    22  -0.4500000  -0.1882840        -146.485    -475.982    -805.479
+    21  -0.4750000  -0.2178817        -160.365    -541.658    -922.951
+    20  -0.5000000  -0.2489214        -174.676    -610.289   -1045.901
+    19  -0.5250000  -0.2807264        -189.218    -680.489   -1171.760
+    18  -0.5500000  -0.3126323        -203.790    -750.896   -1298.003
+    17  -0.5750000  -0.3440788        -218.224    -820.362   -1422.499
+    16  -0.6000000  -0.3746809        -232.404    -888.096   -1543.788
+    15  -0.6250000  -0.4042644        -246.279    -953.742   -1661.205
+    14  -0.6500000  -0.4328656        -259.860   -1017.374   -1774.889
+    13  -0.6750000  -0.4607052        -273.212   -1079.446   -1885.680
+    12  -0.7000000  -0.4881475        -286.444   -1140.702   -1994.960
+    11  -0.7250000  -0.5156591        -299.698   -1202.101   -2104.505
+    10  -0.7500000  -0.5437741        -313.132   -1264.737   -2216.342
+     9  -0.7750000  -0.5730691        -326.921   -1329.792   -2332.663
+     8  -0.8000000  -0.6041494        -341.245   -1398.506   -2455.768
+     7  -0.8250000  -0.6376434        -356.293   -1472.169   -2588.045
+     6  -0.8500000  -0.6742046        -372.261   -1552.119   -2731.978
+     5  -0.8750000  -0.7145184        -389.356   -1639.763   -2890.170
+     4  -0.9000000  -0.7593114        -407.793   -1736.588   -3065.383
+     3  -0.9250000  -0.8093643        -427.809   -1844.197   -3260.585
+     2  -0.9500000  -0.8655258        -449.658   -1964.328   -3478.998
+     1  -0.9750000  -0.9287272        -473.618   -2098.891   -3724.163
+     0  -1.0000000  -1.0000000        -500.000   -2250.000   -4000.000
+
+ Time Splitting Weights: ndtfast =  20    nfast =  29
+
+    Primary            Secondary            Accumulated to Current Step
+
+  1 -0.0009651193358779  0.0500000000000000 -0.0009651193358779  0.0500000000000000
+  2 -0.0013488780126037  0.0500482559667939 -0.0023139973484816  0.1000482559667939
+  3 -0.0011514592651645  0.0501156998674241 -0.0034654566136460  0.1501639558342179
+  4 -0.0003735756740661  0.0501732728306823 -0.0038390322877122  0.2003372286649002
+  5  0.0009829200513762  0.0501919516143856 -0.0028561122363360  0.2505291802792858
+  6  0.0029141799764308  0.0501428056118168  0.0000580677400948  0.3006719858911026
+  7  0.0054132615310267  0.0499970966129952  0.0054713292711215  0.3506690825040978
+  8  0.0084687837865132  0.0497264335364439  0.0139401130576347  0.4003955160405417
+  9  0.0120633394191050  0.0493029943471183  0.0260034524767397  0.4496985103876600
+ 10  0.0161716623600090  0.0486998273761630  0.0421751148367486  0.4983983377638230
+ 11  0.0207585511322367  0.0478912442581626  0.0629336659689853  0.5462895820219856
+ 12  0.0257765478740990  0.0468533167015507  0.0887102138430843  0.5931428987235363
+ 13  0.0311633730493853  0.0455644893078458  0.1198735868924696  0.6387073880313821
+ 14  0.0368391158442262  0.0440063206553765  0.1567127027366958  0.6827137086867585
+ 15  0.0427031802506397  0.0421643648631652  0.1994158829873354  0.7248780735499237
+ 16  0.0486309868367616  0.0400292058506332  0.2480468698240970  0.7649072794005569
+ 17  0.0544704302037591  0.0375976565087951  0.3025173000278562  0.8025049359093520
+ 18  0.0600380921294285  0.0348741349986072  0.3625553921572847  0.8373790709079592
+ 19  0.0651152103984763  0.0318722303921358  0.4276706025557610  0.8692513013000949
+ 20  0.0694434033194839  0.0286164698722119  0.4971140058752449  0.8978677711723068
+ 21  0.0727201499285569  0.0251442997062377  0.5698341558038018  0.9230120708785445
+ 22  0.0745940258796570  0.0215082922098099  0.6444281816834588  0.9445203630883544
+ 23  0.0746596950216180  0.0177785909158270  0.7190878767050768  0.9622989540041814
+ 24  0.0724526566618460  0.0140456061647461  0.7915405333669228  0.9763445601689276
+ 25  0.0674437485167025  0.0104229733316538  0.8589842818836253  0.9867675335005814
+ 26  0.0590334053485720  0.0070507859058187  0.9180176872321973  0.9938183194064002
+ 27  0.0465456732896125  0.0040991156383901  0.9645633605218099  0.9979174350447904
+ 28  0.0292219798521905  0.0017718319739095  0.9937853403740005  0.9996892670186999
+ 29  0.0062146596259994  0.0003107329813000  0.9999999999999999  0.9999999999999999
+
+ ndtfast, nfast =   20  29   nfast/ndtfast = 1.45000
+
+ Centers of gravity and integrals (values must be 1, 1, approx 1/2, 1, 1):
+
+    1.000000000000 1.060707743385 0.530353871693 1.000000000000 1.000000000000
+
+ Power filter parameters, Fgamma, gamma =  0.28400   0.14200
+
+ Minimum X-grid spacing, DXmin =  6.67918871E+00 km
+ Maximum X-grid spacing, DXmax =  1.25696406E+01 km
+ Minimum Y-grid spacing, DYmin =  4.34376658E+00 km
+ Maximum Y-grid spacing, DYmax =  4.34376658E+00 km
+ Minimum Z-grid spacing, DZmin =  5.53323611E+00 m
+ Maximum Z-grid spacing, DZmax =  2.75836519E+02 m
+
+ Minimum barotropic Courant Number =  4.69783444E-02
+ Maximum barotropic Courant Number =  1.32301112E-01
+ Maximum Coriolis   Courant Number =  6.85319684E-03
+
+
+ Maximum grid stiffness ratios:  rx0 =   3.966042E-01 (Beckmann and Haidvogel)
+                                 rx1 =   1.534788E+01 (Haney)
+
+
+ Initial basin volumes: TotVolume =  1.6599435966E+17 m3
+                        MinVolume =  1.6083586258E+08 m3
+                        MaxVolume =  1.5048327667E+10 m3
+                          Max/Min =  9.3563260243E+01
+
+NL ROMS/TOMS: started time-stepping: (Grid: 01 TimeSteps: 00000001 - 00000100)
+
+ Maximum grid stiffness ratios:  rx0 =   3.966042E-01 (Beckmann and Haidvogel)
+                                 rx1 =   1.534788E+01 (Haney)
+
+
+ Initial basin volumes: TotVolume =  1.6599435966E+17 m3
+                        MinVolume =  1.6083586258E+08 m3
+                        MaxVolume =  1.5048327667E+10 m3
+                          Max/Min =  9.3563260243E+01
+
+NL ROMS/TOMS: started time-stepping: (Grid: 01 TimeSteps: 00000001 - 00000100)
+
+ Maximum grid stiffness ratios:  rx0 =   3.966042E-01 (Beckmann and Haidvogel)
+                                 rx1 =   1.534788E+01 (Haney)
+
+
+ Initial basin volumes: TotVolume =  1.6599435966E+17 m3
+                        MinVolume =  1.6083586258E+08 m3
+                        MaxVolume =  1.5048327667E+10 m3
+                          Max/Min =  9.3563260243E+01
+
+NL ROMS/TOMS: started time-stepping: (Grid: 01 TimeSteps: 00000001 - 00000100)
+
+ Maximum grid stiffness ratios:  rx0 =   3.966042E-01 (Beckmann and Haidvogel)
+                                 rx1 =   1.534788E+01 (Haney)
+
+
+ Initial basin volumes: TotVolume =  1.6599435966E+17 m3
+                        MinVolume =  1.6083586258E+08 m3
+                        MaxVolume =  1.5048327667E+10 m3
+                          Max/Min =  9.3563260243E+01
+
+NL ROMS/TOMS: started time-stepping: (Grid: 01 TimeSteps: 00000001 - 00000100)
+
+ Maximum grid stiffness ratios:  rx0 =   3.966042E-01 (Beckmann and Haidvogel)
+                                 rx1 =   1.534788E+01 (Haney)
+
+
+ Initial basin volumes: TotVolume =  1.6599435966E+17 m3
+                        MinVolume =  1.6083586258E+08 m3
+                        MaxVolume =  1.5048327667E+10 m3
+                          Max/Min =  9.3563260243E+01
+
+NL ROMS/TOMS: started time-stepping: (Grid: 01 TimeSteps: 00000001 - 00000100)
+
+ Maximum grid stiffness ratios:  rx0 =   3.966042E-01 (Beckmann and Haidvogel)
+                                 rx1 =   1.534788E+01 (Haney)
+
+
+ Initial basin volumes: TotVolume =  1.6599435966E+17 m3
+                        MinVolume =  1.6083586258E+08 m3
+                        MaxVolume =  1.5048327667E+10 m3
+                          Max/Min =  9.3563260243E+01
+
+NL ROMS/TOMS: started time-stepping: (Grid: 01 TimeSteps: 00000001 - 00000100)
+
+ Maximum grid stiffness ratios:  rx0 =   3.966042E-01 (Beckmann and Haidvogel)
+                                 rx1 =   1.534788E+01 (Haney)
+
+
+ Initial basin volumes: TotVolume =  1.6599435966E+17 m3
+                        MinVolume =  1.6083586258E+08 m3
+                        MaxVolume =  1.5048327667E+10 m3
+                          Max/Min =  9.3563260243E+01
+
+NL ROMS/TOMS: started time-stepping: (Grid: 01 TimeSteps: 00000001 - 00000100)
+
+ Maximum grid stiffness ratios:  rx0 =   3.966042E-01 (Beckmann and Haidvogel)
+                                 rx1 =   1.534788E+01 (Haney)
+
+
+ Initial basin volumes: TotVolume =  1.6599435966E+17 m3
+                        MinVolume =  1.6083586258E+08 m3
+                        MaxVolume =  1.5048327667E+10 m3
+                          Max/Min =  9.3563260243E+01
+
+NL ROMS/TOMS: started time-stepping: (Grid: 01 TimeSteps: 00000001 - 00000100)
+
+   STEP   Day HH:MM:SS  KINETIC_ENRG   POTEN_ENRG    TOTAL_ENRG    NET_VOLUME
+
+      0     0 00:00:00  0.000000E+00  1.963034E+04  1.963034E+04  1.659944E+17
+
+   STEP   Day HH:MM:SS  KINETIC_ENRG   POTEN_ENRG    TOTAL_ENRG    NET_VOLUME
+
+      0     0 00:00:00  0.000000E+00  1.963034E+04  1.963034E+04  1.659944E+17
+
+   STEP   Day HH:MM:SS  KINETIC_ENRG   POTEN_ENRG    TOTAL_ENRG    NET_VOLUME
+
+      0     0 00:00:00  0.000000E+00  1.963034E+04  1.963034E+04  1.659944E+17
+
+   STEP   Day HH:MM:SS  KINETIC_ENRG   POTEN_ENRG    TOTAL_ENRG    NET_VOLUME
+
+      0     0 00:00:00  0.000000E+00  1.963034E+04  1.963034E+04  1.659944E+17
+
+   STEP   Day HH:MM:SS  KINETIC_ENRG   POTEN_ENRG    TOTAL_ENRG    NET_VOLUME
+
+      0     0 00:00:00  0.000000E+00  1.963034E+04  1.963034E+04  1.659944E+17
+
+   STEP   Day HH:MM:SS  KINETIC_ENRG   POTEN_ENRG    TOTAL_ENRG    NET_VOLUME
+
+      0     0 00:00:00  0.000000E+00  1.963034E+04  1.963034E+04  1.659944E+17
+
+   STEP   Day HH:MM:SS  KINETIC_ENRG   POTEN_ENRG    TOTAL_ENRG    NET_VOLUME
+
+      0     0 00:00:00  0.000000E+00  1.963034E+04  1.963034E+04  1.659944E+17
+
+   STEP   Day HH:MM:SS  KINETIC_ENRG   POTEN_ENRG    TOTAL_ENRG    NET_VOLUME
+
+      0     0 00:00:00  0.000000E+00  1.963034E+04  1.963034E+04  1.659944E+17
+      1     0 00:00:50  1.538721E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      1     0 00:00:50  1.538721E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      1     0 00:00:50  1.538721E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      1     0 00:00:50  1.538721E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      1     0 00:00:50  1.538721E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      1     0 00:00:50  1.538721E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      1     0 00:00:50  1.538721E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      1     0 00:00:50  1.538721E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      2     0 00:01:40  6.087962E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      2     0 00:01:40  6.087962E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      2     0 00:01:40  6.087962E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      3     0 00:02:30  1.362528E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      3     0 00:02:30  1.362528E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      2     0 00:01:40  6.087962E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      3     0 00:02:30  1.362528E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      2     0 00:01:40  6.087962E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      2     0 00:01:40  6.087962E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      2     0 00:01:40  6.087962E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      2     0 00:01:40  6.087962E-09  1.963034E+04  1.963034E+04  1.659944E+17
+      4     0 00:03:20  2.413734E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      4     0 00:03:20  2.413734E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      4     0 00:03:20  2.413734E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      3     0 00:02:30  1.362528E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      3     0 00:02:30  1.362528E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      3     0 00:02:30  1.362528E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      5     0 00:04:10  3.760411E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      3     0 00:02:30  1.362528E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      5     0 00:04:10  3.760411E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      3     0 00:02:30  1.362528E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      4     0 00:03:20  2.413734E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      5     0 00:04:10  3.760411E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      4     0 00:03:20  2.413734E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      5     0 00:04:10  3.760411E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      4     0 00:03:20  2.413734E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      4     0 00:03:20  2.413734E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      6     0 00:05:00  5.400755E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      6     0 00:05:00  5.400755E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      6     0 00:05:00  5.400755E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      5     0 00:04:10  3.760411E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      4     0 00:03:20  2.413734E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      6     0 00:05:00  5.400755E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      5     0 00:04:10  3.760411E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      7     0 00:05:50  7.333129E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      5     0 00:04:10  3.760411E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      7     0 00:05:50  7.333129E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      7     0 00:05:50  7.333129E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      7     0 00:05:50  7.333129E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      6     0 00:05:00  5.400755E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      6     0 00:05:00  5.400755E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      5     0 00:04:10  3.760411E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      8     0 00:06:40  9.555774E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      8     0 00:06:40  9.555774E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      8     0 00:06:40  9.555774E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      7     0 00:05:50  7.333129E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      6     0 00:05:00  5.400755E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      7     0 00:05:50  7.333129E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      8     0 00:06:40  9.555774E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      9     0 00:07:30  1.206714E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      9     0 00:07:30  1.206714E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      8     0 00:06:40  9.555774E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      6     0 00:05:00  5.400755E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      8     0 00:06:40  9.555774E-08  1.963034E+04  1.963034E+04  1.659944E+17
+      9     0 00:07:30  1.206714E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      9     0 00:07:30  1.206714E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      7     0 00:05:50  7.333129E-08  1.963034E+04  1.963034E+04  1.659944E+17
+     10     0 00:08:20  1.486556E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     10     0 00:08:20  1.486556E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      9     0 00:07:30  1.206714E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      9     0 00:07:30  1.206714E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     10     0 00:08:20  1.486556E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     11     0 00:09:10  1.794954E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     11     0 00:09:10  1.794954E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      8     0 00:06:40  9.555774E-08  1.963034E+04  1.963034E+04  1.659944E+17
+     10     0 00:08:20  1.486556E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     10     0 00:08:20  1.486556E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      7     0 00:05:50  7.333129E-08  1.963034E+04  1.963034E+04  1.659944E+17
+     10     0 00:08:20  1.486556E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     12     0 00:10:00  2.131747E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     11     0 00:09:10  1.794954E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     12     0 00:10:00  2.131747E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     13     0 00:10:50  2.496782E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     11     0 00:09:10  1.794954E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     11     0 00:09:10  1.794954E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     12     0 00:10:00  2.131747E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      9     0 00:07:30  1.206714E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     11     0 00:09:10  1.794954E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     13     0 00:10:50  2.496782E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     14     0 00:11:40  2.863378E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     12     0 00:10:00  2.131747E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      8     0 00:06:40  9.555774E-08  1.963034E+04  1.963034E+04  1.659944E+17
+     12     0 00:10:00  2.131747E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     14     0 00:11:40  2.863378E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     15     0 00:12:30  3.236174E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     13     0 00:10:50  2.496782E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     13     0 00:10:50  2.496782E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     10     0 00:08:20  1.486556E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     12     0 00:10:00  2.131747E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     15     0 00:12:30  3.236174E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     16     0 00:13:20  3.618818E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     14     0 00:11:40  2.863378E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     14     0 00:11:40  2.863378E-07  1.963034E+04  1.963034E+04  1.659944E+17
+      9     0 00:07:30  1.206714E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     13     0 00:10:50  2.496782E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     17     0 00:14:10  4.011100E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     16     0 00:13:20  3.618818E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     15     0 00:12:30  3.236174E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     13     0 00:10:50  2.496782E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     11     0 00:09:10  1.794954E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     15     0 00:12:30  3.236174E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     14     0 00:11:40  2.863378E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     17     0 00:14:10  4.011100E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     10     0 00:08:20  1.486556E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     18     0 00:15:00  4.413145E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     16     0 00:13:20  3.618818E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     16     0 00:13:20  3.618818E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     14     0 00:11:40  2.863378E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     12     0 00:10:00  2.131747E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     15     0 00:12:30  3.236174E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     18     0 00:15:00  4.413145E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     19     0 00:15:50  4.823935E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     17     0 00:14:10  4.011100E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     17     0 00:14:10  4.011100E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     11     0 00:09:10  1.794954E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     19     0 00:15:50  4.823935E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     15     0 00:12:30  3.236174E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     16     0 00:13:20  3.618818E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     18     0 00:15:00  4.413145E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     20     0 00:16:40  5.244001E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     18     0 00:15:00  4.413145E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     13     0 00:10:50  2.496782E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     20     0 00:16:40  5.244001E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     12     0 00:10:00  2.131747E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     17     0 00:14:10  4.011100E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     19     0 00:15:50  4.823935E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     16     0 00:13:20  3.618818E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     21     0 00:17:30  5.672672E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     19     0 00:15:50  4.823935E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     21     0 00:17:30  5.672672E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     20     0 00:16:40  5.244001E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     18     0 00:15:00  4.413145E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     14     0 00:11:40  2.863378E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     13     0 00:10:50  2.496782E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     17     0 00:14:10  4.011100E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     22     0 00:18:20  6.109431E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     21     0 00:17:30  5.672672E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     20     0 00:16:40  5.244001E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     18     0 00:15:00  4.413145E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     22     0 00:18:20  6.109431E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     19     0 00:15:50  4.823935E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     23     0 00:19:10  6.555108E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     15     0 00:12:30  3.236174E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     14     0 00:11:40  2.863378E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     22     0 00:18:20  6.109431E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     19     0 00:15:50  4.823935E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     21     0 00:17:30  5.672672E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     23     0 00:19:10  6.555108E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     24     0 00:20:00  7.008151E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     20     0 00:16:40  5.244001E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     15     0 00:12:30  3.236174E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     16     0 00:13:20  3.618818E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     23     0 00:19:10  6.555108E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     20     0 00:16:40  5.244001E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     22     0 00:18:20  6.109431E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     25     0 00:20:50  7.469519E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     24     0 00:20:00  7.008151E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     21     0 00:17:30  5.672672E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     24     0 00:20:00  7.008151E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     16     0 00:13:20  3.618818E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     21     0 00:17:30  5.672672E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     26     0 00:21:40  7.939017E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     17     0 00:14:10  4.011100E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     23     0 00:19:10  6.555108E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     25     0 00:20:50  7.469519E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     22     0 00:18:20  6.109431E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     22     0 00:18:20  6.109431E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     17     0 00:14:10  4.011100E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     25     0 00:20:50  7.469519E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     27     0 00:22:30  8.417621E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     23     0 00:19:10  6.555108E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     26     0 00:21:40  7.939017E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     18     0 00:15:00  4.413145E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     24     0 00:20:00  7.008151E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     23     0 00:19:10  6.555108E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     28     0 00:23:20  8.904065E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     18     0 00:15:00  4.413145E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     24     0 00:20:00  7.008151E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     27     0 00:22:30  8.417621E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     26     0 00:21:40  7.939017E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     29     0 00:24:10  9.398310E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     25     0 00:20:50  7.469519E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     25     0 00:20:50  7.469519E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     19     0 00:15:50  4.823935E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     24     0 00:20:00  7.008151E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     28     0 00:23:20  8.904065E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     19     0 00:15:50  4.823935E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     26     0 00:21:40  7.939017E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     30     0 00:25:00  9.901400E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     27     0 00:22:30  8.417621E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     29     0 00:24:10  9.398310E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     20     0 00:16:40  5.244001E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     26     0 00:21:40  7.939017E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     25     0 00:20:50  7.469519E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     31     0 00:25:50  1.041224E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     27     0 00:22:30  8.417621E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     30     0 00:25:00  9.901400E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     20     0 00:16:40  5.244001E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     21     0 00:17:30  5.672672E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     28     0 00:23:20  8.904065E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     26     0 00:21:40  7.939017E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     32     0 00:26:40  1.093189E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     27     0 00:22:30  8.417621E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     28     0 00:23:20  8.904065E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     31     0 00:25:50  1.041224E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     29     0 00:24:10  9.398310E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     22     0 00:18:20  6.109431E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     33     0 00:27:30  1.145938E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     29     0 00:24:10  9.398310E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     27     0 00:22:30  8.417621E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     21     0 00:17:30  5.672672E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     30     0 00:25:00  9.901400E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     32     0 00:26:40  1.093189E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     28     0 00:23:20  8.904065E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     23     0 00:19:10  6.555108E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     34     0 00:28:20  1.199311E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     30     0 00:25:00  9.901400E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     28     0 00:23:20  8.904065E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     31     0 00:25:50  1.041224E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     33     0 00:27:30  1.145938E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     35     0 00:29:10  1.253430E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     31     0 00:25:50  1.041224E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     29     0 00:24:10  9.398310E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     24     0 00:20:00  7.008151E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     22     0 00:18:20  6.109431E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     32     0 00:26:40  1.093189E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     34     0 00:28:20  1.199311E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     29     0 00:24:10  9.398310E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     32     0 00:26:40  1.093189E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     36     0 00:30:00  1.308301E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     25     0 00:20:50  7.469519E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     33     0 00:27:30  1.145938E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     35     0 00:29:10  1.253430E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     30     0 00:25:00  9.901400E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     37     0 00:30:50  1.363900E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     33     0 00:27:30  1.145938E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     30     0 00:25:00  9.901400E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     26     0 00:21:40  7.939017E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     23     0 00:19:10  6.555108E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     34     0 00:28:20  1.199311E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     36     0 00:30:00  1.308301E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     38     0 00:31:40  1.420199E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     34     0 00:28:20  1.199311E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     27     0 00:22:30  8.417621E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     35     0 00:29:10  1.253430E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     31     0 00:25:50  1.041224E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     37     0 00:30:50  1.363900E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     39     0 00:32:30  1.477194E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     31     0 00:25:50  1.041224E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     35     0 00:29:10  1.253430E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     28     0 00:23:20  8.904065E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     24     0 00:20:00  7.008151E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     36     0 00:30:00  1.308301E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     40     0 00:33:20  1.534860E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     38     0 00:31:40  1.420199E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     36     0 00:30:00  1.308301E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     32     0 00:26:40  1.093189E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     29     0 00:24:10  9.398310E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     37     0 00:30:50  1.363900E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     41     0 00:34:10  1.593173E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     39     0 00:32:30  1.477194E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     32     0 00:26:40  1.093189E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     37     0 00:30:50  1.363900E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     25     0 00:20:50  7.469519E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     30     0 00:25:00  9.901400E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     33     0 00:27:30  1.145938E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     40     0 00:33:20  1.534860E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     38     0 00:31:40  1.420199E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     42     0 00:35:00  1.652108E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     38     0 00:31:40  1.420199E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     31     0 00:25:50  1.041224E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     43     0 00:35:50  1.711640E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     41     0 00:34:10  1.593173E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     39     0 00:32:30  1.477194E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     33     0 00:27:30  1.145938E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     34     0 00:28:20  1.199311E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     26     0 00:21:40  7.939017E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     32     0 00:26:40  1.093189E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     39     0 00:32:30  1.477194E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     44     0 00:36:40  1.771770E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     42     0 00:35:00  1.652108E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     40     0 00:33:20  1.534860E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     33     0 00:27:30  1.145938E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     45     0 00:37:30  1.832452E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     43     0 00:35:50  1.711640E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     40     0 00:33:20  1.534860E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     35     0 00:29:10  1.253430E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     34     0 00:28:20  1.199311E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     27     0 00:22:30  8.417621E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     41     0 00:34:10  1.593173E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     46     0 00:38:20  1.893690E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     34     0 00:28:20  1.199311E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     44     0 00:36:40  1.771770E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     41     0 00:34:10  1.593173E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     36     0 00:30:00  1.308301E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     35     0 00:29:10  1.253430E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     42     0 00:35:00  1.652108E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     47     0 00:39:10  1.955464E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     35     0 00:29:10  1.253430E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     45     0 00:37:30  1.832452E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     28     0 00:23:20  8.904065E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     42     0 00:35:00  1.652108E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     36     0 00:30:00  1.308301E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     48     0 00:40:00  2.017728E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     46     0 00:38:20  1.893690E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     37     0 00:30:50  1.363900E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     43     0 00:35:50  1.711640E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     43     0 00:35:50  1.711640E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     36     0 00:30:00  1.308301E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     37     0 00:30:50  1.363900E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     29     0 00:24:10  9.398310E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     49     0 00:40:50  2.080492E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     47     0 00:39:10  1.955464E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     44     0 00:36:40  1.771770E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     38     0 00:31:40  1.420199E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     38     0 00:31:40  1.420199E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     44     0 00:36:40  1.771770E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     48     0 00:40:00  2.017728E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     50     0 00:41:40  2.143816E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     37     0 00:30:50  1.363900E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     39     0 00:32:30  1.477194E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     45     0 00:37:30  1.832452E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     30     0 00:25:00  9.901400E-07  1.963034E+04  1.963034E+04  1.659944E+17
+     45     0 00:37:30  1.832452E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     39     0 00:32:30  1.477194E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     49     0 00:40:50  2.080492E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     51     0 00:42:30  2.207602E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     40     0 00:33:20  1.534860E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     46     0 00:38:20  1.893690E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     31     0 00:25:50  1.041224E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     46     0 00:38:20  1.893690E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     38     0 00:31:40  1.420199E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     50     0 00:41:40  2.143816E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     40     0 00:33:20  1.534860E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     41     0 00:34:10  1.593173E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     52     0 00:43:20  2.271836E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     47     0 00:39:10  1.955464E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     32     0 00:26:40  1.093189E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     51     0 00:42:30  2.207602E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     47     0 00:39:10  1.955464E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     42     0 00:35:00  1.652108E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     48     0 00:40:00  2.017728E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     53     0 00:44:10  2.336506E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     41     0 00:34:10  1.593173E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     39     0 00:32:30  1.477194E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     33     0 00:27:30  1.145938E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     43     0 00:35:50  1.711640E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     52     0 00:43:20  2.271836E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     48     0 00:40:00  2.017728E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     49     0 00:40:50  2.080492E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     54     0 00:45:00  2.401673E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     42     0 00:35:00  1.652108E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     44     0 00:36:40  1.771770E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     34     0 00:28:20  1.199311E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     40     0 00:33:20  1.534860E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     55     0 00:45:50  2.467245E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     53     0 00:44:10  2.336506E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     50     0 00:41:40  2.143816E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     49     0 00:40:50  2.080492E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     45     0 00:37:30  1.832452E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     35     0 00:29:10  1.253430E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     43     0 00:35:50  1.711640E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     56     0 00:46:40  2.533215E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     51     0 00:42:30  2.207602E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     54     0 00:45:00  2.401673E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     41     0 00:34:10  1.593173E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     50     0 00:41:40  2.143816E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     36     0 00:30:00  1.308301E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     46     0 00:38:20  1.893690E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     52     0 00:43:20  2.271836E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     57     0 00:47:30  2.599642E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     55     0 00:45:50  2.467245E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     44     0 00:36:40  1.771770E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     37     0 00:30:50  1.363900E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     47     0 00:39:10  1.955464E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     51     0 00:42:30  2.207602E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     42     0 00:35:00  1.652108E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     53     0 00:44:10  2.336506E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     58     0 00:48:20  2.666443E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     56     0 00:46:40  2.533215E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     38     0 00:31:40  1.420199E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     45     0 00:37:30  1.832452E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     54     0 00:45:00  2.401673E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     52     0 00:43:20  2.271836E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     48     0 00:40:00  2.017728E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     59     0 00:49:10  2.733644E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     57     0 00:47:30  2.599642E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     43     0 00:35:50  1.711640E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     39     0 00:32:30  1.477194E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     55     0 00:45:50  2.467245E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     58     0 00:48:20  2.666443E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     46     0 00:38:20  1.893690E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     53     0 00:44:10  2.336506E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     60     0 00:50:00  2.801273E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     49     0 00:40:50  2.080492E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     40     0 00:33:20  1.534860E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     56     0 00:46:40  2.533215E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     44     0 00:36:40  1.771770E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     59     0 00:49:10  2.733644E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     61     0 00:50:50  2.869250E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     50     0 00:41:40  2.143816E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     47     0 00:39:10  1.955464E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     54     0 00:45:00  2.401673E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     57     0 00:47:30  2.599642E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     41     0 00:34:10  1.593173E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     60     0 00:50:00  2.801273E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     62     0 00:51:40  2.937570E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     51     0 00:42:30  2.207602E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     45     0 00:37:30  1.832452E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     58     0 00:48:20  2.666443E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     48     0 00:40:00  2.017728E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     55     0 00:45:50  2.467245E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     42     0 00:35:00  1.652108E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     61     0 00:50:50  2.869250E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     63     0 00:52:30  3.006304E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     52     0 00:43:20  2.271836E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     59     0 00:49:10  2.733644E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     43     0 00:35:50  1.711640E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     46     0 00:38:20  1.893690E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     56     0 00:46:40  2.533215E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     49     0 00:40:50  2.080492E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     62     0 00:51:40  2.937570E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     53     0 00:44:10  2.336506E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     60     0 00:50:00  2.801273E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     64     0 00:53:20  3.075357E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     63     0 00:52:30  3.006304E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     44     0 00:36:40  1.771770E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     50     0 00:41:40  2.143816E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     47     0 00:39:10  1.955464E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     57     0 00:47:30  2.599642E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     54     0 00:45:00  2.401673E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     64     0 00:53:20  3.075357E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     65     0 00:54:10  3.144741E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     61     0 00:50:50  2.869250E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     45     0 00:37:30  1.832452E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     51     0 00:42:30  2.207602E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     55     0 00:45:50  2.467245E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     58     0 00:48:20  2.666443E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     48     0 00:40:00  2.017728E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     65     0 00:54:10  3.144741E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     66     0 00:55:00  3.214396E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     62     0 00:51:40  2.937570E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     46     0 00:38:20  1.893690E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     56     0 00:46:40  2.533215E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     52     0 00:43:20  2.271836E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     66     0 00:55:00  3.214396E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     59     0 00:49:10  2.733644E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     49     0 00:40:50  2.080492E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     67     0 00:55:50  3.284436E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     57     0 00:47:30  2.599642E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     63     0 00:52:30  3.006304E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     47     0 00:39:10  1.955464E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     67     0 00:55:50  3.284436E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     53     0 00:44:10  2.336506E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     60     0 00:50:00  2.801273E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     68     0 00:56:40  3.354747E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     58     0 00:48:20  2.666443E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     50     0 00:41:40  2.143816E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     64     0 00:53:20  3.075357E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     48     0 00:40:00  2.017728E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     68     0 00:56:40  3.354747E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     54     0 00:45:00  2.401673E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     59     0 00:49:10  2.733644E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     69     0 00:57:30  3.425378E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     61     0 00:50:50  2.869250E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     51     0 00:42:30  2.207602E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     69     0 00:57:30  3.425378E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     60     0 00:50:00  2.801273E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     49     0 00:40:50  2.080492E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     65     0 00:54:10  3.144741E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     70     0 00:58:20  3.496321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     55     0 00:45:50  2.467245E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     62     0 00:51:40  2.937570E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     70     0 00:58:20  3.496321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     61     0 00:50:50  2.869250E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     52     0 00:43:20  2.271836E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     50     0 00:41:40  2.143816E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     71     0 00:59:10  3.567524E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     56     0 00:46:40  2.533215E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     66     0 00:55:00  3.214396E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     71     0 00:59:10  3.567524E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     63     0 00:52:30  3.006304E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     62     0 00:51:40  2.937570E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     72     0 01:00:00  3.639069E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     53     0 00:44:10  2.336506E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     51     0 00:42:30  2.207602E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     72     0 01:00:00  3.639069E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     57     0 00:47:30  2.599642E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     67     0 00:55:50  3.284436E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     64     0 00:53:20  3.075357E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     73     0 01:00:50  3.710875E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     63     0 00:52:30  3.006304E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     52     0 00:43:20  2.271836E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     73     0 01:00:50  3.710875E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     54     0 00:45:00  2.401673E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     58     0 00:48:20  2.666443E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     64     0 00:53:20  3.075357E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     74     0 01:01:40  3.782992E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     68     0 00:56:40  3.354747E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     74     0 01:01:40  3.782992E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     65     0 00:54:10  3.144741E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     53     0 00:44:10  2.336506E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     65     0 00:54:10  3.144741E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     59     0 00:49:10  2.733644E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     55     0 00:45:50  2.467245E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     75     0 01:02:30  3.855366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     75     0 01:02:30  3.855366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     66     0 00:55:00  3.214396E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     66     0 00:55:00  3.214396E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     54     0 00:45:00  2.401673E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     69     0 00:57:30  3.425378E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     76     0 01:03:20  3.928014E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     60     0 00:50:00  2.801273E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     56     0 00:46:40  2.533215E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     76     0 01:03:20  3.928014E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     67     0 00:55:50  3.284436E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     77     0 01:04:10  4.000959E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     55     0 00:45:50  2.467245E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     67     0 00:55:50  3.284436E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     61     0 00:50:50  2.869250E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     77     0 01:04:10  4.000959E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     70     0 00:58:20  3.496321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     68     0 00:56:40  3.354747E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     57     0 00:47:30  2.599642E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     78     0 01:05:00  4.074114E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     56     0 00:46:40  2.533215E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     78     0 01:05:00  4.074114E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     68     0 00:56:40  3.354747E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     79     0 01:05:50  4.147571E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     62     0 00:51:40  2.937570E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     69     0 00:57:30  3.425378E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     58     0 00:48:20  2.666443E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     71     0 00:59:10  3.567524E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     79     0 01:05:50  4.147571E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     80     0 01:06:40  4.221227E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     70     0 00:58:20  3.496321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     57     0 00:47:30  2.599642E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     69     0 00:57:30  3.425378E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     63     0 00:52:30  3.006304E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     80     0 01:06:40  4.221227E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     81     0 01:07:30  4.295169E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     59     0 00:49:10  2.733644E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     71     0 00:59:10  3.567524E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     70     0 00:58:20  3.496321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     58     0 00:48:20  2.666443E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     72     0 01:00:00  3.639069E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     64     0 00:53:20  3.075357E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     81     0 01:07:30  4.295169E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     82     0 01:08:20  4.369321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     72     0 01:00:00  3.639069E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     71     0 00:59:10  3.567524E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     60     0 00:50:00  2.801273E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     82     0 01:08:20  4.369321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     83     0 01:09:10  4.443723E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     73     0 01:00:50  3.710875E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     59     0 00:49:10  2.733644E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     65     0 00:54:10  3.144741E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     73     0 01:00:50  3.710875E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     72     0 01:00:00  3.639069E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     74     0 01:01:40  3.782992E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     83     0 01:09:10  4.443723E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     84     0 01:10:00  4.518366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     61     0 00:50:50  2.869250E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     60     0 00:50:00  2.801273E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     73     0 01:00:50  3.710875E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     74     0 01:01:40  3.782992E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     66     0 00:55:00  3.214396E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     75     0 01:02:30  3.855366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     85     0 01:10:50  4.593213E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     84     0 01:10:00  4.518366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     76     0 01:03:20  3.928014E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     74     0 01:01:40  3.782992E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     61     0 00:50:50  2.869250E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     62     0 00:51:40  2.937570E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     85     0 01:10:50  4.593213E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     86     0 01:11:40  4.668325E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     75     0 01:02:30  3.855366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     67     0 00:55:50  3.284436E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     77     0 01:04:10  4.000959E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     75     0 01:02:30  3.855366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     87     0 01:12:30  4.743595E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     62     0 00:51:40  2.937570E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     86     0 01:11:40  4.668325E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     78     0 01:05:00  4.074114E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     76     0 01:03:20  3.928014E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     68     0 00:56:40  3.354747E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     63     0 00:52:30  3.006304E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     76     0 01:03:20  3.928014E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     88     0 01:13:20  4.819109E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     79     0 01:05:50  4.147571E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     87     0 01:12:30  4.743595E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     63     0 00:52:30  3.006304E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     77     0 01:04:10  4.000959E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     77     0 01:04:10  4.000959E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     80     0 01:06:40  4.221227E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     89     0 01:14:10  4.894794E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     88     0 01:13:20  4.819109E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     69     0 00:57:30  3.425378E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     64     0 00:53:20  3.075357E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     78     0 01:05:00  4.074114E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     81     0 01:07:30  4.295169E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     90     0 01:15:00  4.970707E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     64     0 00:53:20  3.075357E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     78     0 01:05:00  4.074114E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     89     0 01:14:10  4.894794E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     70     0 00:58:20  3.496321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     79     0 01:05:50  4.147571E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     82     0 01:08:20  4.369321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     91     0 01:15:50  5.046849E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     90     0 01:15:00  4.970707E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     65     0 00:54:10  3.144741E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     79     0 01:05:50  4.147571E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     65     0 00:54:10  3.144741E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     80     0 01:06:40  4.221227E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     83     0 01:09:10  4.443723E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     92     0 01:16:40  5.123144E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     91     0 01:15:50  5.046849E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     71     0 00:59:10  3.567524E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     66     0 00:55:00  3.214396E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     66     0 00:55:00  3.214396E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     84     0 01:10:00  4.518366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     80     0 01:06:40  4.221227E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     81     0 01:07:30  4.295169E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     93     0 01:17:30  5.199657E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     92     0 01:16:40  5.123144E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     85     0 01:10:50  4.593213E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     72     0 01:00:00  3.639069E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     67     0 00:55:50  3.284436E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     82     0 01:08:20  4.369321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     67     0 00:55:50  3.284436E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     94     0 01:18:20  5.276310E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     93     0 01:17:30  5.199657E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     81     0 01:07:30  4.295169E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     86     0 01:11:40  4.668325E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     83     0 01:09:10  4.443723E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     68     0 00:56:40  3.354747E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     94     0 01:18:20  5.276310E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     73     0 01:00:50  3.710875E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     95     0 01:19:10  5.353176E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     87     0 01:12:30  4.743595E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     68     0 00:56:40  3.354747E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     82     0 01:08:20  4.369321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     84     0 01:10:00  4.518366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     95     0 01:19:10  5.353176E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     88     0 01:13:20  4.819109E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     96     0 01:20:00  5.430248E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     69     0 00:57:30  3.425378E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     69     0 00:57:30  3.425378E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     74     0 01:01:40  3.782992E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     96     0 01:20:00  5.430248E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     83     0 01:09:10  4.443723E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     85     0 01:10:50  4.593213E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     89     0 01:14:10  4.894794E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     97     0 01:20:50  5.507456E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     70     0 00:58:20  3.496321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     97     0 01:20:50  5.507456E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     70     0 00:58:20  3.496321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     75     0 01:02:30  3.855366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     90     0 01:15:00  4.970707E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     86     0 01:11:40  4.668325E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     98     0 01:21:40  5.584857E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     84     0 01:10:00  4.518366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     98     0 01:21:40  5.584857E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     91     0 01:15:50  5.046849E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     87     0 01:12:30  4.743595E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     71     0 00:59:10  3.567524E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     99     0 01:22:30  5.662435E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     71     0 00:59:10  3.567524E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     99     0 01:22:30  5.662435E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     76     0 01:03:20  3.928014E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     85     0 01:10:50  4.593213E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     92     0 01:16:40  5.123144E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     88     0 01:13:20  4.819109E-06  1.963034E+04  1.963034E+04  1.659944E+17
+    100     0 01:23:20  5.740154E-06  1.963034E+04  1.963034E+04  1.659944E+17
+    100     0 01:23:20  5.740154E-06  1.963034E+04  1.963034E+04  1.659944E+17
+
+ Elapsed CPU time (seconds):
+
+
+ ROMS/TOMS - Output NetCDF summary for Grid 01:
+
+ ROMS/TOMS: DONE... 
+
+ Elapsed CPU time (seconds):
+
+
+ ROMS/TOMS - Output NetCDF summary for Grid 01:
+
+ ROMS/TOMS: DONE... 
+     93     0 01:17:30  5.199657E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     72     0 01:00:00  3.639069E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     72     0 01:00:00  3.639069E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     89     0 01:14:10  4.894794E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     77     0 01:04:10  4.000959E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     86     0 01:11:40  4.668325E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     94     0 01:18:20  5.276310E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     90     0 01:15:00  4.970707E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     73     0 01:00:50  3.710875E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     73     0 01:00:50  3.710875E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     87     0 01:12:30  4.743595E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     78     0 01:05:00  4.074114E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     91     0 01:15:50  5.046849E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     74     0 01:01:40  3.782992E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     74     0 01:01:40  3.782992E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     95     0 01:19:10  5.353176E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     88     0 01:13:20  4.819109E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     92     0 01:16:40  5.123144E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     79     0 01:05:50  4.147571E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     75     0 01:02:30  3.855366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     75     0 01:02:30  3.855366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     89     0 01:14:10  4.894794E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     93     0 01:17:30  5.199657E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     96     0 01:20:00  5.430248E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     76     0 01:03:20  3.928014E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     90     0 01:15:00  4.970707E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     76     0 01:03:20  3.928014E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     94     0 01:18:20  5.276310E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     80     0 01:06:40  4.221227E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     95     0 01:19:10  5.353176E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     91     0 01:15:50  5.046849E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     97     0 01:20:50  5.507456E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     77     0 01:04:10  4.000959E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     77     0 01:04:10  4.000959E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     96     0 01:20:00  5.430248E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     92     0 01:16:40  5.123144E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     81     0 01:07:30  4.295169E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     78     0 01:05:00  4.074114E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     78     0 01:05:00  4.074114E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     98     0 01:21:40  5.584857E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     97     0 01:20:50  5.507456E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     93     0 01:17:30  5.199657E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     79     0 01:05:50  4.147571E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     79     0 01:05:50  4.147571E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     82     0 01:08:20  4.369321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     99     0 01:22:30  5.662435E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     98     0 01:21:40  5.584857E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     94     0 01:18:20  5.276310E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     80     0 01:06:40  4.221227E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     80     0 01:06:40  4.221227E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     83     0 01:09:10  4.443723E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     99     0 01:22:30  5.662435E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     95     0 01:19:10  5.353176E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     81     0 01:07:30  4.295169E-06  1.963034E+04  1.963034E+04  1.659944E+17
+    100     0 01:23:20  5.740154E-06  1.963034E+04  1.963034E+04  1.659944E+17
+
+ Elapsed CPU time (seconds):
+
+
+ ROMS/TOMS - Output NetCDF summary for Grid 01:
+
+ ROMS/TOMS: DONE... 
+     81     0 01:07:30  4.295169E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     82     0 01:08:20  4.369321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     96     0 01:20:00  5.430248E-06  1.963034E+04  1.963034E+04  1.659944E+17
+    100     0 01:23:20  5.740154E-06  1.963034E+04  1.963034E+04  1.659944E+17
+
+ Elapsed CPU time (seconds):
+
+
+ ROMS/TOMS - Output NetCDF summary for Grid 01:
+
+ ROMS/TOMS: DONE... 
+     84     0 01:10:00  4.518366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     82     0 01:08:20  4.369321E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     83     0 01:09:10  4.443723E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     97     0 01:20:50  5.507456E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     83     0 01:09:10  4.443723E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     84     0 01:10:00  4.518366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     85     0 01:10:50  4.593213E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     98     0 01:21:40  5.584857E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     84     0 01:10:00  4.518366E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     85     0 01:10:50  4.593213E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     86     0 01:11:40  4.668325E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     99     0 01:22:30  5.662435E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     85     0 01:10:50  4.593213E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     86     0 01:11:40  4.668325E-06  1.963034E+04  1.963034E+04  1.659944E+17
+    100     0 01:23:20  5.740154E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     86     0 01:11:40  4.668325E-06  1.963034E+04  1.963034E+04  1.659944E+17
+
+ Elapsed CPU time (seconds):
+
+
+ ROMS/TOMS - Output NetCDF summary for Grid 01:
+
+ ROMS/TOMS: DONE... 
+     87     0 01:12:30  4.743595E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     87     0 01:12:30  4.743595E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     87     0 01:12:30  4.743595E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     88     0 01:13:20  4.819109E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     88     0 01:13:20  4.819109E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     88     0 01:13:20  4.819109E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     89     0 01:14:10  4.894794E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     89     0 01:14:10  4.894794E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     89     0 01:14:10  4.894794E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     90     0 01:15:00  4.970707E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     90     0 01:15:00  4.970707E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     90     0 01:15:00  4.970707E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     91     0 01:15:50  5.046849E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     91     0 01:15:50  5.046849E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     91     0 01:15:50  5.046849E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     92     0 01:16:40  5.123144E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     92     0 01:16:40  5.123144E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     92     0 01:16:40  5.123144E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     93     0 01:17:30  5.199657E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     93     0 01:17:30  5.199657E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     93     0 01:17:30  5.199657E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     94     0 01:18:20  5.276310E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     94     0 01:18:20  5.276310E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     95     0 01:19:10  5.353176E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     94     0 01:18:20  5.276310E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     96     0 01:20:00  5.430248E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     95     0 01:19:10  5.353176E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     95     0 01:19:10  5.353176E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     97     0 01:20:50  5.507456E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     96     0 01:20:00  5.430248E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     96     0 01:20:00  5.430248E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     98     0 01:21:40  5.584857E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     97     0 01:20:50  5.507456E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     97     0 01:20:50  5.507456E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     99     0 01:22:30  5.662435E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     98     0 01:21:40  5.584857E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     98     0 01:21:40  5.584857E-06  1.963034E+04  1.963034E+04  1.659944E+17
+    100     0 01:23:20  5.740154E-06  1.963034E+04  1.963034E+04  1.659944E+17
+
+ Elapsed CPU time (seconds):
+
+
+ ROMS/TOMS - Output NetCDF summary for Grid 01:
+
+ ROMS/TOMS: DONE... 
+     99     0 01:22:30  5.662435E-06  1.963034E+04  1.963034E+04  1.659944E+17
+     99     0 01:22:30  5.662435E-06  1.963034E+04  1.963034E+04  1.659944E+17
+    100     0 01:23:20  5.740154E-06  1.963034E+04  1.963034E+04  1.659944E+17
+
+ Elapsed CPU time (seconds):
+
+
+ ROMS/TOMS - Output NetCDF summary for Grid 01:
+
+ ROMS/TOMS: DONE... 
+    100     0 01:23:20  5.740154E-06  1.963034E+04  1.963034E+04  1.659944E+17
+
+ Elapsed CPU time (seconds):
+
+
+ ROMS/TOMS - Output NetCDF summary for Grid 01:
+
+ ROMS/TOMS: DONE... 
+Execution File:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64
+Num of Programs:  8
+Program Path:     /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64
+i:1, argv[5]:$
+argv:$
+input:ocean_benchmark3.in.x
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64
+Core: 1
+Directory [1]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64
+Core: 2
+Directory [2]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64
+Core: 3
+Directory [3]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64
+Core: 4
+Directory [4]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64
+Core: 5
+Directory [5]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64
+Core: 6
+Directory [6]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64
+Core: 7
+Directory [7]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64
+Process Start
+Process Start
+Process Start
+Wait PID: 25212
+Process Start
+Wait PID: 25213
+Process Start
+Wait PID: 25215
+Process Start
+Wait PID: 25217
+Process Start
+Process Start
+Wait PID: 25219
+Wait PID: 25221
+Wait PID: 25223
+Wait PID: 25224
+Execution Time (20) => 10206038989221.00 ns
+Execution Time (26) => 10223403507882.00 ns
+Execution Time (28) => 11206251116683.00 ns
+Execution Time (16) => 11278850095279.00 ns
+Execution Time (12) => 11612039215499.00 ns
+Execution Time (8) => 12640413720983.00 ns
+Execution Time (0) => 12752660443976.00 ns
+Execution Time (4) => 12771308230169.00 ns
+('Full Command: ', '/scale/cal/home/ybmoon/migration/workloads/gap-spec-wrapper/second-wrapper/second_wrapper 0 8 /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/ /home/ybmoon/workloads/cpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/sroms_base.gcc-baseline-o2-m64  $ ocean_benchmark3.in.x ')
+execution_time 12771.65 (s)

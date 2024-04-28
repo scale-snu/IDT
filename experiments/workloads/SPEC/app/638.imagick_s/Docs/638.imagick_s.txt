@@ -1,0 +1,197 @@
+                                 638.imagick_s
+                       SPEC CPU2017 Benchmark Description
+
+  Benchmark Name
+
+   638.imagick_s
+
+  Benchmark Authors
+
+   ImageMagick Studio LLC, a non-profit organization dedicated to making
+   software imaging solutions freely available.
+
+  Benchmark Program General Category
+
+   Image Manipulation.
+
+  Benchmark Description
+
+   ImageMagick is a software suite to create, edit, compose, or convert
+   bitmap images. The SPEC CPU2017 benchmark version uses the convert
+   component of ImageMagick to perform various transforms on input images.
+
+  Input Description
+
+   Inputs to the benchmark are an image and a list of operations to perform
+   on that image. The image output from the convert step is used as input to
+   an image comparison program that calculates structural similarity (SSIM)
+   values relative to a "reference" output image.
+
+  Reference Inputs
+
+   Both the rate mode reference workload (refrate) and the speed mode
+   reference workload (refspeed) operate on a 2068x1380 pixel uncompressed
+   24-bit TARGA format image cropped from a photo.
+
+   The refrate workload performs the following operations in the following
+   order on the input image:
+
+    1. [1]-edge 41 (edge detection)
+    2. [2]-resample 181% (increase image size to 3469x5199)
+    3. [3]-emboss 31 (highlighting detected edges)
+    4. [4]-colorspace YUV (conversion to YUV color space)
+    5. [5]-mean-shift 19x19+15% (perturbation of the colors in the image)
+
+   Output from this step is a 3469x5199 24-bit TARGA image.
+
+   The refspeed workload performs the following operations in the following
+   order on the input image:
+
+    1. [6]-resize 817% (increase image size to 11275x16896)
+    2. [7]-rotate -2.76 (deskew the image)
+    3. [8]-shave 540x375 (crop to middle 10195x16146 of image)
+    4. [9]-alpha remove (discard internal alpha channel data)
+    5. [10]-auto-level (normalize colors)
+    6. [11]-contrast-stretch 1x1% (increase contrast)
+    7. [12]-colorspace Lab [13]-channel R [14]-equalize +channel [15]+channel
+       (equalize contrast in Lab color space)
+    8. [16]-colorspace sRGB (convert to sRGB colorspace)
+    9. [17]-define histogram:unique-colors=false (speed up histogram-based
+       operations)
+   10. [18]-adaptive-blur 0x5 (smooth the image)
+   11. [19]-despeckle (remove speckles left after smoothing)
+   12. [20]-auto-gamma (adjust the image gamma so that the mean color is at
+       50% intensity)
+   13. [21]-adaptive-sharpen 55 (sharpen the image)
+   14. [22]-enhance (filter noise from image)
+   15. [23]-brightness-contrast 10x10 (adjust brightness and contrast by
+       around 10%)
+   16. [24]-resize 30% (shrink the image to 3299x5002 for output)
+
+   Output from this step is a 3299x5002 24-bit TARGA image.
+
+  Training Inputs
+
+   The input image for the feedback training workload (train) is a 10x10
+   pixel uncompressed 24-bit TARGA format image of a blue dot.
+
+   The train workload performs the following operations in the following
+   order on the input image:
+
+    1. [25]-resize 320x240
+    2. [26]-shear 31 (shear the image horizontally by 31 degrees)
+    3. [27]-edge 140 (edge detection)
+    4. [28]-negate (replace each color with its complement)
+    5. [29]-flop (mirror the image)
+    6. [30]-resize 900x900
+    7. [31]-edge 10 (edge detection)
+
+   Output from this step is a 900x900 24-bit TARGA image.
+
+  Test Inputs
+
+   The input image for the test workload is a 10x10 pixel uncompressed 24-bit
+   TARGA format image of a blue dot.
+
+   The test workload performs the following operations in the following order
+   on the input image:
+
+    1. [32]-shear 25 (shear the image horizontally by 25 degrees)
+    2. [33]-resize 640x480
+    3. [34]-negate (replace each color with its complement)
+    4. [35]-alpha Off (disable alpha channel)
+
+   Output from this step is a 640x480 24-bit TARGA image.
+
+  Output Description
+
+   The output is compared using the SPEC utility [36]imagevalidate, which
+   calculates the Structural SIMilarity (SSIM) index over 8x8 pixel areas
+   between the benchmark-produced image and a SPEC-provided expected image.
+   SSIM indexes range from -1 (maximally different) to 1 (identical) for each
+   of those regions.
+
+   If the images are too different, the image comparison program will issue
+   an error. This is accomplished by specifying a threshold SSIM value, and
+   if more than 0.1% of samples go below the threshold, the comparison is
+   stopped and the benchmark does not pass validation. For test, train, and
+   refrate the threshold SSIM value is 0.95; for refspeed it is 0.90. The
+   refspeed threshold is lower because the image it operates on is much
+   larger and individual differences, even when quite extreme, are very
+   difficult to actually see.
+
+   In all cases, the expected output from imagevalidate is
+
+   <filename>: AVG SSIM = 1.000000000
+
+
+   which is then checked by [37]specdiff to verify that the overall average
+   of SSIM values is at least 0.99.
+
+  Programming Language
+
+   ANSI C
+
+  Known portability issues
+
+   None.
+
+  Sources and Licensing
+
+   The benchmark is based on ImageMagick 6.8.9-1, under the ImageMagick
+   License.
+
+   Please see details in the document [38]SPEC CPU2017 Licenses.
+
+  References
+
+     * [39]Image Magick Homepage
+     * [40]Structural Similarity (SSIM) at Wikipedia
+     * [41]TARGA image file format at Wikipedia
+
+   Last updated: $Date: 2017-05-01 13:34:29 -0400 (Mon, 01 May 2017) $
+
+References
+
+   Visible links
+   1. http://www.imagemagick.org/script/command-line-options.php#edge
+   2. http://www.imagemagick.org/script/command-line-options.php#resample
+   3. http://www.imagemagick.org/script/command-line-options.php#emboss
+   4. http://www.imagemagick.org/script/command-line-options.php#colorspace
+   5. http://www.imagemagick.org/script/command-line-options.php#mean-shift
+   6. http://www.imagemagick.org/script/command-line-options.php#resize
+   7. http://www.imagemagick.org/script/command-line-options.php#rotate
+   8. http://www.imagemagick.org/script/command-line-options.php#shave
+   9. http://www.imagemagick.org/script/command-line-options.php#alpha
+  10. http://www.imagemagick.org/script/command-line-options.php#auto-level
+  11. http://www.imagemagick.org/script/command-line-options.php#contrast-stretch
+  12. http://www.imagemagick.org/script/command-line-options.php#colorspace
+  13. http://www.imagemagick.org/script/command-line-options.php#channel
+  14. http://www.imagemagick.org/script/command-line-options.php#equalize
+  15. http://www.imagemagick.org/script/command-line-options.php#channel
+  16. http://www.imagemagick.org/script/command-line-options.php#colorspace
+  17. http://www.imagemagick.org/script/command-line-options.php#define
+  18. http://www.imagemagick.org/script/command-line-options.php#adaptive-blur
+  19. http://www.imagemagick.org/script/command-line-options.php#despeckle
+  20. http://www.imagemagick.org/script/command-line-options.php#auto-gamma
+  21. http://www.imagemagick.org/script/command-line-options.php#adaptive-sharpen
+  22. http://www.imagemagick.org/script/command-line-options.php#enhance
+  23. http://www.imagemagick.org/script/command-line-options.php#brightness-contrast
+  24. http://www.imagemagick.org/script/command-line-options.php#resize
+  25. http://www.imagemagick.org/script/command-line-options.php#resize
+  26. http://www.imagemagick.org/script/command-line-options.php#shear
+  27. http://www.imagemagick.org/script/command-line-options.php#edge
+  28. http://www.imagemagick.org/script/command-line-options.php#negate
+  29. http://www.imagemagick.org/script/command-line-options.php#flop
+  30. http://www.imagemagick.org/script/command-line-options.php#resize
+  31. http://www.imagemagick.org/script/command-line-options.php#edge
+  32. http://www.imagemagick.org/script/command-line-options.php#shear
+  33. http://www.imagemagick.org/script/command-line-options.php#resize
+  34. http://www.imagemagick.org/script/command-line-options.php#negate
+  35. http://www.imagemagick.org/script/command-line-options.php#alpha
+  36. http://www.spec.org/cpu2017/Docs/utility.html#imagevalidate
+  37. http://www.spec.org/cpu2017/Docs/utility.html#specdiff
+  38. https://www.spec.org/cpu2017/Docs/licenses.html#bmk638.imagick_s
+  39. http://www.imagemagick.org/
+  40. https://en.wikipedia.org/wiki/Structural_similarity
+  41. https://en.wikipedia.org/wiki/Truevision_TGA

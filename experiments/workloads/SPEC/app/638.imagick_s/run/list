@@ -1,0 +1,3 @@
+run_base_refspeed_gcc-baseline-o2-m64.0000 dir=/home/ybmoon/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000 label=gcc-baseline-o2-m64 lock=1 size=refspeed tune=base type=run username=ybmoon
+run_base_refspeed_gcc-baseline-o2-m64.0001 dir=/home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0001 label=gcc-baseline-o2-m64 lock=0 size=refspeed tune=base type=run username=ybmoon
+__END__

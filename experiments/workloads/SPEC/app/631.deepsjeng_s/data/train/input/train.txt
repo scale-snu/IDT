@@ -1,0 +1,20 @@
+r1b1r1k1/p1p3pp/2p2n2/2bp4/5P2/3BBQPq/PPPK3P/R4N1R b - - bm Bg4; id "ECM.946";
+14
+2k4r/1pp2ppp/p1p1bn2/4N3/1q1rP3/2N1Q3/PPP2PPP/R4RK1 w - - bm Nd5; id "ECM.952";
+15
+rn3rk1/4bppp/1q2p3/p2pP3/8/1PN2B1P/P4PP1/2RQ1RK1 w - - bm Bxd5; id "ECM.961";
+14
+2r2bk1/4qp2/3n2p1/2R1p1Np/2p1N3/r6P/1Q3PP1/3R2K1 w - - bm Rxc8; id "ECM.973";
+14
+r1b1rnk1/1p3pb1/1qpp2p1/2n5/2PNP2p/1PN3PP/3R1PBK/BR1Q4 b - - bm Rxa1; id "ECM.977";
+16
+r1b2rk1/pp2b3/2pn1n1p/3pNppq/3P4/BP1N2P1/P3PPBP/R1Q2RK1 w - - bm Nxc6; id "ECM.978";
+13
+3rkb1r/1p3p2/p1n1p3/q5pp/2PpP3/1P4P1/P1Q1BPKP/R2N3R b k - bm d3; id "ECM.986";
+16
+5rk1/1r1qbnnp/R2p2p1/1p1Pp3/1Pp1P1N1/2P1B1NP/5QP1/5R1K w - - bm Qxf7+; id "ECM.987";
+14
+5r2/1b2k2p/3bp3/5PP1/Bn1Q3P/1N6/1Pr5/1K3R2 b - - bm Rxb2+; id "ECM.993";
+14
+r4rk1/1b3ppp/p2q1n2/1p2N3/3P4/1B6/P1Q2PPP/2R1R1K1 w - - bm Nxf7; id "ECM.999";
+13

@@ -1,0 +1,15 @@
+Re  	 Pr
+1e5 	.72
+nx	ny	nz
+120     120     248
+CFL	nuim	 nuex2 	nuex4
+1.9 	0.1	 0.1	 0.05
+Method: explicit(0)  Implicit(1)
+1
+Configuration: cubic(0)  sphere(1)
+0
+Number of Time Steps
+   80
+refspeed2_resid.log
+refspeed2_dqnrm.log
+

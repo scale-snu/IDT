@@ -1,0 +1,202 @@
+Execution File:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Num of Programs:  20
+Program Path:     /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:-limit
+option1:-limit
+i:2, argv[6]:disk
+option2:disk
+i:3, argv[7]:0
+option3:0
+i:4, argv[8]:refspeed_input.tga
+option4:refspeed_input.tga
+i:5, argv[9]:-resize
+option5:-resize
+i:6, argv[10]:817%
+option6:817%
+i:7, argv[11]:-rotate
+option7:-rotate
+i:8, argv[12]:-2.76
+option8:-2.76
+i:9, argv[13]:-shave
+option9:-shave
+i:10, argv[14]:540x375
+option10:540x375
+i:11, argv[15]:-alpha
+option11:-alpha
+i:12, argv[16]:remove
+option12:remove
+i:13, argv[17]:-auto-level
+option13:-auto-level
+i:14, argv[18]:-contrast-stretch
+option14:-contrast-stretch
+i:15, argv[19]:1x1%
+option15:1x1%
+i:16, argv[20]:-colorspace
+option16:-colorspace
+i:17, argv[21]:Lab
+option17:Lab
+i:18, argv[22]:-channel
+option18:-channel
+i:19, argv[23]:R
+option19:R
+i:20, argv[24]:-equalize
+option20:-equalize
+i:21, argv[25]:+channel
+option21:+channel
+i:22, argv[26]:-colorspace
+option22:-colorspace
+i:23, argv[27]:sRGB
+option23:sRGB
+i:24, argv[28]:-define
+option24:-define
+i:25, argv[29]:histogram:unique-colors=false
+option25:histogram:unique-colors=false
+i:26, argv[30]:-adaptive-blur
+option26:-adaptive-blur
+i:27, argv[31]:0x5
+option27:0x5
+i:28, argv[32]:-despeckle
+option28:-despeckle
+i:29, argv[33]:-auto-gamma
+option29:-auto-gamma
+i:30, argv[34]:-adaptive-sharpen
+option30:-adaptive-sharpen
+i:31, argv[35]:55
+option31:55
+i:32, argv[36]:-enhance
+option32:-enhance
+i:33, argv[37]:-brightness-contrast
+option33:-brightness-contrast
+i:34, argv[38]:10x10
+option34:10x10
+i:35, argv[39]:-resize
+option35:-resize
+i:36, argv[40]:30%
+option36:30%
+i:37, argv[41]:refspeed_output.tga
+option37:refspeed_output.tga
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 1
+Directory [1]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 2
+Directory [2]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 3
+Directory [3]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 4
+Directory [4]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 5
+Directory [5]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 6
+Directory [6]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 7
+Directory [7]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 8
+Directory [8]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 9
+Directory [9]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 10
+Directory [10]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 11
+Directory [11]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 12
+Directory [12]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 13
+Directory [13]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 14
+Directory [14]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 15
+Directory [15]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 16
+Directory [16]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 17
+Directory [17]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 18
+Directory [18]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 19
+Directory [19]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 18091
+Process Start
+Wait PID: 18092
+Wait PID: 18094
+Process Start
+Process Start
+Wait PID: 18096
+Process Start
+Wait PID: 18098
+Wait PID: 18100
+Process Start
+Process Start
+Wait PID: 18103
+Wait PID: 18105
+Process Start
+Wait PID: 18107
+Process Start
+Process Start
+Wait PID: 18109
+Process Start
+Process Start
+Wait PID: 18111
+Process Start
+Process Start
+Wait PID: 18114
+Process Start
+Wait PID: 18117
+Process Start
+Process Start
+Wait PID: 18119
+Wait PID: 18122
+Wait PID: 18124
+Wait PID: 18125
+Wait PID: 18126
+Wait PID: 18128
+Wait PID: 18129
+Execution Time (28) => 10856868459145.00 ns
+Execution Time (8) => 10867464782756.00 ns
+Execution Time (2) => 10871577467365.00 ns
+Execution Time (40) => 10894866090297.00 ns
+Execution Time (14) => 10946821807303.00 ns
+Execution Time (16) => 10992533577895.00 ns
+Execution Time (30) => 11003743221347.00 ns
+Execution Time (0) => 11004552593822.00 ns
+Execution Time (28) => 11014707678966.00 ns
+Execution Time (24) => 11023724083352.00 ns
+Execution Time (32) => 11049995943068.00 ns
+Execution Time (44) => 11068084989290.00 ns
+Execution Time (40) => 11074353950787.00 ns
+Execution Time (36) => 11089920962383.00 ns
+Execution Time (20) => 11093365444711.00 ns
+Execution Time (0) => 11095646278528.00 ns
+Execution Time (4) => 11106475790204.00 ns
+Execution Time (8) => 11128203516930.00 ns
+Execution Time (26) => 11130450524208.00 ns
+Execution Time (14) => 11133316547233.00 ns
+('Full Command: ', '/scale/cal/home/ybmoon/migration/workloads/gap-spec-wrapper/second-wrapper/second_wrapper 0 20 /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/ /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64  -limit disk 0 refspeed_input.tga -resize 817% -rotate -2.76 -shave 540x375 -alpha remove -auto-level -contrast-stretch 1x1% -colorspace Lab -channel R -equalize +channel -colorspace sRGB -define histogram:unique-colors=false -adaptive-blur 0x5 -despeckle -auto-gamma -adaptive-sharpen 55 -enhance -brightness-contrast 10x10 -resize 30% refspeed_output.tga ')
+execution_time 11133.86 (s)

@@ -1,0 +1,5 @@
+rm -rf *.o  train.out
+find . \( -name \*.o -o -name '*.fppized.f*' -o -name '*.i' -o -name '*.mod' \) -print | xargs rm -rf
+rm -rf deepsjeng_s
+rm -rf deepsjeng_s.exe
+rm -rf core

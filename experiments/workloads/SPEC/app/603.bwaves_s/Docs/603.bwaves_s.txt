@@ -1,0 +1,80 @@
+                                  603.bwaves_s
+                       SPEC CPU2017 Benchmark Description
+
+  Benchmark Name
+
+   603.bwaves_s
+
+  Benchmark Author
+
+   Dr. Mark Kremenetsky, <mdk [at] sgi.com>
+   Silicon Graphics, Inc
+   1500 Crittenden Lane
+   Mountain View, CA 94043, USA
+
+  Benchmark Program General Category
+
+   Computational Fluid Dynamics
+
+  Benchmark Description
+
+   603.bwaves_s numerically simulates blast waves in three dimensional
+   transonic transient laminar viscous flow.
+
+   The initial configuration of the blast waves problem consists of a high
+   pressure and density region at the center of a cubic cell of a periodic
+   lattice, with low pressure and density elsewhere. Periodic boundary
+   conditions are applied to the array of cubic cells forming an infinite
+   network. Initially, the high pressure volume begins to expand in the
+   radial direction as classical shock waves. At the same time, the expansion
+   waves move to fill the void at the center of the cubic cell. When the
+   expanding flow reaches the boundaries, it collides with its periodic
+   images from other cells, thus creating a complex structure of interfering
+   nonlinear waves. These processes create a nonlinear damped periodic system
+   with energy being dissipated in time. Finally, the system will come to an
+   equilibrium and steady state.
+
+   The algorithm implemented is an unfactored solver for the implicit
+   solution of the compressible Navier-Stokes equations using the Bi-CGstab
+   algorithm, which solves systems of non-symmetric linear equations
+   iteratively.
+
+  Input Description
+
+   The input file describes the grid size, flow parameters, initial boundary
+   condition and number of time steps. The three data sets, test, train and
+   ref, differ only in grid size and number of time steps.
+
+  Output Description
+
+   The transient nature of the flow and iterative solver makes bwaves a
+   difficult problem to validate. In SPEC CPU2017 this has been addressed by
+   comparing three different outputs. These are:
+
+     * The L2 norm of dq(l.i.j.k) vector after final time step
+     * The residual for convergence after each time step
+     * The cumulative sum of iterations for convergence for every time step
+
+  Programming Language
+
+   Fortran
+
+  Known portability issues
+
+   none
+
+  Sources and Licensing
+
+   A SPEC member company contributed Blast Waves, which became 603.bwaves_s.
+
+  References
+
+     * Arsi Vaziri and Mark Kremenetsky. Visualization and Tracking of
+       Parallel CFD Simulations. [1]Report NAS-95-004, February 1995
+
+   Last updated: $Date: 2017-05-01 12:15:57 -0400 (Mon, 01 May 2017) $
+
+References
+
+   Visible links
+   1. http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19970010487.pdf

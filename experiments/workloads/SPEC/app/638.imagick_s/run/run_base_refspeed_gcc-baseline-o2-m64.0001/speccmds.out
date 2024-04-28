@@ -1,0 +1,80 @@
+specinvoke r4356
+ Invoked as: /home/ybmoon/workloads/cpu2017/bin/specinvoke -d /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0001 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+timer ticks over every 1000 ns
+ Environment in effect for these runs:
+ # 1: SPEC=/home/ybmoon/workloads/cpu2017
+ # 2: HOME=/scale/cal/home/ybmoon
+ # 3: LIBCONFIGPATH=/scale/cal1/home/ybmoon/tools/libconfig-1.7.2
+ # 4: SPECPERLLIB=/home/ybmoon/workloads/cpu2017/bin/lib:/home/ybmoon/workloads/cpu2017/bin
+ # 5: PKG_CONFIG_PATH=/scale/cal/home/ybmoon/local/lib/opencv4
+ # 6: SSH_TTY=/dev/pts/1
+ # 7: MVN_HOME=/scale/cal1/home/ybmoon/maven
+ # 8: OMP_STACKSIZE=120M
+ # 9: SSH_CLIENT=10.1.0.13 61904 22
+ #10: LC_LANG=C
+ #11: MAIL=/var/mail/ybmoon
+ #12: SSH_CONNECTION=10.1.0.13 61904 192.168.101.48 22
+ #13: LD_LIBRARY_PATH=/usr/lib64/:/usr/lib/:/lib64
+ #14: CLASSPATH=.:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar
+ #15: JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ #16: MIGDIR=/scale/cal1/home/ybmoon/research/migration/migration_works/scal-migration
+ #17: CB_MULTI_GO=0
+ #18: POLARSSLPATH=/scale/cal1/home/ybmoon/tools/polarssl-1.2.3_source
+ #19: SHLVL=2
+ #20: PINPATH=/scale/cal1/home/ybmoon/tools/pin-2.14-71313-gcc.4.4.7-linux
+ #21: SHELL=/bin/bash
+ #22: XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+ #23: PWD=/home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s
+ #24: XDG_RUNTIME_DIR=/run/user/1022
+ #25: STY=41533.ybmoon
+ #26: GOPATH=/scale/cal/home/ybmoon/go
+ #27: SPECDB_PWD=/home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s
+ #28: LC_ALL=C
+ #29: LIBC_FATAL_STDERR_=1
+ #30: USER=ybmoon
+ #31: LOGNAME=ybmoon
+ #32: M2_HOME=/scale/cal1/home/ybmoon/local/apache-maven-3.5.4
+ #33: XDG_SESSION_ID=322
+ #34: PATH=/home/ybmoon/workloads/cpu2017/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/dell/srvadmin/bin:/usr/local/bin:/scale/cal1/home/ybmoon/maven/bin:/usr/local/bin:/scale/cal1/home/ybmoon/maven/bin
+ #35: WINDOW=1
+ #36: TERMCAP=SC|screen.xterm-256color|VT 100/ANSI X3.64 virtual terminal:\
+	:DO=\E[%dB:LE=\E[%dD:RI=\E[%dC:UP=\E[%dA:bs:bt=\E[Z:\
+	:cd=\E[J:ce=\E[K:cl=\E[H\E[J:cm=\E[%i%d;%dH:ct=\E[3g:\
+	:do=^J:nd=\E[C:pt:rc=\E8:rs=\Ec:sc=\E7:st=\EH:up=\EM:\
+	:le=^H:bl=^G:cr=^M:it#8:ho=\E[H:nw=\EE:ta=^I:is=\E)0:\
+	:li#69:co#270:am:xn:xv:LP:sr=\EM:al=\E[L:AL=\E[%dL:\
+	:cs=\E[%i%d;%dr:dl=\E[M:DL=\E[%dM:dc=\E[P:DC=\E[%dP:\
+	:im=\E[4h:ei=\E[4l:mi:IC=\E[%d@:ks=\E[?1h\E=:\
+	:ke=\E[?1l\E>:vi=\E[?25l:ve=\E[34h\E[?25h:vs=\E[34l:\
+	:ti=\E[?1049h:te=\E[?1049l:us=\E[4m:ue=\E[24m:so=\E[3m:\
+	:se=\E[23m:mb=\E[5m:md=\E[1m:mh=\E[2m:mr=\E[7m:\
+	:me=\E[m:ms:\
+	:Co#8:pa#64:AF=\E[3%dm:AB=\E[4%dm:op=\E[39;49m:AX:\
+	:vb=\Eg:G0:as=\E(0:ae=\E(B:\
+	:ac=\140\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:\
+	:po=\E[5i:pf=\E[4i:Km=\E[M:k0=\E[10~:k1=\EOP:k2=\EOQ:\
+	:k3=\EOR:k4=\EOS:k5=\E[15~:k6=\E[17~:k7=\E[18~:\
+	:k8=\E[19~:k9=\E[20~:k;=\E[21~:F1=\E[23~:F2=\E[24~:\
+	:F3=\E[1;2P:F4=\E[1;2Q:F5=\E[1;2R:F6=\E[1;2S:\
+	:F7=\E[15;2~:F8=\E[17;2~:F9=\E[18;2~:FA=\E[19;2~:kb=:\
+	:K2=\EOE:kB=\E[Z:kF=\E[1;2B:kR=\E[1;2A:*4=\E[3;2~:\
+	:*7=\E[1;2F:#2=\E[1;2H:#3=\E[2;2~:#4=\E[1;2D:%c=\E[6;2~:\
+	:%e=\E[5;2~:%i=\E[1;2C:kh=\E[1~:@1=\E[1~:kH=\E[4~:\
+	:@7=\E[4~:kN=\E[6~:kP=\E[5~:kI=\E[2~:kD=\E[3~:ku=\EOA:\
+	:kd=\EOB:kr=\EOC:kl=\EOD:km:
+ #37: LANG=en_US.UTF-8
+ #38: TERM=screen.xterm-256color
+ #39: JDK_PATH=/usr/lib/jvm/java-9-openjdk-amd64
+ #40: OMP_NUM_THREADS=1
+ #41: OMP_THREAD_LIMIT=1
+running commands in speccmds.cmd 1 times
+runs started at		1673411122, 325887000, Wed Jan 11 13:25:22 2023
+run 1 started at	1673411122, 325914000, Wed Jan 11 13:25:22 2023
+child started: 0,	1673411122, 325925000, pid=18146, '../run_base_refspeed_gcc-baseline-o2-m64.0001/imagick_s_base.gcc-baseline-o2-m64 -limit disk 0 refspeed_input.tga -resize 817% -rotate -2.76 -shave 540x375 -alpha remove -auto-level -contrast-stretch 1x1% -colorspace Lab -channel R -equalize +channel -colorspace sRGB -define histogram:unique-colors=false -adaptive-blur 0x5 -despeckle -auto-gamma -adaptive-sharpen 55 -enhance -brightness-contrast 10x10 -resize 30% refspeed_output.tga > refspeed_convert.out 2>> refspeed_convert.err'
+child finished: 0,	1673411122, 328494000, sec=0, nsec=2569000, pid=18146, rc=32512
+run 1 finished at:	1673411122, 328512000, Wed Jan 11 13:25:22 2023
+run 1 elapsed time:	         0, 002598000, 0.002598000
+runs finished at	1673411122, 328526000, Wed Jan 11 13:25:22 2023
+runs elapsed time:	         0, 002639000, 0.002639000
+error: a total of 1 children finished with errors
+specinvoke exit: rc=0

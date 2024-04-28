@@ -1,0 +1,6 @@
+SPEC CPU XZ driver: input=cpu2006docs.tar.xz insize=6643
+Loading Input Data
+Compressed size: 1287176; Uncompressed size: 9041920
+SHA-512 of decompressed data compared successfully!
+work available for up to 6965690368 / 13631488 => 512 threads
+context size per thread: 13312 KB

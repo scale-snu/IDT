@@ -1,0 +1,188 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+      <link rel="STYLESHEET" href="https://www.spec.org/cpu2017/Docs/css/cpudocs.css" type="text/css" />
+<style type="text/css">
+.new         {color:#074015; background:#ffffc0; font-size:80%; font-style:italic;}
+</style>
+<title>638.imagick_s: SPEC CPU2017 Benchmark Description</title>
+<meta name="generator" content="Cloyce+VIM 7.0" />
+<meta name="revision"
+      content="$Id: imagick.html 5637 2017-05-01 17:34:29Z JohnHenning $" />
+</head>
+
+<body>
+<div style="text-align: center">
+
+<h1>638.imagick_s<br />
+SPEC CPU2017 Benchmark Description</h1>
+</div>
+
+<h3>Benchmark Name</h3>
+<p>638.imagick_s</p>
+
+
+<h3>Benchmark Authors</h3>
+
+<p>ImageMagick Studio LLC, a non-profit organization
+  dedicated to making software imaging solutions freely available.</p>
+
+
+<h3>Benchmark Program General Category</h3>
+
+<p>Image Manipulation.</p>
+
+
+<h3>Benchmark Description</h3>
+
+  <p>ImageMagick is a software suite to create, edit, compose, or convert
+  bitmap images. The SPEC CPU2017 benchmark version uses the <tt>convert</tt>
+  component of ImageMagick to perform various transforms on input images.</p>
+
+
+<h3>Input Description</h3>
+
+  <p>Inputs to the benchmark are an image and a list of operations to perform
+  on that image.  The image output from the convert step is used as input to
+  an image comparison program that calculates structural similarity (SSIM) values
+  relative to a "reference" output image.</p>
+
+  <h3>Reference Inputs</h3>
+  <p>Both the rate mode reference workload (refrate) and the speed mode
+  reference workload (refspeed) operate on a 2068x1380 pixel uncompressed
+  24-bit TARGA format image cropped from a photo.</p>
+
+  <p>The refrate workload performs the following operations in the following
+  order on the input image:</p>
+  <ol>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#edge"      >-edge</a> 41</tt> (edge detection)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#resample"  >-resample</a> 181%</tt> (increase image size to 3469x5199)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#emboss"    >-emboss</a> 31</tt> (highlighting detected edges)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#colorspace">-colorspace</a> YUV</tt> (conversion to YUV color space)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#mean-shift">-mean-shift</a> 19x19+15%</tt> (perturbation of the colors in the image)</li>
+  </ol>
+
+  <p>Output from this step is a 3469x5199 24-bit TARGA image.</p>
+
+  <p>The refspeed workload performs the following operations in the following
+  order on the input image:</p>
+  <ol>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#resize"             >-resize</a> 817%</tt> (increase image size to 11275x16896)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#rotate"             >-rotate</a> -2.76</tt> (deskew the image)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#shave"              >-shave</a> 540x375</tt> (crop to middle 10195x16146 of image)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#alpha"              >-alpha</a> remove</tt> (discard internal alpha channel data)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#auto-level"         >-auto-level</a></tt> (normalize colors)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#contrast-stretch"   >-contrast-stretch</a> 1x1%</tt> (increase contrast)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#colorspace"         >-colorspace</a> Lab
+            <a class="external" href="http://www.imagemagick.org/script/command-line-options.php#channel"            >-channel</a> R
+            <a class="external" href="http://www.imagemagick.org/script/command-line-options.php#equalize"           >-equalize</a> +channel
+            <a class="external" href="http://www.imagemagick.org/script/command-line-options.php#channel"            >+channel</a></tt> (equalize contrast in Lab color space)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#colorspace"         >-colorspace</a> sRGB</tt> (convert to sRGB colorspace)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#define"             >-define</a> histogram:unique-colors=false</tt> (speed up histogram-based operations)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#adaptive-blur"      >-adaptive-blur</a> 0x5</tt> (smooth the image)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#despeckle"          >-despeckle</a></tt> (remove speckles left after smoothing)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#auto-gamma"         >-auto-gamma</a></tt> (adjust the image gamma so that the mean color is at 50% intensity)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#adaptive-sharpen"   >-adaptive-sharpen</a> 55</tt> (sharpen the image)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#enhance"            >-enhance</a></tt> (filter noise from image)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#brightness-contrast">-brightness-contrast</a> 10x10</tt> (adjust brightness and contrast by around 10%)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#resize"             >-resize</a> 30%</tt> (shrink the image to 3299x5002 for output)</li>
+  </ol>
+
+  <p>Output from this step is a 3299x5002 24-bit TARGA image.</p>
+
+  <h3>Training Inputs</h3>
+
+  <p>The input image for the feedback training workload (train) is a 10x10
+  pixel uncompressed 24-bit TARGA format image of a blue dot.</p>
+
+  <p>The train workload performs the following operations in the following
+  order on the input image:</p>
+  <ol>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#resize">-resize</a> 320x240</tt></li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#shear" >-shear</a> 31</tt> (shear the image horizontally by 31 degrees)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#edge"  >-edge</a> 140</tt> (edge detection)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#negate">-negate</a></tt> (replace each color with its complement)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#flop"  >-flop</a></tt> (mirror the image)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#resize">-resize</a> 900x900</tt></li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#edge"  >-edge</a> 10</tt> (edge detection)</li>
+  </ol>
+
+  <p>Output from this step is a 900x900 24-bit TARGA image.</p>
+
+  <h3>Test Inputs</h3>
+
+  <p>The input image for the test workload is a 10x10 pixel uncompressed 24-bit
+  TARGA format image of a blue dot.</p>
+
+  <p>The test workload performs the following operations in the following
+  order on the input image:</p>
+  <ol>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#shear" >-shear</a> 25</tt> (shear the image horizontally by 25 degrees)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#resize">-resize</a> 640x480</tt></li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#negate">-negate</a></tt> (replace each color with its complement)</li>
+    <li><tt><a class="external" href="http://www.imagemagick.org/script/command-line-options.php#alpha" >-alpha</a> Off</tt> (disable alpha channel)</li>
+  </ol>
+
+  <p>Output from this step is a 640x480 24-bit TARGA image.</p>
+
+
+<h3>Output Description</h3>
+
+  <p>The output is compared using the SPEC utility <a
+   href="http://www.spec.org/cpu2017/Docs/utility.html#imagevalidate">imagevalidate</a>,
+  which calculates the Structural SIMilarity (SSIM) index over 8x8 pixel areas
+  between the benchmark-produced image and a SPEC-provided expected image.  SSIM
+  indexes range from -1 (maximally different) to 1 (identical) for each of those
+  regions.</p>
+
+  <p>If the images are too different, the image comparison program will issue an
+  error.  This is accomplished by specifying a threshold SSIM value, and if more
+  than 0.1% of samples go below the threshold, the comparison is stopped and the
+  benchmark does not pass validation.  For test, train, and refrate the
+  threshold SSIM value is 0.95; for refspeed it is 0.90.  The refspeed threshold
+  is lower because the image it operates on is much larger and individual
+  differences, even when quite extreme, are very difficult to actually see.</p>
+
+  <p>In all cases, the expected output from imagevalidate is</p>
+  <pre>
+  &lt;filename&gt;: AVG SSIM = 1.000000000
+  </pre>
+
+  <p>which is then checked by <a class="external"
+     href="http://www.spec.org/cpu2017/Docs/utility.html#specdiff">specdiff</a>
+  to verify that the overall average of SSIM values is at least 0.99.</p>
+
+
+<h3>Programming Language</h3>
+
+<p>ANSI C</p>
+
+
+<h3>Known portability issues</h3>
+
+  <p>None.</p>
+
+
+<h3 id="license">Sources and Licensing</h3>
+
+<p>The benchmark is based on ImageMagick 6.8.9-1, under the ImageMagick License.</p>
+
+  <p>Please see details in the document <a
+    href="https://www.spec.org/cpu2017/Docs/licenses.html#bmk638.imagick_s">SPEC CPU2017 Licenses</a>.</p>
+
+
+
+<h3>References</h3>
+<ul>
+  <li><a class="external" href="http://www.imagemagick.org">Image Magick Homepage</a></li>
+  <li><a class="external" href="https://en.wikipedia.org/wiki/Structural_similarity">Structural Similarity (SSIM) at Wikipedia</a></li>
+  <li><a class="external" href="https://en.wikipedia.org/wiki/Truevision_TGA">TARGA image file format at Wikipedia</a></li>
+</ul>
+
+<p>Last updated: $Date: 2017-05-01 13:34:29 -0400 (Mon, 01 May 2017) $</p>
+
+</body>
+</html>
+

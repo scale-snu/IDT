@@ -1,0 +1,5 @@
+
+
+# End dependencies
+# These are the build dependencies
+$(addsuffix $(OBJ), $(basename Fortran/cctk.f90)): Fortran/cctk.f90 $(addsuffix $(OBJ),$(basename Fortran/cctk_ActiveThorns.f90 Fortran/cctk_Banner.f90 Fortran/cctk_Cache.f90 Fortran/cctk_Comm.f90 Fortran/cctk_CommandLine.f90 Fortran/cctk_Complex.f90 Fortran/cctk_Constants.f90 Fortran/cctk_Coord.f90 Fortran/cctk_DebugDefines.f90 Fortran/cctk_Faces.f90 Fortran/cctk_File.f90 Fortran/cctk_Flesh.f90 Fortran/cctk_FortranString1.f90 Fortran/cctk_FortranWrappers.f90 Fortran/cctk_GHExtensions.f90 Fortran/cctk_GNU.f90 Fortran/cctk_Groups.f90 Fortran/cctk_GroupsOnGH.f90 Fortran/cctk_IO.f90 Fortran/cctk_IOMethods.f90 Fortran/cctk_Interp.f90 Fortran/cctk_Main.f90 Fortran/cctk_Malloc1.f90 Fortran/cctk_Math.f90 Fortran/cctk_MemAlloc.f90 Fortran/cctk_Misc.f90 Fortran/cctk_ParamCheck.f90 Fortran/cctk_Parameter.f90 Fortran/cctk_Reduction.f90 Fortran/cctk_Schedule.f90 Fortran/cctk_Sync.f90 Fortran/cctk_Termination.f90 Fortran/cctk_Timers.f90 Fortran/cctk_Types.f90 Fortran/cctk_Version.f90 Fortran/cctk_WarnLevel.f90 Fortran/util_Table.f90) )

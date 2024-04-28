@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE flagsdescription SYSTEM
+       "http://www.spec.org/dtd/cpuflags2.dtd">
+
+<!-- This file defines flags appear in 
+     603.bwaves_s.
+
+  Copyright 2010 Standard Performance Evaluation Corporation
+
+  $Revision: 5674 $
+  $Date: 2017-05-05 17:29:02 -0400 (Fri, 05 May 2017) $
+-->
+<flagsdescription>
+
+<filename>603.bwaves_s.flags</filename>
+
+<title>603.bwaves_s Flags</title>
+
+<header>
+<![CDATA[
+<p>These are flags that appear in the benchmark sources, categorized as to
+   whether they are portability candidates, mandatory, or forbidden.</p>
+]]>
+</header>
+
+<!-- flag name="DSPEC_MPI" class="portability" -->
+<flag name="DSPEC_MPI" class="forbidden">
+Set this macro to enable MPI parallelization.
+</flag>
+
+
+</flagsdescription>

@@ -1,0 +1,2134 @@
+Execution File:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Num of Programs:  12
+Program Path:     /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:spec_ref.par
+option1:spec_ref.par
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 1
+Directory [1]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 2
+Directory [2]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 3
+Directory [3]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 4
+Directory [4]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 5
+Directory [5]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 6
+Directory [6]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 7
+Directory [7]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 8
+Directory [8]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 9
+Directory [9]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 10
+Directory [10]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Core: 11
+Directory [11]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 246--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reduct--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_ref.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reductions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+ions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200,16.900]  y=>[-0.200,16.900]  z=>[-0.200,16.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,171]  y=>[0,171]  z=>[0,171]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 172 172 172
+INFO (Time): Timestep set to 0.025 (courant_static)
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+     9 |    0.225 |   0.88569800 |   1.13039324 |  -0.09951101 |   0.07865257 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    10 |    0.250 |   0.88869661 |   1.14265740 |  -0.11022732 |   0.09264240 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    11 |    0.275 |   0.87071054 |   1.14395521 |  -0.12594572 |   0.09798008 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    12 |    0.300 |   0.84820546 |   1.17477873 |  -0.13066383 |   0.10939081 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    13 |    0.325 |   0.83063319 |   1.19717103 |  -0.13984607 |   0.11875048 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    14 |    0.350 |   0.82283362 |   1.21215070 |  -0.14285060 |   0.13553277 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    15 |    0.375 |   0.81513236 |   1.24304917 |  -0.13970440 |   0.13866671 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    16 |    0.400 |   0.82144962 |   1.27765065 |  -0.15029285 |   0.12126093 |
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    17 |    0.425 |   0.82949960 |   1.32217447 |  -0.15967934 |   0.13379803 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    18 |    0.450 |   0.82472076 |   1.31000390 |  -0.16648910 |   0.16371808 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    19 |    0.475 |   0.82267548 |   1.23101279 |  -0.16304849 |   0.17962561 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+--------------------------------------------------------------------------------
+Done.
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    20 |    0.500 |   0.82692816 |   1.20814704 |  -0.17064073 |   0.16585444 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    21 |    0.525 |   0.84181580 |   1.20449149 |  -0.20472530 |   0.13033826 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    22 |    0.550 |   0.83663056 |   1.19124861 |  -0.22991236 |   0.16773296 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    23 |    0.575 |   0.74706849 |   1.19148942 |  -0.20794573 |   0.22531688 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    24 |    0.600 |   0.69367725 |   1.26881606 |  -0.20625844 |   0.24638209 |
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    25 |    0.625 |   0.67424173 |   1.31631109 |  -0.22387820 |   0.25914321 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+--------------------------------------------------------------------------------
+Done.
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    26 |    0.650 |   0.68667172 |   1.31857154 |  -0.31130694 |   0.26311355 |
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    27 |    0.675 |   0.72923158 |   1.36651960 |  -0.36380659 |   0.22224432 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+--------------------------------------------------------------------------------
+Done.
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    28 |    0.700 |   0.74485205 |   1.36524238 |  -0.36889719 |   0.23752149 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    29 |    0.725 |   0.73584026 |   1.30280567 |  -0.32183434 |   0.27530490 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    30 |    0.750 |   0.72459162 |   1.31491866 |  -0.30842449 |   0.29129710 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    31 |    0.775 |   0.72903477 |   1.35831468 |  -0.37901415 |   0.39076425 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    32 |    0.800 |   0.72254249 |   1.35582964 |  -0.48872078 |   0.43456804 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    33 |    0.825 |   0.71283544 |   1.50290304 |  -0.57154441 |   0.38652703 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+--------------------------------------------------------------------------------
+Done.
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    34 |    0.850 |   0.69295624 |   1.52601076 |  -0.63561454 |   0.36127697 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+--------------------------------------------------------------------------------
+Done.
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    35 |    0.875 |   0.68604311 |   1.49802588 |  -0.62405695 |   0.40411324 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    36 |    0.900 |   0.67949517 |   1.41209800 |  -0.53406350 |   0.39577785 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    37 |    0.925 |   0.69256722 |   1.33902836 |  -0.37865088 |   0.31929117 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    38 |    0.950 |   0.72955094 |   1.32146569 |  -0.36590858 |   0.25737172 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    39 |    0.975 |   0.77654400 |   1.29510574 |  -0.40175063 |   0.32990822 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+    40 |    1.000 |   0.78259880 |   1.36360330 |  -0.43315962 |   0.47238494 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    41 |    1.025 |   0.73987732 |   1.41070590 |  -0.44559315 |   0.53132713 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    42 |    1.050 |   0.72252003 |   1.40731313 |  -0.45212136 |   0.49793426 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+--------------------------------------------------------------------------------
+Done.
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    43 |    1.075 |   0.71001431 |   1.39753178 |  -0.47438120 |   0.44659857 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    44 |    1.100 |   0.71910218 |   1.34284603 |  -0.52539317 |   0.43673928 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+--------------------------------------------------------------------------------
+Done.
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    45 |    1.125 |   0.74266293 |   1.37645157 |  -0.52229495 |   0.36339748 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    46 |    1.150 |   0.71368858 |   1.40773542 |  -0.45337780 |   0.38716010 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    47 |    1.175 |   0.61792513 |   1.43065704 |  -0.36114193 |   0.44969245 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    48 |    1.200 |   0.56283408 |   1.47765331 |  -0.41921632 |   0.48878665 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    49 |    1.225 |   0.54371558 |   1.51732600 |  -0.45093476 |   0.49295983 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    50 |    1.250 |   0.54358537 |   1.54950401 |  -0.59190112 |   0.61160710 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    51 |    1.275 |   0.55394545 |   1.69763230 |  -0.63662648 |   0.72712753 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    52 |    1.300 |   0.57415821 |   1.67390085 |  -0.63585064 |   0.64066454 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    53 |    1.325 |   0.59250843 |   1.76442717 |  -0.72072576 |   0.45011242 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    54 |    1.350 |   0.63402522 |   1.75966143 |  -0.71090035 |   0.40816144 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    55 |    1.375 |   0.69738870 |   1.64089581 |  -0.57637060 |   0.44854192 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    56 |    1.400 |   0.63138080 |   1.58370398 |  -0.43498243 |   0.46989796 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    57 |    1.425 |   0.59170237 |   1.64822951 |  -0.48573557 |   0.49935309 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    58 |    1.450 |   0.56901867 |   1.69069653 |  -0.55821487 |   0.59986582 |
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    59 |    1.475 |   0.54570021 |   1.79876971 |  -0.54190114 |   0.55551355 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+--------------------------------------------------------------------------------
+Done.
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    60 |    1.500 |   0.55748627 |   1.84474699 |  -0.46010070 |   0.42739312 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+--------------------------------------------------------------------------------
+Done.
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    61 |    1.525 |   0.59752437 |   1.79778119 |  -0.46518480 |   0.40958857 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    62 |    1.550 |   0.63149125 |   1.67716497 |  -0.44017612 |   0.39330032 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    63 |    1.575 |   0.66004680 |   1.57694602 |  -0.41318790 |   0.40293447 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    64 |    1.600 |   0.65055693 |   1.70529333 |  -0.49313755 |   0.48330870 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    65 |    1.625 |   0.64394683 |   1.92339986 |  -0.55742284 |   0.55212935 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    66 |    1.650 |   0.59706805 |   2.07801712 |  -0.59693347 |   0.60075248 |
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    67 |    1.675 |   0.57319779 |   2.10039700 |  -0.74426312 |   0.61508303 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+--------------------------------------------------------------------------------
+Done.
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    68 |    1.700 |   0.55057191 |   1.98119522 |  -0.81721260 |   0.63804489 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+--------------------------------------------------------------------------------
+Done.
+    69 |    1.725 |   0.52306243 |   2.05155755 |  -0.78058990 |   0.55042464 |
+    70 |    1.750 |   0.52939161 |   2.22528925 |  -0.76045700 |   0.46821926 |
+--------------------------------------------------------------------------------
+Done.
+86
+Process Start
+Wait PID: 24688
+Process Start
+Wait PID: 24690
+Process Start
+Wait PID: 24692
+Process Start
+Wait PID: 24694
+Process Start
+Process Start
+Wait PID: 24696
+Wait PID: 24698
+Process Start
+Process Start
+Wait PID: 24700
+Wait PID: 24702
+Wait PID: 24704
+Wait PID: 24705
+Wait PID: 24706
+Execution Time (24) => 3294087182596.00 ns
+Execution Time (28) => 3905688532624.00 ns
+Execution Time (32) => 4010436811809.00 ns
+Execution Time (36) => 4303667663567.00 ns
+Execution Time (20) => 4406429379428.00 ns
+Execution Time (40) => 4680988058720.00 ns
+Execution Time (16) => 4733399644688.00 ns
+Execution Time (4) => 5190300824224.00 ns
+Execution Time (12) => 5236986915233.00 ns
+Execution Time (44) => 5443076094839.00 ns
+Execution Time (8) => 5475213940410.00 ns
+Execution Time (0) => 5511147531084.00 ns
+('Full Command: ', '/scale/cal/home/ybmoon/migration/workloads/gap-spec-wrapper/second-wrapper/second_wrapper 0 12 /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/ /home/ybmoon/workloads/cpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/cactuBSSN_s_base.gcc-baseline-o2-m64  spec_ref.par ')
+execution_time 5511.56 (s)

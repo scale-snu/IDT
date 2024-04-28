@@ -1,0 +1,99 @@
+                                631.deepsjeng_s
+                       SPEC CPU2017 Benchmark Description
+
+  Benchmark Name
+
+   631.deepsjeng_s
+
+  Benchmark Authors
+
+   Gian-Carlo Pascutto <gcp [at] sjeng.org>
+
+  Benchmark Program General Category
+
+   Artificial Intelligence (alpha-beta tree search & pattern recognition)
+
+  Benchmark Description
+
+   631.deepsjeng_s is based on Deep Sjeng WC2008, the 2008 World Computer
+   Speed-Chess Champion. Deep Sjeng is a rewrite of the older Sjeng-Free
+   program, focused on obtaining the highest possible playing strength.
+
+   It attempts to find the best move via a combination of alpha-beta tree
+   searching, advanced move ordering, ositional evaluation and heuristic
+   forward pruning. Practically, it will explore the tree of variations
+   resulting from a given position to a given base depth, extending
+   interesting variations but discarding doubtful or irrelevant ones. From
+   this tree the optimal line of play for both players ("principal
+   variation") is determined, as well as a score reflecting the balance of
+   power between the two.
+
+   Specific advances since the previous version include the use of bitboards
+   based on Kindergarten/Magic attack calculators, an evaluation function
+   with much deeper positional understanding, and a search function that is
+   significantly better at discarding irrelevant subtrees. The overall
+   program structure has been optimized for speed as well, dropping support
+   for everything besides classical chess.
+
+   The rate version of the benchmark is compiled with SMALL_MEMORY. It was
+   observed to require around 700 MiB of memory during pre-release testing on
+   one of SPEC's Linux systems.
+
+   The speed version is compiled with BIG_MEMORY, and uses around 10x as much
+   memory as the rate version. Having more memory allows more information to
+   be stored about every position, notably if there are threats, or if there
+   is only one good move. This information then causes some positions to be
+   investigated deeper, which means it will take longer to reach the same
+   search depth, but the result will be more accurate.
+
+  Input Description
+
+   Both the rate and speed versions use the same inputs, a textfile
+   containing alternations of:
+
+    1. a chess position in the standard Forsyth-Edwards Notation (FEN) with
+       optional Extended Position Description (EPD) tags, and
+    2. the depth to which this position should be analyzed, in half-moves
+       (ply depth).
+
+  Output Description
+
+   The output consists, per position, of some side information (textual
+   display of the chessboard, phase of the game, used parameters...) followed
+   by the output from the tree searching module as it progresses. This is
+   formatted as follows:
+
+    1. Attained depth in half-moves (plies)
+    2. Score for the player that is to move, in equivalents of 1/100ths pawn
+    3. Number of positions investigated
+    4. The optimal line of play ("principle variation").
+
+   The output is validated against a SPEC-supplied set of expected outputs.
+   Note that the expected output differs between the rate and speed versions.
+
+  Programming Language
+
+   C++
+
+  Known portability issues
+
+   None.
+
+  Sources and Licensing
+
+   Deep Sjeng (which became 631.deepsjeng_s) is licensed directly to SPEC by
+   the author, Gian-Carlo Pascutto.
+
+  References
+
+     * Sjeng 11.2 & Deep Sjeng: [1]http://www.sjeng.org
+     * Portable Game Notation Specification (including FEN/EPD):
+       [2]http://www.tim-mann.org/Standard
+     * Kindergarten/Magic bitboards: [3]Chess Programming Wiki article
+
+References
+
+   Visible links
+   1. http://www.sjeng.org/
+   2. http://www.tim-mann.org/Standard
+   3. http://chessprogramming.wikispaces.com/Kindergarten+Bitboards

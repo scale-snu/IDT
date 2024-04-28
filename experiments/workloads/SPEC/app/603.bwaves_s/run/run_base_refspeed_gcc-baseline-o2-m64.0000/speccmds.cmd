@@ -1,0 +1,44 @@
+-E CB_MULTI_GO 0
+-E CLASSPATH .:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar
+-E DISPLAY localhost:11.0
+-E FAM_CODE /scale/cal/home/ybmoon/hynix/kernel_FAM/linux-5.3.18-fam/fam/net/client
+-E GOPATH /scale/cal/home/ybmoon/go
+-E HOME /scale/cal/home/ybmoon
+-E JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
+-E JDK_PATH /usr/lib/jvm/java-9-openjdk-amd64
+-E LANG en_US.UTF-8
+-E LC_ALL C
+-E LC_LANG C
+-E LD_LIBRARY_PATH /usr/lib64/:/usr/lib/:/lib64
+-E LIBCONFIGPATH /scale/cal/home/ybmoon/tools/libconfig-1.7.2
+-E LIBC_FATAL_STDERR_ 1
+-E LIBRARY_PATH :/scale/cal/home/ybmoon/local/lib
+-E LOGNAME ybmoon
+-E M2_HOME /scale/cal/home/ybmoon/local/apache-maven-3.5.4
+-E MAIL /var/mail/ybmoon
+-E MVN_HOME /scale/cal/home/ybmoon/maven
+-E OMP_NUM_THREADS 1
+-E OMP_STACKSIZE 120M
+-E OMP_THREAD_LIMIT 1
+-E PATH /home/ybmoon/cpu2017/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/dell/srvadmin/bin:/usr/local/bin
+-E PINPATH /scale/cal/home/ybmoon/tools/pin-2.14-71313-gcc.4.4.7-linux
+-E PKG_CONFIG_PATH /scale/cal/home/ybmoon/local/lib/opencv4
+-E POLARSSLPATH /scale/cal/home/ybmoon/tools/polarssl-1.2.3_source
+-E SHELL /bin/bash
+-E SPEC /home/ybmoon/cpu2017
+-E SPECDB_PWD /home/ybmoon/cpu2017
+-E SPECPERLLIB /home/ybmoon/cpu2017/bin/lib:/home/ybmoon/cpu2017/bin
+-E SSH_CLIENT '10.1.0.3 49786 22'
+-E SSH_CONNECTION '10.1.0.3 49786 192.168.101.48 22'
+-E SSH_TTY /dev/pts/2
+-E TERM xterm
+-E TF_FAM /home/ybmoon/kernel_FAM/linux-5.3.18-fam
+-E USER ybmoon
+-E XDG_DATA_DIRS /usr/local/share:/usr/share:/var/lib/snapd/desktop
+-E XDG_RUNTIME_DIR /run/user/1022
+-E XDG_SESSION_ID 3
+-r
+-N C
+-C /home/ybmoon/cpu2017/benchspec/CPU/603.bwaves_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000
+-i bwaves_1.in -o bwaves_1.out -e bwaves_1.err ../run_base_refspeed_gcc-baseline-o2-m64.0000/speed_bwaves_base.gcc-baseline-o2-m64 bwaves_1 < bwaves_1.in > bwaves_1.out 2>> bwaves_1.err
+-i bwaves_2.in -o bwaves_2.out -e bwaves_2.err ../run_base_refspeed_gcc-baseline-o2-m64.0000/speed_bwaves_base.gcc-baseline-o2-m64 bwaves_2 < bwaves_2.in > bwaves_2.out 2>> bwaves_2.err

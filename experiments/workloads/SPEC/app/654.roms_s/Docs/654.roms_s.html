@@ -1,0 +1,138 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+      <link rel="STYLESHEET" href="https://www.spec.org/cpu2017/Docs/css/cpudocs.css" type="text/css" />
+<title>654.roms_s: SPEC CPU2017 Benchmark Description</title>
+<meta name="generator" content="Cloyce+VIM 6.2" />
+<meta name="revision"
+      content="$Id: roms.html 5637 2017-05-01 17:34:29Z JohnHenning $" />
+</head>
+
+<body>
+<div style="text-align: center">
+<h1>654.roms_s<br />
+SPEC CPU2017 Benchmark Description</h1>
+</div>
+ 
+<h3>Benchmark Name</h3>
+<p>654.roms_s</p>
+
+<h3>Benchmark Author</h3>
+<p>ROMS is written and maintained 
+by "The ROMS/TOMS Group", which is described as:</p> 
+<ul>
+   <li>ROMS: Regional Ocean Modeling System</li>
+   <li>TOMS: Terrain-following Ocean Modeling System</li>
+</ul>
+
+<h3>Benchmark Program General Category</h3>
+<p>ROMS is a Regional Ocean Modeling System</p>
+ 
+<h3>Benchmark Description</h3>
+<p>ROMS is a free-surface, hydrostatic, primitive equation model discretized
+with a terrain-following vertical coordinate system.  It is coded in parallel
+for multi-threaded and multi-process architectures and has been widely applied
+in many applications from planetary scales down to the scales of estuarine
+environments. Forecasts include predictions of water temperature, ocean
+currents, salinity, and sea surface height.</p>
+
+<p>554.ROMS is based on ROMS/TOMS version 3.2    SVN Revision: 405M
+except some code from ROMS (573) to solve a race condition.</p>
+<p>ROMS usually requires NETCDF, but the <b>BENCHMARK</b> dataset used will make
+no calls to NETCDF so the port to SPEC includes a few NETCDF constants being
+defined but does NOT require the NETCDF code to be present.</p>
+
+<h3>Input Description</h3>
+<p>654.roms_s uses the generic <b>BENCHMARK</b> data set.   <br />
+TITLE = Benchmark Test, Idealized Southern Ocean, Small Grid</p>
+<p>The files used are:</p>
+<pre>
+  varinfo.dat                   Used by all tests<br />
+  ocean_benchmark<b>N</b>.in.x  where <b>N</b>=[0123] representing test, train, 
+                                refrate, and refspeed.  
+</pre>
+
+<p>The ocean_benchmark<b>N</b>.in.x files are read from stdin.  They are
+preprocessed for the OpenMP threaded version to find an optimal and legal set of
+values for tiling of the I and J dimensions, resulting in files
+ocean_benchmark<b>N</b>.in</p>
+
+<p>To create larger or smaller datasets the following parameters in the
+ocean_benchmark<b>N</b>.in.x files can be used for this (values shown for test
+case):</p>
+<pre>
+	  Lm == 512           ! Number of I-direction INTERIOR RHO-points
+          Mm == 64            ! Number of J-direction INTERIOR RHO-points
+           N == 30            ! Number of vertical levels
+      NTIMES == 5             ! Total number time-steps in current run.
+</pre>
+<p>The 3 first parameters will impact both size (memory) and time spent, the last one only time.</p>
+
+<p>The SPEC-supplied <tt>test</tt> and <tt>train</tt> workloads use the Lm, Mm,
+and N  values shown above; they differ only in NTIMES (total number of time
+steps), with 5 steps done by test and 200 by train. Both use on the order of 270&nbsp;MiB 
+of memory on a Linux system tested by SPEC.</p>
+
+<p>For the <tt>refrate</tt> workload (which is used by the rate version), these values
+are used, and memory increases to about 850&nbsp;MiB on the same Linux system:</p>
+<pre>
+            Lm == 1024          ! Number of I-direction INTERIOR RHO-points
+            Mm == 128           ! Number of J-direction INTERIOR RHO-points
+             N == 24            ! Number of vertical levels
+        NTIMES == 150           ! Total number time-steps in current run.
+</pre>
+
+<p>The <tt>refspeed</tt> workload (for the speed version of the benchmark) uses 
+about 13.7&nbsp;GiB on the tested system, and has these values:</p>
+<pre>
+            Lm == 2048          ! Number of I-direction INTERIOR RHO-points
+            Mm == 512           ! Number of J-direction INTERIOR RHO-points
+             N == 40            ! Number of vertical levels
+        NTIMES == 100           ! Total number time-steps in current run.
+</pre>
+
+
+
+
+<h3>Output Description</h3>
+
+<p>After each time step, various calculated energies and volume are printed and
+validated against a SPEC-supplied set of expected answers.  Note that all of
+the values printed in the table after each step are calculated.  The fact that
+3 of the 4 values printed are the same on each step is an expected behavior.
+</p>
+
+<p>The output is written to stdout, which is redirected to: <br />
+ocean_benchmark<b>N</b>.log where <b>N</b> is again 0, 1, 2, or 3.</p>
+
+
+<h3>Programming Language</h3>
+<p>Fortran 2003</p>
+
+<h3>Threading Model</h3>
+<p>OpenMP only</p>
+
+<h3>Known portability issues</h3>
+<p>None</p>
+
+<h3 id="license">Sources and Licensing</h3>
+
+<p>The benchmark is based on ROMS 3.2, under the ROMS license.</p>
+
+  <p>Please see details in the document <a
+    href="https://www.spec.org/cpu2017/Docs/licenses.html#bmk654.roms_s">SPEC CPU2017 Licenses</a>.</p>
+
+
+<h3>References</h3>
+<ul>
+<li><a href="http://www.myroms.org">ROMS HOME</a></li>
+<li><a href="https://science.jpl.nasa.gov/projects/ROMS/"> JPL Roms - realtime</a></li>
+<li><a href="http://oos.soest.hawaii.edu/pacioos/focus/modeling/roms.php">Hawaii model</a></li>
+<li><a href="http://www.sccoos.org/data/roms-3km/">72 hour forecast near California</a></li>
+</ul>
+
+<p>Last updated: $Date: 2017-05-01 13:34:29 -0400 (Mon, 01 May 2017) $</p>
+</body>
+</html>

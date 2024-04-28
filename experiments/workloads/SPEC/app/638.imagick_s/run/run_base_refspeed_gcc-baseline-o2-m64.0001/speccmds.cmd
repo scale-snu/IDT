@@ -1,0 +1,43 @@
+-E CB_MULTI_GO 0
+-E CLASSPATH .:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar
+-E GOPATH /scale/cal/home/ybmoon/go
+-E HOME /scale/cal/home/ybmoon
+-E JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
+-E JDK_PATH /usr/lib/jvm/java-9-openjdk-amd64
+-E LANG en_US.UTF-8
+-E LC_ALL C
+-E LC_LANG C
+-E LD_LIBRARY_PATH /usr/lib64/:/usr/lib/:/lib64
+-E LIBCONFIGPATH /scale/cal1/home/ybmoon/tools/libconfig-1.7.2
+-E LIBC_FATAL_STDERR_ 1
+-E LOGNAME ybmoon
+-E M2_HOME /scale/cal1/home/ybmoon/local/apache-maven-3.5.4
+-E MAIL /var/mail/ybmoon
+-E MIGDIR /scale/cal1/home/ybmoon/research/migration/migration_works/scal-migration
+-E MVN_HOME /scale/cal1/home/ybmoon/maven
+-E OMP_NUM_THREADS 1
+-E OMP_STACKSIZE 120M
+-E OMP_THREAD_LIMIT 1
+-E PATH /home/ybmoon/workloads/cpu2017/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/dell/srvadmin/bin:/usr/local/bin:/scale/cal1/home/ybmoon/maven/bin:/usr/local/bin:/scale/cal1/home/ybmoon/maven/bin
+-E PINPATH /scale/cal1/home/ybmoon/tools/pin-2.14-71313-gcc.4.4.7-linux
+-E PKG_CONFIG_PATH /scale/cal/home/ybmoon/local/lib/opencv4
+-E POLARSSLPATH /scale/cal1/home/ybmoon/tools/polarssl-1.2.3_source
+-E SHELL /bin/bash
+-E SPEC /home/ybmoon/workloads/cpu2017
+-E SPECDB_PWD /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s
+-E SPECPERLLIB /home/ybmoon/workloads/cpu2017/bin/lib:/home/ybmoon/workloads/cpu2017/bin
+-E SSH_CLIENT '10.1.0.13 61904 22'
+-E SSH_CONNECTION '10.1.0.13 61904 192.168.101.48 22'
+-E SSH_TTY /dev/pts/1
+-E STY 41533.ybmoon
+-E TERM screen.xterm-256color
+-E TERMCAP 'SC|screen.xterm-256color|VT 100/ANSI X3.64 virtual terminal:\ 	:DO=\E[%dB:LE=\E[%dD:RI=\E[%dC:UP=\E[%dA:bs:bt=\E[Z:\ 	:cd=\E[J:ce=\E[K:cl=\E[H\E[J:cm=\E[%i%d;%dH:ct=\E[3g:\ 	:do=^J:nd=\E[C:pt:rc=\E8:rs=\Ec:sc=\E7:st=\EH:up=\EM:\ 	:le=^H:bl=^G:cr=^M:it#8:ho=\E[H:nw=\EE:ta=^I:is=\E)0:\ 	:li#69:co#270:am:xn:xv:LP:sr=\EM:al=\E[L:AL=\E[%dL:\ 	:cs=\E[%i%d;%dr:dl=\E[M:DL=\E[%dM:dc=\E[P:DC=\E[%dP:\ 	:im=\E[4h:ei=\E[4l:mi:IC=\E[%d@:ks=\E[?1h\E=:\ 	:ke=\E[?1l\E>:vi=\E[?25l:ve=\E[34h\E[?25h:vs=\E[34l:\ 	:ti=\E[?1049h:te=\E[?1049l:us=\E[4m:ue=\E[24m:so=\E[3m:\ 	:se=\E[23m:mb=\E[5m:md=\E[1m:mh=\E[2m:mr=\E[7m:\ 	:me=\E[m:ms:\ 	:Co#8:pa#64:AF=\E[3%dm:AB=\E[4%dm:op=\E[39;49m:AX:\ 	:vb=\Eg:G0:as=\E(0:ae=\E(B:\ 	:ac=\140\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:\ 	:po=\E[5i:pf=\E[4i:Km=\E[M:k0=\E[10~:k1=\EOP:k2=\EOQ:\ 	:k3=\EOR:k4=\EOS:k5=\E[15~:k6=\E[17~:k7=\E[18~:\ 	:k8=\E[19~:k9=\E[20~:k;=\E[21~:F1=\E[23~:F2=\E[24~:\ 	:F3=\E[1;2P:F4=\E[1;2Q:F5=\E[1;2R:F6=\E[1;2S:\ 	:F7=\E[15;2~:F8=\E[17;2~:F9=\E[18;2~:FA=\E[19;2~:kb=:\ 	:K2=\EOE:kB=\E[Z:kF=\E[1;2B:kR=\E[1;2A:*4=\E[3;2~:\ 	:*7=\E[1;2F:#2=\E[1;2H:#3=\E[2;2~:#4=\E[1;2D:%c=\E[6;2~:\ 	:%e=\E[5;2~:%i=\E[1;2C:kh=\E[1~:@1=\E[1~:kH=\E[4~:\ 	:@7=\E[4~:kN=\E[6~:kP=\E[5~:kI=\E[2~:kD=\E[3~:ku=\EOA:\ 	:kd=\EOB:kr=\EOC:kl=\EOD:km:'
+-E USER ybmoon
+-E WINDOW 1
+-E XDG_DATA_DIRS /usr/local/share:/usr/share:/var/lib/snapd/desktop
+-E XDG_RUNTIME_DIR /run/user/1022
+-E XDG_SESSION_ID 322
+-r
+-N C
+-C /home/ybmoon/workloads/cpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0001
+-o refspeed_convert.out -e refspeed_convert.err ../run_base_refspeed_gcc-baseline-o2-m64.0001/imagick_s_base.gcc-baseline-o2-m64 -limit disk 0 refspeed_input.tga -resize 817% -rotate -2.76 -shave 540x375 -alpha remove -auto-level -contrast-stretch 1x1% -colorspace Lab -channel R -equalize +channel -colorspace sRGB -define histogram:unique-colors=false -adaptive-blur 0x5 -despeckle -auto-gamma -adaptive-sharpen 55 -enhance -brightness-contrast 10x10 -resize 30% refspeed_output.tga > refspeed_convert.out 2>> refspeed_convert.err

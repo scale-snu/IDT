@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <link rel="STYLESHEET" href="https://www.spec.org/cpu2017/Docs/css/cpudocs.css" type="text/css" />
+<title>603.bwaves_s: SPEC CPU2017 Benchmark Description</title>
+</head>
+<body>
+<div style="text-align: center">
+<h1>603.bwaves_s<br />
+SPEC CPU2017 Benchmark Description</h1>
+</div>
+
+<h3>Benchmark Name</h3>
+
+<p>603.bwaves_s</p>
+
+
+<h3>Benchmark Author</h3>
+
+<p>Dr. Mark Kremenetsky, &lt;mdk &#x5b;at&#x5d; sgi.com&gt;<br />
+Silicon Graphics, Inc<br />
+1500 Crittenden Lane<br />
+Mountain View, CA 94043, USA</p>
+
+
+<h3>Benchmark Program General Category</h3>
+
+<p>Computational Fluid Dynamics</p>
+
+<h3>Benchmark Description</h3>
+
+<p>603.bwaves_s numerically simulates blast waves in three dimensional
+transonic transient laminar viscous flow.  </p>
+
+<p>The initial configuration
+of the blast waves problem consists of a high pressure and density region
+at the center of a cubic cell of a periodic lattice, with low pressure
+and density elsewhere. Periodic boundary conditions are applied to the
+array of cubic cells forming an infinite network.  Initially, the high
+pressure volume begins to expand in the radial direction as 
+classical shock waves.  At the same time, the expansion waves move to
+fill the void at the center of the cubic cell. When the expanding flow
+reaches the boundaries, it collides with its periodic images from
+other cells, thus creating a complex structure of interfering
+nonlinear waves.  These processes create a nonlinear damped periodic
+system with energy being dissipated in time. Finally, the system will
+come to an equilibrium and steady state.</p>
+
+<p>The algorithm implemented is an unfactored solver for the
+implicit solution of the compressible Navier-Stokes equations using the Bi-CGstab
+algorithm, which solves systems of non-symmetric linear equations
+iteratively.</p>
+
+
+<h3>Input Description</h3>
+
+<p> The input file describes the grid size, flow parameters, initial
+boundary condition and number of time steps. The three data sets,
+test, train and ref, differ only in grid size and number of time
+steps. </p>
+
+
+<h3>Output Description</h3>
+
+<p>The transient nature of the flow and iterative solver makes bwaves
+a difficult problem to validate. In SPEC CPU2017 this has been
+addressed by comparing three different outputs. These are:</p>
+
+<ul>
+<li>The L2 norm of dq(l.i.j.k) vector after final time step</li>
+
+<li>The residual for convergence after each time step</li>
+
+<li>The cumulative sum of iterations for convergence for every time step</li>
+</ul>
+
+
+<h3>Programming Language</h3>
+
+<p>Fortran</p>
+
+
+<h3>Known portability issues</h3>
+
+<p>none</p>
+
+<h3 id="license">Sources and Licensing</h3>
+
+<p>A SPEC member company contributed Blast Waves, which became 603.bwaves_s.</p>
+
+
+<h3>References</h3>
+<ul>
+  <li>Arsi Vaziri and Mark Kremenetsky.
+  Visualization and Tracking of Parallel CFD Simulations.
+  <a href="http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19970010487.pdf">Report <strong>NAS-95-004, February 1995</strong></a>
+  </li>
+</ul>
+
+
+<p>Last updated: $Date: 2017-05-01 12:15:57 -0400 (Mon, 01 May 2017) $</p>
+</body>
+</html>

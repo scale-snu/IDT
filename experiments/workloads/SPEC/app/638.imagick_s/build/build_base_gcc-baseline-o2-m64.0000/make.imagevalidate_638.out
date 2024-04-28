@@ -1,0 +1,66 @@
+/usr/bin/gcc   -m64   -std=c11 -c -o image_validator/ImageValidator.o -DSPEC -DNDEBUG -I.  -g -O2 -fopt-info           -fopenmp -DSPEC_OPENMP    -DSPEC_LP64  image_validator/ImageValidator.c
+image_validator/ImageValidator.c: In function 'read_tga_file':
+image_validator/ImageValidator.c:662:9: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+         fread(tmprawdata, 2, 1, stream);             \
+         ^
+image_validator/ImageValidator.c:715:5: note: in expansion of macro 'read_le16'
+     read_le16(fin, tga->colormaporigin);
+     ^
+image_validator/ImageValidator.c:662:9: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+         fread(tmprawdata, 2, 1, stream);             \
+         ^
+image_validator/ImageValidator.c:716:5: note: in expansion of macro 'read_le16'
+     read_le16(fin, tga->colormaplength);
+     ^
+image_validator/ImageValidator.c:662:9: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+         fread(tmprawdata, 2, 1, stream);             \
+         ^
+image_validator/ImageValidator.c:718:5: note: in expansion of macro 'read_le16'
+     read_le16(fin, tga->x_origin);
+     ^
+image_validator/ImageValidator.c:662:9: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+         fread(tmprawdata, 2, 1, stream);             \
+         ^
+image_validator/ImageValidator.c:719:5: note: in expansion of macro 'read_le16'
+     read_le16(fin, tga->y_origin);
+     ^
+image_validator/ImageValidator.c:662:9: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+         fread(tmprawdata, 2, 1, stream);             \
+         ^
+image_validator/ImageValidator.c:720:5: note: in expansion of macro 'read_le16'
+     read_le16(fin, tga->width);
+     ^
+image_validator/ImageValidator.c:662:9: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+         fread(tmprawdata, 2, 1, stream);             \
+         ^
+image_validator/ImageValidator.c:721:5: note: in expansion of macro 'read_le16'
+     read_le16(fin, tga->height);
+     ^
+image_validator/ImageValidator.c:728:9: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+         fread(tga->image_id, tga->idlength, 1, fin);
+         ^
+image_validator/ImageValidator.c:662:9: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+         fread(tmprawdata, 2, 1, stream);             \
+         ^
+image_validator/ImageValidator.c:672:9: note: in expansion of macro 'read_le16'
+         read_le16(stream, tmpmap);            \
+         ^
+image_validator/ImageValidator.c:684:13: note: in expansion of macro 'read_16bit_pixel'
+             read_16bit_pixel(stream, dest);         \
+             ^
+image_validator/ImageValidator.c:736:13: note: in expansion of macro 'read_pixel'
+             read_pixel(fin, tga->colormapdata[i], tga->colormapdepth);
+             ^
+image_validator/ImageValidator.c:662:9: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+         fread(tmprawdata, 2, 1, stream);             \
+         ^
+image_validator/ImageValidator.c:672:9: note: in expansion of macro 'read_le16'
+         read_le16(stream, tmpmap);            \
+         ^
+image_validator/ImageValidator.c:684:13: note: in expansion of macro 'read_16bit_pixel'
+             read_16bit_pixel(stream, dest);         \
+             ^
+image_validator/ImageValidator.c:747:13: note: in expansion of macro 'read_pixel'
+             read_pixel(fin, tga->imagedata[h][w], tga->bitsperpixel);
+             ^
+/usr/bin/gcc   -m64   -std=c11      -g -O2 -fopt-info        -fopenmp -DSPEC_OPENMP  image_validator/ImageValidator.o             -lm       -L/scale/cal1/home/ybmoon/research/numa_autofdo/maphea_open/install/lib -lmemkind -L/scale/cal1/home/ybmoon/research/numa_autofdo/maphea_open/install/lib -lmaphea   -o imagevalidate_638  

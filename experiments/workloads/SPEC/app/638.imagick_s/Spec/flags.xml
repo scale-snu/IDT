@@ -1,0 +1,1679 @@
+<?xml version="1.0"?>
+<!DOCTYPE flagsdescription SYSTEM
+       "http://www.spec.org/dtd/cpuflags2.dtd">
+
+<!-- This file defines flags in 638.imagick_s.
+
+  Copyright 2012-2015 Standard Performance Evaluation Corporation
+
+  $Revision: 5674 $
+  $Date: 2017-05-05 17:29:02 -0400 (Fri, 05 May 2017) $
+-->
+<flagsdescription>
+
+<filename>638.imagick_s.flags</filename>
+<title>638.imagick_s Flags</title>
+
+<header>
+<![CDATA[
+<p>These are flags that appear in the benchmark sources, categorized as to
+   whether they are portability candidates, mandatory, or forbidden.</p>
+]]>
+</header>
+
+<!--
+   - Portability flags
+   -->
+
+<flag name="D_magickcore_const" class="portability">
+_magickcore_const, set if you need to change how const is dealt with, in
+MagickCore.h.
+</flag>
+
+<flag name="D_magickcore_inline" class="portability">
+_magickcore_inline, set if you need to define inline, in MagickCore.h.
+</flag>
+
+<flag name="D_magickcore_restrict" class="portability">
+_magickcore_restrict, set if you need to adjust how restrict is used,
+in magick-config.h and MagickCore.h.
+</flag>
+
+<flag name="DMAGICKCORE_DIR_SEPARATOR_CHAR" class="portability">
+Can be used to change the default directory pathname separator character, if
+you're trying to port the benchmark to some bizarro system that claims to
+support POSIX but doesn't use '/' as the directory separator character.
+</flag>
+
+<flag name="noC99math" regexp="[-/]DSPEC_NO_(?:ACOSH|ASINH|ATANH|ISNAN)\b" class="portability">
+<example>
+  -DSPEC_NO_ACOSH,
+  -DSPEC_NO_ASINH,
+  -DSPEC_NO_ATANH
+</example>
+These macros are used to indicate the UNavailablilty of some standard C99 math
+functions.  Unless explicitly disabled, these functions are assumed to be
+available.
+</flag>
+
+
+<!--
+   - Optimization flags
+   -->
+<!-- don't got none -->
+
+<!--
+   - Forbidden but mostly okay flags
+   -->
+<!-- don't got none -->
+
+<!--
+   - Mandatory flags
+   -->
+<!-- don't got none that ain't already covered in flags-mandatory.xml -->
+
+<!--
+   - Forbidden flags
+   -->
+<flag name="DAC_APPLE_UNIVERSAL_BUILD" class="forbidden">
+AC_APPLE_UNIVERSAL_BUILD, to set WORDS_BIGENDIAN, see magick-config.h
+</flag>
+
+<flag name="DCLK_TCK" class="forbidden">
+CLK_TCK, used in internal timers in magick_timer.c, do not mess with.
+</flag>
+
+<flag name="DCLOCK_REALTIME_HR" class="forbidden">
+CLOCK_REALTIME_HR, see magick-config.h
+</flag>
+
+<flag name="DDEBUG_ELLIPSE" class="forbidden">
+DEBUG_ELLIPSE, turn on debug information, see magick_resample.c, do not change.
+</flag>
+
+<flag name="DDEBUG_HIT_MISS" class="forbidden">
+DEBUG_HIT_MISS, used with DEBUG_ELLIPSE in magick_resample.c, do not change.
+</flag>
+
+<flag name="DDEBUG_NO_PIXEL_HIT" class="forbidden">
+DEBUG_NO_PIXEL_HIT, turns non-hit pixels red, in magick_resample.c, do not change.
+</flag>
+
+<flag name="DDEBUG_OPT_FRAME" class="forbidden">
+DEBUG_OPT_FRAME, turns on debug writes in magick_layer.c, do not change
+</flag>
+
+<flag name="DDISABLE_SIOUX" class="forbidden">
+DISABLE_SIOUX, used with macintosh define, not currently tested for omp2012.
+</flag>
+
+<flag name="DDRAW_BINARY_IMPLEMENTATION" class="forbidden">
+DRAW_BINARY_IMPLEMENTATION, enables feature using DrawPatternPath in
+wand_drawing-wand.c, do not change.
+</flag>
+
+<flag name="DEILSEQ" class="forbidden">
+EILSEQ, sets error for illegal sequence, do not change.
+</flag>
+
+<flag name="DEWA" class="forbidden">
+EWA, use clamped EWA, in magick_resample.c, do not change.
+</flag>
+
+<flag name="DEWA_CLAMP" class="forbidden">
+EWA_CLAMP, use EWA Clamping form Nicolas Robidoux, see magick_resample.c, do not
+change.
+</flag>
+
+<flag name="DFC_VERSION" class="forbidden">
+FC_VERSION, decisions based upon font version available, not used,
+do not change.
+</flag>
+
+<flag name="DFILTER_DIRECT" class="forbidden">
+FILTER_DIRECT, sets WLUT_WIDTH value when not defined, in magick_resample.c,
+do not change.
+</flag>
+
+<flag name="DFILTER_LUT" class="forbidden">
+FILTER_LUT, use LUT rather than direct filter calls, in magick_resample.c,
+do not change.
+</flag>
+
+<flag name="DFT_OPEN_PATHNAME" class="forbidden">
+FT_OPEN_PATHNAME, sets variable in magick_annotate.c, do not change.
+</flag>
+
+<flag name="DFastClassify" class="forbidden">
+FastClassify, sets quick values if set in magick_segment.c, do not change.
+</flag>
+
+<flag name="DForgetGravity" class="forbidden">
+ForgetGravity, sets enum type GravityType in geometry.h, do not change.
+</flag>
+
+<flag name="DGetMagickModule" class="forbidden">
+GetMagickModule, sets debug information in log.h, do not change.
+</flag>
+
+<flag name="DLCMS_VERSION" class="forbidden">
+LCMS_VERSION, for use with LCMS, not used, do not change.
+</flag>
+
+<flag name="DMAGICKCORE_BUILD_MODULES" class="forbidden">
+MAGICKCORE_BUILD_MODULES, in studio.h, do not define, do not change.
+</flag>
+
+<flag name="DMAGICKCORE_BZLIB_DELEGATE" class="forbidden">
+MAGICKCORE_BZLIB_DELEGATE, set to 0, see magick-config.h, not used in benchmark.
+</flag>
+
+<flag name="DMAGICKCORE_CIPHER_SUPPORT" class="forbidden">
+MAGICKCORE_CIPHER_SUPPORT, set to 1, see magick-config.h, do not change.
+</flag>
+
+<flag name="DMAGICKCORE_CODER_PATH" class="forbidden">
+MAGICKCORE_CODER_PATH, set in magick-config.h, not used
+</flag>
+
+<flag name="DMAGICKCORE_CODER_RELATIVE_PATH" class="forbidden">
+MAGICKCORE_CODER_RELATIVE_PATH, set in magick-config.h, not used
+</flag>
+
+<flag name="DMAGICKCORE_CONFIGURE_PATH" class="forbidden">
+MAGICKCORE_CONFIGURE_PATH, set in magick-config.h, not used
+</flag>
+
+<flag name="DMAGICKCORE_CONFIGURE_RELATIVE_PATH" class="forbidden">
+MAGICKCORE_CONFIGURE_RELATIVE_PATH, set in magick-config.h, not used
+</flag>
+
+<flag name="DMAGICKCORE_DEBUG" class="forbidden">
+MAGICKCORE_DEBUG, used in magick_semaphore.c for debug, do not use for
+benchmark.
+</flag>
+
+<flag name="DMAGICKCORE_DOCUMENTATION_PATH" class="forbidden">
+MAGICKCORE_DOCUMENTATION_PATH, set in magick-config.h, not used for benchmark,
+do not change.
+</flag>
+
+<flag name="DMAGICKCORE_EXCLUDE_DEPRECATED" class="forbidden">
+MAGICKCORE_EXCLUDE_DEPRECATED, removes deprecated functions, do not change.
+</flag>
+
+<flag name="DMAGICKCORE_EXECUTABLE_PATH" class="forbidden">
+MAGICKCORE_EXECUTABLE_PATH, sets path for executables, not used by benchmark.
+</flag>
+
+<flag name="DMAGICKCORE_FFTW_DELEGATE" class="forbidden">
+MAGICKCORE_FFTW_DELEGATE, in magick-config.h, set if you have FFTW, do not
+change.
+</flag>
+
+<flag name="DMAGICKCORE_FILTER_PATH" class="forbidden">
+MAGICKCORE_FILTER_PATH, location of filter modules, not used, do not mess with.
+</flag>
+
+<flag name="DMAGICKCORE_FILTER_RELATIVE_PATH" class="forbidden">
+MAGICKCORE_FILTER_RELATIVE_PATH, location of filter modules, do not mess with.
+</flag>
+
+<flag name="DMAGICKCORE_FONTCONFIG_DELEGATE" class="forbidden">
+MAGICKCORE_FONTCONFIG_DELEGATEi, undefined, not used for benchmark,
+in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_FREETYPE_DELEGATE" class="forbidden">
+MAGICKCORE_FREETYPE_DELEGATE, set if using FreeType, benchmark does not, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_GS_DELEGATE" class="forbidden">
+MAGICKCORE_GS_DELEGATE, set if using GhostSCript, benchmark does not, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_ARM_LIMITS_H" class="forbidden">
+MAGICKCORE_HAVE_ARM_LIMITS_H, set if have arm/limits.h, not part of benchmark,
+in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_CABS" class="forbidden">
+MAGICKCORE_HAVE_CABS, set to assume cabs function exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_CARG" class="forbidden">
+MAGICKCORE_HAVE_CARG, set to assume carg function exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_CIMAG" class="forbidden">
+MAGICKCORE_HAVE_CIMAG, set to assume cimag function exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_CLOCK" class="forbidden">
+MAGICKCORE_HAVE_CLOCK, set to assume clock function exixts, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_CLOCK_GETTIME" class="forbidden">
+MAGICKCORE_HAVE_CLOCK_GETTIME, set to assume clock_gettime exists,
+in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_CL_CL_H" class="forbidden">
+MAGICKCORE_HAVE_CL_CL_H, set to assume cl.h is not available, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_COMPLEX_H" class="forbidden">
+MAGICKCORE_HAVE_COMPLEX_H, set to assume complex.h is available, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_CREAL" class="forbidden">
+MAGICKCORE_HAVE_CREAL, set to assume creal function exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_DECL_PREAD" class="forbidden">
+MAGICKCORE_HAVE_DECL_PREAD, set to assume pread is available, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_DECL_PWRITE" class="forbidden">
+MAGICKCORE_HAVE_DECL_PWRITE, set to assume pwrite is available, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_DECL_STRLCPY" class="forbidden">
+MAGICKCORE_HAVE_DECL_STRLCPY, set to assume strlcpy is declared, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_DECL_VSNPRINTF" class="forbidden">
+MAGICKCORE_HAVE_DECL_VSNPRINTF, set to assume vsnprintf is declared, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_ERRNO_H" class="forbidden">
+MAGICKCORE_HAVE_ERRNO_H, set to assume errno.h is available, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_EXECVP" class="forbidden">
+MAGICKCORE_HAVE_EXECVP, set to assume execvp function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_FCNTL_H" class="forbidden">
+MAGICKCORE_HAVE_FCNTL_H, set to assume fcntl.h is availabl, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_FLOOR" class="forbidden">
+MAGICKCORE_HAVE_FLOOR, set to assume floor function exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_FSEEKO" class="forbidden">
+MAGICKCORE_HAVE_FSEEKO, set to assume fseeko function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_FTIME" class="forbidden">
+MAGICKCORE_HAVE_FTIME, set to assume ftime function exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_FTRUNCATE" class="forbidden">
+MAGICKCORE_HAVE_FTRUNCATE, set to assume ftruncate function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_GETCWD" class="forbidden">
+MAGICKCORE_HAVE_GETCWD, set to assume getcwd function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_GETDTABLESIZE" class="forbidden">
+MAGICKCORE_HAVE_GETDTABLESIZE, set to assume getdtablesize function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_GETEXECNAME" class="forbidden">
+MAGICKCORE_HAVE_GETEXECNAME, set to assume no getexecname function, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_GETPAGESIZE" class="forbidden">
+MAGICKCORE_HAVE_GETPAGESIZE, set to assume getpagesize function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_GETPID" class="forbidden">
+MAGICKCORE_HAVE_GETPID, set to assume getpid function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_GETRLIMIT" class="forbidden">
+MAGICKCORE_HAVE_GETRLIMIT, set to assume getrlimit function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_GETRUSAGE" class="forbidden">
+MAGICKCORE_HAVE_GETRUSAGE, set to assume getrusage function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_GETTIMEOFDAY" class="forbidden">
+MAGICKCORE_HAVE_GETTIMEOFDAY, set to assume gettimeofday function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_GMTIME_R" class="forbidden">
+MAGICKCORE_HAVE_GMTIME_R, set to assume gmtime_r function exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_INTMAX_T" class="forbidden">
+MAGICKCORE_HAVE_INTMAX_T, set to assume intmax_t type exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_INTPTR_T" class="forbidden">
+MAGICKCORE_HAVE_INTPTR_T, set to assume intptr_t type exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_INTTYPES_H" class="forbidden">
+MAGICKCORE_HAVE_INTTYPES_H, set to assume inttypes.h available, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_J0" class="forbidden">
+MAGICKCORE_HAVE_J0, assumes function j0 exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_J1" class="forbidden">
+MAGICKCORE_HAVE_J1, assumes function j1 exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_LCMS2_H" class="forbidden">
+MAGICKCORE_HAVE_LCMS2_H, does not have lcms2.h, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_LCMS_LCMS2_H" class="forbidden">
+MAGICKCORE_HAVE_LCMS_LCMS2_H, does not have lcms2/lcms2.h, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_LCMS_LCMS_H" class="forbidden">
+MAGICKCORE_HAVE_LCMS_LCMS_H, does not have lcms/lcms.h, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_LIMITS_H" class="forbidden">
+MAGICKCORE_HAVE_LIMITS_H, assumes limits.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_LOCALTIME_R" class="forbidden">
+MAGICKCORE_HAVE_LOCALTIME_R, assumes function localtime_r exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_LONG_DOUBLE" class="forbidden">
+MAGICKCORE_HAVE_LONG_DOUBLE, assumes type long double exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_LONG_LONG_INT" class="forbidden">
+MAGICKCORE_HAVE_LONG_LONG_INT, says type long long int exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_MACH_O_DYLD_H" class="forbidden">
+MAGICKCORE_HAVE_MACH_O_DYLD_H, mach-o/dyld.h is assumed not available, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_MBSTATE_T" class="forbidden">
+MAGICKCORE_HAVE_MBSTATE_T, wchar.h declares mbstate_t, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_MEMMOVE" class="forbidden">
+MAGICKCORE_HAVE_MEMMOVE, function memmove exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_MEMORY_H" class="forbidden">
+MAGICKCORE_HAVE_MEMORY_H, include memory.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_MEMSET" class="forbidden">
+MAGICKCORE_HAVE_MEMSET, function memset exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_MKSTEMP" class="forbidden">
+MAGICKCORE_HAVE_MKSTEMP, function mkstemp exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_MMAP" class="forbidden">
+MAGICKCORE_HAVE_MMAP, function mmap works, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_NAMESPACES" class="forbidden">
+MAGICKCORE_HAVE_NAMESPACES, compiler implements namespaces, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_NAMESPACE_STD" class="forbidden">
+MAGICKCORE_HAVE_NAMESPACE_STD, g++ supports namespace std, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_NANOSLEEP" class="forbidden">
+MAGICKCORE_HAVE_NANOSLEEP, no nanosleep function used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_NDIR_H" class="forbidden">
+MAGICKCORE_HAVE_NDIR_H, include ndir.h not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_NEWLOCALE" class="forbidden">
+MAGICKCORE_HAVE_NEWLOCALE, newlocale function not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_OPENCL_CL_H" class="forbidden">
+MAGICKCORE_HAVE_OPENCL_CL_H, include opencl/cl.h not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_PCLOSE" class="forbidden">
+MAGICKCORE_HAVE_PCLOSE, function pclose exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_POLL" class="forbidden">
+MAGICKCORE_HAVE_POLL, function poll exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_POPEN" class="forbidden">
+MAGICKCORE_HAVE_POPEN, function popen exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_POSIX_MEMALIGN" class="forbidden">
+MAGICKCORE_HAVE_POSIX_MEMALIGN, posix_memalign() not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE__ALIGNED_MALLOC" class="forbidden">
+MAGICKCORE_HAVE__ALIGNED_MALLOC, _aligned_malloc() not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_POW" class="forbidden">
+MAGICKCORE_HAVE_POW, function pow exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_PREAD" class="forbidden">
+MAGICKCORE_HAVE_PREAD, function pread exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_PROCESS_H" class="forbidden">
+MAGICKCORE_HAVE_PROCESS_H, process.h not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_PWRITE" class="forbidden">
+MAGICKCORE_HAVE_PWRITE, function pwrite exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_RAISE" class="forbidden">
+MAGICKCORE_HAVE_RAISE, function raise exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_READDIR_R" class="forbidden">
+MAGICKCORE_HAVE_READDIR_R, function readdir_r exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_READLINK" class="forbidden">
+MAGICKCORE_HAVE_READLINK, function readlink exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SELECT" class="forbidden">
+MAGICKCORE_HAVE_SELECT, function select exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SETVBUF" class="forbidden">
+MAGICKCORE_HAVE_SETVBUF, function setvbuf exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SIGACTION" class="forbidden">
+MAGICKCORE_HAVE_SIGACTION, function sigaction exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SIGEMPTYSET" class="forbidden">
+MAGICKCORE_HAVE_SIGEMPTYSET, function sigemptyset exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SQRT" class="forbidden">
+MAGICKCORE_HAVE_SQRT, function sqrt exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STDARG_H" class="forbidden">
+MAGICKCORE_HAVE_STDARG, include stdarg.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STDINT_H" class="forbidden">
+MAGICKCORE_HAVE_STDINT, include stdint.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STDLIB_H" class="forbidden">
+MAGICKCORE_HAVE_STDLIB, include stdlib.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STD_LIBS" class="forbidden">
+MAGICKCORE_HAVE_STD_LIBS, ISO C++ standard library, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRCASECMP" class="forbidden">
+MAGICKCORE_HAVE_STRCASECMP, function strcasecmp exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRCHR" class="forbidden">
+MAGICKCORE_HAVE_STRCHR, function strchr exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRCSPN" class="forbidden">
+MAGICKCORE_HAVE_STRCSPN, function strcspn exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRDUP" class="forbidden">
+MAGICKCORE_HAVE_STRDUP, function strdup exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRERROR" class="forbidden">
+MAGICKCORE_HAVE_STRERROR, function strerror exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRERROR_R" class="forbidden">
+MAGICKCORE_HAVE_STRERROR_R, function strerror_r exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRINGIZE" class="forbidden">
+MAGICKCORE_HAVE_STRINGIZE, cpp supports ANSI # stringizing operator, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRINGS_H" class="forbidden">
+MAGICKCORE_HAVE_STRINGS, include strings.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRING_H" class="forbidden">
+MAGICKCORE_HAVE_STRING, include string.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRLCPY" class="forbidden">
+MAGICKCORE_HAVE_STRLCPY, function strlcpy exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRNCASECMP" class="forbidden">
+MAGICKCORE_HAVE_STRNCASECMP, function strncasecmp exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRPBRK" class="forbidden">
+MAGICKCORE_HAVE_STRPBRK, function strpbrk exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRRCHR" class="forbidden">
+MAGICKCORE_HAVE_STRRCHR, function strrchr exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRSPN" class="forbidden">
+MAGICKCORE_HAVE_STRSPN, function strspn exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRSTR" class="forbidden">
+MAGICKCORE_HAVE_STRSTR, function strstr exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRTOD" class="forbidden">
+MAGICKCORE_HAVE_STRTOD, function strtod exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRTOD_L" class="forbidden">
+MAGICKCORE_HAVE_STRTOD_L, don't use strtod_l function, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRTOL" class="forbidden">
+MAGICKCORE_HAVE_STRTOL, function strtol exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_STRTOUL" class="forbidden">
+MAGICKCORE_HAVE_STRTOUL, function strtoul exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYMLINK" class="forbidden">
+MAGICKCORE_HAVE_SYMLINK, function symlink exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYSCONF" class="forbidden">
+MAGICKCORE_HAVE_SYSCONF, function sysconf exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_DIR_H" class="forbidden">
+MAGICKCORE_HAVE_DIR, include sys/dir.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_MMAN_H" class="forbidden">
+MAGICKCORE_HAVE_MMAN, include sys/mman.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_NDIR_H" class="forbidden">
+MAGICKCORE_HAVE_SYS_NDIR_H, sys/ndir.h not assumed, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_PARAM_H" class="forbidden">
+MAGICKCORE_HAVE_PARAM, include sys/param.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_RESOURCE_H" class="forbidden">
+MAGICKCORE_HAVE_RESOURCE, include sys/resource.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_SELECT_H" class="forbidden">
+MAGICKCORE_HAVE_SELECT, include sys/select.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_SOCKET_H" class="forbidden">
+MAGICKCORE_HAVE_SOCKET, include sys/socket.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_STAT_H" class="forbidden">
+MAGICKCORE_HAVE_STAT, include sys/stat.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_SYSLIMITS_H" class="forbidden">
+MAGICKCORE_HAVE_SYSLIMITS, include sys/syslimits.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_TIMEB_H" class="forbidden">
+MAGICKCORE_HAVE_TIMEB, include sys/timeb.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_TIMES_H" class="forbidden">
+MAGICKCORE_HAVE_TIMES, include sys/times.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_TIME_H" class="forbidden">
+MAGICKCORE_HAVE_TIME, include sys/time.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_TYPES_H" class="forbidden">
+MAGICKCORE_HAVE_TYPES, include sys/types.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SYS_WAIT_H" class="forbidden">
+MAGICKCORE_HAVE_WAIT, include sys/wait.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_TEMPNAM" class="forbidden">
+MAGICKCORE_HAVE_TEMPNAM, function tempnam exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_TIFFCONF_H" class="forbidden">
+MAGICKCORE_HAVE_TIFFCONF_H, keep undefined, not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_TIMES" class="forbidden">
+MAGICKCORE_HAVE_TIMES, function times exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_UINTMAX_T" class="forbidden">
+MAGICKCORE_HAVE_UINTMAX_T, type uintmax_t exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_UINTPTR_T" class="forbidden">
+MAGICKCORE_HAVE_UINTPTR_T, type uintptr_t exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_UNISTD_H" class="forbidden">
+MAGICKCORE_HAVE_UNISTD, include unistd.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_UNSIGNED_LONG_LONG_INT" class="forbidden">
+MAGICKCORE_HAVE_UNSIGNED_LONG_LONG_INT, type unsigned long long int exists, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_USELOCALE" class="forbidden">
+MAGICKCORE_HAVE_USELOCALE, function uselocale not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_USLEEP" class="forbidden">
+MAGICKCORE_HAVE_USLEEP, function usleep exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_VFPRINTF" class="forbidden">
+MAGICKCORE_HAVE_VFPRINTF, function vfprintf exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_VFPRINTF_L" class="forbidden">
+MAGICKCORE_HAVE_VFPRINTF_L, function vfprintf_l not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_VPRINTF" class="forbidden">
+MAGICKCORE_HAVE_VPRINTF, function vprintf exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_VSNPRINTF" class="forbidden">
+MAGICKCORE_HAVE_VSNPRINTF, function vsnprintf exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_VSNPRINTF_L" class="forbidden">
+MAGICKCORE_HAVE_VSNPRINTF_L, function vsnprintf_l not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_VSPRINTF" class="forbidden">
+MAGICKCORE_HAVE_VSPRINTF, function vsprintf exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_WCHAR_H" class="forbidden">
+MAGICKCORE_HAVE_WCHAR, include wchar.h exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_WINTHREADS" class="forbidden">
+MAGICKCORE_HAVE_WINTHREADS, not used, not windows threads.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_XLOCALE_H" class="forbidden">
+MAGICKCORE_HAVE_XLOCALE_H, include xlocale.h not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE__EXIT" class="forbidden">
+MAGICKCORE_HAVE__EXIT, function _exit exists, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE__NSGETEXECUTABLEPATH" class="forbidden">
+MAGICKCORE_HAVE__NSGETEXECUTABLEPATH, not used for benchmark, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE__WFOPEN" class="forbidden">
+MAGICKCORE_HAVE__WFOPEN, function _wfopen not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE___ATTRIBUTE__" class="forbidden">
+MAGICKCORE_HAVE___ATTRIBUTE__, __attribute__ not used in benchmark, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_HDRI_SUPPORT" class="forbidden">
+MAGICKCORE_HDRI_SUPPORT, not used in becnhmark, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_INSTALLED_SUPPORT" class="forbidden">
+MAGICKCORE_INSTALLED_SUPPORT, not used for benchmark, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_LCMS_DELEGATE" class="forbidden">
+MAGICKCORE_LCMS_DELEGATE, do not use LCMS library, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_LIBRARY_PATH" class="forbidden">
+MAGICKCORE_LIBRARY_PATH, set path, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_LIBRARY_RELATIVE_PATH" class="forbidden">
+MAGICKCORE_LIBRARY_RELATIVE_PATH, set relative path, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_LQR_DELEGATE" class="forbidden">
+MAGICKCORE_LQR_DELEGATE, do not use LQR library, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_LTDL_DELEGATE" class="forbidden">
+MAGICKCORE_LTDL_DELEGATE, do not use libltdl, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_MODULES_SUPPORT" class="forbidden">
+MAGICKCORE_MODULES_SUPPORT, not used.
+</flag>
+
+<flag name="DMAGICKCORE_NAMESPACE_PREFIX" class="forbidden">
+MAGICKCORE_NAMESPACE_PREFIX, sets api prefix, not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_OPENCL_SUPPORT" class="forbidden">
+MAGICKCORE_OPENCL_SUPPORT, not doing opencl.
+</flag>
+
+<flag name="DMAGICKCORE_OPENMP_SUPPORT" class="forbidden">
+MAGICKCORE_OPENMP_SUPPORT, openmp, do not change.
+</flag>
+
+<flag name="DMAGICKCORE_PACKAGE_BUGREPORT" class="forbidden">
+MAGICKCORE_PACKAGE_BUGREPORT, where to send bugs, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_PACKAGE" class="forbidden">
+MAGICKCORE_PACKAGE, name of package, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_PACKAGE_NAME" class="forbidden">
+MAGICKCORE_PACKAGE_NAME, name of package, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_PACKAGE_STRING" class="forbidden">
+MAGICKCORE_PACKAGE_STRING, full name of package, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_PACKAGE_TARNAME" class="forbidden">
+MAGICKCORE_PACKAGE_TARNAME, name of tar file, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_PACKAGE_URL" class="forbidden">
+MAGICKCORE_PACKAGE_URL, package url, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_PACKAGE_VERSION" class="forbidden">
+MAGICKCORE_PACKAGE_VERSION, package version, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_VERSION" class="forbidden">
+MAGICKCORE_VERSION, version, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_POSIX_SUPPORT" class="forbidden">
+MAGICKCORE_POSIX_SUPPORT, posix assumed, in MagickCore.h.
+</flag>
+
+<flag name="DMAGICKWAND_POSIX_SUPPORT" class="forbidden">
+MAGICKWAND_POSIX_SUPPORT, posix assumed, in MagickWand.h.
+</flag>
+
+<flag name="DMAGICKCORE_QUANTUM_DEPTH" class="forbidden">
+MAGICKCORE_QUANTUM_DEPTH, pixel quantum is 16, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_QUANTUM_DEPTH_OBSOLETE_IN_H" class="forbidden">
+MAGICKCORE_QUANTUM_DEPTH_OBSOLETE_IN_H, pixel quantum is 16, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_RETSIGTYPE" class="forbidden">
+MAGICKCORE_RETSIGTYPE, set signal handlers return as void, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SELECT_TYPE_ARG1" class="forbidden">
+MAGICKCORE_SELECT_TYPE_ARG1, select arg 1 in type int, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SELECT_TYPE_ARG234" class="forbidden">
+MAGICKCORE_SELECT_TYPE_ARG234, select args 2, 3, 4 are type (fd_set *), in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SELECT_TYPE_ARG5" class="forbidden">
+MAGICKCORE_SELECT_TYPE_ARG5, select arg 5 type (struct timeval *), in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SHARE_PATH" class="forbidden">
+MAGICKCORE_SHARE_PATH, path name, not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SHARE_RELATIVE_PATH" class="forbidden">
+MAGICKCORE_SHARE_RELATIVE_PATH, path name, not used, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_OFF_T" class="forbidden">
+MAGICKCORE_SIZEOF_OFF_T, size of off_t is 8, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_SIGNED_INT" class="forbidden">
+MAGICKCORE_SIZEOF_SIGNED_INT, size of signed int is 4, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_SIGNED_LONG" class="forbidden">
+MAGICKCORE_SIZEOF_SIGNED_LONG, size of signed long is 4, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_SIGNED_LONG_LONG" class="forbidden">
+MAGICKCORE_SIZEOF_SIGNED_LONG_LONG, size of signed long long is 8, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_SIGNED_SHORT" class="forbidden">
+MAGICKCORE_SIZEOF_SIGNED_SHORT, size of signed short is 2, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_SIZE_T" class="forbidden">
+MAGICKCORE_SIZEOF_SIZE_T, size of size_t is 4, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_SSIZE_T" class="forbidden">
+MAGICKCORE_SIZEOF_SSIZE_T, size of ssize_t is 4, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_UNSIGNED_INT" class="forbidden">
+MAGICKCORE_SIZEOF_UNSIGNED_INT, size of unsigned int is 4, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_UNSIGNED_INTP" class="forbidden">
+MAGICKCORE_SIZEOF_UNSIGNED_INTP, size of unsigned int* is 4, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_UNSIGNED_LONG" class="forbidden">
+MAGICKCORE_SIZEOF_UNSIGNED_LONG, size of unsigned long is 4, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_UNSIGNED_LONG_LONG" class="forbidden">
+MAGICKCORE_SIZEOF_UNSIGNED_LONG_LONG, size of unsigned long long is 8, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_SIZEOF_UNSIGNED_SHORT" class="forbidden">
+MAGICKCORE_SIZEOF_UNSIGNED_SHORT, size of unsigned short is 2, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_STDC_HEADERS" class="forbidden">
+MAGICKCORE_STDC_HEADERS, ansi c headers, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_THREAD_SUPPORT" class="forbidden">
+MAGICKCORE_THREAD_SUPPORT, have posix threads, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_TIFF_DELEGATE" class="forbidden">
+MAGICKCORE_TIFF_DELEGATE not using tiff, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_WINDOWS_SUPPORT" class="forbidden">
+MAGICKCORE_WINDOWS_SUPPORT, windows support, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_WORDS_BIGENDIAN" class="forbidden">
+MAGICKCORE_WORDS_BIGENDIAN, system endianess, shouldn't be needed, in
+magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE_ZLIB_DELEGATE" class="forbidden">
+MAGICKCORE_ZLIB_DELEGATE, not using ZLIB, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE__FILE_OFFSET_BITS" class="forbidden">
+MAGICKCORE__FILE_OFFSET_BITS, set file offset to 64, in magick-config.h.
+</flag>
+
+<flag name="DMAGICKCORE__OPENCL" class="forbidden">
+MAGICKCORE__OPENCL, not used, in magick-config.h.
+</flag>
+
+<flag name="DMagickDLLCall" class="forbidden">
+MagickDLLCall, do not change.
+</flag>
+
+<flag name="DMaxTextExtent" class="forbidden">
+MaxTextExtent, do not change.
+</flag>
+
+<flag name="DPRE_R4_ICCCM" class="forbidden">
+PRE_R4_ICCCM, do not change.
+</flag>
+
+<flag name="DPRE_R5_ICCCM" class="forbidden">
+PRE_R5_ICCCM, do not change.
+</flag>
+
+<flag name="DPRE_R6_ICCCM" class="forbidden">
+PRE_R6_ICCCM, do not change.
+</flag>
+
+<flag name="DPWinGravity" class="forbidden">
+PWinGravity, do not change.
+</flag>
+
+<flag name="DP_tmpdir" class="forbidden">
+P_tmpdir, do not change.
+</flag>
+
+<flag name="DPixelCacheThreshold" class="forbidden">
+PixelCacheThreshold, do not change.
+</flag>
+
+<flag name="DSA_INTERRUPT" class="forbidden">
+SA_INTERRUPT, do not change.
+</flag>
+
+<flag name="DSSIZE_MAX" class="forbidden">
+SSIZE_MAX, do not change.
+</flag>
+
+<flag name="DSTDC_HEADERS" class="forbidden">
+STDC_HEADERS, do not change.
+</flag>
+
+<flag name="DSTDIN_FILENO" class="forbidden">
+STDIN_FILENO, do not change.
+</flag>
+
+<flag name="DTARGET_OS_IPHONE" class="forbidden">
+TARGET_OS_IPHONE, do not change.
+</flag>
+
+<flag name="DTMP_MAX" class="forbidden">
+TMP_MAX, do not change.
+</flag>
+
+<flag name="DWIN32" class="forbidden">
+WIN32, do not change.
+</flag>
+
+<flag name="DWIN64" class="forbidden">
+WIN64, do not change.
+</flag>
+
+<flag name="DWORDS_BIGENDIAN" class="forbidden">
+WORDS_BIGENDIAN, do not change.
+</flag>
+
+<flag name="DWindows95" class="forbidden">
+Windows95, do not change.
+</flag>
+
+<flag name="DX11_PREFERENCES_PATH" class="forbidden">
+X11_PREFERENCES_PATH, not used.
+</flag>
+
+<flag name="DXS_VERSION" class="forbidden">
+XS_VERSION, not used.
+</flag>
+
+<flag name="DXlibSpecificationRelease" class="forbidden">
+XlibSpecificationRelease, not sued.
+</flag>
+
+<flag name="Daccess" class="forbidden">
+access, do not change.
+</flag>
+
+<flag name="Dchdir" class="forbidden">
+chdir, do not change.
+</flag>
+
+<flag name="Dchsize" class="forbidden">
+chsize, do not change.
+</flag>
+
+<flag name="Dclose" class="forbidden">
+close, do not change.
+</flag>
+
+<flag name="Dclosedir" class="forbidden">
+closedir, do not change.
+</flag>
+
+<flag name="DcmsFLAGS_BLACKPOINTCOMPENSATION" class="forbidden">
+cmsFLAGS_BLACKPOINTCOMPENSATION, do not change.
+</flag>
+
+<flag name="Dconst" class="forbidden">
+const, do not change.
+</flag>
+
+<flag name="Dfdopen" class="forbidden">
+fdopen, do not change.
+</flag>
+
+<flag name="Dfileno" class="forbidden">
+fileno, do not change.
+</flag>
+
+<flag name="Dfprintf_l" class="forbidden">
+fprintf_l, do not change.
+</flag>
+
+<flag name="Dfseek" class="forbidden">
+fseek, do not change.
+</flag>
+
+<flag name="Dfstat" class="forbidden">
+fstat, do not change.
+</flag>
+
+<flag name="Dfsync" class="forbidden">
+fsync, do not change.
+</flag>
+
+<flag name="Dft_encoding_latin_1" class="forbidden">
+ft_encoding_latin_1, do not change.
+</flag>
+
+<flag name="Dftell" class="forbidden">
+ftell, do not change.
+</flag>
+
+<flag name="Dftruncate" class="forbidden">
+ftruncate, do not change.
+</flag>
+
+<flag name="Dgetcwd" class="forbidden">
+getcwd, do not change.
+</flag>
+
+<flag name="Dgetpid" class="forbidden">
+getpid, do not change.
+</flag>
+
+<flag name="Dgs_main_instance_DEFINED" class="forbidden">
+gs_main_instance_DEFINED, do not change.
+</flag>
+
+<flag name="Dhypot" class="forbidden">
+hypot, do not change.
+</flag>
+
+<flag name="Dinline" class="forbidden">
+inline, do not change.
+</flag>
+
+<flag name="Disatty" class="forbidden">
+isatty, do not change.
+</flag>
+
+<flag name="Dlocale_t" class="forbidden">
+locale_t, do not change.
+</flag>
+
+<flag name="Dlt_dlclose" class="forbidden">
+lt_dlclose, do not change.
+</flag>
+
+<flag name="Dlt_dlerror" class="forbidden">
+lt_dlerror, do not change.
+</flag>
+
+<flag name="Dlt_dlexit" class="forbidden">
+lt_dlexit, do not change.
+</flag>
+
+<flag name="Dlt_dlinit" class="forbidden">
+lt_dlinit, do not change.
+</flag>
+
+<flag name="Dlt_dlopen" class="forbidden">
+lt_dlopen, do not change.
+</flag>
+
+<flag name="Dlt_dlsetsearchpath" class="forbidden">
+lt_dlsetsearchpath, do not change.
+</flag>
+
+<flag name="Dlt_dlsym" class="forbidden">
+lt_dlsym, do not change.
+</flag>
+
+<flag name="Dmagick_attribute" class="forbidden">
+magick_attribute, do not change.
+</flag>
+
+<flag name="Dmkdir" class="forbidden">
+mkdir, do not change.
+</flag>
+
+<flag name="Dmmap" class="forbidden">
+mmap, do not change.
+</flag>
+
+<flag name="Dmsync" class="forbidden">
+msync, do not change.
+</flag>
+
+<flag name="Dmunmap" class="forbidden">
+munmap, do not change.
+</flag>
+
+<flag name="Dopen" class="forbidden">
+open, do not change.
+</flag>
+
+<flag name="Dopendir" class="forbidden">
+opendir, do not change.
+</flag>
+
+<flag name="Dpclose" class="forbidden">
+pclose, do not change.
+</flag>
+
+<flag name="Dpopen" class="forbidden">
+popen, do not change.
+</flag>
+
+<flag name="Dread" class="forbidden">
+read, do not change.
+</flag>
+
+<flag name="Dreaddir" class="forbidden">
+readdir, do not change.
+</flag>
+
+<flag name="Drestrict" class="forbidden">
+restrict, do not change.
+</flag>
+
+<flag name="Dseekdir" class="forbidden">
+seekdir, do not change.
+</flag>
+
+<flag name="Dsetmode" class="forbidden">
+setmode, do not change.
+</flag>
+
+<flag name="Dspawnvp" class="forbidden">
+spawnvp, do not change.
+</flag>
+
+<flag name="Dstat" class="forbidden">
+stat, do not change.
+</flag>
+
+<flag name="Dstrcasecmp" class="forbidden">
+strcasecmp, do not change.
+</flag>
+
+<flag name="Dstrncasecmp" class="forbidden">
+strncasecmp, do not change.
+</flag>
+
+<flag name="Dstrtod_l" class="forbidden">
+strtod_l, do not change.
+</flag>
+
+<flag name="Dsysconf" class="forbidden">
+sysconf, do not change.
+</flag>
+
+<flag name="Dtelldir" class="forbidden">
+telldir, do not change.
+</flag>
+
+<flag name="Dtempnam" class="forbidden">
+tempnam, do not change.
+</flag>
+
+<flag name="Dvfprintf_l" class="forbidden">
+vfprintf_l, do not change.
+</flag>
+
+<flag name="Dvms" class="forbidden">
+vms, do not change.
+</flag>
+
+<flag name="Dvsnprintf" class="forbidden">
+vsnprintf, do not change.
+</flag>
+
+<flag name="Dvsnprintf_l" class="forbidden">
+vsnprintf_l , do not change.
+</flag>
+
+<flag name="Dwrite" class="forbidden">
+write, do not change.
+</flag>
+
+<flag name="Dwstat" class="forbidden">
+wstat, do not change.
+</flag>
+
+<flag name="DKEY_WOW64_32KEY" class="forbidden">
+  This macro is not used in the benchmark sources and may not be set.
+</flag>
+
+<flag name="DProvideDllMain" class="forbidden">
+  This macro is defined when building ImageMagick DLLs on Windows.  It is not used
+  in the benchmark sources and may not be set.
+</flag>
+
+<flag name="bench_implicit" class="forbidden" regexp="[-/]D(?:MAGICK_PIXEL_(?:BGRA|RGBA)|_CH_|__CHAR_UNSIGNED__|_DEBUG|_DLL|_LIB|_MAGICKCORE_POSIX_SUPPORT_VERSION|_MAGICKDLL_|_MAGICKLIB_|_MAGICKMOD_|_POSIX_PTHREAD_SEMANTICS|MAGICK_TARGET_CPU|_DARWIN_USE_64_BIT_INODE|MAGICKWAND_WINDOWS_SUPPORT)(?:=\S*)?\b">
+These flags are set implicitly by the benchmark sources and may not be
+set explicitly.
+<example>
+-D_CH_=XXX,
+-D__CHAR_UNSIGNED__=XXX,
+-D_DEBUG=XXX,
+-D_DLL=XXX,
+-D_LIB=XXX,
+-D_MAGICKCORE_POSIX_SUPPORT_VERSION=XXX,
+-D_MAGICKDLL_=XXX,
+-D_MAGICKLIB_=XXX,
+-D_MAGICKMOD_=XXX,
+-D_POSIX_PTHREAD_SEMANTICS=XXX,
+-DMAGICK_PIXEL_BGRA,
+-DMAGICK_PIXEL_RGBA,
+-DMAGICK_TARGET_CPU=XXX,
+-D_DARWIN_USE_64_BIT_INODE,
+-DMAGICKWAND_WINDOWS_SUPPORT
+</example>
+</flag>
+
+<flag name="DMAGICKCORE_CLPERFMARKER" class="forbidden">
+  This macro is used to enable OpenCL perf markers, and may not be used for reportable runs.
+</flag>
+
+<flag name="C99math" regexp="[-/]DMAGICKCORE_HAVE_(?:ACOSH|ASINH|ATANH|ISNAN)\b" class="forbidden">
+<example>
+  -DMAGICKCORE_HAVE_ACOSH,
+  -DMAGICKCORE_HAVE_ASINH,
+  -DMAGICKCORE_HAVE_ATANH,
+  -DMAGICKCORE_HAVE_ISNAN
+</example>
+These macros are used to indicate the availablilty of some standard C99 math
+functions.  Unless explicitly disabled by their SPEC_NO_whatever counterparts,
+they are defined by default.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_POSIX_FALLOCATE" class="forbidden">
+  This macro causes the posix_fallocate() function to be used in a couple of
+  places; in the benchmark the only effect might be to slow execution down
+  a little bit.  It may not be used for reportable runs.
+</flag>
+
+<flag name="DMAGICKCORE_HAVE_SOCKET" class="forbidden">
+  This macro causes the distributed pixel cache server to be enabled.  The
+  benchmark should not use any kind of pixel cache other than in main memory,
+  but this option still may not be used for a reportable run.
+</flag>
+
+<flag name="DMAGICKCORE_ZERO_CONFIGURATION_SUPPORT" class="forbidden">
+  The MAGICKCORE_ZERO_CONFIGURATION_SUPPORT causes the memory allocation
+  routines to change completely.  It may not be used in a reportable run.
+</flag>
+
+<!-- Flags that won't be described -->
+<!-- ECANCELED is being ignored; it's just an error code that some systems have -->
+<!-- FC_FULLNAME is being ignored; it has no effect on the build or the run -->
+<!-- FT_BBOX_H is being ignored; it guards against multiple header inclusion -->
+<!-- FT_FREETYPE_H is being ignored; it guards against multiple header inclusion -->
+<!-- FT_GLYPH_H is being ignored; it guards against multiple header inclusion -->
+<!-- FT_LOAD_TARGET_LCD is being ignored; no text is drawn as part of the benchmark -->
+<!-- FT_LOAD_TARGET_LIGHT is being ignored; no text is drawn as part of the benchmark -->
+<!-- FT_OUTLINE_H is being ignored; it guards against multiple header inclusion -->
+<!-- HDRI_SUPPORT is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_AUTOTRACE_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_CAIRO_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_CODER_DIRNAME is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_DJVU_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_DPS_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_EMF_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_FILTER_DIRNAME is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_FPX_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_GVC_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_HAVE_HUGEPAGES is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_HDRI_ENABLE is being ignored; it can't be set by the user -->
+<!-- MAGICKCORE_HDRI_ENABLE_OBSOLETE_IN_H is being ignored; it can't be set by the user -->
+<!-- MAGICKCORE_INCLUDEARCH_PATH is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_INCLUDE_PATH is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_JBIG_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_JPEG_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_LIBOPENJP2_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_LIBRARY_NAME is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_LIB_BIN_BASEDIRNAME is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_LT_OBJDIR is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_LZMA_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_MODULES_BASEDIRNAME is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_MODULES_DIRNAME is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_MODULES_PATH is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_MODULES_RELATIVE_PATH is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_OPENEXR_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_PANGOCAIRO_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_PNG_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_RSVG_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_SHAREARCH_BASEDIRNAME is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_SHAREARCH_DIRNAME is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_SHAREARCH_PATH is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_SHAREARCH_RELATIVE_PATH is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_SIZEOF_DOUBLE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_SIZEOF_DOUBLE_T is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_SIZEOF_FLOAT is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_SIZEOF_FLOAT_T is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_SIZEOF_LONG_DOUBLE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_STRERROR_R_CHAR_P is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_WEBP_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_WINGDI32_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_WMFLITE_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_WMF_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_X11_CONFIGURE_PATH is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_X11_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAGICKCORE_XML_DELEGATE is being ignored; it has no effect in the benchmark -->
+<!-- MAP_ANON is being ignored; it is supplied by the compilation environment -->
+<!-- MAP_ANONYMOUS is being ignored; it is supplied by the compilation environment -->
+<!-- MAP_FAILED is being ignored; it is supplied by the compilation environment -->
+<!-- MAP_HUGETLB is being ignored; it is supplied by the compilation environment -->
+<!-- MSG_NOSIGNAL is being ignored; it is set implicitly by the compilation system -->
+<!-- OPENCLLOG_ENABLED is being ignored; it has no effect in the benchmark -->
+<!-- O_BINARY is being ignored; it is supplied by the compilation environment -->
+<!-- O_NOFOLLOW is being ignored; it is supplied by the compilation environment -->
+<!-- PATH_MAX is being ignored; it is supplied by the compilation environment -->
+<!-- PTHREAD_MUTEX_ERRORCHECK is being ignored; it is set implicitly by the compilation system -->
+<!-- RECREATEBUFFER is being ignored; it has no effect in the benchmark -->
+<!-- RLIMIT_NOFILE is being ignored; it is supplied by the compilation environment -->
+<!-- RUSAGE_SELF is being ignored; it is supplied by the compilation environment -->
+<!-- SIGABRT is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGBUS is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGFPE is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGHUP is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGINT is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGMAX is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGPIPE is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGQUIT is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGSEGV is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGTERM is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGXCPU is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIGXFSZ is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIG_DFL is being ignored; it is the name of a signal supplied by the system -->
+<!-- SIG_ERR is being ignored; it is the name of a signal supplied by the system -->
+<!-- S_IRUSR is being ignored; it is supplied by the compilation environment -->
+<!-- S_ISDIR is being ignored; it is supplied by the compilation environment -->
+<!-- S_ISFIFO is being ignored; it is supplied by the compilation environment -->
+<!-- S_ISREG is being ignored; it is supplied by the compilation environment -->
+<!-- S_IWUSR is being ignored; it is supplied by the compilation environment -->
+<!-- _ALL_SOURCE is being ignored; it is set implicitly by the compilation system -->
+<!-- _GNU_SOURCE is being ignored; it is set implicitly by the compilation system -->
+<!-- _MAGICKCORE_ACCELERATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_ACCELERATE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_ANIMATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_ANIMATE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_ANNOTATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_API_DEPRECATED_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_ARTIFACT_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_ATTRIBUTE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_BLOB_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_BLOB_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CACHE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CACHE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CACHE_VIEW_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CHANNEL_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CIPHER_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CLIENT_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CODER_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_COLORMAP_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_COLORMAP_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_COLORSPACE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_COLORSPACE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_COLOR_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_COLOR_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_COMPARE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_COMPOSITE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_COMPOSITE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_COMPRESS_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CONFIGURE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CONFIG_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CONSTITUTE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_CORE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DECORATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DELEGATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DELEGATE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DEPRECATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DISPLAY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DISPLAY_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DISTORT_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DISTRIBUTE_CACHE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DISTRIBUTE_CACHE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DRAW_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_DRAW_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_EFFECT_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_ENHANCE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_EXCEPTION_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_EXCEPTION_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_FEATURE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_FFT_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_FX_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_FX_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_GEM_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_GEM_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_GEOMETRY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_HASHMAP_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_HISTOGRAM_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_IDENTIFY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_IMAGEMAGICK_DEPRECATED_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_IMAGE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_IMAGE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_LAYER_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_LIST_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_LOCALE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_LOG_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MAGICK_CONFIG_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MAGICK_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MAGICK_TYPE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MAGIC_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MATRIX_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MEMORY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MEMORY_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_METHOD_ATTRIBUTE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_METHOD_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MODULE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MONITOR_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MONTAGE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_MORPHOLOGY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_NT_BASE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_NT_BASE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_NT_FEATURE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_OPENCL_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_OPENCL_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_OPTION_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_PAINT_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_PIXEL_ACCESSOR_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_PIXEL_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_PIXEL_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_POLICY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_PREPRESS_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_PRER5ICCCM_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_PROFILE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_PROPERTY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_QUANTIZE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_QUANTUM_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_QUANTUM_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_RANDOM_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_RANDOM__H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_REGISTRY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_RESAMPLE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_RESAMPLE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_RESIZE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_RESIZE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_RESOURCE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_SEGMENT_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_SEMAPHORE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_SEMAPHORE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_SHEAR_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_SIGNATURE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_SIGNATURE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_SPLAY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_STATIC_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_STATISTIC_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_STREAM_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_STREAM_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_STRING_H_ is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_STRING_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_STUDIO_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_THREAD_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_THREAD_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_THRESHOLD_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_TIMER_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_TOKEN_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_TOKEN_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_TRANSFORM_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_TYPE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_UTILITY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_UTILITY_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_VERSION_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_VERSION_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_WIDGET_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_XML_TREE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_XML_TREE_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_XWINDOW_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKCORE_XWINDOW_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKIMAGE_IMAGE_VIEW_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_ANIMATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_COMPARE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_COMPOSITE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_CONFIG_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_CONJURE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_CONVERT_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_DEPRECATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_DISPLAY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_DRAWING_WAND_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_IDENTIFY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_IMPORT_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_MAGICK_IMAGE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_MAGICK_PROPERTY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_MAGICK_WAND_DEPRECATED_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_MAGICK_WAND_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_METHOD_ATTRIBUTE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_MOGRIFY_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_MOGRIFY_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_MONTAGE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_PIXEL_ITERATOR_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_PIXEL_WAND_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_PIXEL_WAND_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_STREAM_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_STUDIO_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_WAND_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICKWAND_WAND_VIEW_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICK_MAGICK_BASECONFIG_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICK_MIME_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICK_MONITOR_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICK_MORPHOLOGY_PRIVATE_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MAGICK_WAND_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MIME_MIME_H is being ignored; it guards against multiple header inclusion -->
+<!-- _MSC_VER is being ignored; it is set implicitly by the compilation system -->
+<!-- _MT is being ignored; it is set implicitly by the compilation system -->
+<!-- _OPENCL is being ignored; it is set implicitly by the compilation system -->
+<!-- _OPENMP is being ignored; it is set implicitly by the compilation system -->
+<!-- _SC_OPEN_MAX is being ignored; it is set implicitly by the compilation system -->
+<!-- _SC_PAGE_SIZE is being ignored; it is set implicitly by the compilation system -->
+<!-- _SC_PHYS_PAGES is being ignored; it is set implicitly by the compilation system -->
+<!-- _TANDEM_SOURCE is being ignored; it is set implicitly by the compilation system -->
+<!-- _VISUALC_ is being ignored; it is set implicitly by the compilation system -->
+<!-- _WIN32 is being ignored; it is set implicitly by the compilation system -->
+<!-- _WIN64 is being ignored; it is set implicitly by the compilation system -->
+<!-- _WINDOWS is being ignored; it is set implicitly by the compilation system -->
+<!-- __APPLE__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __BEOS__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __BIG_ENDIAN__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __BORLANDC__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __CYGWIN32__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __CYGWIN__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __DJGPP__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __EXTENSIONS__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __GNUC_MINOR__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __GNUC__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __GNU__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __ICC is being ignored; it is set implicitly by the compilation system -->
+<!-- __MINGW32__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __MINGW64__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __MSDOS__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __MSVCRT_VERSION__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __OPENCC__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __OS2__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __OpenBSD__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __RESTRICT is being ignored; it is set implicitly by the compilation system -->
+<!-- __STDC_VERSION__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __STDC__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __SUNPRO_CC is being ignored; it is set implicitly by the compilation system -->
+<!-- __VMS is being ignored; it is set implicitly by the compilation system -->
+<!-- __apple_build_version__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __clang__ is being ignored; it is set implicitly by the compilation system -->
+<!-- __cplusplus is being ignored; it is set implicitly by the compilation system -->
+<!-- c_plusplus is being ignored; it is set implicitly by the compilation system -->
+<!-- macintosh is being ignored; it is set implicitly by the compilation system -->
+<!-- powerpc is being ignored; it is set implicitly by the compilation system -->
+
+</flagsdescription>

@@ -1,0 +1,312 @@
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+extern struct
+{
+  CCTK_REAL AlphaDriver;
+  CCTK_REAL BetaDriver;
+  CCTK_REAL EpsDiss;
+  CCTK_REAL LapseACoeff;
+  CCTK_REAL LapseAdvectionCoeff;
+  CCTK_REAL MinimumLapse;
+  CCTK_REAL ShiftAdvectionCoeff;
+  CCTK_REAL ShiftBCoeff;
+  CCTK_REAL ShiftGammaCoeff;
+  CCTK_REAL SpatialBetaDriverRadius;
+  CCTK_REAL SpatialShiftGammaCoeffRadius;
+  CCTK_REAL harmonicF;
+  const char * UseSpatialBetaDriver;
+  const char * calculate_ADMBase_variables_at;
+  const char * my_initial_boundary_condition;
+  const char * my_rhs_boundary_condition;
+  CCTK_INT ML_BSSN_Advect_calc_every;
+  CCTK_INT ML_BSSN_Advect_calc_offset;
+  CCTK_INT ML_BSSN_Dissipation_calc_every;
+  CCTK_INT ML_BSSN_Dissipation_calc_offset;
+  CCTK_INT ML_BSSN_InitGamma_calc_every;
+  CCTK_INT ML_BSSN_InitGamma_calc_offset;
+  CCTK_INT ML_BSSN_InitRHS_calc_every;
+  CCTK_INT ML_BSSN_InitRHS_calc_offset;
+  CCTK_INT ML_BSSN_MaxNumArrayEvolvedVars;
+  CCTK_INT ML_BSSN_MaxNumEvolvedVars;
+  CCTK_INT ML_BSSN_Minkowski_calc_every;
+  CCTK_INT ML_BSSN_Minkowski_calc_offset;
+  CCTK_INT ML_BSSN_RHSStaticBoundary_calc_every;
+  CCTK_INT ML_BSSN_RHSStaticBoundary_calc_offset;
+  CCTK_INT ML_BSSN_RHS_calc_every;
+  CCTK_INT ML_BSSN_RHS_calc_offset;
+  CCTK_INT ML_BSSN_boundary_calc_every;
+  CCTK_INT ML_BSSN_boundary_calc_offset;
+  CCTK_INT ML_BSSN_constraints_calc_every;
+  CCTK_INT ML_BSSN_constraints_calc_offset;
+  CCTK_INT ML_BSSN_convertFromADMBaseGamma_calc_every;
+  CCTK_INT ML_BSSN_convertFromADMBaseGamma_calc_offset;
+  CCTK_INT ML_BSSN_convertFromADMBase_calc_every;
+  CCTK_INT ML_BSSN_convertFromADMBase_calc_offset;
+  CCTK_INT ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_every;
+  CCTK_INT ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_offset;
+  CCTK_INT ML_BSSN_convertToADMBaseDtLapseShift_calc_every;
+  CCTK_INT ML_BSSN_convertToADMBaseDtLapseShift_calc_offset;
+  CCTK_INT ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_every;
+  CCTK_INT ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_offset;
+  CCTK_INT ML_BSSN_convertToADMBase_calc_every;
+  CCTK_INT ML_BSSN_convertToADMBase_calc_offset;
+  CCTK_INT ML_BSSN_enforce_calc_every;
+  CCTK_INT ML_BSSN_enforce_calc_offset;
+  CCTK_INT ShiftAlphaPower;
+  CCTK_INT conformalMethod;
+  CCTK_INT fdOrder;
+  CCTK_INT harmonicN;
+  CCTK_INT harmonicShift;
+  CCTK_INT other_timelevels;
+  CCTK_INT rhs_timelevels;
+  CCTK_INT timelevels;
+  CCTK_INT verbose;
+} RESTRICTED_ML_BSSN_STRUCT;
+
+#ifdef __cplusplus
+}
+#endif
+
+#define DECLARE_RESTRICTED_ML_BSSN_STRUCT_PARAMS \
+  CCTK_DECLARE_INIT (CCTK_REAL const, AlphaDriver, CCTK_PARAMETER__ML_BSSN__AlphaDriver); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, BetaDriver, CCTK_PARAMETER__ML_BSSN__BetaDriver); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, EpsDiss, CCTK_PARAMETER__ML_BSSN__EpsDiss); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, LapseACoeff, CCTK_PARAMETER__ML_BSSN__LapseACoeff); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, LapseAdvectionCoeff, CCTK_PARAMETER__ML_BSSN__LapseAdvectionCoeff); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, MinimumLapse, CCTK_PARAMETER__ML_BSSN__MinimumLapse); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, ShiftAdvectionCoeff, CCTK_PARAMETER__ML_BSSN__ShiftAdvectionCoeff); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, ShiftBCoeff, CCTK_PARAMETER__ML_BSSN__ShiftBCoeff); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, ShiftGammaCoeff, CCTK_PARAMETER__ML_BSSN__ShiftGammaCoeff); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, SpatialBetaDriverRadius, CCTK_PARAMETER__ML_BSSN__SpatialBetaDriverRadius); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, SpatialShiftGammaCoeffRadius, CCTK_PARAMETER__ML_BSSN__SpatialShiftGammaCoeffRadius); \
+  CCTK_DECLARE_INIT (CCTK_REAL const, harmonicF, CCTK_PARAMETER__ML_BSSN__harmonicF); \
+  CCTK_DECLARE_INIT (const char * const, UseSpatialBetaDriver, CCTK_PARAMETER__ML_BSSN__UseSpatialBetaDriver); \
+  CCTK_DECLARE_INIT (const char * const, calculate_ADMBase_variables_at, CCTK_PARAMETER__ML_BSSN__calculate_ADMBase_variables_at); \
+  CCTK_DECLARE_INIT (const char * const, my_initial_boundary_condition, CCTK_PARAMETER__ML_BSSN__my_initial_boundary_condition); \
+  CCTK_DECLARE_INIT (const char * const, my_rhs_boundary_condition, CCTK_PARAMETER__ML_BSSN__my_rhs_boundary_condition); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_Advect_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_Advect_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_Advect_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_Advect_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_Dissipation_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_Dissipation_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_Dissipation_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_Dissipation_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_InitGamma_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitGamma_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_InitGamma_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitGamma_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_InitRHS_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitRHS_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_InitRHS_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitRHS_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_MaxNumArrayEvolvedVars, CCTK_PARAMETER__ML_BSSN__ML_BSSN_MaxNumArrayEvolvedVars); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_MaxNumEvolvedVars, CCTK_PARAMETER__ML_BSSN__ML_BSSN_MaxNumEvolvedVars); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_Minkowski_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_Minkowski_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_Minkowski_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_Minkowski_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_RHSStaticBoundary_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHSStaticBoundary_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_RHSStaticBoundary_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHSStaticBoundary_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_RHS_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHS_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_RHS_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHS_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_boundary_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_boundary_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_boundary_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_boundary_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_constraints_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_constraints_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_constraints_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_constraints_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertFromADMBaseGamma_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBaseGamma_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertFromADMBaseGamma_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBaseGamma_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertFromADMBase_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBase_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertFromADMBase_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBase_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertToADMBaseDtLapseShift_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShift_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertToADMBaseDtLapseShift_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShift_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertToADMBase_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBase_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_convertToADMBase_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBase_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_enforce_calc_every, CCTK_PARAMETER__ML_BSSN__ML_BSSN_enforce_calc_every); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ML_BSSN_enforce_calc_offset, CCTK_PARAMETER__ML_BSSN__ML_BSSN_enforce_calc_offset); \
+  CCTK_DECLARE_INIT (CCTK_INT const, ShiftAlphaPower, CCTK_PARAMETER__ML_BSSN__ShiftAlphaPower); \
+  CCTK_DECLARE_INIT (CCTK_INT const, conformalMethod, CCTK_PARAMETER__ML_BSSN__conformalMethod); \
+  CCTK_DECLARE_INIT (CCTK_INT const, fdOrder, CCTK_PARAMETER__ML_BSSN__fdOrder); \
+  CCTK_DECLARE_INIT (CCTK_INT const, harmonicN, CCTK_PARAMETER__ML_BSSN__harmonicN); \
+  CCTK_DECLARE_INIT (CCTK_INT const, harmonicShift, CCTK_PARAMETER__ML_BSSN__harmonicShift); \
+  CCTK_DECLARE_INIT (CCTK_INT const, other_timelevels, CCTK_PARAMETER__ML_BSSN__other_timelevels); \
+  CCTK_DECLARE_INIT (CCTK_INT const, rhs_timelevels, CCTK_PARAMETER__ML_BSSN__rhs_timelevels); \
+  CCTK_DECLARE_INIT (CCTK_INT const, timelevels, CCTK_PARAMETER__ML_BSSN__timelevels); \
+  CCTK_DECLARE_INIT (CCTK_INT const, verbose, CCTK_PARAMETER__ML_BSSN__verbose); \
+
+
+#ifndef CCTK_PARAMETER__ML_BSSN__AlphaDriver
+#  define CCTK_PARAMETER__ML_BSSN__AlphaDriver RESTRICTED_ML_BSSN_STRUCT.AlphaDriver
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__BetaDriver
+#  define CCTK_PARAMETER__ML_BSSN__BetaDriver RESTRICTED_ML_BSSN_STRUCT.BetaDriver
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__EpsDiss
+#  define CCTK_PARAMETER__ML_BSSN__EpsDiss RESTRICTED_ML_BSSN_STRUCT.EpsDiss
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__LapseACoeff
+#  define CCTK_PARAMETER__ML_BSSN__LapseACoeff RESTRICTED_ML_BSSN_STRUCT.LapseACoeff
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__LapseAdvectionCoeff
+#  define CCTK_PARAMETER__ML_BSSN__LapseAdvectionCoeff RESTRICTED_ML_BSSN_STRUCT.LapseAdvectionCoeff
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__MinimumLapse
+#  define CCTK_PARAMETER__ML_BSSN__MinimumLapse RESTRICTED_ML_BSSN_STRUCT.MinimumLapse
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ShiftAdvectionCoeff
+#  define CCTK_PARAMETER__ML_BSSN__ShiftAdvectionCoeff RESTRICTED_ML_BSSN_STRUCT.ShiftAdvectionCoeff
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ShiftBCoeff
+#  define CCTK_PARAMETER__ML_BSSN__ShiftBCoeff RESTRICTED_ML_BSSN_STRUCT.ShiftBCoeff
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ShiftGammaCoeff
+#  define CCTK_PARAMETER__ML_BSSN__ShiftGammaCoeff RESTRICTED_ML_BSSN_STRUCT.ShiftGammaCoeff
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__SpatialBetaDriverRadius
+#  define CCTK_PARAMETER__ML_BSSN__SpatialBetaDriverRadius RESTRICTED_ML_BSSN_STRUCT.SpatialBetaDriverRadius
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__SpatialShiftGammaCoeffRadius
+#  define CCTK_PARAMETER__ML_BSSN__SpatialShiftGammaCoeffRadius RESTRICTED_ML_BSSN_STRUCT.SpatialShiftGammaCoeffRadius
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__harmonicF
+#  define CCTK_PARAMETER__ML_BSSN__harmonicF RESTRICTED_ML_BSSN_STRUCT.harmonicF
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__UseSpatialBetaDriver
+#  define CCTK_PARAMETER__ML_BSSN__UseSpatialBetaDriver RESTRICTED_ML_BSSN_STRUCT.UseSpatialBetaDriver
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__calculate_ADMBase_variables_at
+#  define CCTK_PARAMETER__ML_BSSN__calculate_ADMBase_variables_at RESTRICTED_ML_BSSN_STRUCT.calculate_ADMBase_variables_at
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__my_initial_boundary_condition
+#  define CCTK_PARAMETER__ML_BSSN__my_initial_boundary_condition RESTRICTED_ML_BSSN_STRUCT.my_initial_boundary_condition
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__my_rhs_boundary_condition
+#  define CCTK_PARAMETER__ML_BSSN__my_rhs_boundary_condition RESTRICTED_ML_BSSN_STRUCT.my_rhs_boundary_condition
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_Advect_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_Advect_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_Advect_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_Advect_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_Advect_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_Advect_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_Dissipation_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_Dissipation_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_Dissipation_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_Dissipation_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_Dissipation_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_Dissipation_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitGamma_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitGamma_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_InitGamma_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitGamma_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitGamma_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_InitGamma_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitRHS_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitRHS_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_InitRHS_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitRHS_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_InitRHS_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_InitRHS_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_MaxNumArrayEvolvedVars
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_MaxNumArrayEvolvedVars RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_MaxNumArrayEvolvedVars
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_MaxNumEvolvedVars
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_MaxNumEvolvedVars RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_MaxNumEvolvedVars
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_Minkowski_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_Minkowski_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_Minkowski_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_Minkowski_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_Minkowski_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_Minkowski_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHSStaticBoundary_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHSStaticBoundary_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_RHSStaticBoundary_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHSStaticBoundary_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHSStaticBoundary_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_RHSStaticBoundary_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHS_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHS_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_RHS_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHS_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_RHS_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_RHS_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_boundary_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_boundary_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_boundary_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_boundary_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_boundary_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_boundary_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_constraints_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_constraints_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_constraints_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_constraints_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_constraints_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_constraints_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBaseGamma_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBaseGamma_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertFromADMBaseGamma_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBaseGamma_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBaseGamma_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertFromADMBaseGamma_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBase_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBase_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertFromADMBase_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBase_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertFromADMBase_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertFromADMBase_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertToADMBaseDtLapseShiftBoundary_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShift_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShift_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertToADMBaseDtLapseShift_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShift_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseDtLapseShift_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertToADMBaseDtLapseShift_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertToADMBaseFakeDtLapseShift_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBase_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBase_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertToADMBase_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBase_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_convertToADMBase_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_convertToADMBase_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_enforce_calc_every
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_enforce_calc_every RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_enforce_calc_every
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ML_BSSN_enforce_calc_offset
+#  define CCTK_PARAMETER__ML_BSSN__ML_BSSN_enforce_calc_offset RESTRICTED_ML_BSSN_STRUCT.ML_BSSN_enforce_calc_offset
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__ShiftAlphaPower
+#  define CCTK_PARAMETER__ML_BSSN__ShiftAlphaPower RESTRICTED_ML_BSSN_STRUCT.ShiftAlphaPower
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__conformalMethod
+#  define CCTK_PARAMETER__ML_BSSN__conformalMethod RESTRICTED_ML_BSSN_STRUCT.conformalMethod
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__fdOrder
+#  define CCTK_PARAMETER__ML_BSSN__fdOrder RESTRICTED_ML_BSSN_STRUCT.fdOrder
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__harmonicN
+#  define CCTK_PARAMETER__ML_BSSN__harmonicN RESTRICTED_ML_BSSN_STRUCT.harmonicN
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__harmonicShift
+#  define CCTK_PARAMETER__ML_BSSN__harmonicShift RESTRICTED_ML_BSSN_STRUCT.harmonicShift
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__other_timelevels
+#  define CCTK_PARAMETER__ML_BSSN__other_timelevels RESTRICTED_ML_BSSN_STRUCT.other_timelevels
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__rhs_timelevels
+#  define CCTK_PARAMETER__ML_BSSN__rhs_timelevels RESTRICTED_ML_BSSN_STRUCT.rhs_timelevels
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__timelevels
+#  define CCTK_PARAMETER__ML_BSSN__timelevels RESTRICTED_ML_BSSN_STRUCT.timelevels
+#endif
+#ifndef CCTK_PARAMETER__ML_BSSN__verbose
+#  define CCTK_PARAMETER__ML_BSSN__verbose RESTRICTED_ML_BSSN_STRUCT.verbose
+#endif
+

@@ -1,0 +1,5 @@
+rm -rf *.o  bwaves_1.out bwaves_2.out
+find . \( -name \*.o -o -name '*.fppized.f*' -o -name '*.i' -o -name '*.mod' \) -print | xargs rm -rf
+rm -rf speed_bwaves
+rm -rf speed_bwaves.exe
+rm -rf core

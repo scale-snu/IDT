@@ -1,0 +1,580 @@
+ Process Information:
+
+ Process Information:
+ Process Information:
+
+
+ Process Information:
+
+
+
+
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+                          
+                          
+                          
+ Model Input Parameters:  ROMS/TOMS version 3.2  
+ -----------------------------------------------------------------------------
+                          
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+
+
+
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+
+ Version adapted for spec, built without netcdf
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+
+ Version adapted for spec, built without netcdf
+ Benchmark Test, Idealized Southern Ocean, Large Grid
+ Operating system : 
+ Version adapted for spec, built without netcdf
+ CPU/hardware     : 
+
+
+ Compiler system  : 
+ Version adapted for spec, built without netcdf
+ Compiler command : 
+ Operating system : 
+
+ Compiler flags   : 
+ CPU/hardware     : 
+ Operating system : 
+ CPU/hardware     : 
+
+ Compiler system  : 
+ Operating system : 
+ Compiler system  : 
+ Compiler command : 
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+ Compiler command : 
+ Compiler flags   : 
+ CPU/hardware     : 
+
+ SVN Revision  : 405M
+ Compiler system  : 
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+
+ Compiler flags   : 
+ Compiler command : 
+ SVN Revision  : 405M
+ Local Root    : 
+
+
+ Compiler flags   : 
+ Header Dir    : 
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+
+ Local Root    : 
+ Header file   : benchmark.h
+ SVN Root URL  : https://www.myroms.org/svn/src/trunk
+ Header Dir    : 
+ SVN Revision  : 405M
+ Analytical Dir: 
+ Header file   : benchmark.h
+
+ SVN Revision  : 405M
+
+ Analytical Dir: 
+ Local Root    : 
+ Local Root    : 
+ Header Dir    : 
+ Header Dir    : 
+ Header file   : benchmark.h
+
+ Header file   : benchmark.h
+ Analytical Dir: 
+
+ Analytical Dir: 
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+
+
+
+
+
+
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+ Physical Parameters, Grid: 01
+ Resolution, Grid 01: 2048x0512x040,  Parallel Threads:  0,  Tiling: 000x000
+ Physical Parameters, Grid: 01
+ =============================
+ =============================
+
+
+
+
+
+
+ Physical Parameters, Grid: 01
+ Physical Parameters, Grid: 01
+ =============================
+        100  ntimes          Number of timesteps for 3-D equations.
+        100  ntimes          Number of timesteps for 3-D equations.
+
+ =============================
+
+        100  ntimes          Number of timesteps for 3-D equations.
+        100  ntimes          Number of timesteps for 3-D equations.
+     50.000  dt              Timestep size (s) for 3-D equations.
+     50.000  dt              Timestep size (s) for 3-D equations.
+     50.000  dt              Timestep size (s) for 3-D equations.
+     50.000  dt              Timestep size (s) for 3-D equations.
+         20  ndtfast         Number of timesteps for 2-D equations between
+                               each 3D timestep.
+         20  ndtfast         Number of timesteps for 2-D equations between
+         20  ndtfast         Number of timesteps for 2-D equations between
+                               each 3D timestep.
+          1  ERstr           Starting ensemble/perturbation run number.
+                               each 3D timestep.
+         20  ndtfast         Number of timesteps for 2-D equations between
+          1  ERend           Ending ensemble/perturbation run number.
+          1  ERstr           Starting ensemble/perturbation run number.
+          0  nrrec           Number of restart records to read from disk.
+                               each 3D timestep.
+          1  ERstr           Starting ensemble/perturbation run number.
+          1  ERend           Ending ensemble/perturbation run number.
+          1  ERend           Ending ensemble/perturbation run number.
+          1  ERstr           Starting ensemble/perturbation run number.
+          0  nrrec           Number of restart records to read from disk.
+          0  nrrec           Number of restart records to read from disk.
+          1  ERend           Ending ensemble/perturbation run number.
+          T  LcycleRST       Switch to recycle time-records in restart file.
+          0  nrrec           Number of restart records to read from disk.
+       1000  nRST            Number of timesteps between the writing of data
+          T  LcycleRST       Switch to recycle time-records in restart file.
+                               into restart fields.
+          T  LcycleRST       Switch to recycle time-records in restart file.
+       1000  nRST            Number of timesteps between the writing of data
+          1  ninfo           Number of timesteps between print of information
+       1000  nRST            Number of timesteps between the writing of data
+                               into restart fields.
+                               to standard output.
+          T  LcycleRST       Switch to recycle time-records in restart file.
+                               into restart fields.
+          1  ninfo           Number of timesteps between print of information
+          T  ldefout         Switch to create a new output NetCDF file(s).
+                               to standard output.
+       1000  nRST            Number of timesteps between the writing of data
+          1  ninfo           Number of timesteps between print of information
+       1000  nHIS            Number of timesteps between the writing fields
+                               into restart fields.
+                               to standard output.
+          T  ldefout         Switch to create a new output NetCDF file(s).
+                               into history file.
+          1  ninfo           Number of timesteps between print of information
+          T  ldefout         Switch to create a new output NetCDF file(s).
+       1000  nHIS            Number of timesteps between the writing fields
+                               to standard output.
+                               into history file.
+       1000  nHIS            Number of timesteps between the writing fields
+          T  ldefout         Switch to create a new output NetCDF file(s).
+                               into history file.
+       1000  nHIS            Number of timesteps between the writing fields
+                               into history file.
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 01: temp
+                               for tracer 01: temp
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(01)        Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 02: salt
+                               for tracer 01: temp
+                               for tracer 01: temp
+                               for tracer 02: salt
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+ 5.0000E+02  tnu2(02)        Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 02: salt
+                               for momentum.
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+                               for tracer 02: salt
+                               for momentum.
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+ 5.0000E+03  visc2           Horizontal, harmonic mixing coefficient (m2/s)
+                               for momentum.
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+                               for tracer 01: temp
+                               for momentum.
+                               for tracer 01: temp
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(01)     Background vertical mixing coefficient (m2/s)
+                               for tracer 02: salt
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+                               for tracer 01: temp
+                               for tracer 01: temp
+                               for tracer 02: salt
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+                               for momentum.
+ 1.0000E-05  Akt_bak(02)     Background vertical mixing coefficient (m2/s)
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+                               for tracer 02: salt
+                               for momentum.
+                               for tracer 02: salt
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+                               for momentum.
+ 1.0000E-04  Akv_bak         Background vertical mixing coefficient (m2/s)
+                               for momentum.
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 2.0000E-02  Zob             Bottom roughness (m).
+ 3.0000E-04  rdrg            Linear bottom drag coefficient (m/s).
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 2.0000E-02  Zob             Bottom roughness (m).
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 3.0000E-03  rdrg2           Quadratic bottom drag coefficient.
+ 2.0000E-02  Zob             Bottom roughness (m).
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 2.0000E-02  Zob             Bottom roughness (m).
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+ 1.0000E+01  blk_ZQ          Height (m) of surface air humidity measurement.
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+          1  lmd_Jwt         Jerlov water type.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+ 1.0000E+01  blk_ZT          Height (m) of surface air temperature measurement.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+          1  Vtransform      S-coordinate transformation equation.
+          1  lmd_Jwt         Jerlov water type.
+ 1.0000E+01  blk_ZW          Height (m) of surface winds measurement.
+          1  Vstretching     S-coordinate stretching function.
+          1  Vtransform      S-coordinate transformation equation.
+          1  lmd_Jwt         Jerlov water type.
+          1  lmd_Jwt         Jerlov water type.
+          1  Vstretching     S-coordinate stretching function.
+          1  Vtransform      S-coordinate transformation equation.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+          1  Vtransform      S-coordinate transformation equation.
+          1  Vstretching     S-coordinate stretching function.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+          1  Vstretching     S-coordinate stretching function.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+ 5.0000E+00  theta_s         S-coordinate surface control parameter.
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+ 4.0000E-01  theta_b         S-coordinate bottom  control parameter.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+                               in vertical coordinate stretching.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+                               in vertical coordinate stretching.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+                               in vertical coordinate stretching.
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+    200.000  Tcline          S-coordinate surface/bottom layer width (m) used
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+                               in vertical coordinate stretching.
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+   1025.000  rho0            Mean density (kg/m3) for Boussinesq approximation.
+      0.000  dstart          Time-stamp assigned to model initialization (days).
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+       0.00  time_ref        Reference time for units attribute (yyyymmdd.dd)
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+                               for tracer 01: temp
+                               for tracer 01: temp
+                               for tracer 01: temp
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+ 0.0000E+00  Tnudg(01)       Nudging/relaxation time scale (days)
+                               for tracer 02: salt
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+                               for tracer 02: salt
+                               for tracer 01: temp
+                               for tracer 02: salt
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+                               for free-surface.
+ 0.0000E+00  Tnudg(02)       Nudging/relaxation time scale (days)
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+                               for free-surface.
+                               for tracer 02: salt
+                               for free-surface.
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+                               for 2D momentum.
+ 0.0000E+00  Znudg           Nudging/relaxation time scale (days)
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+                               for 2D momentum.
+                               for free-surface.
+                               for 2D momentum.
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+                               for 3D momentum.
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+ 0.0000E+00  M2nudg          Nudging/relaxation time scale (days)
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+                               for 3D momentum.
+                               for 2D momentum.
+                               for 3D momentum.
+ 0.0000E+00  obcfac          Factor between passive and active
+ 0.0000E+00  obcfac          Factor between passive and active
+                               open boundary conditions.
+ 0.0000E+00  M3nudg          Nudging/relaxation time scale (days)
+ 0.0000E+00  obcfac          Factor between passive and active
+                               open boundary conditions.
+                               for 3D momentum.
+                               open boundary conditions.
+     10.000  T0              Background potential temperature (C) constant.
+     10.000  T0              Background potential temperature (C) constant.
+ 0.0000E+00  obcfac          Factor between passive and active
+     10.000  T0              Background potential temperature (C) constant.
+                               open boundary conditions.
+     35.000  S0              Background salinity (PSU) constant.
+     35.000  S0              Background salinity (PSU) constant.
+     35.000  S0              Background salinity (PSU) constant.
+     10.000  T0              Background potential temperature (C) constant.
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+                                                    no-slip (-1.0).
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+                                                    no-slip (-1.0).
+     35.000  S0              Background salinity (PSU) constant.
+                                                    no-slip (-1.0).
+
+
+
+      1.000  gamma2          Slipperiness variable: free-slip (1.0) or 
+ Output/Input Files:
+ Output/Input Files:
+ Output/Input Files:
+
+
+                                                    no-slip (-1.0).
+
+
+ Output/Input Files:
+
+             Output Restart File:  ocean_rst.nc
+             Output Restart File:  ocean_rst.nc
+             Output Restart File:  ocean_rst.nc
+             Output Restart File:  ocean_rst.nc
+
+
+ Activated C-preprocessing Options:
+ Activated C-preprocessing Options:
+
+
+
+ Activated C-preprocessing Options:
+
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ ALBEDO              Shortwave radiation from albedo equation.
+ ALBEDO              Shortwave radiation from albedo equation.
+ ALBEDO              Shortwave radiation from albedo equation.
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_CLOUD           Analytical cloud fraction.
+ ANA_GRID            Analytical grid set-up.
+ ANA_GRID            Analytical grid set-up.
+ ANA_GRID            Analytical grid set-up.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ ANA_INITIAL         Analytical initial conditions.
+ ANA_INITIAL         Analytical initial conditions.
+ ANA_PAIR            Analytical surface air pressure.
+ ANA_PAIR            Analytical surface air pressure.
+ ANA_RAIN            Analytical rain fall rate.
+ ANA_RAIN            Analytical rain fall rate.
+ ANA_INITIAL         Analytical initial conditions.
+
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ Activated C-preprocessing Options:
+ ANA_PAIR            Analytical surface air pressure.
+
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ ANA_RAIN            Analytical rain fall rate.
+ ANA_WINDS           Analytical surface wind components.
+ ANA_WINDS           Analytical surface wind components.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ BENCHMARK           Benchmark Test, Idealized Southern Ocean, Large Grid
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ ALBEDO              Shortwave radiation from albedo equation.
+ ANA_WINDS           Analytical surface wind components.
+ ANA_BSFLUX          Analytical kinematic bottom salinity flux.
+ CURVGRID            Orthogonal curvilinear grid.
+ CURVGRID            Orthogonal curvilinear grid.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ ANA_BTFLUX          Analytical kinematic bottom temperature flux.
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ ANA_CLOUD           Analytical cloud fraction.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ CURVGRID            Orthogonal curvilinear grid.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ ANA_GRID            Analytical grid set-up.
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ EW_PERIODIC         East-West periodic boundaries.
+ EW_PERIODIC         East-West periodic boundaries.
+ ANA_HUMIDITY        Analytical surface air humidity.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ ANA_INITIAL         Analytical initial conditions.
+ EW_PERIODIC         East-West periodic boundaries.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ ANA_PAIR            Analytical surface air pressure.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ ANA_RAIN            Analytical rain fall rate.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ ANA_SRFLUX          Analytical kinematic shortwave radiation flux.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ LMD_SKPP            KPP surface boundary layer mixing.
+ LMD_SKPP            KPP surface boundary layer mixing.
+ ANA_SSFLUX          Analytical kinematic surface salinity flux.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ LONGWAVE            Compute net longwave radiation internally.
+ LONGWAVE            Compute net longwave radiation internally.
+ ANA_WINDS           Analytical surface wind components.
+ LMD_SKPP            KPP surface boundary layer mixing.
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ LONGWAVE            Compute net longwave radiation internally.
+ ASSUMED_SHAPE       Using assumed-shape arrays.
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ BULK_FLUXES         Surface bulk fluxes parametererization.
+ NONLINEAR           Nonlinear Model.
+ NONLINEAR           Nonlinear Model.
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ CURVGRID            Orthogonal curvilinear grid.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ DJ_GRADPS           Parabolic Splines density Jacobian (Shchepetkin, 2002).
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ DOUBLE_PRECISION    Double precision arithmetic.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ EW_PERIODIC         East-West periodic boundaries.
+ PROFILE             Time profiling activated .
+ PROFILE             Time profiling activated .
+ NONLINEAR           Nonlinear Model.
+ LMD_CONVEC          LMD convective mixing due to shear instability.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ LMD_MIXING          Large/McWilliams/Doney interior mixing.
+ SALINITY            Using salinity.
+ SALINITY            Using salinity.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ LMD_NONLOCAL        LMD convective nonlocal transport.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ LMD_RIMIX           LMD diffusivity due to shear instability.
+ SOLVE3D             Solving 3D Primitive Equations.
+ SOLVE3D             Solving 3D Primitive Equations.
+ PROFILE             Time profiling activated .
+ LMD_SKPP            KPP surface boundary layer mixing.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ LONGWAVE            Compute net longwave radiation internally.
+ SPLINES             Conservative parabolic spline reconstruction.
+ SPLINES             Conservative parabolic spline reconstruction.
+ SALINITY            Using salinity.
+ MIX_GEO_TS          Mixing of tracers along geopotential surfaces.
+ SPHERICAL           Spherical grid configuration.
+ SPHERICAL           Spherical grid configuration.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ MIX_S_UV            Mixing of momentum along constant S-surfaces.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ SOLVE3D             Solving 3D Primitive Equations.
+ NONLINEAR           Nonlinear Model.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ NONLIN_EOS          Nonlinear Equation of State for seawater.
+ TS_DIF2             Harmonic mixing of tracers.
+ TS_DIF2             Harmonic mixing of tracers.
+ SPLINES             Conservative parabolic spline reconstruction.
+ NORTHERN_WALL       Wall boundary at Northern edge.
+ UV_ADV              Advection of momentum.
+ UV_ADV              Advection of momentum.
+ SPHERICAL           Spherical grid configuration.
+ POWER_LAW           Power-law shape time-averaging barotropic filter.
+ UV_COR              Coriolis term.
+ UV_COR              Coriolis term.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ PROFILE             Time profiling activated .
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ !RST_SINGLE         Double precision fields in restart NetCDF file.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ TS_DIF2             Harmonic mixing of tracers.
+ SALINITY            Using salinity.
+ UV_QDRAG            Quadratic bottom stress.
+ UV_QDRAG            Quadratic bottom stress.
+ UV_ADV              Advection of momentum.
+ SOLAR_SOURCE        Solar Radiation Source Term.
+ UV_VIS2             Harmonic mixing of momentum.
+ UV_VIS2             Harmonic mixing of momentum.
+ UV_COR              Coriolis term.
+ SOLVE3D             Solving 3D Primitive Equations.
+ VAR_RHO_2D          Variable density barotropic mode.
+ VAR_RHO_2D          Variable density barotropic mode.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ SOUTHERN_WALL       Wall boundary at Southern edge.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ SPLINES             Conservative parabolic spline reconstruction.
+ SPHERICAL           Spherical grid configuration.
+ UV_QDRAG            Quadratic bottom stress.
+ TS_U3HADVECTION     Third-order upstream horizontal advection of tracers.
+ UV_VIS2             Harmonic mixing of momentum.
+ TS_C4VADVECTION     Fourth-order centered vertical advection of tracers.
+ VAR_RHO_2D          Variable density barotropic mode.
+ TS_DIF2             Harmonic mixing of tracers.
+ UV_ADV              Advection of momentum.
+ UV_COR              Coriolis term.
+ UV_U3HADVECTION     Third-order upstream horizontal advection of 3D momentum.
+ UV_C4VADVECTION     Fourth-order centered vertical advection of momentum.
+ UV_QDRAG            Quadratic bottom stress.
+ UV_VIS2             Harmonic mixing of momentum.
+ VAR_RHO_2D          Variable density barotropic mode.

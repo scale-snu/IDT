@@ -1,0 +1,1 @@
+/scale/cal/home-interns/jschang0215/IDT-Kernel/scripts/gdb/vmlinux-gdb.py

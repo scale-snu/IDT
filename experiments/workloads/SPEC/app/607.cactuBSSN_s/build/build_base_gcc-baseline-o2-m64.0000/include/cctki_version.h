@@ -1,0 +1,7 @@
+#ifndef _CCTKI_VERSION_H_
+#define _CCTKI_VERSION_H_
+#define CCTK_VERSION_MAJOR 4
+#define CCTK_VERSION_MINOR 2
+#define CCTK_VERSION_OTHER 1
+#define CCTK_VERSION       4.2.1
+#endif /* _CCTKI_VERSION_H_ */

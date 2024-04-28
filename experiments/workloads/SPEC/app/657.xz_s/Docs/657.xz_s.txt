@@ -1,0 +1,141 @@
+                                    657.xz_s
+                       SPEC CPU2017 Benchmark Description
+
+  Benchmark Name
+
+   657.xz_s
+
+  Benchmark Author
+
+   Lasse Collin <lasse.collin at tukaani.org> is the author of XZ Utils
+
+   Igor Pavlov wrote key portions of the compression algorithm, according to
+   the [1]references.
+
+   Jindrich Novy wrote pxz, which is used by the SPEC version to provide
+   parallelism when multiple OpenMP threads are available.
+
+  Benchmark Program General Category
+
+   Data compression
+
+  Benchmark Description
+
+   657.xz_s is based directly on Lasse Collin's XZ Utils 5.0.5, with these
+   differences: it incorporates pxz; performs no file I/O other than reading
+   the input; does all compression and decompression entirely in memory; and
+   prefers generic portable routines rather than platform-specific routines.
+   As usual for SPEC CPU, the intent is to measure the compute-intensive
+   portion of a real application, while minimizing IO; thereby focusing on
+   the performance of the CPU, memory, and compiler.
+
+  Input Description
+
+   Inputs for 657.xz_s are XZ-compressed files containing the data that will
+   be compressed during the test. The reference (timed) workloads use three
+   components: a tar archive of HTML documentation and some supporting
+   images; a database of ClamAV malware signatures; and an input file with
+   combined text and image data. All three have highly compressible sections
+   and incompressible sections.
+
+   Parameters for each test are taken from the command line. In order, they
+   are:
+
+    1. filename -- name of the compressed input file
+    2. input buffer size in MiB -- size to perform compression on
+    3. SHA-512 hash of input contents -- the input files are compressed; this
+       allows for verification that the decompression was performed properly
+    4. minimum compressed size -- expected minimum size of compressed data;
+       may be set to -1 to disable compressed size checking
+    5. maximum compressed size -- expected maximum size of compressed data;
+       only used if minimum compressed size is >= 0
+    6. compression level -- a number from 0-9, optionally followed by an "e"
+       for "extreme" compression mode
+
+   The refrate workload (for 557.xz_r) is invoked with these parameters:
+       Input file      Buffer     Minimum        Maximum     Compression
+                        (MiB)                                   level
+   cld.tar.xz          160     59,796,407     61,004,416     6
+   cpu2006docs.tar.xz  250     23,047,774     23,513,385     6e
+   input.combined.xz   250     40,401,484     41,217,675     7
+   The refspeed workload (for 657.xz_s) uses:
+       Input file      Buffer     Minimum        Maximum     Compression
+                        (MiB)                                   level
+   cpu2006docs.tar.xz  6643    1,036,078,272  1,111,795,472  4
+   cld.tar.xz          1400    536,995,164    539,938,872    8
+
+   Command lines are constructed by the run harness from the contents of the
+   control file. Adding new workloads is quite simple; it's just a file of
+   data to be compressed and an entry for that file in the control file.
+
+   Each input set is initially decompressed and the SHA-512 sum of the
+   decompression is verified against the one specified on the command line.
+   Then that input is duplicated (or truncated) until its size matches what
+   was requested on the command line. It's then compressed using the XZ
+   preset ("compression level") requested on the command line. Verification
+   of compressed size is output, if compressed size checking is enabled.
+   (Compressed data size may vary slightly depending on the number of threads
+   used to do compression.) That compressed data is then decompressed and its
+   SHA-512 sum calculated and compared to the one generated during the
+   initial load. Doing the comparison in this way reduces the
+   verification-related memory access for the benchmark, as well as its
+   memory footprint.
+
+   About memory usage: The second parameter selects the size of a buffer that
+   will be the input to the compression phase. The total virtual memory used
+   by the benchmark will be larger. On one particular platform tested by
+   SPEC, the total memory for 557.xz_r and 657.xz_s was about
+
+ (2 * the buffer size) + (0.5 to 1.0 GiB)
+
+   Your usage may vary, depending on (among other things): compiler options,
+   operating system, and the number of OpenMP threads.
+
+  Output Description
+
+   The output files provide a brief outline of what the benchmark is doing as
+   it runs. Output sizes for each compression and decompression are printed
+   to facilitate validation, and the results of decompression are compared
+   with the input data to ensure that they match.
+
+  Programming Language
+
+   ISO C99
+
+  Threading Model
+
+   OpenMP for speed workload
+
+  Known portability issues
+
+   None
+
+  Sources and Licensing
+
+   The benchmark is based on XZ Utils 5.0.5, which is Public Domain. It
+   includes a modified version of Jindrich Novy's [2]pxz, which is licensed
+   under GPLv2 or later. SPEC started from pxz revision [3]ae80846 from 18
+   October 2014. Additional components added by SPEC are mentioned at [4]SPEC
+   CPU2017 Licenses.
+
+  References
+
+     * [5]"Lempel-Ziv-Markov_chain_algorithm" on [6]Wikipedia
+     * [7]XZ Utils home page
+     * [8]7-Zip home page
+
+   Last updated: $Date: 2017-06-22 11:26:34 -0400 (Thu, 22 Jun 2017) $
+
+
+
+References
+
+   Visible links
+   1. 657.xz_s.html#ref
+   2. https://github.com/jnovy/pxz
+   3. https://github.com/jnovy/pxz/tree/ae808463c2950edfdedb8fb49f95006db0a18667
+   4. https://www.spec.org/cpu2017/Docs/licenses.html#bmk657.xz_s
+   5. http://en.wikipedia.org/wiki/Lempel-Ziv-Markov_chain_algorithm
+   6. http://wikipedia.org/
+   7. http://www.tukaani.org/xz/
+   8. http://www.7-zip.org/

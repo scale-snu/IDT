@@ -1,0 +1,49 @@
+specinvoke r4356
+ Invoked as: /home/ybmoon/cpu2017/bin/specinvoke -d /home/ybmoon/cpu2017/benchspec/CPU/603.bwaves_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+timer ticks over every 1000 ns
+ Environment in effect for these runs:
+ # 1: SSH_CONNECTION=10.1.0.3 49786 192.168.101.48 22
+ # 2: PINPATH=/scale/cal/home/ybmoon/tools/pin-2.14-71313-gcc.4.4.7-linux
+ # 3: TERM=xterm
+ # 4: SPECDB_PWD=/home/ybmoon/cpu2017
+ # 5: POLARSSLPATH=/scale/cal/home/ybmoon/tools/polarssl-1.2.3_source
+ # 6: CLASSPATH=.:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar
+ # 7: SPECPERLLIB=/home/ybmoon/cpu2017/bin/lib:/home/ybmoon/cpu2017/bin
+ # 8: CB_MULTI_GO=0
+ # 9: USER=ybmoon
+ #10: TF_FAM=/home/ybmoon/kernel_FAM/linux-5.3.18-fam
+ #11: LOGNAME=ybmoon
+ #12: LD_LIBRARY_PATH=/usr/lib64/:/usr/lib/:/lib64
+ #13: LC_ALL=C
+ #14: MVN_HOME=/scale/cal/home/ybmoon/maven
+ #15: GOPATH=/scale/cal/home/ybmoon/go
+ #16: XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+ #17: LIBC_FATAL_STDERR_=1
+ #18: SSH_CLIENT=10.1.0.3 49786 22
+ #19: LANG=en_US.UTF-8
+ #20: OMP_STACKSIZE=120M
+ #21: JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ #22: M2_HOME=/scale/cal/home/ybmoon/local/apache-maven-3.5.4
+ #23: MAIL=/var/mail/ybmoon
+ #24: XDG_SESSION_ID=3
+ #25: SPEC=/home/ybmoon/cpu2017
+ #26: LIBRARY_PATH=:/scale/cal/home/ybmoon/local/lib
+ #27: SHLVL=1
+ #28: LIBCONFIGPATH=/scale/cal/home/ybmoon/tools/libconfig-1.7.2
+ #29: SSH_TTY=/dev/pts/2
+ #30: LC_LANG=C
+ #31: PKG_CONFIG_PATH=/scale/cal/home/ybmoon/local/lib/opencv4
+ #32: FAM_CODE=/scale/cal/home/ybmoon/hynix/kernel_FAM/linux-5.3.18-fam/fam/net/client
+ #33: XDG_RUNTIME_DIR=/run/user/1022
+ #34: DISPLAY=localhost:11.0
+ #35: PWD=/home/ybmoon/cpu2017
+ #36: PATH=/home/ybmoon/cpu2017/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/dell/srvadmin/bin:/usr/local/bin
+ #37: JDK_PATH=/usr/lib/jvm/java-9-openjdk-amd64
+ #38: SHELL=/bin/bash
+ #39: HOME=/scale/cal/home/ybmoon
+ #40: OMP_NUM_THREADS=1
+ #41: OMP_THREAD_LIMIT=1
+running commands in speccmds.cmd 1 times
+runs started at		1636036942, 405754000, Thu Nov  4 23:42:22 2021
+run 1 started at	1636036942, 405787000, Thu Nov  4 23:42:22 2021
+child started: 0,	1636036942, 405799000, pid=25684, '../run_base_refspeed_gcc-baseline-o2-m64.0000/speed_bwaves_base.gcc-baseline-o2-m64 bwaves_1 < bwaves_1.in > bwaves_1.out 2>> bwaves_1.err'

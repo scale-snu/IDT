@@ -1,0 +1,53 @@
+include Makefile.conf
+include MakeDepend
+
+SOURCES := $(shell cat Srcfiles)
+OBJS    := $(addsuffix .o, $(basename $(SOURCES)))
+SRCNETCDF := $(shell cat netcdf/Srcfiles)
+OBJNETCDF := $(addprefix netcdf/, $(addsuffix .o, $(basename $(SRCNETCDF))))
+
+MLIBS	:=
+SLIBS	:= 
+EXEC_SE := roms.exe$(version)
+
+all:	NETCDF $(EXEC_SE)
+
+$(EXEC_SE): NETCDF $(OBJS) 
+	$(LD) -o $(EXEC_SE) $(OBJS) $(OBJNETCDF) $(SLIBS) $(MLIBS) $(LDFLAGS)
+
+NETCDF:	
+	cd netcdf; \
+	$(MAKE) all; \
+	cp -p *.$(MOD_SUFFIX) ..; \
+	cd ..
+
+list:
+	@echo " Sources=$(SOURCES)"
+	@echo " Objects=$(OBJS)"
+
+netcdf/netcdf.o:	NETCDF
+
+.SUFFIXES:
+.SUFFIXES: .F90 .c .o
+
+.F90.o:
+	$(FC) -c $(INCLDIR) $(INCS) $(FFLAGS) $(FREEFLAGS)  $<
+
+.c.o:
+	$(CC) -c $(INCLDIR) $(INCS) $(CFLAGS)  $<
+
+.F.o:
+	$(FC) -c $(INCLDIR) $(INCS) $(FFLAGS) $(FIXEDFLAGS) $<
+
+.f90.o:
+	$(FC) -c $(INCLDIR) $(INCS) $(FFLAGS) $(FREEFLAGS)  $<
+
+mostlyclean:
+	$(RM) -f *.f *.f90
+
+clean:
+	$(RM) -f *.f *.f90 *.d *.$(MOD_SUFFIX) $(OBJS)
+	cd netcdf; \
+        $(MAKE) clean; \
+	cd ..
+

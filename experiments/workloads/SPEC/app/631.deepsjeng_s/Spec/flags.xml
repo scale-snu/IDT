@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE flagsdescription SYSTEM
+       "http://www.spec.org/dtd/cpuflags2.dtd">
+
+<!-- This file defines portability flags in 631.deepsjeng_s.
+
+  Copyright 2016 Standard Performance Evaluation Corporation
+
+  $Revision: 5674 $
+  $Date: 2017-05-05 17:29:02 -0400 (Fri, 05 May 2017) $
+-->
+<flagsdescription>
+
+<filename>631.deepsjeng_s.flags</filename>
+
+<title>631.deepsjeng_s Flags</title>
+
+<header>
+<![CDATA[
+<p>These are flags that appear in the benchmark sources, categorized as to
+   whether they are portability candidates, mandatory, or forbidden.</p>
+]]>
+</header>
+
+
+<flag name="DBIG_MEMORY" class="mandatory">
+<![CDATA[
+<p>The speed version of deepsjeng is compiled with BIG_MEMORY, and uses around 10x as much memory as the rate version.
+   Having more memory allows more information to be stored about every position, notably if there are threats, or if
+   there is only one good move. This information then causes some positions to be investigated deeper, which means it
+   will take longer to reach the same search depth, but the result will be more accurate.</p>
+
+<p>BIG_MEMORY is required when building the speed version of deepsjeng.  It is set by object.pm, and must not be set in the
+   user config file.</p>
+]]>
+
+</flag>
+
+<flag name="DSMALL_MEMORY" class="mandatory">
+<![CDATA[
+   <p>SMALL_MEMORY causes allocation of around 700 MiB of memory.  Compare to BIG_MEMORY.  </p>
+   <p>The SMALL_MEMORY flag
+      is required when building the rate version of deepsjeng.  It is set by object.pm, and must not be set on the user config file.</p>
+]]>
+</flag>
+
+<flag name="DWIN32" class="forbidden">
+Do not set WIN32; use SPEC_WINDOWS instead (automatically supplied when compiling under 'runcpu')
+</flag>
+
+<flag name="DWIN64" class="forbidden">
+Do not set WIN64; use SPEC_WINDOWS instead (automatically supplied when compiling under 'runcpu')
+</flag>
+
+<flag name="D_MSC_VER" class="forbidden">
+_MSC_VER disables some warnings.  It is set by the compiler, and you should not set it from the command line. 
+</flag>
+
+
+<flag name="DCOPYPROTECTION" class="forbidden">
+COPYPROTECTION causes information to be printed about move timing.  It is not used in the SPEC version of deepsjeng.
+</flag>
+
+
+<flag name="DEVAL_DEBUG" class="forbidden">
+EVAL_DEBUG may be useful during a debug effort.  It is not allowed for reportable runs.
+</flag>
+
+
+<flag name="DPAWN_EVAL_DEBUG" class="forbidden">
+PAWN_EVAL_DEBUG may be useful during a debug effort.  It is not allowed for reportable runs.
+</flag>
+
+<!-- ATTACKS_H is being ignored: it is a header guard -->
+<!-- BITBOARD_H is being ignored: it is a header guard -->
+<!-- BITS_H is being ignored: it is a header guard -->
+<!-- BOARD_H is being ignored: it is a header guard -->
+<!-- DRAW_H is being ignored: it is a header guard -->
+<!-- ENDGAME_H is being ignored: it is a header guard -->
+<!-- EPD_H is being ignored: it is a header guard -->
+<!-- EVPAR_H is being ignored: it is a header guard -->
+<!-- GENERATE_H is being ignored: it is a header guard -->
+<!-- INITP_H is being ignored: it is a header guard -->
+<!-- MAKE_H is being ignored: it is a header guard -->
+<!-- MOVES_H is being ignored: it is a header guard -->
+<!-- NEVAL_H is being ignored: it is a header guard -->
+<!-- PAWN_H is being ignored: it is a header guard -->
+<!-- PREPROC_H is being ignored: it is a header guard -->
+<!-- SEARCH_H is being ignored: it is a header guard -->
+<!-- SEE_H is being ignored: it is a header guard -->
+<!-- SJENG_H is being ignored: it is a header guard -->
+<!-- STATE_H is being ignored: it is a header guard -->
+<!-- TTABLE_H is being ignored: it is a header guard -->
+<!-- UTILS_H is being ignored: it is a header guard -->
+
+
+
+</flagsdescription>

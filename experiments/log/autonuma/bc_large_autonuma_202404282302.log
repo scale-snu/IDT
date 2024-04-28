@@ -1,0 +1,466 @@
+Execution File:   ./workloads/GAPBS/bin/bc
+Num of Programs:  8
+Program Path:     ./workloads/GAPBS/bin/
+Progarm Options:  ./workloads/GAPBS/bin/bc
+i:1, argv[5]:-f
+option1:-f
+i:2, argv[6]:/home/ybmoon/workloads/gapbs-data/twitter.sg
+option2:/home/ybmoon/workloads/gapbs-data/twitter.sg
+i:3, argv[7]:-i4
+option3:-i4
+i:4, argv[8]:-n16
+option4:-n16
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 1
+Directory [1]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 2
+Directory [2]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 3
+Directory [3]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 4
+Directory [4]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 5
+Directory [5]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 6
+Directory [6]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 7
+Directory [7]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Process Start
+Process Start
+Process Start
+Execution END: -1
+Execution Time (4) => 748292.00 ns
+Execution File:   ./workloads/GAPBS/bin/bc
+Num of Programs:  8
+Program Path:     ./workloads/GAPBS/bin/
+Progarm Options:  ./workloads/GAPBS/bin/bc
+i:1, argv[5]:-f
+option1:-f
+i:2, argv[6]:/home/ybmoon/workloads/gapbs-data/twitter.sg
+option2:/home/ybmoon/workloads/gapbs-data/twitter.sg
+i:3, argv[7]:-i4
+option3:-i4
+i:4, argv[8]:-n16
+option4:-n16
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 1
+Directory [1]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 2
+Directory [2]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 3
+Directory [3]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 4
+Directory [4]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 5
+Directory [5]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 6
+Directory [6]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 7
+Directory [7]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Process Start
+Process Start
+Process Start
+Execution END: -1
+Execution Time (2) => 734841.00 ns
+Execution File:   ./workloads/GAPBS/bin/bc
+Num of Programs:  8
+Program Path:     ./workloads/GAPBS/bin/
+Progarm Options:  ./workloads/GAPBS/bin/bc
+i:1, argv[5]:-f
+option1:-f
+i:2, argv[6]:/home/ybmoon/workloads/gapbs-data/twitter.sg
+option2:/home/ybmoon/workloads/gapbs-data/twitter.sg
+i:3, argv[7]:-i4
+option3:-i4
+i:4, argv[8]:-n16
+option4:-n16
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 1
+Directory [1]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 2
+Directory [2]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 3
+Directory [3]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 4
+Directory [4]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 5
+Directory [5]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 6
+Directory [6]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 7
+Directory [7]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 17385
+Process Start
+Execution END: -1
+Execution Time (10) => 728398.00 ns
+Execution File:   ./workloads/GAPBS/bin/bc
+Num of Programs:  8
+Program Path:     ./workloads/GAPBS/bin/
+Progarm Options:  ./workloads/GAPBS/bin/bc
+i:1, argv[5]:-f
+option1:-f
+i:2, argv[6]:/home/ybmoon/workloads/gapbs-data/twitter.sg
+option2:/home/ybmoon/workloads/gapbs-data/twitter.sg
+i:3, argv[7]:-i4
+option3:-i4
+i:4, argv[8]:-n16
+option4:-n16
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 1
+Directory [1]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 2
+Directory [2]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 3
+Directory [3]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 4
+Directory [4]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 5
+Directory [5]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 6
+Directory [6]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 7
+Directory [7]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 17385
+Process Start
+Wait PID: 17387
+Execution END: -1
+Execution Time (12) => 519291.00 ns
+Execution File:   ./workloads/GAPBS/bin/bc
+Num of Programs:  8
+Program Path:     ./workloads/GAPBS/bin/
+Progarm Options:  ./workloads/GAPBS/bin/bc
+i:1, argv[5]:-f
+option1:-f
+i:2, argv[6]:/home/ybmoon/workloads/gapbs-data/twitter.sg
+option2:/home/ybmoon/workloads/gapbs-data/twitter.sg
+i:3, argv[7]:-i4
+option3:-i4
+i:4, argv[8]:-n16
+option4:-n16
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 1
+Directory [1]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 2
+Directory [2]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 3
+Directory [3]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 4
+Directory [4]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 5
+Directory [5]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 6
+Directory [6]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 7
+Directory [7]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 17385
+Process Start
+Wait PID: 17387
+Process Start
+Wait PID: 17389
+Process Start
+Execution END: -1
+Execution Time (18) => 697595.00 ns
+Execution File:   ./workloads/GAPBS/bin/bc
+Num of Programs:  8
+Program Path:     ./workloads/GAPBS/bin/
+Progarm Options:  ./workloads/GAPBS/bin/bc
+i:1, argv[5]:-f
+option1:-f
+i:2, argv[6]:/home/ybmoon/workloads/gapbs-data/twitter.sg
+option2:/home/ybmoon/workloads/gapbs-data/twitter.sg
+i:3, argv[7]:-i4
+option3:-i4
+i:4, argv[8]:-n16
+option4:-n16
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 1
+Directory [1]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 2
+Directory [2]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 3
+Directory [3]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 4
+Directory [4]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 5
+Directory [5]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 6
+Directory [6]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 7
+Directory [7]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 17385
+Process Start
+Wait PID: 17387
+Process Start
+Wait PID: 17389
+Process Start
+Execution Time (2) => 967952.00 ns
+Wait PID: 17391
+Execution Time (8) => 976344.00 ns
+Execution Time (6) => 991886.00 ns
+Process Start
+Execution END: -1
+Execution Time (22) => 573247.00 ns
+Execution File:   ./workloads/GAPBS/bin/bc
+Num of Programs:  8
+Program Path:     ./workloads/GAPBS/bin/
+Progarm Options:  ./workloads/GAPBS/bin/bc
+i:1, argv[5]:-f
+option1:-f
+i:2, argv[6]:/home/ybmoon/workloads/gapbs-data/twitter.sg
+option2:/home/ybmoon/workloads/gapbs-data/twitter.sg
+i:3, argv[7]:-i4
+option3:-i4
+i:4, argv[8]:-n16
+option4:-n16
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 1
+Directory [1]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 2
+Directory [2]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 3
+Directory [3]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 4
+Directory [4]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 5
+Directory [5]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 6
+Directory [6]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 7
+Directory [7]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 17385
+Process Start
+Wait PID: 17387
+Process Start
+Wait PID: 17389
+Process Start
+Execution Time (2) => 967952.00 ns
+Wait PID: 17391
+Execution Time (8) => 976344.00 ns
+Execution Time (6) => 991886.00 ns
+Process Start
+Execution Time (14) => 724712.00 ns
+Wait PID: 17395
+Wait PID: 17393
+Execution END: -1
+Execution Time (26) => 729742.00 ns
+Execution File:   ./workloads/GAPBS/bin/bc
+Num of Programs:  8
+Program Path:     ./workloads/GAPBS/bin/
+Progarm Options:  ./workloads/GAPBS/bin/bc
+i:1, argv[5]:-f
+option1:-f
+i:2, argv[6]:/home/ybmoon/workloads/gapbs-data/twitter.sg
+option2:/home/ybmoon/workloads/gapbs-data/twitter.sg
+i:3, argv[7]:-i4
+option3:-i4
+i:4, argv[8]:-n16
+option4:-n16
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 1
+Directory [1]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 2
+Directory [2]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 3
+Directory [3]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 4
+Directory [4]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 5
+Directory [5]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 6
+Directory [6]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 7
+Directory [7]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 17385
+Process Start
+Wait PID: 17387
+Process Start
+Wait PID: 17389
+Process Start
+Execution Time (2) => 967952.00 ns
+Wait PID: 17391
+Execution Time (8) => 976344.00 ns
+Execution Time (6) => 991886.00 ns
+Process Start
+Execution Time (14) => 724712.00 ns
+Wait PID: 17395
+Wait PID: 17393
+Execution Time (16) => 898861.00 ns
+Wait PID: 17396
+Execution END: -1
+Execution Time (28) => 675568.00 ns
+Execution File:   ./workloads/GAPBS/bin/bc
+Num of Programs:  8
+Program Path:     ./workloads/GAPBS/bin/
+Progarm Options:  ./workloads/GAPBS/bin/bc
+i:1, argv[5]:-f
+option1:-f
+i:2, argv[6]:/home/ybmoon/workloads/gapbs-data/twitter.sg
+option2:/home/ybmoon/workloads/gapbs-data/twitter.sg
+i:3, argv[7]:-i4
+option3:-i4
+i:4, argv[8]:-n16
+option4:-n16
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 1
+Directory [1]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 2
+Directory [2]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 3
+Directory [3]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 4
+Directory [4]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 5
+Directory [5]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 6
+Directory [6]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Core: 7
+Directory [7]:   ./workloads/GAPBS/bin/
+exe_path: ./workloads/GAPBS/bin/bc
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 17385
+Process Start
+Wait PID: 17387
+Process Start
+Wait PID: 17389
+Process Start
+Execution Time (2) => 967952.00 ns
+Wait PID: 17391
+Execution Time (8) => 976344.00 ns
+Execution Time (6) => 991886.00 ns
+Process Start
+Execution Time (14) => 724712.00 ns
+Wait PID: 17395
+Wait PID: 17393
+Execution Time (16) => 898861.00 ns
+Wait PID: 17396
+Execution Time (20) => 827104.00 ns
+Wait PID: 17397
+Execution Time (24) => 950549.00 ns
+Execution Time (30) => 880135.00 ns
+('Full Command: ', './workloads/GAPBS/second_wrapper 0 8 ./workloads/GAPBS/bin/ ./workloads/GAPBS/bin/bc -f /home/ybmoon/workloads/gapbs-data/twitter.sg -i4 -n16')
+execution_time 0.29 (s)

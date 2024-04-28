@@ -1,0 +1,124 @@
+# Benchmark of BSSN (McLachlan) using PUGH 
+
+# PUGH, a uniform grid driver for Cactus
+ActiveThorns                     = "PUGH PUGHInterp PUGHReduce PUGHSlab"
+
+# The total run time depends on both parameters. The best practice
+# is probably to set the driver::local_nsize to fit the physical memory  
+# of the running machine and then adjust Cactus::cctk_itlast to change
+# the run time.
+
+PUGH::local_nsize                = 172
+Cactus::cctk_itlast              = 70 
+
+PUGH::storage_verbose            = "no"
+PUGH::storage_report_every       = 0
+
+# Extra flesh parameters
+Cactus::cctk_run_title           = "Benchmark of BSSN (McLachlan) using PUGH"
+Cactus::cctk_show_schedule       = no
+Cactus::cctk_timer_output        = "off"
+
+IOUtil::out_fileinfo             = "none"
+
+#==========================================#
+# PLEASE DON'T CHANGE THE PARAMETERS BELOW #
+#==========================================#
+
+PUGH::local_size_includes_ghosts = no
+PUGH::ghost_size                 = 3
+
+# Thorns in CactusBase provide utilities for numerical simulations
+ActiveThorns                     = "Boundary CartGrid3D CoordBase LocalReduce SymBase"
+
+CartGrid3D::type                 = "coordbase"
+CartGrid3D::domain               = "full"
+CartGrid3D::avoid_origin         = "no"
+
+CoordBase::xmin                  = 0
+CoordBase::ymin                  = 0
+CoordBase::zmin                  = 0
+
+CoordBase::xmax                  = 1
+CoordBase::ymax                  = 1
+CoordBase::zmax                  = 1
+
+CoordBase::dx                    = 0.1
+CoordBase::dy                    = 0.1
+CoordBase::dz                    = 0.1
+
+CoordBase::boundary_size_x_lower = 3
+CoordBase::boundary_size_y_lower = 3
+CoordBase::boundary_size_z_lower = 3
+CoordBase::boundary_size_x_upper = 3
+CoordBase::boundary_size_y_upper = 3
+CoordBase::boundary_size_z_upper = 3
+
+
+# ADMBase and CoordGauge provide basic interfaces for numerical relativity thorns
+ActiveThorns                     = "ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal"
+
+ADMBase::initial_data            = "GaugeWave"
+ADMBase::initial_lapse           = "GaugeWave"
+ADMBase::initial_shift           = "GaugeWave"
+ADMBase::initial_dtlapse         = "GaugeWave"
+ADMBase::initial_dtshift         = "GaugeWave"
+
+# Time thorn to set timesteps 
+ActiveThorns                     = "Time"
+
+Time::dtfac                      = 0.25
+
+
+# Method of Line thorn provides generic time integrators
+ActiveThorns                     = "MoL"
+
+MoL::ODE_Method                  = RK3
+
+
+# McLachlan code for solving Einstein equations
+ActiveThorns                     = "ML_BSSN ML_BSSN_Helper"
+
+ADMBase::evolution_method        = "ML_BSSN"
+ADMBase::lapse_evolution_method  = "ML_BSSN"
+ADMBase::shift_evolution_method  = "ML_BSSN"
+
+ML_BSSN::harmonicN               = 1      # 1+log
+ML_BSSN::harmonicF               = 2.0    # 1+log
+ML_BSSN::ShiftGammaCoeff         = 0.75
+ML_BSSN::BetaDriver              = 0.5
+ML_BSSN::LapseAdvectionCoeff     = 1.0
+ML_BSSN::ShiftAdvectionCoeff     = 1.0
+
+
+# GaugeWave initial data for testing purpose
+ActiveThorns                     = "GaugeWave"
+
+GaugeWave::amp                   = 0.1
+GaugeWave::period                = 0.577350269189626
+GaugeWave::psi                   = -1.9216757376671543544
+GaugeWave::theta                 = 0.66214523564555227398
+GaugeWave::phi                   = 1.2199169159226388841
+
+
+# IOBasic provides I/O methods for outputting information and scalar values in ASCII
+ActiveThorns                     = "IOBasic"
+
+IOBasic::outInfo_every           = 1
+IOBasic::outInfo_vars            = "ADMBase::gxx ADMBase::gxy"
+
+# IOASCII provides methods for outputting 1D, 2D, and 3D output of 3D variables in ASCII
+ActiveThorns                     = "IOASCII"
+
+IOASCII::out1D_every             = 1
+IOASCII::out1D_d                 = no
+IOASCII::out1D_x                 = yes
+IOASCII::out1D_y                 = no
+IOASCII::out1D_z                 = no
+IOASCII::out1D_vars              = "ADMBase::gxx ADMBase::gxy"
+
+# I/O thorn provides basic I/O utilities
+ActiveThorns                     = "IOUtil"
+
+IO::print_timing_info            = no 
+IO::new_filename_scheme          = no

@@ -1,0 +1,72 @@
+Couldn't open file ./workloads/GAPBS/gapbs-data/twitter.sg
+Couldn't open file ./workloads/GAPBS/gapbs-data/twitter.sg
+Couldn't open file ./workloads/GAPBS/gapbs-data/twitter.sg
+Couldn't open file ./workloads/GAPBS/gapbs-data/twitter.sg
+Couldn't open file ./workloads/GAPBS/gapbs-data/twitter.sg
+Couldn't open file ./workloads/GAPBS/gapbs-data/twitter.sg
+Couldn't open file ./workloads/GAPBS/gapbs-data/twitter.sg
+Couldn't open file ./workloads/GAPBS/gapbs-data/twitter.sg
+Execution File:   /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc
+Num of Programs:  8
+Program Path:     /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/
+Progarm Options:  /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc
+i:1, argv[5]:-f
+option1:-f
+i:2, argv[6]:./workloads/GAPBS/gapbs-data/twitter.sg
+option2:./workloads/GAPBS/gapbs-data/twitter.sg
+i:3, argv[7]:-i4
+option3:-i4
+i:4, argv[8]:-n16
+option4:-n16
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/
+exe_path: /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc
+Core: 1
+Directory [1]:   /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/
+exe_path: /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc
+Core: 2
+Directory [2]:   /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/
+exe_path: /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc
+Core: 3
+Directory [3]:   /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/
+exe_path: /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc
+Core: 4
+Directory [4]:   /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/
+exe_path: /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc
+Core: 5
+Directory [5]:   /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/
+exe_path: /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc
+Core: 6
+Directory [6]:   /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/
+exe_path: /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc
+Core: 7
+Directory [7]:   /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/
+exe_path: /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 15948
+Process Start
+Wait PID: 15950
+Process Start
+Wait PID: 15952
+Process Start
+Process Start
+Wait PID: 15954
+Wait PID: 15956
+Wait PID: 15958
+Wait PID: 15959
+Wait PID: 15960
+Execution Time (0) => 34738886.00 ns
+Execution Time (20) => 34066332.00 ns
+Execution Time (24) => 34040176.00 ns
+Execution Time (8) => 34818607.00 ns
+Execution Time (12) => 34485635.00 ns
+Execution Time (16) => 34291968.00 ns
+Execution Time (28) => 33671034.00 ns
+Execution Time (4) => 35039054.00 ns
+('Full Command: ', './workloads/GAPBS/second_wrapper 0 8 /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/ /scale/cal1/home/ybmoon/research/numa_autofdo/gapbs/bin-adt_exp/bc -f ./workloads/GAPBS/gapbs-data/twitter.sg -i4 -n16')
+execution_time 0.38 (s)

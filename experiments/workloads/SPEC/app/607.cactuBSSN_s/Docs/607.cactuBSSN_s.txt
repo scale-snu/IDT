@@ -1,0 +1,119 @@
+                                607.cactuBSSN_s
+                       SPEC CPU2017 Benchmark Description
+
+  Benchmark Name
+
+   607.cactuBSSN_s
+
+  Benchmark Author
+
+   Jian Tao <jtao@cct.lsu.edu>
+   Center for Computation & Technology,
+   Louisiana State University,
+   Baton Rouge, LA 70803, USA
+
+   Gabrielle Allen <gallen@cct.lsu.edu>
+   Center for Computation & Technology,
+   Louisiana State University,
+   Baton Rouge, LA 70803, USA
+
+   Peter Diener <diener@cct.lsu.edu>
+   Center for Computation & Technology,
+   Louisiana State University,
+   Baton Rouge, LA 70803, USA}
+
+   Erik Schnetter <schnetter@cct.lsu.edu>
+   Center for Computation & Technology,
+   Louisiana State University,
+   Baton Rouge, LA 70803, USA}
+
+  Benchmark Program General Category
+
+   Physics / General Relativity / Numerical Relativity
+
+  Benchmark Description
+
+   Based on the [1]Cactus Computational Framework, this benchmark uses the
+   [2]EinsteinToolkit to solve the Einstein equations in vacuum. The
+   numerical kernel of this benchmark, [3]McLachlan, is automatically
+   generated from a high level set of partial differential equations with the
+   [4]Kranc code generation package. As a production level code, [5]McLachlan
+   has been successfully used to model blackholes, gravitational waves. When
+   coupled to other general relativistic (magneto)hydrodynamic codes, it can
+   also be used to model white dwarfs, neutron stars, etc. In this benchmark,
+   we model a vacuum flat space-time. We use the BSSN formulation of the
+   Einstein equations, and employs finite differencing in space, an explicit
+   time integration method, and relies on the memory management and
+   communication driver PUGH (Parallel Uniform Grid Hierarchy) for
+   distributing grid functions over processors.
+
+  Input Description
+
+   This benchmark requires a parameter file as the input. Both physics and
+   computational parameters are specified in this file. For benchmarking, we
+   suggest that only the computational parameters, namely the grid size and
+   the number of iterations be changed by end users.
+
+     * driver::local_nsize = 60
+     * Cactus::cctk_itlast = 40
+
+   The total run time depends on both parameters. The parameter
+   driver::local_nsize (60 by default) defines the total number of grid
+   points (60x60x60), i.e., memory usage (~300MB), while Cactus::cctk_itlast
+   (40 by default) defines the total number of iterations. The best practice
+   is probably to set driver::local_nsize to fit the physical memory of the
+   running system and then adjust Cactus::cctk_itlast to change.
+
+  Output Description
+
+   By default, this benchmark writes to both standard output and file system.
+
+     * It will write to standard output the minimum and maximum of two
+       components of the spatial metric ADMBase::gxx and ADMBase::gxy at each
+       iteration.
+     * It will write the minimum, maximum, normal1, normal2, as well as the
+       value along the x-axis of the following variables.
+
+ ADMBase::gxx ADMBase::gxy
+ ADMBase::kxx ADMBase::alp
+ ML_BSSN::At11 ML_BSSN::trK ML_BSSN::Xt1
+ ML_BSSN::A ML_BSSN::B1 ML_BSSN::ML_Ham
+ ML_BSSN::ML_Mom ML_BSSN::phi
+
+  Programming Language
+
+   C, C++, and Fortran
+
+  Known portability issues
+
+   By default, it is assumed that the C++11 feature "static assert" is
+   available. If you do not have that feature, you can try setting the
+   portability flag SPEC_NO_CXX_STATIC_ASSERT.
+
+  Sources and Licensing
+
+   The benchmark is used under the GNU GPL license, and original sources are
+   provided.
+
+   Please see details in the document [6]SPEC CPU2017 Licenses.
+
+  References
+
+     * [7]Cactus Computational Framework
+     * [8]EinsteinToolkit
+     * [9]Kranc Code Generation Package
+     * [10]McLachlan, a Public BSSN Code
+
+References
+
+   Visible links
+   1. http://www.cactuscode.org/
+   2. http://www.einsteintoolkit.org/
+   3. http://www.cct.lsu.edu/~eschnett/McLachlan/
+   4. http://kranccode.org/
+   5. http://www.cct.lsu.edu/~eschnett/McLachlan/
+   6. https://www.spec.org/cpu2017/Docs/licenses.html#bmk607.cactuBSSN_s
+   7. http://www.cactuscode.org/
+   8. http://www.einsteintoolkit.org/
+   9. http://kranccode.org/
+  10. http://www.cct.lsu.edu/~eschnett/McLachlan/

@@ -1,0 +1,2 @@
+#define FORTRAN_CPP_ANSI 0
+#define HAVE_CAPABILITY_Fortran 1

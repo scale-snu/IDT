@@ -1,0 +1,50 @@
+Execution File:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+Num of Programs:  1
+Program Path:     /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:cpu2006docs.tar.xz
+option1:cpu2006docs.tar.xz
+i:2, argv[6]:6643
+option2:6643
+i:3, argv[7]:055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae
+option3:055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae
+i:4, argv[8]:1036078272
+option4:1036078272
+i:5, argv[9]:1111795472
+option5:1111795472
+i:6, argv[10]:4
+option6:4
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+Process Start
+Execution END: -1
+Execution Time (2) => 691433.00 ns
+Execution File:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+Num of Programs:  1
+Program Path:     /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:cpu2006docs.tar.xz
+option1:cpu2006docs.tar.xz
+i:2, argv[6]:6643
+option2:6643
+i:3, argv[7]:055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae
+option3:055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae
+i:4, argv[8]:1036078272
+option4:1036078272
+i:5, argv[9]:1111795472
+option5:1111795472
+i:6, argv[10]:4
+option6:4
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+Process Start
+Wait PID: 30903
+Execution Time (0) => 1013554.00 ns
+('Full Command: ', '/scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/second_wrapper 0 1 /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/ /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64  cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4 ')
+execution_time 0.32 (s)

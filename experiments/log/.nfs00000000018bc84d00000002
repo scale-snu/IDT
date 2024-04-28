@@ -1,0 +1,34 @@
+Read Time:           2639.38165
+Graph has 61578415 nodes and 1468364884 directed edges for degree: 23
+    a                0.08697
+source: 12441072
+Read Time:           2653.89618
+Graph has 61578415 nodes and 1468364884 directed edges for degree: 23
+    a                0.07973
+source: 12441072
+Read Time:           2671.08819
+Graph has 61578415 nodes and 1468364884 directed edges for degree: 23
+    a                0.09598
+source: 12441072
+Read Time:           2681.56554
+Graph has 61578415 nodes and 1468364884 directed edges for degree: 23
+    a               65.28099
+source: 12441072
+    b            11437.25441
+    p             8222.05656
+source: 54488257
+    b            11805.43131
+    p             8043.34863
+source: 54488257
+    b            14161.98502
+    p             6373.22802
+source: 54488257
+    b            10789.40666
+    p             9820.71504
+source: 54488257
+    b             4752.28411
+    p             1751.57157
+source: 25451915
+    b             4629.21039
+    p             3033.88518
+source: 25451915

@@ -1,0 +1,122 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+      <link rel="STYLESHEET" href="https://www.spec.org/cpu2017/Docs/css/cpudocs.css" type="text/css" />
+<title>607.cactuBSSN_s: SPEC CPU2017 Benchmark Description</title>
+<meta name="generator" content="Cloyce+VIM 6.2" />
+<meta name="revision"
+      content="$Id: cactuBSSN.html 5637 2017-05-01 17:34:29Z JohnHenning $" />
+</head>
+
+<body>
+<div style="text-align: center">
+<h1>607.cactuBSSN_s<br />
+SPEC CPU2017 Benchmark Description</h1>
+</div>
+ 
+<h3>Benchmark Name</h3>
+<p>607.cactuBSSN_s</p>
+
+<h3>Benchmark Author</h3>
+<p>Jian Tao &lt;jtao@cct.lsu.edu&gt; <br />
+Center for Computation &amp; Technology, <br />
+Louisiana State University, <br />
+Baton Rouge, LA 70803, USA</p>
+
+<p>Gabrielle Allen &lt;gallen@cct.lsu.edu&gt; <br />
+Center for Computation &amp; Technology, <br />
+Louisiana State University, <br />
+Baton Rouge, LA 70803, USA</p>
+
+<p>Peter Diener &lt;diener@cct.lsu.edu&gt; <br />
+Center for Computation &amp; Technology, <br />
+Louisiana State University, <br />
+Baton Rouge, LA 70803, USA}</p>
+
+<p>Erik Schnetter &lt;schnetter@cct.lsu.edu&gt;  <br />
+Center for Computation &amp; Technology,<br />
+Louisiana State University, <br />
+Baton Rouge, LA 70803, USA}</p>
+
+
+<h3>Benchmark Program General Category</h3>
+<p>Physics / General Relativity / Numerical Relativity</p>
+ 
+<h3>Benchmark Description</h3>
+<p>Based on the <a href="http://www.cactuscode.org">Cactus Computational Framework</a>, 
+this benchmark uses the <a href="http://www.einsteintoolkit.org">EinsteinToolkit</a> 
+to solve the Einstein equations in vacuum. The numerical kernel of this benchmark, 
+<a href="http://www.cct.lsu.edu/~eschnett/McLachlan/">McLachlan</a>, is 
+automatically generated from a high level set of partial differential equations
+with the <a href="http://kranccode.org">Kranc</a> code 
+generation package. As a production level code, 
+<a href="http://www.cct.lsu.edu/~eschnett/McLachlan/">McLachlan</a> has been successfully
+used to model blackholes, gravitational waves. When coupled to other general relativistic
+(magneto)hydrodynamic codes, it can also be used to model white dwarfs, neutron stars, etc.
+In this benchmark, we model a vacuum flat space-time.
+We use the BSSN formulation of the Einstein equations, and employs 
+finite differencing in space, an explicit time integration method, and relies on the 
+memory management and communication driver PUGH (Parallel Uniform Grid Hierarchy) 
+for distributing grid functions over processors.</p>
+
+<h3>Input Description</h3>
+<p>This benchmark requires a parameter file as the input. Both physics
+and computational parameters are specified in this file. For benchmarking, we suggest
+that only the computational parameters, namely the grid size and the number of iterations
+be changed by end users.</p> 
+<ul>
+<li>driver::local_nsize = 60 </li>
+<li>Cactus::cctk_itlast = 40 </li> 
+</ul>
+<p>The total run time depends on both parameters. The parameter driver::local_nsize (60 by default) 
+defines the total number of grid points (60x60x60), i.e., memory usage (~300MB), while 
+Cactus::cctk_itlast (40 by default) defines the total number of iterations. The best practice 
+is probably to set driver::local_nsize to fit the physical memory of the running system and then adjust 
+Cactus::cctk_itlast to change.
+</p>
+
+<h3>Output Description</h3>
+<p>
+By default, this benchmark writes to both standard output and file system.</p>
+<ul>
+<li>It will write to standard output the minimum and maximum of two components of the
+spatial metric ADMBase::gxx and ADMBase::gxy at each iteration.</li>
+<li><p>It will write the minimum, maximum, normal1, normal2, as well as the value along 
+   the x-axis of the following variables.</p>
+<pre>
+ADMBase::gxx ADMBase::gxy 
+ADMBase::kxx ADMBase::alp 
+ML_BSSN::At11 ML_BSSN::trK ML_BSSN::Xt1 
+ML_BSSN::A ML_BSSN::B1 ML_BSSN::ML_Ham 
+ML_BSSN::ML_Mom ML_BSSN::phi
+</pre></li>
+</ul>
+
+<h3>Programming Language</h3>
+<p><i>C, C++, and Fortran</i></p>
+
+<h3>Known portability issues</h3>
+<p>By default, it is assumed that the C++11 feature "static assert" is available.  If you do not have that feature, you can try setting the portability flag <tt>SPEC_NO_CXX_STATIC_ASSERT</tt>.  </p>
+
+<h3 id="license">Sources and Licensing</h3>
+
+<p>The benchmark is used under the GNU GPL license, and original sources are provided.</p>
+
+  <p>Please see details in the document <a
+    href="https://www.spec.org/cpu2017/Docs/licenses.html#bmk607.cactuBSSN_s">SPEC CPU2017 Licenses</a>.</p>
+
+
+
+
+<h3>References</h3>
+<ul>
+<li><a href="http://www.cactuscode.org">Cactus Computational Framework</a></li>
+<li><a href="http://www.einsteintoolkit.org">EinsteinToolkit</a></li>
+<li><a href="http://kranccode.org">Kranc Code Generation Package</a></li>
+<li><a href="http://www.cct.lsu.edu/~eschnett/McLachlan/">McLachlan, a Public BSSN Code</a></li>
+</ul>
+
+</body>
+</html>

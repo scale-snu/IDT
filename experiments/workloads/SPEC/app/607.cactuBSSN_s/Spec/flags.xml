@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<!DOCTYPE flagsdescription SYSTEM
+       "http://www.spec.org/dtd/cpuflags2.dtd">
+
+<!-- This file defines flags that appear in the sources for 607.cactuBSSN_s.
+
+  Copyright 2006-2014 Standard Performance Evaluation Corporation
+
+  $Revision: 5676 $
+  $Date: 2017-05-06 15:49:34 -0400 (Sat, 06 May 2017) $
+-->
+<flagsdescription>
+
+<filename>607.cactuBSSN_s.flags</filename>
+
+<title>607.cactuBSSN_s Flags</title>
+
+<header>
+<![CDATA[
+<p>These are flags that appear in the benchmark sources, categorized as to
+whether they are portability candidates, mandatory, or forbidden.
+</p>
+]]>
+</header>
+
+<flag name="DSPEC_NO_CXX_STATIC_ASSERT" class="portability">
+<![CDATA[
+<p>Define if "static_assert" is not available for C++.  
+</p>
+]]>
+</flag>
+
+<flag name="DSPEC_NO_C99_MATH_IN_CXX" class="portability">
+<![CDATA[
+<p>Default is to use "std::name" for the following C++ cmath routines.  Use this when these routines are actual functions but are not found in the <tt>std</tt> namespace.</p>
+<ul>
+<li>fpclassify</li>
+<li>isfinite</li>
+<li>isinf</li>
+<li>isnan</li>
+<li>isnormal</li>
+<li>signbit</li>
+</ul> 
+]]>
+
+</flag>
+<flag name="DSPEC_IS_MACROS" class="portability">
+<![CDATA[
+<p>Default is to use "std::name" for the following C++ cmath routines unless SPEC_NO_C99_MATH_IN_CXX is also defined.  This options uses just "name".  Used in cases where "name" is macro and not a routine.</p>
+<ul>
+<li>fpclassify</li>
+<li>isfinite</li>
+<li>isinf</li>
+<li>isnan</li>
+<li>isnormal</li>
+<li>signbit</li>
+</ul> 
+]]>
+</flag>
+
+<flag name="DSPEC_NO_UNDERSCORE" class="portability">
+If defined uses Fortran symbol names ABC as abc
+</flag>
+
+<flag name="currdir_inc" class="mandatory" regexp="-I(?:\.\./)?include\b">
+<example>-Iinclude, -I../include</example>
+This flag is included automatically by Spec/object.pm.
+</flag>
+
+<flag name="DSPEC_USE_BUILTIN" class="forbidden">
+   <!-- This COULD be optimization, if SPEC chose to change rule https://www.spec.org/cpu2017/Docs/runrules.html#rule_2.2.1
+        but unless or until that happens, it is forbidden -->
+<![CDATA[
+Defining this macro will cause <tt>__builtin_infinity()</tt> to be used instead of
+a call to <tt>std::numeric_limits&lt;double&gt;::infinity()</tt>.  Likewise, __builtin_nan
+will be used instead of <tt>std::numeric_limits&lt;double&gt;::quiet_NaN()</tt>.
+]]>
+</flag>
+
+<flag name="code" class="mandatory" regexp="[-/]D[CF]CODE(?:=\S*)?\b">
+<example>
+  -DFCODE,
+  -DCCODE
+</example>
+These macros are used to enable or disable code based on which language is
+being used to build.  They are set automatically in object.pm.
+</flag>
+
+<flag name="DCCTK_DISABLE_RESTRICT" class="mandatory">
+<example>-DCCTK_DISABLE_RESTRICT=1</example>
+This flag is set automatically in Spec/object.pm, and disables use of the
+non-standard "restrict" keyword in C++ code.
+</flag>
+
+<flag name="precision" class="forbidden" regexp="[-/]DCCTK_(?:INTEGER|REAL|COMPLEX)_PRECISION_(\d+)(?:=\S*)?\b">
+<example>
+-DCCTK_COMPLEX_PRECISION_16=XXX,
+-DCCTK_COMPLEX_PRECISION_32=XXX,
+-DCCTK_COMPLEX_PRECISION_8=XXX
+-DCCTK_INTEGER_PRECISION_2=XXX,
+-DCCTK_INTEGER_PRECISION_4=XXX,
+-DCCTK_INTEGER_PRECISION_8=XXX,
+-DCCTK_REAL_PRECISION_16=XXX,
+-DCCTK_REAL_PRECISION_4=XXX,
+-DCCTK_REAL_PRECISION_8=XXX
+</example>
+These macros determine which types are used internally, and may not be set
+explicitly.
+</flag>
+
+<flag name="debug" class="forbidden" regexp="D(?:DEBUG(?:_(?:BANNER|BOUNDARY|CCTK|COORD|GROUPS|HASH|INTERP|IOASCII|IOUTIL|LA|MISC|PUGH|REDUCTION|SCHEDULAR|SNPRINTF|TIME|TIMERS))?|(?:ESLIC|IOBASIC|IO|SYM)_DEBUG|MEMDEBUG|UTIL_TABLE_DEBUG2?|CCTK_DEBUG(?:_DEBUG)?)\b">
+<example>
+-DCCTK_DEBUG,
+-DCCTK_DEBUG_DEBUG,
+-DDEBUG,
+-DDEBUG_BANNER,
+-DDEBUG_BOUNDARY,
+-DDEBUG_CCTK,
+-DDEBUG_COORD,
+-DDEBUG_GROUPS,
+-DDEBUG_HASH,
+-DDEBUG_INTERP,
+-DDEBUG_IOASCII,
+-DDEBUG_IOUTIL,
+-DDEBUG_LA,
+-DDEBUG_MISC,
+-DDEBUG_PUGH,
+-DDEBUG_REDUCTION,
+-DDEBUG_SCHEDULAR,
+-DDEBUG_SNPRINTF,
+-DDEBUG_TIME,
+-DDEBUG_TIMERS,
+-DESLIC_DEBUG,
+-DIOBASIC_DEBUG,
+-DIO_DEBUG,
+-DMEMDEBUG,
+-DSYM_DEBUG,
+-DUTIL_TABLE_DEBUG,
+-DUTIL_TABLE_DEBUG2
+</example>
+These flags enable debugging output; they may not be set for a benchmark run.
+</flag>
+
+<flag name="type_macros" class="forbidden" regexp="[-/]DCCTK_(?:VARIABLE_)?(?:INT|REAL)_?\d+(?:=\S*)?\b">
+<example>
+-DCCTK_INT2=XXX,
+-DCCTK_INT4=XXX,
+-DCCTK_INT8=XXX,
+-DCCTK_REAL16=XXX,
+-DCCTK_REAL4=XXX,
+-DCCTK_REAL8=XXX,
+-DCCTK_VARIABLE_INT2=XXX,
+-DCCTK_VARIABLE_INT4=XXX,
+-DCCTK_VARIABLE_INT8=XXX,
+-DCCTK_VARIABLE_REAL16=XXX,
+-DCCTK_VARIABLE_REAL4=XXX,
+-DCCTK_VARIABLE_REAL8=XXX
+</example>
+These macros hold the types for variables of various sizes.  They are set
+automatically and their default values may not be changed.
+</flag>
+
+<flag name="have_foo" class="forbidden" regexp="[-/]DHAVE_(?:BCOPY|BOOL|BZERO|GETHOSTBYNAME|GETOPT_LONG_ONLY|ISASCII|LONG_DOUBLE|MEMPCPY|MODE_T|SNPRINTF|SOCKLEN_T|STDARGS|TIME_GETRUSAGE|TIME_GETTIMEOFDAY|VSNPRINTF)(?:=\S*)?\b">
+<example>
+-DHAVE_BCOPY,
+-DHAVE_BOOL,
+-DHAVE_BZERO,
+-DHAVE_GETHOSTBYNAME,
+-DHAVE_GETOPT_LONG_ONLY,
+-DHAVE_ISASCII,
+-DHAVE_LONG_DOUBLE,
+-DHAVE_MEMPCPY,
+-DHAVE_MODE_T,
+-DHAVE_SNPRINTF,
+-DHAVE_SOCKLEN_T,
+-DHAVE_STDARGS,
+-DHAVE_TIME_GETRUSAGE,
+-DHAVE_TIME_GETTIMEOFDAY,
+-DHAVE_VSNPRINTF
+</example>
+These flags may be used to indicate the presence of a particular function.
+The default configuration should be sufficient, and these may not be set
+explicitly.
+</flag>
+
+<flag name="have_headers" class="forbidden" regexp="[-/]DHAVE_(?:ALLOCA|ASSERT|CONFIG|DIRENT|GETOPT|LIBINTL|NETDB|REGEX|STDARG|STRING|SYS_STAT|SYS_TIME|TIME|UNISTD|VARARGS|WINSOCK2)_H(?:=\S*)?\b">
+<example>
+-DHAVE_ALLOCA_H,
+-DHAVE_ASSERT_H,
+-DHAVE_CONFIG_H,
+-DHAVE_DIRENT_H,
+-DHAVE_GETOPT_H,
+-DHAVE_LIBINTL_H,
+-DHAVE_NETDB_H,
+-DHAVE_REGEX_H,
+-DHAVE_STDARG_H,
+-DHAVE_STRING_H,
+-DHAVE_SYS_STAT_H,
+-DHAVE_SYS_TIME_H,
+-DHAVE_TIME_H,
+-DHAVE_UNISTD_H,
+-DHAVE_VARARGS_H,
+-DHAVE_WINSOCK2_H
+</example>
+These flags are used to indicate the presence of certain header files.  They
+are set automatically and may not be set explicitly.
+</flag>
+
+
+<flag name="test" class="forbidden" regexp="[-/]D(?:UTIL_TABLE_TEST|MAKETEST|TESUHASH|TESTMALLOC|TEST_(?:BinaryTree|EXPRESSION_PARSER|KEYED_FUNCTIONS|NAMES|PARAMETERS|ParseFile|SCHEDULECREATOR|SCHEDULETRAVERSE|SNPRINTF|SORTER|STOREHANDLEDDATA|STRINGLIST|StoreKeyedData|StoreNamedData|Util_STRSEP)?)(?:=\S*)?\b">
+<example>
+-DTEST,
+-DTESTMALLOC,
+-DTEST_BinaryTree,
+-DTEST_EXPRESSION_PARSER,
+-DTEST_KEYED_FUNCTIONS,
+-DTEST_NAMES,
+-DTEST_PARAMETERS,
+-DTEST_ParseFile,
+-DTEST_SCHEDULECREATOR,
+-DTEST_SCHEDULETRAVERSE,
+-DTEST_SNPRINTF,
+-DTEST_SORTER,
+-DTEST_STOREHANDLEDDATA,
+-DTEST_STRINGLIST,
+-DTEST_StoreKeyedData,
+-DTEST_StoreNamedData,
+-DTEST_Util_STRSEP,
+-DTESUHASH,
+-DMAKETEST,
+-DUTIL_TABLE_TEST
+</example>
+These flags enable test output, and may not be set.
+</flag>
+
+<flag name="thorn_is" class="forbidden" regexp="[-/]DTHORN_IS_(?:BenchADM|Boundary|Cactus|CartGrid3D|Einstein|IDLinearWaves|IOASCII|IOBasic|IOUtil|PUGH|PUGHReduce|PUGHSlab|Time)(?:=\S*)?\b">
+<example>
+-DTHORN_IS_BenchADM,
+-DTHORN_IS_Boundary,
+-DTHORN_IS_Cactus,
+-DTHORN_IS_CartGrid3D,
+-DTHORN_IS_Einstein,
+-DTHORN_IS_IDLinearWaves,
+-DTHORN_IS_IOASCII,
+-DTHORN_IS_IOBasic,
+-DTHORN_IS_IOUtil,
+-DTHORN_IS_PUGH,
+-DTHORN_IS_PUGHReduce,
+-DTHORN_IS_PUGHSlab,
+-DTHORN_IS_Time
+</example>
+These macros serve as indications of which part of the source is being built,
+and may not be set explicitly.
+</flag>
+
+<flag name="DWIN32" class="forbidden">
+This macro is used to indicate that the benchmark is being built on a
+Windows system.  It is set automatically.
+</flag>
+
+<flag name="sys_flags" class="forbidden" regexp="[-/]D(?:_AIX|_GNU_GETOPT_INTERFACE_VERSION|_LIBC|_MSC_VER|_NO_PROTO|_POSIX_C_SOURCE|_POSIX_SOURCE|_REGEX_RE_COMP|_XOPEN_SOURCE|__GLIBC__|__GNUC__|__GNU_LIBRARY__|__STDC__|CRAY|__cplusplus|__need_getopt|_cplusplus|_tolower|STDC_HEADERS|S_ISDIR|T3E|VMS|NULL|GETOPT_INTERFACE_VERSION)(?:=\S*)?\b">
+<example>
+-D_AIX,
+-D_GNU_GETOPT_INTERFACE_VERSION,
+-D_LIBC,
+-D_MSC_VER,
+-D_NO_PROTO,
+-D_POSIX_C_SOURCE,
+-D_POSIX_SOURCE,
+-D_REGEX_RE_COMP,
+-D_XOPEN_SOURCE,
+-D__GLIBC__,
+-D__GNUC__,
+-D__GNU_LIBRARY__,
+-D__STDC__,
+-DCRAY,
+-D__cplusplus,
+-D__need_getopt,
+-D_cplusplus,
+-D_tolower
+-DSTDC_HEADERS,
+-DS_ISDIR=XXX,
+-DT3E,
+-DVMS,
+-DNULL=XXX,
+-DGETOPT_INTERFACE_VERSION=XXX
+</example>
+These macros should be set automatically by the compilation system, and may
+not be set explicitly.
+</flag>
+
+<flag name="header_guards" class="forbidden" regexp="[-/]D_(?:
+BINARYTREE|CACTUS(?:COMM|IO|MAIN)FUNCTIONS|CACTUSMAINDEFAULTS|CACTUS_(?:PARAMETERS|PROTOTYPES|REGISTRY)|CARTGRID3D_(?:PARAMETERS|PROTOTYPES)|CCTKI_(?:BANNER|BINDINGS|CACHE|GHEXTENSIONS|GROUPS|NAMES|PARAMETER|SCHEDULE|SCHEDUULEBINDINGS|STAGGER|VERSION|WARNLEVEL)|CCTK|CCTK_(?:ARCHDEFS|BANNER|CACHE|COMMANDLINE|COMM|COMPLEX|CONFIG|CONSTANTS|COORD|EXTRADEFS|FILE|FLESH|FORTRANSTRING|FUNCTIONALIASES|GHEXTENSIONS|GNU|GROUPSONGH|GROUPS|INTERP|IOMETHODS|IO|MAIN|MALLOC|MEMALLOC|MISC|PARAMCHECK|PARAMETER|REDUCTION|SCHEDULE|STAGGER|SYNC|TERMINATION|TIMERS|TYPES|TYPES|VERSION|WARNLEVEL)|CGH|COMMANDLINE|DUMMIES|EINSTEIN|(?:BENCHADM|BOUNDARY|EINSTEIN|IOASCII|IOBASIC|IOUTIL|PUGHREDUCE|PUGHSLAB|PUGH|TIME|IDLINEARWAVES)_(?:PARAMETERS|PROTOTYPES)|GETOPT|IOASCII_IOASCII|IOGH|IOUTIL_(?:ADVERTISED_FILES|CHECKPOINTRECOVERY|UTILS)|MAIN|OVERLOADMACROS|PARAMETERBINDINGS|PGV|PUGHI|PUGHSLAB_(?:NEWPUGHSLAB|PUGHSLABI|PUGHSLAB)|PUGH_(?:COMM|EXTENSION|REDUCTIONS)|PUGH|REGEX|REGISTERKEYEDFUNCTION|SCHEDULE|SKBINTREE|STORE(?:HANDLE|KEYE|NAME)DDATA|SYMMETRY|UTIL_(?:ERRORCODES|HASH|NETWORK|STRINGLIST|STRING|TABLE)|_CCTK(?:I_ACTIVETHORNS|I_FORTRANWRAPPERS|_ACTIVETHORNS|_FORTRANWRAPPERS)|_UTIL(?:I_EXPRESSION|_EXPRESSION))_H_*(?:=\S*)?\b">
+<example>
+-D_BENCHADM_PARAMETERS_H_,
+-D_BENCHADM_PROTOTYPES_H_,
+-D_BINARYTREE_H_,
+-D_BOUNDARY_H_,
+-D_BOUNDARY_PARAMETERS_H_,
+-D_BOUNDARY_PROTOTYPES_H_,
+-D_CACTUSCOMMFUNCTIONS_H_,
+-D_CACTUSIOFUNCTIONS_H_,
+-D_CACTUSMAINDEFAULTS_H_,
+-D_CACTUSMAINFUNCTIONS_H_,
+-D_CACTUS_PARAMETERS_H_,
+-D_CACTUS_PROTOTYPES_H_,
+-D_CACTUS_REGISTRY_H_,
+-D_CARTGRID3D_PARAMETERS_H_,
+-D_CARTGRID3D_PROTOTYPES_H_,
+-D_CCTKI_BANNER_H_,
+-D_CCTKI_BINDINGS_H_,
+-D_CCTKI_CACHE_H_,
+-D_CCTKI_GHEXTENSIONS_H_,
+-D_CCTKI_GROUPS_H_,
+-D_CCTKI_NAMES_H_,
+-D_CCTKI_PARAMETER_H_,
+-D_CCTKI_SCHEDULE_H_,
+-D_CCTKI_SCHEDUULEBINDINGS_H_,
+-D_CCTKI_STAGGER_H_,
+-D_CCTKI_VERSION_H_,
+-D_CCTKI_WARNLEVEL_H_,
+-D_CCTK_ARCHDEFS_H_,
+-D_CCTK_BANNER_H_,
+-D_CCTK_CACHE_H_,
+-D_CCTK_COMMANDLINE_H_,
+-D_CCTK_COMM_H_,
+-D_CCTK_COMPLEX_H_,
+-D_CCTK_CONFIG_H_,
+-D_CCTK_CONSTANTS_H_,
+-D_CCTK_COORD_H_,
+-D_CCTK_EXTRADEFS_H_,
+-D_CCTK_FILE_H_,
+-D_CCTK_FLESH_H_,
+-D_CCTK_FORTRANSTRING_H_,
+-D_CCTK_FUNCTIONALIASES_H_,
+-D_CCTK_GHEXTENSIONS_H_,
+-D_CCTK_GNU_H_,
+-D_CCTK_GROUPSONGH_H_,
+-D_CCTK_GROUPS_H_,
+-D_CCTK_H_,
+-D_CCTK_INTERP_H_,
+-D_CCTK_IOMETHODS_H_,
+-D_CCTK_IO_H_,
+-D_CCTK_MAIN_H_,
+-D_CCTK_MALLOC_H_,
+-D_CCTK_MEMALLOC_H_,
+-D_CCTK_MISC_H_,
+-D_CCTK_PARAMCHECK_H_,
+-D_CCTK_PARAMETER_H,
+-D_CCTK_REDUCTION_H_,
+-D_CCTK_SCHEDULE_H_,
+-D_CCTK_STAGGER_H_,
+-D_CCTK_SYNC_H_,
+-D_CCTK_TERMINATION_H_,
+-D_CCTK_TIMERS_H_,
+-D_CCTK_TYPES_H,
+-D_CCTK_TYPES_H_,
+-D_CCTK_VERSION_H_,
+-D_CCTK_WARNLEVEL_H_,
+-D_CGH_H_,
+-D_COMMANDLINE_H_,
+-D_CRAY,
+-D_DUMMIES_H_,
+-D_EINSTEIN_H_,
+-D_EINSTEIN_PARAMETERS_H_,
+-D_EINSTEIN_PROTOTYPES_H_,
+-D_GETOPT_H,
+-D_IDLINEARWAVES_PARAMETERS_H_,
+-D_IDLINEARWAVES_PROTOTYPES_H_,
+-D_IOASCII_IOASCII_H_,
+-D_IOASCII_PARAMETERS_H_,
+-D_IOASCII_PROTOTYPES_H_,
+-D_IOBASIC_PARAMETERS_H_,
+-D_IOBASIC_PROTOTYPES_H_,
+-D_IOGH_H_,
+-D_IOUTIL_ADVERTISED_FILES_H_,
+-D_IOUTIL_CHECKPOINTRECOVERY_H_,
+-D_IOUTIL_PARAMETERS_H_,
+-D_IOUTIL_PROTOTYPES_H_,
+-D_IOUTIL_UTILS_H_,
+-D_MAIN_H_,
+-D_OVERLOADMACROS_H_,
+-D_PARAMETERBINDINGS_H_,
+-D_PGV_H_,
+-D_PUGHI_H_,
+-D_PUGHREDUCE_PARAMETERS_H_,
+-D_PUGHREDUCE_PROTOTYPES_H_,
+-D_PUGHSLAB_NEWPUGHSLAB_H_,
+-D_PUGHSLAB_PARAMETERS_H_,
+-D_PUGHSLAB_PROTOTYPES_H_,
+-D_PUGHSLAB_PUGHSLABI_H_,
+-D_PUGHSLAB_PUGHSLAB_H_,
+-D_PUGH_COMM_H_,
+-D_PUGH_EXTENSION_H_,
+-D_PUGH_H_,
+-D_PUGH_PARAMETERS_H_,
+-D_PUGH_PROTOTYPES_H_,
+-D_PUGH_REDUCTIONS_H_,
+-D_REGEX_H,
+-D_REGISTERKEYEDFUNCTION_H_,
+-D_SCHEDULE_H_,
+-D_SKBINTREE_H_,
+-D_STOREHANDLEDDATA_H_,
+-D_STOREKEYEDDATA_H_,
+-D_STORENAMEDDATA_H_,
+-D_SYMMETRY_H_,
+-D_TIME_PARAMETERS_H_,
+-D_TIME_PROTOTYPES_H_,
+-D_UTIL_ERRORCODES_H_,
+-D_UTIL_HASH_H_,
+-D_UTIL_NETWORK_H_,
+-D_UTIL_STRINGLIST_H_,
+-D_UTIL_STRING_H_,
+-D_UTIL_TABLE_H_,
+-D__CCTKI_ACTIVETHORNS_H_,
+-D__CCTKI_FORTRANWRAPPERS_H_,
+-D__CCTK_ACTIVETHORNS_H_,
+-D__CCTK_FORTRANWRAPPERS_H_,
+-D__UTILI_EXPRESSION_H__,
+-D__UTIL_EXPRESSION_H__
+</example>
+These macros are used to guard against multiple header inclusion, and may
+not be set explicitly.
+</flag>
+
+<flag name="function_defs" class="forbidden" regexp="[-/]D(?:alloca|bcopy|bzero|calloc|const|emacs|free|getenv|isascii|isblank|isgraph|malloc|memcmp|memcpy|realloc|strdup|strlen)(?:=\S*)?\b">
+<example>
+-Dalloca=XXX,
+-Dbcopy=XXX,
+-Dbzero=XXX,
+-Dcalloc=XXX,
+-Dconst=XXX,
+-Demacs=XXX,
+-Dfree=XXX,
+-Dgetenv=XXX,
+-Disascii=XXX,
+-Disblank=XXX,
+-Disgraph=XXX,
+-Dmalloc=XXX,
+-Dmemcmp=XXX,
+-Dmemcpy=XXX,
+-Drealloc=XXX,
+-Dstrdup=XXX,
+-Dstrlen=XXX
+</example>
+These macros hold the names for common functions used in the source.  They may
+not be set explicitly.
+</flag>
+
+<flag name="default_only" class="forbidden" regexp="[-/]D(?:FALSE|INT_IS_16BIT|MAX|MIN|SINGLE_PRECISION|SQR|TRUE|WIDE_CHAR_SUPPORT|USE_ARGUMENTS|ABS|ARGUMENTS|CONVERT|CCTK_PARAMUNCHECKED|LONG_STRING|NEED_PARAMETER_SCOPE_STRINGS|NEED_PARAMETER_TYPE_STRINGS|OVERLOABLE_DUMMY_PREFIX|OVERLOABLE_PREFIX|OVERLOADABLE_CALL|PARAMS|NOTHING|PUGH_WITH_DERIVED_DATATYPES|RETURN_TYPE|gettext_noop|text_set_element)(?:=\S*)?\b">
+<example>
+-DFALSE=XXX,
+-DINT_IS_16BIT=XXX,
+-DMAX=XXX,
+-DMIN=XXX,
+-DSINGLE_PRECISION=XXX,
+-DSQR=XXX,
+-DTRUE=XXX,
+-DWIDE_CHAR_SUPPORT=XXX,
+-DUSE_ARGUMENTS=XXX,
+-DABS=XXX,
+-DARGUMENTS=XXX,
+-DCONVERT=XXX,
+-DCCTK_PARAMUNCHECKED=XXX,
+-DLONG_STRING=XXX,
+-DNEED_PARAMETER_SCOPE_STRINGS=XXX,
+-DNEED_PARAMETER_TYPE_STRINGS=XXX,
+-DOVERLOABLE_DUMMY_PREFIX=XXX,
+-DOVERLOABLE_PREFIX=XXX,
+-DOVERLOADABLE_CALL=XXX,
+-DPARAMS=XXX,
+-DNOTHING=XXX,
+-DPUGH_WITH_DERIVED_DATATYPES=XXX,
+-DRETURN_TYPE=XXX,
+-Dgettext_noop=XXX,
+-Dtext_set_element=XXX
+</example>
+The default value of these macros may not be changed.
+</flag>
+
+<flag name="unused" class="forbidden" regexp="[-/]D(?:COMM_TIMING|CCTK_MPI|TIME_WITH_SYS_TIME)(?:=\S*)?\b">
+<example>
+-DCOMM_TIMING,
+-DCCTK_MPI,
+-DTIME_WITH_SYS_TIME
+</example>
+These macros have no function in the benchmark version of the source, and may
+not be set explicitly.
+</flag>
+
+<flag name="regexp_flags" class="forbidden" regexp="[-/]D(?:
+)(?:=\S*)?\b">
+<example>
+-DCHARCLASS_NAME_MAX=XXX,
+-DC_ALLOCA=XXX,
+-DELIDE_CODE=XXX,
+-DEXTRACT_MACROS=XXX,
+-DINHIBIT_STRING_HEADER=XXX,
+-DINIT_FAILURE_ALLOC=XXX,
+-DMATCH_MAY_ALLOCATE=XXX,
+-DPATFETCH=XXX,
+-DREGEX_MALLOC=XXX,
+-DREL_ALLOC=XXX,
+-DRE_DUP_MAX=XXX,
+-DRE_NREGS=XXX,
+-DRE_TRANSLATE_TYPE=XXX,
+-DSWITCH_ENUM_BUG=XXX,
+-DSYNTAX_TABLE=XXX,
+-DSword=XXX,
+-DTRANSLATE=XXX
+</example>
+These macros are all tuning knobs for the regular expression engine.  They
+may not be changed from their default values.
+</flag>
+
+</flagsdescription>

@@ -1,0 +1,2449 @@
+<?xml version="1.0"?>
+<!DOCTYPE flagsdescription SYSTEM
+       "http://www.spec.org/dtd/cpuflags2.dtd">
+
+<!-- This file defines flags that are present in the source of 654.roms_s
+
+  Copyright 2011-2016 Standard Performance Evaluation Corporation
+
+  $Revision: 5674 $
+  $Date: 2017-05-05 17:29:02 -0400 (Fri, 05 May 2017) $
+-->
+<flagsdescription>
+
+<filename>654.roms_s.flags</filename>
+
+<title>654.roms_s Flags</title>
+
+<header>
+<![CDATA[
+<p>These are flags that appear in the benchmark sources, categorized as to
+   whether they are portability candidates, mandatory, or forbidden.</p>
+
+<p>The original Regional Ocean Modeling System (ROMS) code offers great
+   flexibility as to how it is configured, with flags for different types of
+   problems and for the idiosyncracies of different platforms.  See the wiki
+   page <a
+      href="https://www.myroms.org/wiki/Options">myroms.org/wiki/Options</a> for
+   documentation of them. (There is a local copy of that page in the
+   654.roms_s/Docs directory on your SPEC CPU2017 kit.  The original at <a
+      href="https://www.myroms.org/wiki/Options">myroms.org/wiki/Options</a> is
+   preferred).</p>
+
+<p>For SPEC CPU purposes, we want to test a specific configuration, with minimal
+   source code differences from one system to another. Therefore, <span
+      style="background:yellow;">the vast majority of the flags are
+      forbidden</span> for this SPEC CPU benchmark version of ROMS.</p>
+
+<p>If you believe that a forbidden flag is required in order to build or run the
+   benchmark version, please see the document "Technical Support" in
+   the top-level benchmark Docs/ directory.  </p>
+
+
+]]>
+</header>
+
+
+
+<flag name="DSPEC_AIX" class="forbidden">
+   The flag SPEC_AIX is not used with 654.roms_s.
+</flag>
+<flag name="DSPEC_CASE_FLAG" class="forbidden">
+   The flag SPEC_CASE_FLAG  is not used with 654.roms_s.
+</flag>
+<flag name="DSPEC_LINUX" class="forbidden">
+   The flag SPEC_LINUX is not used with 654.roms_s.
+</flag>
+
+<flag name="DNO_GETTIMEOFDAY" class="mandatory">
+This flag is included automatically by Spec/object.pm. 
+If unset timing information will be printed if the function cpu_time is available, see my_wtime in mp_routines.F90
+Timing information can potentially be useful for tuning; however, output will not validate if timing is included.
+</flag>
+
+<flag name="DBENCHMARK" class="mandatory">
+This flag is included automatically by Spec/object.pm.
+It defines that BENCHMARK is the ROMS application to compile for. Do not change.
+</flag>
+
+<flag name="DNestedGrids" class="mandatory">
+This flag is included automatically by Spec/object.pm.
+It defines the number of grids for the BENCHMARK application. Do not change.
+</flag>
+
+<flag name="DDOUBLE_PRECISION" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCYGWIN" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DG95" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DI686" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNO_4BYTE_REALS" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSGI" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DUNICOS_SN" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DAIX" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCRAY" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCRAYT3E" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCRAYX1" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DDEC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNEC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSUN" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DHEADER_DIR" class="forbidden">
+   HEADER_DIR   Activates netcdf-related printouts.   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DROMS_HEADER" class="forbidden">
+ROMS_HEADER Used in ROMS to define which application to run. 
+Deactivated via guard. in cppdefs.h, forced to be benchmark.h 
+Activates netcdf-related printouts.   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DROOT_DIR" class="forbidden">
+   ROOT_DIR   Activates netcdf-related printouts.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSVN_REV" class="forbidden">
+   SVN_REV  Activates netcdf-related printouts, forced to 405M with SPEC guard.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DALBEDO" class="forbidden">
+   ALBEDO use if albedo equation for shortwave radiation. Defined in benchmark.h.  Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_BSFLUX" class="forbidden">
+   ANA_BSFLUX use if analytical bottom salinity flux. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_BTFLUX" class="forbidden">
+   ANA_BTFLUX use if analytical bottom temperature flux. Defined in benchmark.h.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_CLOUD" class="forbidden">
+   ANA_CLOUD use if analytical cloud fraction. Defined in benchmark.h.  Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_GRID" class="forbidden">
+   ANA_GRID use if analytical model grid set-up. Defined in benchmark.h.  Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_HUMIDITY" class="forbidden">
+   ANA_HUMIDITY use if analytical surface air humidity. Defined in benchmark.h.  Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_INITIAL" class="forbidden">
+   ANA_INITIAL use if analytical initial conditions. Defined in benchmark.h.  Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_PAIR" class="forbidden">
+   ANA_PAIR use if analytical surface air pressure. Defined in benchmark.h.  Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_RAIN" class="forbidden">
+   ANA_RAIN use if analytical rain fall rate. Defined in benchmark.h.  Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_SRFLUX" class="forbidden">
+   ANA_SRFLUX use if analytical surface shortwave radiation flux. Defined in benchmark.h.  Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_SSFLUX" class="forbidden">
+   ANA_SSFLUX use if analytical surface salinity flux. Defined in benchmark.h.  Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_TAIR" class="forbidden">
+   ANA_TAIR use if analytical surface air temperature. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_WINDS" class="forbidden">
+   ANA_WINDS use if analytical surface winds. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DBULK_FLUXES" class="forbidden">
+   BULK_FLUXES use if bulk fluxes computation. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCURVGRID" class="forbidden">
+   CURVGRID use if curvilinear coordinates grid. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDJ_GRADPS" class="forbidden">
+   DJ_GRADPS use if splines density Jacobian (Shchepetkin, 2000). Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEW_PERIODIC" class="forbidden">
+   EW_PERIODIC use if East-West periodic boundaries. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLMD_CONVEC" class="forbidden">
+   LMD_CONVEC use to add convective mixing due to shear instability. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLMD_MIXING" class="forbidden">
+   LMD_MIXING use if Large et al. (1994) interior closure. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLMD_NONLOCAL" class="forbidden">
+   LMD_NONLOCAL use if nonlocal transport. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLMD_RIMIX" class="forbidden">
+   LMD_RIMIX use to add diffusivity due to shear instability. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLMD_SKPP" class="forbidden">
+   LMD_SKPP use if surface boundary layer KPP mixing. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLONGWAVE" class="forbidden">
+   LONGWAVE use if computing net longwave radiation. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMIX_GEO_TS" class="forbidden">
+   MIX_GEO_TS use if mixing on geopotential (constant Z) surfaces. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMIX_S_UV" class="forbidden">
+   MIX_S_UV use if mixing along constant S-surfaces. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNONLIN_EOS" class="forbidden">
+   NONLIN_EOS use if using nonlinear equation of state. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTHERN_WALL" class="forbidden">
+   NORTHERN_WALL use if Northern edge, closed wall condition. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSALINITY" class="forbidden">
+   SALINITY use if having salinity. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOLAR_SOURCE" class="forbidden">
+   SOLAR_SOURCE use if solar radiation source term. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOLVE3D" class="forbidden">
+   SOLVE3D use if solving 3D primitive equations. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTHERN_WALL" class="forbidden">
+   SOUTHERN_WALL use if Southern edge, closed wall condition. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSPHERICAL" class="forbidden">
+   SPHERICAL use if analytical spherical grid. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSPLINES" class="forbidden">
+   SPLINES use to activate parabolic splines reconstruction. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_C4VADVECTION" class="forbidden">
+   TS_C4VADVECTION use if 4th-order centered vertical advection. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_DIF2" class="forbidden">
+   TS_DIF2 use to turn ON or OFF harmonic horizontal mixing. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_U3HADVECTION" class="forbidden">
+   TS_U3HADVECTION use if 3rd-order upstream horiz. advection. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_ADV" class="forbidden">
+   UV_ADV use to turn ON or OFF advection terms. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_COR" class="forbidden">
+   UV_COR use to turn ON or OFF Coriolis term. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_QDRAG" class="forbidden">
+   UV_QDRAG use to turn ON or OFF quadratic bottom friction. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_VIS2" class="forbidden">
+   UV_VIS2 use to turn ON or OFF harmonic horizontal mixing. Defined in benchmark.h.    Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DADJOINT" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DADJUST_BOUNDARY" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DAIR_OCEAN" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DANALYTICAL" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DANALYTICAL_DIR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DANA_BMFLUX" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DANA_SCOPE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DASSIMILATION" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DASSUMED_SHAPE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DATMOS_COUPLING" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBACKGROUND" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBALANCE_OPERATOR_NOT_YET" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBBL_MODEL" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBEDLOAD" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBIOLOGY" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBIO_FASHAM" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBIO_LIMADONEY" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBOUNDARY" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBOUNDARY_ALLREDUCE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBSTRESS_UPWIND" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DBV_FREQUENCY" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCELERITY_READ" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCHECKPOINTING" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCHECKPOINTING2" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCLIMATOLOGY" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCLM_FILE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCLOUDS" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCOHESIVE_BED" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCOLLECT_ALLGATHER" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCOLLECT_ALLREDUCE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCONST_PAR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCOSINE2" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DCUBIC_MASKED" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DDIAGNOSTICS" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DDIFF_3DCOEF" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DDISTRIBUTE" class="forbidden">
+   DISTRIBUTE is used for MPI version. Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_FSOBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DEAST_M2OBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DEAST_M3OBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DEAST_TOBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DENERGYNORM_SCALE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DEOS_TDERIVATIVE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DESMF_COUPLING" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DEXTENDED_GRID" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DFOUR_DVAR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DFOWARD_MIXING" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DFRC_FILE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DFT_EIGENMMODES" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DGENT_McWILLIAMS" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DGEO_ROTATION" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DGLS_MIXING_NOT_YET" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DGM82_RIPRUF" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DINI_FILE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DIOMS" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DIVLEV_IMPLICIT" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DLIMTR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DLINEAR_CONTINUATION" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DLMD_BKPP_NOT_YET" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DLMD_BOUND" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DLMD_MIXING_NOT_YET" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DLMD_NONLOCAL_NOT_YET" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DM94WC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMAX_SLOPE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMB_BBL_CALC_UB" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMIN_STRAT" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMIXED_BED" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMIXED_LAYER" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMIX_STABILITY" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMODEL_COUPLING" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMONO_ROLLER" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMOVE_SET_DEPTH" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMPDATA_HOT" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMPI" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMY25_MIXING_NOT_YET" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DMY_OPTION" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DN92_RIPRUF" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNEARHSORE_MELLOR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNESTING" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNEUMANN" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNEW_CODE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNONLINEAR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNORTH_FSOBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNORTH_M2OBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNORTH_M3OBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNORTH_TOBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNUDGING" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DNUDGING_COFF" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DOBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DOBC_DATA" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DOBC_FSRADIATION" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DOBC_M2RADIATION" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DOBC_VOLCONS" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DOBSERVATIONS" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DOBS_SENSITIBITY" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DPAPA_CLM" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DPARALLEL_IO" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DPERTURBATION" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DPOWER_LAW" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DPROPAGATOR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DQUADRATIC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DR2D_GRADIENT" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DR88_RIPRUF" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DRECOMPUTE_4DVAR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DREDUCE_ALLGATHER" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DREDUCE_ALLREDUCE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DRHO_SURF" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSASHA" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSEDIMENT_NOT_YET" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSED_BIODIFF" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSENSITIVITY_4DVAR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSET_ZETA" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSGWC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSHORTWAVE" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSLOPE_LESSER" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSLOPE_NEMETH" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSOUTH_FSOBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSOUTH_M2OBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSOUTH_M3OBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSOUTH_TOBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSO_NON_AR1" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSPITZ" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DSVENDSEN_ROLLER" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTANGENT" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTEST_ORTHOGONALIZATION" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTHREE_GHOST" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTIMELESS_DATA" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTKE_DIF2" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTKE_DIF4" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTLM_OBS" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTL_IOMS" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTL_W4DPSAS" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTL_W4DVAR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTRENCH" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTS_HADVECTION_TL" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DTS_VADVECTION_TL" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DUV_DIF2" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DUV_DIF4" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DVAR_RHO_2D" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DVISC_3DCOEF" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWAVES_BOT_PERIOD" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWAVES_COUPLING" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWAVES_DIR" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWAVES_HEIGHT" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWAVES_LENGTH" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWAVES_OCEAN" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWAVES_TOP_PERIOD" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWAVES_UB" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWAVE_DATA" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWEAK_CONSTRAINT" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWEST_FSOBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWEST_M2OBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWEST_M3OBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWEST_TOBC" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWET_MASK" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWIND_WAVES" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DWRiTE_WATER" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DYALIN" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DpCO2_RZ" class="forbidden">
+   Setting this flag is not supported for this SPEC CPU version of ROMS.
+</flag>
+
+<flag name="DADD_FSOBC" class="forbidden">
+   ADD_FSOBC use to add tidal elevation to processed OBC data.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DADD_M2OBC" class="forbidden">
+   ADD_M2OBC use to add tidal currents to processed OBC data.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DADJUST_STFLUX" class="forbidden">
+   ADJUST_STFLUX use if including surface tracer flux in 4DVar state.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DADJUST_WSTRESS" class="forbidden">
+   ADJUST_WSTRESS use if including wind-stress in 4DVar state.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DADM_DRIVER" class="forbidden">
+   ADM_DRIVER used for generic adjoint model driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DADRIA02" class="forbidden">
+   ADRIA02 Adriatic Sea Application.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAD_SENSITIVITY" class="forbidden">
+   AD_SENSITIVITY use if adjoint sensitivity driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAFT_EIGENMODES" class="forbidden">
+   AFT_EIGENMODES use if adjoint finite time eingenmodes driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_BIOLOGY" class="forbidden">
+   ANA_BIOLOGY use if analytical biology initial conditions.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_BPFLUX" class="forbidden">
+   ANA_BPFLUX use if analytical bottom passive tracers fluxes.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_DIAG" class="forbidden">
+   ANA_DIAG use if customized diagnostics. Do   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_FSOBC" class="forbidden">
+   ANA_FSOBC use if analytical free-surface boundary conditions.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_M2CLIMA" class="forbidden">
+   ANA_M2CLIMA use if analytical 2D momentum climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_M2OBC" class="forbidden">
+   ANA_M2OBC use if analytical 2D momentum boundary conditions.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_M3CLIMA" class="forbidden">
+   ANA_M3CLIMA use if analytical 3D momentum climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_M3OBC" class="forbidden">
+   ANA_M3OBC use if analytical 3D momentum boundary conditions.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_MASK" class="forbidden">
+   ANA_MASK use if analytical Land/Sea masking.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_PASSIVE" class="forbidden">
+   ANA_PASSIVE use if analytical initial condtions for inert tracers.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_PERTURB" class="forbidden">
+   ANA_PERTURB use if analytical perturbation of initial conditions.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_PSOURCE" class="forbidden">
+   ANA_PSOURCE use if analytical point Sources/Sinks.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_SEDIMENT" class="forbidden">
+   ANA_SEDIMENT use if analytical sediment initial fields.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_SMFLUX" class="forbidden">
+   ANA_SMFLUX use if analytical surface momentum stress.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_SPFLUX" class="forbidden">
+   ANA_SPFLUX use if analytical surface passive tracers fluxes.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_SPINNING" class="forbidden">
+   ANA_SPINNING use if analytical time-varying rotation force.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_SSH" class="forbidden">
+   ANA_SSH use if analytical sea surface height.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_SSS" class="forbidden">
+   ANA_SSS use if analytical sea surface salinity.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_SST" class="forbidden">
+   ANA_SST use if analytical SST and dQdSST.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_STFLUX" class="forbidden">
+   ANA_STFLUX use if analytical surface temperature flux.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_TCLIMA" class="forbidden">
+   ANA_TCLIMA use if analytical tracers climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_TOBC" class="forbidden">
+   ANA_TOBC use if analytical tracers boundary conditions.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_VMIX" class="forbidden">
+   ANA_VMIX use if analytical vertical mixing coefficients.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DANA_WWAVE" class="forbidden">
+   ANA_WWAVE use if analytical wind induced waves.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DASSIMILATION_SSH" class="forbidden">
+   ASSIMILATION_SSH use if assimilating SSH observations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DASSIMILATION_SST" class="forbidden">
+   ASSIMILATION_SST use if assimilating SST observations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DASSIMILATION_T" class="forbidden">
+   ASSIMILATION_T use if assimilating tracers observations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DASSIMILATION_UV" class="forbidden">
+   ASSIMILATION_UV use if assimilating horizontal current observations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DASSIMILATION_UVsur" class="forbidden">
+   ASSIMILATION_UVsur use if assimilating surface current observations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DATM_PRESS" class="forbidden">
+   ATM_PRESS use to impose atmospheric pressure onto sea surface.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAVERAGES" class="forbidden">
+   AVERAGES use if writing out time-averaged data.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAVERAGES_AKS" class="forbidden">
+   AVERAGES_AKS use if writing out time-averaged AKs.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAVERAGES_AKT" class="forbidden">
+   AVERAGES_AKT use if writing out time-averaged AKt.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAVERAGES_AKV" class="forbidden">
+   AVERAGES_AKV use if writing out time-averaged AKv.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAVERAGES_BEDLOAD" class="forbidden">
+   AVERAGES_BEDLOAD use if writing out time-averaged bed load.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAVERAGES_DETIDE" class="forbidden">
+   AVERAGES_DETIDE use if writing out time-averaged detided fields.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAVERAGES_FLUXES" class="forbidden">
+   AVERAGES_FLUXES use if writing out time-averaged fluxes.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAVERAGES_NEARSHORE" class="forbidden">
+   AVERAGES_NEARSHORE use if writing out time-averaged nearshore stresses.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DAVERAGES_QUADRATIC" class="forbidden">
+   AVERAGES_QUADRATIC use if writing out quadratic terms.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DBALANCE_OPERATOR" class="forbidden">
+   BALANCE_OPERATOR use if error covariance multivariate balance term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DBASIN" class="forbidden">
+   BASIN Big Bad Basin Example.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DBEDLOAD_MPM" class="forbidden">
+   BEDLOAD_MPM use to activate Meyer-Peter-Mueller bed load.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DBEDLOAD_SOULSBY" class="forbidden">
+   BEDLOAD_SOULSBY use to activate Soulsby wave/current bed load.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DBIO_FENNEL" class="forbidden">
+   BIO_FENNEL use if Fennel et al. (2006) nitrogen-based model.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DBIO_SEDIMENT" class="forbidden">
+   BIO_SEDIMENT use to restore fallen material to the nutrient pool.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DBL_TEST" class="forbidden">
+   BL_TEST Boundary Layers Test.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DBODYFORCE" class="forbidden">
+   BODYFORCE use if applying stresses as bodyforces.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DBVF_MIXING" class="forbidden">
+   BVF_MIXING use if Brunt-Vaisala frequency mixing.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCANUTO_A" class="forbidden">
+   CANUTO_A use if Canuto A-stability function formulation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCANUTO_B" class="forbidden">
+   CANUTO_B use if Canuto B-stability function formulation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCANYON" class="forbidden">
+   CANYON Costal form stress Canyon Test.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCARBON" class="forbidden">
+   CARBON use to add carbon constituents.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCELERITY_WRITE" class="forbidden">
+   CELERITY_WRITE use if writing radiation celerity in forward file.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCHANNEL_NECK" class="forbidden">
+   CHANNEL_NECK Channel with a Constriction.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCHARNOK" class="forbidden">
+   CHARNOK use if Charnok surface roughness from wind stress.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCLIMA_TS_MIX" class="forbidden">
+   CLIMA_TS_MIX use if diffusion of tracer perturbation (t-tclm).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCOARE_OOST" class="forbidden">
+   COARE_OOST use Oost et al (2002) relation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCOARE_TAYLOR_YELLAND" class="forbidden">
+   COARE_TAYLOR_YELLAND use Taylor and Yelland (2001) relation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCONVOLUTION" class="forbidden">
+   CONVOLUTION use if adjoint convolution driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCONVOLVE" class="forbidden">
+   CONVOLVE use if convolving solution with diffusion operators.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCOOL_SKIN" class="forbidden">
+   COOL_SKIN use if cool skin correction.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCORRELATION" class="forbidden">
+   CORRELATION use if background-error correlation model driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCOUPLING_TEST" class="forbidden">
+   COUPLING_TEST Two-way Atmosphere-Ocean Coupling Test.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DCRAIG_BANNER" class="forbidden">
+   CRAIG_BANNER use if Craig and Banner wave breaking surface flux.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDAMEE_4" class="forbidden">
+   DAMEE_4 North Atlantic DAMEE Application, 3/4 degree.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDATALESS_LOOPS" class="forbidden">
+   DATALESS_LOOPS use if testing convergence of Picard iterations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDEBUGGING" class="forbidden">
+   DEBUGGING use to activate parallel debugging switch.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDEEPWATER_WAVES" class="forbidden">
+   DEEPWATER_WAVES use Deep water waves approximation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDEFLATE" class="forbidden">
+   DEFLATE use to set compression NetCDF-4/HDF5 format files.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDENITRIFICATION" class="forbidden">
+   DENITRIFICATION use to add denitrification processes.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDIAGNOSTICS_BIO" class="forbidden">
+   DIAGNOSTICS_BIO use if writing out biological diagnostics.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDIAGNOSTICS_TS" class="forbidden">
+   DIAGNOSTICS_TS use if writing out tracer diagnostics.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDIAGNOSTICS_UV" class="forbidden">
+   DIAGNOSTICS_UV use if writing out momentum diagnostics.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDIFF_GRID" class="forbidden">
+   DIFF_GRID use to scale diffusion coefficients by grid size.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDIURNAL_SRFLUX" class="forbidden">
+   DIURNAL_SRFLUX use to impose shortwave radiation local diurnal cycle.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DDOUBLE_GYRE" class="forbidden">
+   DOUBLE_GYRE Idealized Double-gyre Example.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEASTERN_WALL" class="forbidden">
+   EASTERN_WALL use if Eastern edge, closed wall condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_FSCHAPMAN" class="forbidden">
+   EAST_FSCHAPMAN use if free-surface Chapman condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_FSCLAMPED" class="forbidden">
+   EAST_FSCLAMPED use if free-surface clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_FSGRADIENT" class="forbidden">
+   EAST_FSGRADIENT use if free-surface gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_FSNUDGING" class="forbidden">
+   EAST_FSNUDGING use if free-surface passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_FSRADIATION" class="forbidden">
+   EAST_FSRADIATION use if free-surface radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_KGRADIENT" class="forbidden">
+   EAST_KGRADIENT use if TKE fields gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_KRADIATION" class="forbidden">
+   EAST_KRADIATION use if TKE fields radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_M2CLAMPED" class="forbidden">
+   EAST_M2CLAMPED use if 2D momentum clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_M2FLATHER" class="forbidden">
+   EAST_M2FLATHER use if 2D momentum Flather condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_M2GRADIENT" class="forbidden">
+   EAST_M2GRADIENT use if 2D momentum gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_M2NUDGING" class="forbidden">
+   EAST_M2NUDGING use if 2D momentum passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_M2RADIATION" class="forbidden">
+   EAST_M2RADIATION use if 2D momentum radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_M2REDUCED" class="forbidden">
+   EAST_M2REDUCED use if 2D momentum reduced-physics.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_M3CLAMPED" class="forbidden">
+   EAST_M3CLAMPED use if 3D momentum clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_M3GRADIENT" class="forbidden">
+   EAST_M3GRADIENT use if 3D momentum gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_M3NUDGING" class="forbidden">
+   EAST_M3NUDGING use if 3D momentum passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_M3RADIATION" class="forbidden">
+   EAST_M3RADIATION use if 3D momentum radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_TCLAMPED" class="forbidden">
+   EAST_TCLAMPED use if tracers clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_TGRADIENT" class="forbidden">
+   EAST_TGRADIENT use if tracers gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_TNUDGING" class="forbidden">
+   EAST_TNUDGING use if tracers passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_TRADIATION" class="forbidden">
+   EAST_TRADIATION use if tracers radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEAST_VOLCONS" class="forbidden">
+   EAST_VOLCONS use if Eastern edge mass conservation enforcement.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DECOSIM" class="forbidden">
+   ECOSIM use if bio-optical EcoSim model.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DEMINUSP" class="forbidden">
+   EMINUSP use if computing E-P.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DENSEMBLE" class="forbidden">
+   ENSEMBLE use if ensemble prediction driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DESMF_LIB" class="forbidden">
+   ESMF_LIB use Earth System Modeling Framework Library.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DESTUARY_TEST" class="forbidden">
+   ESTUARY_TEST Test Estuary for Sediment.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFLOATS" class="forbidden">
+   FLOATS use to activate simulated Lagrangian drifters.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFLOAT_VWALK" class="forbidden">
+   FLOAT_VWALK use if vertical random walk.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFLT_TEST" class="forbidden">
+   FLT_TEST Float Tracking Example.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFORCING_SV" class="forbidden">
+   FORCING_SV use if forcing singular vectors driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFORWARD_MIXING" class="forbidden">
+   FORWARD_MIXING use if processing forward vertical mixing coefficient.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFORWARD_READ" class="forbidden">
+   FORWARD_READ use if reading in forward solution, basic state.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFORWARD_RHS" class="forbidden">
+   FORWARD_RHS use if processing forward right-hand-side terms.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFORWARD_WRITE" class="forbidden">
+   FORWARD_WRITE use if writing out forward solution, basic state.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFSOBC_REDUCED" class="forbidden">
+   FSOBC_REDUCED use if SSH data and reduced physics conditions.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFT_EIGENMODES" class="forbidden">
+   FT_EIGENMODES use if finite time eingenmodes driver: normal modes.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DFULL_GRID" class="forbidden">
+   FULL_GRID use to consider both interior and boundary points.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DGLS_MIXING" class="forbidden">
+   GLS_MIXING use if Generic Length-Scale mixing.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DGRADIENT_CHECK" class="forbidden">
+   GRADIENT_CHECK use if tangent linear and adjoint codes gradient test.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DGRAV_ADJ" class="forbidden">
+   GRAV_ADJ Graviational Adjustment Example.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DHOLLING_GRAZING" class="forbidden">
+   HOLLING_GRAZING use Holling-type s-shaped curve grazing (implicit).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DICESHELF" class="forbidden">
+   ICESHELF use if including ice shelf cavities.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DIMPLICIT_VCONV" class="forbidden">
+   IMPLICIT_VCONV use if implicit vertical convolution algorithm.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DIMPULSE" class="forbidden">
+   IMPULSE use if processing adjoint impulse forcing.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DINLET_TEST" class="forbidden">
+   INLET_TEST Test Inlet Application.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DINLINE_2DIO" class="forbidden">
+   INLINE_2DIO use if processing 3D IO level by level.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DINNER_PRODUCT" class="forbidden">
+   INNER_PRODUCT use if tangent linear and adjoint inner product check.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DIOM" class="forbidden">
+   IOM use to activate IOM multiple executables.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DIRON_LIMIT" class="forbidden">
+   IRON_LIMIT use if Fe limitation on phytoplankton growth.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DIRON_RELAX" class="forbidden">
+   IRON_RELAX use if nudging Fe over the shelf, h le FeHmin.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DIS4DVAR" class="forbidden">
+   IS4DVAR use if incremental 4DVar data assimilation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DIVLEV_EXPLICIT" class="forbidden">
+   IVLEV_EXPLICIT use Ivlev explicit grazing algorithm.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DKANTHA_CLAYSON" class="forbidden">
+   KANTHA_CLAYSON use if Kantha and Clayson stability function.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DKELVIN" class="forbidden">
+   KELVIN Kelvin wave test.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DK_C2ADVECTION" class="forbidden">
+   K_C2ADVECTION use if 2nd-order centered advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DK_C4ADVECTION" class="forbidden">
+   K_C4ADVECTION use if 4th-order centered advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLAB_CANYON" class="forbidden">
+   LAB_CANYON Lab Canyon, Polar Coordinates Example.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLAKE_SIGNELL" class="forbidden">
+   LAKE_SIGNELL Lake Signell Sediment Test Case.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLMD_BKPP" class="forbidden">
+   LMD_BKPP use if bottom boundary layer KPP mixing.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLMD_DDMIX" class="forbidden">
+   LMD_DDMIX use to add double-diffusive mixing.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLMD_SHAPIRO" class="forbidden">
+   LMD_SHAPIRO use if Shapiro filtering boundary layer depth.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLMD_TEST" class="forbidden">
+   LMD_TEST Test for LMD and KPP.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DLONGWAVE_OUT" class="forbidden">
+   LONGWAVE_OUT use if computing ougoing longwave radiation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DM2CLIMATOLOGY" class="forbidden">
+   M2CLIMATOLOGY use if processing 2D momentum climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DM2CLM_NUDGING" class="forbidden">
+   M2CLM_NUDGING use if nudging 2D momentum climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DM3CLIMATOLOGY" class="forbidden">
+   M3CLIMATOLOGY use if processing 3D momentum climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DM3CLM_NUDGING" class="forbidden">
+   M3CLM_NUDGING use if nudging 3D momentum climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMASKING" class="forbidden">
+   MASKING use if land/sea masking.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMB_BBL" class="forbidden">
+   MB_BBL use if Meinte Blaas BBL closure.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMB_CALC_UB" class="forbidden">
+   MB_CALC_UB use if computing bottom orbital velocity internally.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMB_CALC_ZNOT" class="forbidden">
+   MB_CALC_ZNOT use if computing bottom roughness internally.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMB_Z0BIO" class="forbidden">
+   MB_Z0BIO use if biogenic bedform roughness for ripples.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMB_Z0BL" class="forbidden">
+   MB_Z0BL use if bedload roughness for ripples.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMB_Z0RIP" class="forbidden">
+   MB_Z0RIP use if bedform roughness for ripples.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMCT_LIB" class="forbidden">
+   MCT_LIB use Model Coupling Toolkit Library.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMIX_GEO_UV" class="forbidden">
+   MIX_GEO_UV use if mixing on geopotential (constant Z) surfaces.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMIX_ISO_TS" class="forbidden">
+   MIX_ISO_TS use if mixing on epineutral (constant RHO) surfaces.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMIX_S_TS" class="forbidden">
+   MIX_S_TS use if mixing along constant S-surfaces.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMULTIPLE_TLM" class="forbidden">
+   MULTIPLE_TLM use if multiple TLM history files in 4DVAR.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DMY25_MIXING" class="forbidden">
+   MY25_MIXING use if Mellor/Yamada Level-2.5 closure.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DN2S2_HORAVG" class="forbidden">
+   N2S2_HORAVG use if horizontal smoothing of buoyancy/shear.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNEARSHORE_MELLOR" class="forbidden">
+   NEARSHORE_MELLOR use to activate radiation stress terms..   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNEMURO" class="forbidden">
+   NEMURO use if Nemuro ecosystem model..   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNETCDF4" class="forbidden">
+   NETCDF4 use to create NetCDF-4/HDF5 format files.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNJ_BIGHT" class="forbidden">
+   NJ_BIGHT New Jersey Bight Application.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNLM_OUTER" class="forbidden">
+   NLM_OUTER use if nonlinear model as basic state in outer loop.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNL_BULK_FLUXES" class="forbidden">
+   NL_BULK_FLUXES use bulk fluxes computed by nonlinear model.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_FSCHAPMAN" class="forbidden">
+   NORTH_FSCHAPMAN use if free-surface Chapman condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_FSCLAMPED" class="forbidden">
+   NORTH_FSCLAMPED use if free-surface clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_FSGRADIENT" class="forbidden">
+   NORTH_FSGRADIENT use if free-surface gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_FSNUDGING" class="forbidden">
+   NORTH_FSNUDGING use if free-surface passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_FSRADIATION" class="forbidden">
+   NORTH_FSRADIATION use if free-surface radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_KGRADIENT" class="forbidden">
+   NORTH_KGRADIENT use if TKE fields gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_KRADIATION" class="forbidden">
+   NORTH_KRADIATION use if TKE fields radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_M2CLAMPED" class="forbidden">
+   NORTH_M2CLAMPED use if 2D momentum clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_M2FLATHER" class="forbidden">
+   NORTH_M2FLATHER use if 2D momentum Flather condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_M2GRADIENT" class="forbidden">
+   NORTH_M2GRADIENT use if 2D momentum gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_M2NUDGING" class="forbidden">
+   NORTH_M2NUDGING use if 2D momentum passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_M2RADIATION" class="forbidden">
+   NORTH_M2RADIATION use if 2D momentum radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_M2REDUCED" class="forbidden">
+   NORTH_M2REDUCED use if 2D momentum reduced-physics.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_M3CLAMPED" class="forbidden">
+   NORTH_M3CLAMPED use if 3D momentum clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_M3GRADIENT" class="forbidden">
+   NORTH_M3GRADIENT use if 3D momentum gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_M3NUDGING" class="forbidden">
+   NORTH_M3NUDGING use if 3D momentum passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_M3RADIATION" class="forbidden">
+   NORTH_M3RADIATION use if 3D momentum radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_TCLAMPED" class="forbidden">
+   NORTH_TCLAMPED use if tracers clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_TGRADIENT" class="forbidden">
+   NORTH_TGRADIENT use if tracers gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_TNUDGING" class="forbidden">
+   NORTH_TNUDGING use if tracers passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_TRADIATION" class="forbidden">
+   NORTH_TRADIATION use if tracers radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNORTH_VOLCONS" class="forbidden">
+   NORTH_VOLCONS use if Northern edge mass conservation enforcement.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNO_READ_GHOST" class="forbidden">
+   NO_READ_GHOST use to not include ghost points during read/scatter.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNO_WRITE_GRID" class="forbidden">
+   NO_WRITE_GRID use if not writing grid arrays.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNPZD_FRANKS" class="forbidden">
+   NPZD_FRANKS use if NPZD Biology model, Franks et al. (1986).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNPZD_IRON" class="forbidden">
+   NPZD_IRON use if NPZD Biology model wiht iron limitation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNPZD_POWELL" class="forbidden">
+   NPZD_POWELL use if NPZD Biology model, Powell et al. (2006).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNS_PERIODIC" class="forbidden">
+   NS_PERIODIC use if North-South periodic boundaries.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNUDGING_SSH" class="forbidden">
+   NUDGING_SSH use if nudging SSH observations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNUDGING_SST" class="forbidden">
+   NUDGING_SST use if nudging SST observations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNUDGING_T" class="forbidden">
+   NUDGING_T use if nudging tracers observations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNUDGING_UV" class="forbidden">
+   NUDGING_UV use if nudging horizontal currents observations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DNUDGING_UVsur" class="forbidden">
+   NUDGING_UVsur use if nudging surface current observations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DOBS_IMPACT" class="forbidden">
+   OBS_IMPACT use if observation impact to 4DVAR data assimilation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DOBS_SENSITIVITY" class="forbidden">
+   OBS_SENSITIVITY use if 4DVAR observations sensitivity driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DOCMIP_OXYGEN_SC" class="forbidden">
+   OCMIP_OXYGEN_SC use if Schmidt number from Keeling et al. (1998).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DOPT_OBSERVATIONS" class="forbidden">
+   OPT_OBSERVATIONS use if optimal observations driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DOPT_PERTURBATION" class="forbidden">
+   OPT_PERTURBATION use if optimal perturbations driver, singular vectors.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DOUT_DOUBLE" class="forbidden">
+   OUT_DOUBLE use if writing double precision output fields.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DOVERFLOW" class="forbidden">
+   OVERFLOW Graviational/Overflow Example.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DOXYGEN" class="forbidden">
+   OXYGEN use to add oxygen dynamics.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DPERFECT_RESTART" class="forbidden">
+   PERFECT_RESTART use to include perfect restart variables.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DPICARD_TEST" class="forbidden">
+   PICARD_TEST use if representer tangent linear model test.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DPJ_GRADP" class="forbidden">
+   PJ_GRADP use if finite volume Pressure Jacobian (Lin,1997).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DPJ_GRADPQ2" class="forbidden">
+   PJ_GRADPQ2 use if quartic 2 Pressure Jacobian (Shchepetkin,2000).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DPJ_GRADPQ4" class="forbidden">
+   PJ_GRADPQ4 use if quartic 4 Pressure Jacobian (Shchepetkin,2000).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DPOSTERIOR_EOFS" class="forbidden">
+   POSTERIOR_EOFS Use if posterior analysis error covariace EOFS.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DPOSTERIOR_ERROR_F" class="forbidden">
+   POSTERIOR_ERROR_F Use if final posterior analysis error covariace.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DPOSTERIOR_ERROR_I" class="forbidden">
+   POSTERIOR_ERROR_I Use if initial posterior analysis error covariace.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DPROFILE" class="forbidden">
+   PROFILE use if time profiling.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DPSEUDOSPECTRA" class="forbidden">
+   PSEUDOSPECTRA use if pseudospectra of tangent linear resolvant.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DQCORRECTION" class="forbidden">
+   QCORRECTION use if net heat flux correction.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DQ_PSOURCE" class="forbidden">
+   Q_PSOURCE use to turn ON or OFF mass point Sources.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRADIATION_2D" class="forbidden">
+   RADIATION_2D use if tangential phase speed in radiation conditions.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRAMP_TIDES" class="forbidden">
+   RAMP_TIDES use if ramping (over one day) tidal forcing.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DREAD_WATER" class="forbidden">
+   READ_WATER use if only reading water points data.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DREFDIF_COUPLING" class="forbidden">
+   REFDIF_COUPLING use if coupling to REFDIT wave model.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRIVERPLUME1" class="forbidden">
+   RIVERPLUME1 River Plume Example 1.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRIVERPLUME2" class="forbidden">
+   RIVERPLUME2 River plume Example 2 (Hyatt and Signell).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRIVER_BIOLOGY" class="forbidden">
+   RIVER_BIOLOGY use to process river biology point-sources.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRIVER_SEDIMENT" class="forbidden">
+   RIVER_SEDIMENT use to process river sediment point-sources.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRI_HORAVG" class="forbidden">
+   RI_HORAVG use if horizontal Richardson number smoothing.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRI_VERAVG" class="forbidden">
+   RI_VERAVG use if vertical Richardson number smoothing.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRPM_DRIVER" class="forbidden">
+   RPM_DRIVER use if generic representers model driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRPM_RELAXATION" class="forbidden">
+   RPM_RELAXATION use if Picard iterations, Diffusive Relaxation of RPM.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DRST_SINGLE" class="forbidden">
+   RST_SINGLE use if writing single precision restart fields.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DR_SYMMETRY" class="forbidden">
+   R_SYMMETRY use if representer matrix symmetry test.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSANITY_CHECK" class="forbidden">
+   SANITY_CHECK use if tangent linear and adjoint codes sanity check.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSCORRECTION" class="forbidden">
+   SCORRECTION use if freshwater flux correction.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSEAMOUNT" class="forbidden">
+   SEAMOUNT Seamount Example.   Setting this flag is not supported for this SPEC CPU version of ROMS.
+
+</flag>
+
+<flag name="DSEDIMENT" class="forbidden">
+   SEDIMENT use to activate sediment transport model.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSED_DENS" class="forbidden">
+   SED_DENS use to activate sediment to affect equation of state.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSED_MORPH" class="forbidden">
+   SED_MORPH use to allow bottom model elevation to evolve.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSED_TEST1" class="forbidden">
+   SED_TEST1 Suspended Sediment Test in a Channel.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSED_TOY" class="forbidden">
+   SED_TOY One-dimension (vertical) Sediment Toy.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSG_BBL" class="forbidden">
+   SG_BBL use if Styles and Glenn (2000) BBL closure.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSG_CALC_UB" class="forbidden">
+   SG_CALC_UB use if computing bottom orbital velocity internally.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSG_CALC_ZNOT" class="forbidden">
+   SG_CALC_ZNOT use if computing bottom roughness internally.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSG_LOGINT" class="forbidden">
+   SG_LOGINT use if logarithmic interpolation of (Ur,Vr).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSHOREFACE" class="forbidden">
+   SHOREFACE Shore Face Planar Beach Test Case.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOLITON" class="forbidden">
+   SOLITON Equatorial Rossby Wave Example.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_FSCHAPMAN" class="forbidden">
+   SOUTH_FSCHAPMAN use if free-surface Chapman condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_FSCLAMPED" class="forbidden">
+   SOUTH_FSCLAMPED use if free-surface clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_FSGRADIENT" class="forbidden">
+   SOUTH_FSGRADIENT use if free-surface gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_FSNUDGING" class="forbidden">
+   SOUTH_FSNUDGING use if free-surface passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_FSRADIATION" class="forbidden">
+   SOUTH_FSRADIATION use if free-surface radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_KGRADIENT" class="forbidden">
+   SOUTH_KGRADIENT use if TKE fields gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_KRADIATION" class="forbidden">
+   SOUTH_KRADIATION use if TKE fields radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_M2CLAMPED" class="forbidden">
+   SOUTH_M2CLAMPED use if 2D momentum clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_M2FLATHER" class="forbidden">
+   SOUTH_M2FLATHER use if 2D momentum Flather condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_M2GRADIENT" class="forbidden">
+   SOUTH_M2GRADIENT use if 2D momentum gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_M2NUDGING" class="forbidden">
+   SOUTH_M2NUDGING use if 2D momentum passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_M2RADIATION" class="forbidden">
+   SOUTH_M2RADIATION use if 2D momentum radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_M2REDUCED" class="forbidden">
+   SOUTH_M2REDUCED use if 2D momentum reduced-physics.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_M3CLAMPED" class="forbidden">
+   SOUTH_M3CLAMPED use if 3D momentum clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_M3GRADIENT" class="forbidden">
+   SOUTH_M3GRADIENT use if 3D momentum gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_M3NUDGING" class="forbidden">
+   SOUTH_M3NUDGING use if 3D momentum passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_M3RADIATION" class="forbidden">
+   SOUTH_M3RADIATION use if 3D momentum radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_TCLAMPED" class="forbidden">
+   SOUTH_TCLAMPED use if tracers clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_TGRADIENT" class="forbidden">
+   SOUTH_TGRADIENT use if tracers gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_TNUDGING" class="forbidden">
+   SOUTH_TNUDGING use if tracers passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_TRADIATION" class="forbidden">
+   SOUTH_TRADIATION use if tracers radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSOUTH_VOLCONS" class="forbidden">
+   SOUTH_VOLCONS use if Southern edge mass conservation enforcement.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSO_SEMI" class="forbidden">
+   SO_SEMI use if stochastic optimals driver, semi-norm.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSO_SEMI_WHITE" class="forbidden">
+   SO_SEMI_WHITE use to activate white/red noise processes.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSO_TRACE" class="forbidden">
+   SO_TRACE use if stochastic optimals, randomized trace.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSPLINES_VCONV" class="forbidden">
+   SPLINES_VCONV use to activate implicit splines vertical convolution.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSPONGE" class="forbidden">
+   SPONGE use if enhanced viscosity/diffusion areas.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSRELAXATION" class="forbidden">
+   SRELAXATION use if salinity relaxation as a freshwater flux.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSSH_TIDES" class="forbidden">
+   SSH_TIDES use if imposing tidal elevation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSSW_BBL" class="forbidden">
+   SSW_BBL use if Sherwood et al. BBL closure.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSSW_CALC_UB" class="forbidden">
+   SSW_CALC_UB use if computing bottom orbital velocity internally.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSSW_CALC_ZNOT" class="forbidden">
+   SSW_CALC_ZNOT use if computing bottom roughness internally.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSSW_FORM_DRAG_COR" class="forbidden">
+   SSW_FORM_DRAG_COR use to activate form drag coefficient.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSSW_LOGINT" class="forbidden">
+   SSW_LOGINT use if logarithmic interpolation of (Ur,Vr).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSSW_ZOBIO" class="forbidden">
+   SSW_ZOBIO use if biogenic bedform roughness from ripples.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSSW_ZOBL" class="forbidden">
+   SSW_ZOBL use if bedload roughness for ripples.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSSW_ZORIP" class="forbidden">
+   SSW_ZORIP use if bedform roughness from ripples.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSTATIONS" class="forbidden">
+   STATIONS use if writing out station data.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSTATIONS_CGRID" class="forbidden">
+   STATIONS_CGRID use if extracting data at native C-grid.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSTOCHASTIC_OPT" class="forbidden">
+   STOCHASTIC_OPT use if stochastic optimals.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSUSPLOAD" class="forbidden">
+   SUSPLOAD use to activate suspended load transport.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DSWAN_COUPLING" class="forbidden">
+   SWAN_COUPLING use if coupling to SWAN wave model.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTALK_NONCONSERV" class="forbidden">
+   TALK_NONCONSERV use if nonconservative computation of alkalinity.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTCLIMATOLOGY" class="forbidden">
+   TCLIMATOLOGY use if processing tracers climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTCLM_NUDGING" class="forbidden">
+   TCLM_NUDGING use if nudging tracers climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTEST_CHAN" class="forbidden">
+   TEST_CHAN Sediment Test Channel Case.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTKE_WAVEDISS" class="forbidden">
+   TKE_WAVEDISS use if wave breaking surface flux from wave amplitude.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTLM_CHECK" class="forbidden">
+   TLM_CHECK use if tangent linear model linearization check.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTLM_DRIVER" class="forbidden">
+   TLM_DRIVER use if generic tangent linear model driver.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_A4HADVECTION" class="forbidden">
+   TS_A4HADVECTION use if 4th-order Akima horizontal advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_A4HADVECTION_TL" class="forbidden">
+   TS_A4HADVECTION_TL use if 4th-order Akima horizontal advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_A4VADVECTION" class="forbidden">
+   TS_A4VADVECTION use if 4th-order Akima vertical advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_A4VADVECTION_TL" class="forbidden">
+   TS_A4VADVECTION_TL use if 4th-order Akima vertical advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_C2HADVECTION" class="forbidden">
+   TS_C2HADVECTION use if 2nd-order centered horizontal advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_C2HADVECTION_TL" class="forbidden">
+   TS_C2HADVECTION_TL use if 2nd-order centered horizontal advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_C2VADVECTION" class="forbidden">
+   TS_C2VADVECTION use if 2nd-order centered vertical advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_C2VADVECTION_TL" class="forbidden">
+   TS_C2VADVECTION_TL use if 2nd-order centered vertical advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_C4HADVECTION" class="forbidden">
+   TS_C4HADVECTION use if 4th-order centered horizontal advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_C4HADVECTION_TL" class="forbidden">
+   TS_C4HADVECTION_TL use if 4th-order centered horizontal advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_C4VADVECTION_TL" class="forbidden">
+   TS_C4VADVECTION_TL use if 4th-order centered vertical advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_DIF4" class="forbidden">
+   TS_DIF4 use to turn ON or OFF biharmonic horizontal mixing.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_FIXED" class="forbidden">
+   TS_FIXED use if diagnostic run, no evolution of tracers.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_MPDATA" class="forbidden">
+   TS_MPDATA use if recursive MPDATA 3D advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_PSOURCE" class="forbidden">
+   TS_PSOURCE use to turn ON or OFF point Sources/Sinks.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_SMAGORINSKY" class="forbidden">
+   TS_SMAGORINSKY use to turn ON or OFF Smagorinsky-like diffusion.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_SVADVECTION" class="forbidden">
+   TS_SVADVECTION use if splines vertical advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_SVADVECTION_TL" class="forbidden">
+   TS_SVADVECTION_TL use if splines vertical advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_U3ADV_SPLIT" class="forbidden">
+   TS_U3ADV_SPLIT use if 3rd-order upstream split tracer advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DTS_U3HADVECTION_TL" class="forbidden">
+   TS_U3HADVECTION_TL use if 3rd-order upstream horiz. advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DT_PASSIVE" class="forbidden">
+   T_PASSIVE use if inert passive tracers (dyes, etc).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUPWELLING" class="forbidden">
+   UPWELLING Upwelling Example (default).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_BAROCLINIC" class="forbidden">
+   UV_BAROCLINIC use if assimilating baroclinic currents only.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_C2ADVECTION" class="forbidden">
+   UV_C2ADVECTION use to turn ON or OFF 2nd-order centered advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_C4ADVECTION" class="forbidden">
+   UV_C4ADVECTION use to turn ON or OFF 4th-order centered advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_LDRAG" class="forbidden">
+   UV_LDRAG use to turn ON or OFF linear bottom friction.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_LOGDRAG" class="forbidden">
+   UV_LOGDRAG use to turn ON or OFF logarithmic bottom friction.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_PSOURCE" class="forbidden">
+   UV_PSOURCE use to turn ON or OFF point Sources/Sinks.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_SADVECTION" class="forbidden">
+   UV_SADVECTION use to turn ON or OFF splines vertical advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_SMAGORINSKY" class="forbidden">
+   UV_SMAGORINSKY use to turn ON or OFF Smagorinsky-like viscosity.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_TIDES" class="forbidden">
+   UV_TIDES use if imposing tidal currents.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_U3ADV_SPLIT" class="forbidden">
+   UV_U3ADV_SPLIT use if 3rd-order upstream split momentum advection.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DUV_VIS4" class="forbidden">
+   UV_VIS4 use to turn ON or OFF biharmonic horizontal mixing.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DVCONVOLUTION" class="forbidden">
+   VCONVOLUTION use to add vertical correlation to 3D convolution.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DVERIFICATION" class="forbidden">
+   VERIFICATION use if writing out solution at observation locations.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DVISC_GRID" class="forbidden">
+   VISC_GRID use to scale viscosity coefficient by grid size.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DVWALK_FORWARD" class="forbidden">
+   VWALK_FORWARD use if foward time stepping vertical random walk.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DW4DPSAS" class="forbidden">
+   W4DPSAS use if weak constraint 4DPSAS data assimilation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DW4DPSAS_SENSITIVITY" class="forbidden">
+   W4DPSAS_SENSITIVITY use if weak constraint 4DPSAS observation sensitivity.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DW4DVAR" class="forbidden">
+   W4DVAR use if Weak constraint 4DVar data assimilation.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DW4DVAR_SENSITIVITY" class="forbidden">
+   W4DVAR_SENSITIVITY use if Weak constraint 4DVar observation sensitivity.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEDDELL" class="forbidden">
+   WEDDELL Idealized Weddell Sea Shelf Application.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWESTERN_WALL" class="forbidden">
+   WESTERN_WALL use if Western edge, closed wall condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_FSCHAPMAN" class="forbidden">
+   WEST_FSCHAPMAN use if free-surface Chapman condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_FSCLAMPED" class="forbidden">
+   WEST_FSCLAMPED use if free-surface clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_FSGRADIENT" class="forbidden">
+   WEST_FSGRADIENT use if free-surface gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_FSNUDGING" class="forbidden">
+   WEST_FSNUDGING use if free-surface passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_FSRADIATION" class="forbidden">
+   WEST_FSRADIATION use if free-surface radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_KGRADIENT" class="forbidden">
+   WEST_KGRADIENT use if TKE fields gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_KRADIATION" class="forbidden">
+   WEST_KRADIATION use if TKE fields radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_M2CLAMPED" class="forbidden">
+   WEST_M2CLAMPED use if 2D momentum clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_M2FLATHER" class="forbidden">
+   WEST_M2FLATHER use if 2D momentum Flather condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_M2GRADIENT" class="forbidden">
+   WEST_M2GRADIENT use if 2D momentum gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_M2NUDGING" class="forbidden">
+   WEST_M2NUDGING use if 2D momentum passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_M2RADIATION" class="forbidden">
+   WEST_M2RADIATION use if 2D momentum radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_M2REDUCED" class="forbidden">
+   WEST_M2REDUCED use if 2D momentum reduced-physics.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_M3CLAMPED" class="forbidden">
+   WEST_M3CLAMPED use if 3D momentum clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_M3GRADIENT" class="forbidden">
+   WEST_M3GRADIENT use if 3D momentum gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_M3NUDGING" class="forbidden">
+   WEST_M3NUDGING use if 3D momentum passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_M3RADIATION" class="forbidden">
+   WEST_M3RADIATION use if 3D momentum radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_TCLAMPED" class="forbidden">
+   WEST_TCLAMPED use if tracers clamped condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_TGRADIENT" class="forbidden">
+   WEST_TGRADIENT use if tracers gradient condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_TNUDGING" class="forbidden">
+   WEST_TNUDGING use if tracers passive/active nudging term.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_TRADIATION" class="forbidden">
+   WEST_TRADIATION use if tracers radiation condition.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWEST_VOLCONS" class="forbidden">
+   WEST_VOLCONS use if Western edge mass conservation enforcement.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWET_DRY" class="forbidden">
+   WET_DRY use to activate wetting and drying.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWINDBASIN" class="forbidden">
+   WINDBASIN Linear Wind-driven Constant Coriolis Basin.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWJ_GRADP" class="forbidden">
+   WJ_GRADP use if weighted density Jacobian (Song,1998).   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWRF_COUPLING" class="forbidden">
+   WRF_COUPLING use if coupling to WRF atmospheric model.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DWRITE_WATER" class="forbidden">
+   WRITE_WATER use if only writing water points data.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DZCLIMATOLOGY" class="forbidden">
+   ZCLIMATOLOGY use if processing SSH climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DZCLM_NUDGING" class="forbidden">
+   ZCLM_NUDGING use if nudging SSH climatology.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DZETA_ELLIPTIC" class="forbidden">
+   ZETA_ELLIPTIC use if SSH elliptic Equation in balance operator.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+<flag name="DZOS_HSIG" class="forbidden">
+   ZOS_HSIG use if surface roughness from wave amplitude.   Setting this flag is not supported for this SPEC CPU version of ROMS.  
+</flag>
+
+</flagsdescription>

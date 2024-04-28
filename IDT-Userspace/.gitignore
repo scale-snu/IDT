@@ -1,0 +1,6 @@
+__pycache__/
+data/
+chkpt/
+test.py
+data/experience.buf
+run.sh

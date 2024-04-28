@@ -1,0 +1,98 @@
+Execution File:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Num of Programs:  15
+Program Path:     /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:-limit
+option1:-limit
+i:2, argv[6]:disk
+option2:disk
+i:3, argv[7]:0
+option3:0
+i:4, argv[8]:refspeed_input.tga
+option4:refspeed_input.tga
+i:5, argv[9]:-resize
+option5:-resize
+i:6, argv[10]:817%
+option6:817%
+i:7, argv[11]:-rotate
+option7:-rotate
+i:8, argv[12]:-2.76
+option8:-2.76
+i:9, argv[13]:-shave
+option9:-shave
+i:10, argv[14]:540x375
+option10:540x375
+i:11, argv[15]:-alpha
+option11:-alpha
+i:12, argv[16]:remove
+option12:remove
+i:13, argv[17]:-auto-level
+option13:-auto-level
+i:14, argv[18]:-contrast-stretch
+option14:-contrast-stretch
+i:15, argv[19]:1x1%
+option15:1x1%
+i:16, argv[20]:-colorspace
+option16:-colorspace
+i:17, argv[21]:Lab
+option17:Lab
+i:18, argv[22]:-channel
+option18:-channel
+i:19, argv[23]:R
+option19:R
+i:20, argv[24]:-equalize
+option20:-equalize
+i:21, argv[25]:+channel
+option21:+channel
+i:22, argv[26]:-colorspace
+option22:-colorspace
+i:23, argv[27]:sRGB
+option23:sRGB
+i:24, argv[28]:-define
+option24:-define
+i:25, argv[29]:histogram:unique-colors=false
+option25:histogram:unique-colors=false
+i:26, argv[30]:-adaptive-blur
+option26:-adaptive-blur
+i:27, argv[31]:0x5
+option27:0x5
+i:28, argv[32]:-despeckle
+option28:-despeckle
+i:29, argv[33]:-auto-gamma
+option29:-auto-gamma
+i:30, argv[34]:-adaptive-sharpen
+option30:-adaptive-sharpen
+i:31, argv[35]:55
+option31:55
+i:32, argv[36]:-enhance
+option32:-enhance
+i:33, argv[37]:-brightness-contrast
+option33:-brightness-contrast
+i:34, argv[38]:10x10
+option34:10x10
+i:35, argv[39]:-resize
+option35:-resize
+i:36, argv[40]:30%
+option36:30%
+i:37, argv[41]:refspeed_output.tga
+option37:refspeed_output.tga
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 1
+Directory [1]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 2
+Directory [2]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 3
+Directory [3]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 4
+Directory [4]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/imagick_s_base.gcc-baseline-o2-m64
+Core: 5
+Directory [5]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/638.imagick_s/run/run_base_re

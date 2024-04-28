@@ -1,0 +1,34 @@
+# To use this Makefile, temporarily copy the 2 netcdf f90 files into this directory as .F90
+# Afterwards, concatenate all the .d files into a Depends file using the mergedep.awk file
+
+include Makefile.conf
+AWK := awk
+FDEPENDS=fdepends.awk
+DEPSUF = .d
+PERL = /usr/bin/perl
+
+SRCS_F90:= $(shell cat Srcfiles_F90)
+DEPENDS := $(SRCS_F90:.F90=$(DEPSUF))
+
+depends: $(DEPENDS)
+	@echo "Done updating dependencies"
+
+list:
+	@echo " Sources=$(SOURCES)"
+	@echo " Objects=$(OBJS)"
+
+.SUFFIXES:
+.SUFFIXES: .F90 .c .o
+
+%$(DEPSUF): %.F90
+	@echo 'Making dependencies for' $< '-->' $@
+	$(CPP) $(CPPFLAGS) -I. -I./netcdf/include -o $*.f90 $*.F90
+	@$(AWK) -f $(FDEPENDS) -v NAME=$(basename $<) -v SUF=$(suffix $<) $*.f90 > $@
+	$(RM) $*.f90
+
+
+#	@$(AWK) -f $(FDEPENDS) -v NAME=$(basename $<) -v SUF=$(suffix $<) $< > $@
+#.F90.o:
+#        $(RM) $*.f90
+#        $(CPP) $(CPPFLAGS) $(CFLAGS) $(COPTS) $(INCLUDES) -o $*.f90 $*.F90
+

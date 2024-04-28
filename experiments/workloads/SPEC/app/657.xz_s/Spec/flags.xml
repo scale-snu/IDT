@@ -1,0 +1,840 @@
+<?xml version="1.0"?>
+<!DOCTYPE flagsdescription SYSTEM
+       "http://www.spec.org/dtd/cpuflags2.dtd">
+
+<!-- This file defines flags that appear in the sources for 657.xz_s.
+
+  Copyright 2013-2015 Standard Performance Evaluation Corporation
+
+  $Revision: 5676 $
+  $Date: 2017-05-06 15:49:34 -0400 (Sat, 06 May 2017) $
+-->
+<flagsdescription>
+
+<!-- Normal flags file should suggest a name for themselves -->
+<filename>657.xz_s.flags</filename>
+
+<title>657.xz_s Flags</title>
+
+<header>
+<![CDATA[
+<p>There are only a few preprocessor macros used in 657.xz_s.
+Because they are either set automatically by the compilation system or would
+break the build or run, attempting to change them is not allowed.</p>
+]]>
+</header>
+
+
+<!-- ***********************************************************************
+   - Portability flags
+   -->
+<flag name="DWORDS_BIGENDIAN" class="portability">
+This macro should be set on systems which have "big endian" (most significant
+byte first) byte order, if the byte order is not correctly automatically supplied
+by the tools.
+</flag>
+
+<flag name="DSPEC_NO_STDBOOL_H" class="portability">
+This macro may be defined when the compilation environment lacks the stdbool.h
+header file.
+</flag>
+
+<flag name="DSPEC_NEED_INTTYPES_H" class="portability">
+This macro may be defined on Windows systems when the compilation system
+does not supply the inttypes.h header file, in which case a local version is
+supplied instead.
+</flag>
+
+<flag name="DHAVE__BOOL" class="portability">
+This macro may be defined to indicate that the compilation system natively
+provides a type of "_Bool".  This macro has no effect unless -DSPEC_NO_STDBOOL_H
+is set.
+</flag>
+
+<flag name="DSPEC_NO_SSIZE_T" class="portability">
+This macro may be defined to cause instances of ssize_t to be replaced with SSIZE_T.
+</flag>
+
+<flag name="DSPEC_NEED__SNPRINTF" class="portability">
+This macro can be defined to indicate that the snprintf() function is not available,
+but that _snprintf() is.
+</flag>
+
+<flag name="DSPEC_HAVE_SNPRINTF" class="portability">
+This macro can be defined to prevent the preprocessor from replacing instances of
+snprintf() with _snprintf().  This substitution happens automatically on Windows.
+</flag>
+
+<flag name="D_WIN32" class="portability">
+This flag indicates that the source is being built on Windows.
+</flag>
+
+<flag name="SPEC_NULLCAST" class="portability" regexp="[-/]DSPEC_NULLCAST(?:=\S*)?">
+This macro defines a cast which is used when comparing a file handle value
+(from the I/O abstraction layer) to NULL.  It must match the type used for
+the file handle, which is int.
+</flag>
+
+<flag name="DSPEC_GCC_INITIALIZER_CAST" class="portability">
+This macro is used to change the syntax use to cast initialization values from proper
+C99-style to GCC-style.  The primary difference is that C99 defines it as a cast
+expression while GCC has it as a postfix expression.  The syntax difference is one
+set of parentheses.
+</flag>
+
+<flag name="DSPEC_NO_C99_STATIC_ARRAY_ARGUMENTS" class="portability">
+  This macro can be used to indicate that the compilation environment doesn't
+  support using the static modifier to array size specifications in function
+  declarators.
+</flag>
+
+<flag name="extensions" class="portability" regexp="[-/]D(?:_ALL_SOURCE|_GNU_SOURCE|_TANDEM_SOURCE|__EXTENSIONS__|_POSIX_PTHREAD_SEMANTICS)(?:=\S*)?$">
+<example>
+-D_ALL_SOURCE=0,
+-D_GNU_SOURCE=0,
+-D_TANDEM_SOURCE=0,
+-D__EXTENSIONS__=0,
+-D_POSIX_PTHREAD_SEMANTICS=0,
+</example>
+These macros enable some source extensions on certain platforms.  They are set
+to 1 by default but may be set to other values if necessary for portability.
+</flag>
+
+<flag name="DAC_APPLE_UNIVERSAL_BUILD" class="portability">
+This macro indicates that "universal" binaries are being built on MacOS X.  The
+practical effect is to set WORDS_BIGENDIAN if __BIG_ENDIAN__ is set.
+</flag>
+
+<flag name="DPRIX32" class="portability">
+This macro contains the string value of the printf() format string that can be
+used to print a 32-bit integer as hexadecimal with upper-case characters.  The
+default value is "X".
+</flag>
+
+<flag name="DPRIX64" class="portability">
+This macro contains the string value of the printf() format string that can be
+used to print a 64-bit integer as hexadecimal with upper-case characters.  The
+default value is "llX" on 32-bit systems and "lX" on 64-bit systems.
+</flag>
+
+<flag name="DPRIu32" class="portability">
+This macro contains the string value of the printf() format string that can be
+used to print a 32-bit unsigned integer.  The default value is "u".
+</flag>
+
+<flag name="DPRIu64" class="portability">
+This macro contains the string value of the printf() format string that can be
+used to print a 64-bit unsigned integer.  The default value is "llu" on 32-bit
+systems and "lu" on 64-bit systems.
+</flag>
+
+<flag name="DPRIx32" class="portability">
+This macro contains the string value of the printf() format string that can be
+used to print a 32-bit integer as hexadecimal with lower-case characters.  The
+default value is "x".
+</flag>
+
+<flag name="DPRIx64" class="portability">
+This macro contains the string value of the printf() format string that can be
+used to print a 64-bit integer as hexadecimal with lower-case characters.  The
+default value is "llx" on 32-bit systems and "lx" on 64-bit systems.
+</flag>
+
+<flag name="DLZMA_MANUAL_HEADERS" class="portability">
+When this macro is defined, XZ will not attempt to load system headers to get
+definitions for standard integer types.
+</flag>
+
+<flag name="DTUKLIB_DOSLIKE" class="portability">
+This macro indicates that XZ is being built on a "DOS-like" system.  It's set
+automatically when necessary, but may also be set explicitly if necessary.
+</flag>
+
+<flag name="std_suffix" class="portability" regexp="[-/]DUINT(?:32|64)_C(?:=\S*)?$">
+<example>
+-DUINT32_C=XXX,
+-DUINT64_C=XXX
+</example>
+These C99-standard macros ensure that the correct suffix is attached to their
+arguments.  They should be defined by system header files, but in cases where
+they aren't, or are defined incorrectly, it's allowed to set them explicitly.
+</flag>
+
+<flag name="size_maxes" class="portability" regexp="[-/]D(?:SIZE|U(?:INT(?:32|64|)|LONG))_MAX(?:=\S*)?$">
+<example>
+-DSIZE_MAX=XXX,
+-DUINT_MAX=XXX,
+-DUINT32_MAX=XXX,
+-DUINT64_MAX=XXX,
+-DULONG_MAX=XXX
+</example>
+These macros define maximum values for their respective data types.  They
+should be defined by system header files, but in cases where they aren't, or
+are defined incorrectly, it's allowed to set them explicitly.
+</flag>
+
+<flag name="DHAVE_MEMORY_H" class="portability">
+This macro may be set if the compilation environment requires inclusion of
+memory.h to get memcmp(), memset() and others.
+</flag>
+
+<flag name="DHAVE_STRINGS_H" class="portability">
+This macro may be set if the compilation environment requires inclusion of
+strings.h to get memcmp(), memset() and others.
+</flag>
+
+<flag name="DSTATIC_IMAXDIV" class="portability">
+This will cause the imaxdiv() function defined in the supplied inttypes.h
+(used only on Windows) to be declared static.  The benchmark does not use
+imaxdiv(), but conceivably use of this flag could eliminate a linkage error
+if there's a conflict with a library function of the same name.
+</flag>
+
+
+<!-- ***********************************************************************
+   - These COULD be Optimization flags if rule 2.2.1 were adjusted; until
+     and unless that happens, classifying as forbidden
+   -->
+<flag name="DSPEC_UNALIGNED_OK" class="forbidden">
+This macro indicates that the system being built can tolerate unaligned
+memory access, and is only used in the MD5 code.
+</flag>
+
+<flag name="DTUKLIB_FAST_UNALIGNED_ACCESS" class="forbidden">
+This macro indicates that the system being built can tolerate unaligned
+memory access for 16- and 32-bit integers.
+</flag>
+
+<flag name="DHAVE_BYTESWAP_H" class="forbidden">
+This macro indicates that the byteswap.h header file is available and contains
+definitions or prototypes for bswap_16(), bswap_32(), and bswap_64() functions.
+</flag>
+
+<flag name="DHAVE_SYS_BYTEORDER_H" class="forbidden">
+This macro indicates that the sys/byteorder.h header file is available and
+contains definitions or prototypes for any or all of BSWAP_16(), BSWAP_32(),
+BSWAP_64(), BE_16(), BE_32(), BE_64(), LE_16(), LE_32(), and LE_64() functions.
+</flag>
+
+<flag name="DHAVE_SYS_ENDIAN_H" class="forbidden">
+This macro indicates that the sys/endian.h header file is available and
+contains definitions or prototypes for any or all of bswap16(), bswap32(),
+bswap64(), conv16be(), conv32be(), conv64be(), conv16le(), conv32le(), and
+conv64le() functions.
+</flag>
+
+
+<!-- ***********************************************************************
+   - Forbidden flags
+   -->
+<flag name="DSPEC_MEMOP_PAUSE" class="forbidden">
+Defining this macro will cause the benchmark binary to pause before and after
+memory allocation and release operations that happen within the benchmark
+driver code.
+</flag>
+
+<flag name="DALREADY_SPEC" class="forbidden">
+This macro is defined and used internally and may not be set explicitly.
+</flag>
+
+<flag name="D__CYGWIN__" class="forbidden">
+This flag indicates that the source is being built under Windows using the
+Cygwin toolset.  It may not be set by hand.
+</flag>
+
+<flag name="D__DJGPP__" class="forbidden">
+This flag indicates that the source is being built under MS-DOS using the
+DJGPP compiler.  It may not be set by hand.
+</flag>
+
+<flag name="D__GNUC__" class="forbidden">
+This flag indicates that the source is being built with the GNU Compiler
+Collection.  It has no effect in the CPU2017 version of the code, and thus may
+not be set by hand.
+</flag>
+
+<flag name="D__cplusplus" class="forbidden">
+This macro indicates that the benchmark is being built with a C++ compiler.  It
+may not be set by hand.
+</flag>
+
+<flag name="DSPEC_XZ_DEBUG" class="forbidden">
+This macro defines the debug level for the benchmark driver code.  3 is the
+default and it may not be set lower.  Setting it higher will enable output
+that will cause the benchmark to miscompare.  Its use in reportable runs is
+forbidden.
+</flag>
+
+<flag name="DDEBUG" class="forbidden">
+This flag enables copious debug output which is guaranteed to cause the
+benchmark to miscompare.  Its use in reportable runs is forbidden.
+</flag>
+
+<flag name="DDEBUG_DUMP" class="forbidden">
+This flag causes buffers generated during the benchmark run to be dumped to
+files.  Because this causes actual file I/O, its use in reportable runs is
+forbidden.
+</flag>
+
+<flag name="DNULL" class="forbidden">
+NULL should be defined by your system headers.  Setting it explicitly is
+forbidden.
+</flag>
+
+<flag name="DTIMING_OUTPUT" class="forbidden">
+Use of this flag causes some internal timing to be done and output via the
+debug output facility.  Its use is forbidden for reportable runs.
+</flag>
+
+<flag name="SPEC_STDIN" class="forbidden" regexp="[-/]D(?:SPEC_STDIN|STDIN_FILENO)(?:=\d*)?">
+<example>
+-DSPEC_STDIN=N,
+-DSTDIN_FILENO=N
+</example>
+This flag is used to set the file number for stdin used by the benchmark's
+file I/O abstraction layer.  Its default value must not be changed.
+</flag>
+
+<flag name="SPEC_STDOUT" class="forbidden" regexp="[-/]D(?:SPEC_STDOUT|STDOUT_FILENO)(?:=\d*)?">
+<example>
+-DSPEC_STDOUT=N,
+-DSTDOUT_FILENO=N
+</example>
+This flag is used to set the file number for stdout used by the benchmark's
+file I/O abstraction layer.  Its default value must not be changed.
+</flag>
+
+<flag name="SPEC_STDERR" class="forbidden" regexp="[-/]D(?:SPEC_STDERR|STDERR_FILENO)(?:=\d*)?">
+<example>
+-DSPEC_STDERR=N,
+-DSTDERR_FILENO=N
+</example>
+This flag is used to set the file number for stderr used by the benchmark's
+file I/O abstraction layer.  Its default value must not be changed.
+</flag>
+
+<flag name="binary" class="forbidden" regexp="[-/]DO_BINARY(?:=\S*)?">
+This macro defines a value for the open mode which will cause file I/O to be
+done without text translation.  It is either defined by the compilation
+environment (if necessary), or it is defined to 0 otherwise.  It may not be
+set by hand.
+</flag>
+
+<flag name="noctty" class="forbidden" regexp="[-/]DO_NOCTTY(?:=\S*)?">
+This macro defines a value for the open mode which will cause an open of
+a terminal device to not cause the controlling terminal to change.
+It has no effect in the benchmark version of the sources, and may not be
+set by hand.
+</flag>
+
+<flag name="nofollow" class="forbidden" regexp="[-/]DO_NOFOLLOW(?:=\S*)?">
+This macro defines a value for the open mode which will cause an open of
+a file to not follow symlinks.  It has no effect in the benchmark version of
+the sources, and may not be set by hand.
+</flag>
+
+<flag name="D__i386__" class="forbidden">
+This macro is set automatically by the compilation system and indicates that
+the benchmark is being built on an x86 system that can tolerate unaligned
+access.  It may not be set by hand.
+</flag>
+
+<flag name="D__vax__" class="forbidden">
+This macro is set automatically by the compilation system and indicates that
+the benchmark is being built on a VAX system that can tolerate unaligned
+access.  It may not be set by hand.
+</flag>
+
+<flag name="D__x86_64__" class="forbidden">
+This macro is set automatically by the compilation system and indicates that
+the benchmark is being built on an AMD64-compatible system that can tolerate
+unaligned access.  It may not be set by hand.
+</flag>
+
+<flag name="DSPEC_BZIP" class="forbidden">
+This flag indicates that the SPEC in-memory I/O shim should be built to work
+with bzip2.  It will break the build and may not be used.
+</flag>
+
+<flag name="conv_and_swap" class="forbidden" regexp="[-/]D(?:bswap|conv)(?:16|32|64)(?:le|be)?(?:=\S*)?$">
+<example>
+-Dbswap16=XXX,
+-Dbswap32=XXX,
+-Dbswap64=XXX,
+-Dconv16be=XXX,
+-Dconv16le=XXX,
+-Dconv32be=XXX,
+-Dconv32le=XXX,
+-Dconv64be=XXX,
+-Dconv64le=XXX
+</example>
+These macros define functions used for byte-swapping and endian conversion.
+They are set automatically and may not be changed for a reportable run.
+</flag>
+
+<flag name="more_swap_n_conv" class="forbidden" regexp="[-/]D(?:HAVE_)?(?:BSWAP_|[BL]E_)(?:16|32|64)(?:=\S*)?$">
+<example>
+-DHAVE_BSWAP_16,
+-DHAVE_BSWAP_32,
+-DHAVE_BSWAP_64,
+-DBE_16=XXX,
+-DBE_32=XXX,
+-DBE_64=XXX,
+-DLE_16=XXX,
+-DLE_32=XXX,
+-DLE_64=XXX
+</example>
+These macros indicate the availablity of, or are themselves, byte-swapping or
+endian conversion functions.  They are set automatically by the compilation
+system and may not be set explicitly for reportable runs.
+</flag>
+
+<flag name="check_avail" class="forbidden" regexp="[-/][DU]HAVE_CHECK_(?:CRC32|CRC64|SHA256)(?:=\S*)?$">
+<example>
+-DHAVE_CHECK_CRC32,
+-DHAVE_CHECK_CRC64,
+-DHAVE_CHECK_SHA256
+</example>
+These macros indicate the availability of certain internal XZ checksum
+functions.  They may not be set or unset for reportable runs.
+</flag>
+
+<flag name="decoder_avail" class="forbidden" regexp="[-/][DU]HAVE_DECODER_(?:ARM|ARMTHUMB|DELTA|IA64|LZMA[12]|POWERPC|SPARC|X86)(?:=\S*)?$">
+<example>
+-DHAVE_DECODER_ARM,
+-DHAVE_DECODER_ARMTHUMB,
+-DHAVE_DECODER_DELTA,
+-DHAVE_DECODER_IA64,
+-DHAVE_DECODER_LZMA1,
+-DHAVE_DECODER_LZMA2,
+-DHAVE_DECODER_POWERPC,
+-DHAVE_DECODER_SPARC,
+-DHAVE_DECODER_X86
+</example>
+These macros indicate the availability of internal XZ decoder
+functions.  They may not be set or unset for reportable runs.
+</flag>
+
+<flag name="encoder_avail" class="forbidden" regexp="[-/][DU]HAVE_ENCODER_(?:ARM|ARMTHUMB|DELTA|IA64|LZMA[12]|POWERPC|SPARC|X86)(?:=\S*)?$">
+<example>
+-DHAVE_ENCODER_ARM,
+-DHAVE_ENCODER_ARMTHUMB,
+-DHAVE_ENCODER_DELTA,
+-DHAVE_ENCODER_IA64,
+-DHAVE_ENCODER_LZMA1,
+-DHAVE_ENCODER_LZMA2,
+-DHAVE_ENCODER_POWERPC,
+-DHAVE_ENCODER_SPARC,
+-DHAVE_ENCODER_X86
+</example>
+These macros indicate the availability of internal XZ encoder
+functions.  They may not be set or unset for reportable runs.
+</flag>
+
+<flag name="match_finders" class="forbidden" regexp="[-/][DU]HAVE_MF_(?:BT|HC)[234](?:=\S*)?$">
+<example>
+-DHAVE_MF_BT2,
+-DHAVE_MF_BT3,
+-DHAVE_MF_BT4,
+-DHAVE_MF_HC3,
+-DHAVE_MF_HC4
+</example>
+These macros indicate the availability of internal XZ match finder
+functions.  They may not be set or unset for reportable runs.
+</flag>
+
+<flag name="header_guards" class="forbidden" regexp="[-/]D(?:LZMA_(?:ALONE_DECODER|BLOCK_(?:EN|DE)CODER|CHECK|COMMON|DELTA_(?:COMMON|DECODER|ENCODER|PRIVATE)|FASTPOS|FILTER_(?:COMMON|DECODER|ENCODER)|INDEX(?:_ENCODER)?|LZMA2_(?:EN|DE)CODER|LZMA_(?:COMMON|(?:EN|DE)CODER(?:_PRIVATE)?)|LZ_(?:EN|DE)CODER(?:_HASH)?|PRICE|RANGE_(?:COMMON|(?:EN|DE)CODER)|SIMPLE_(?:(?:EN|DE)?CODER|PRIVATE)|STREAM_(?:EN|DE)CODER|STREAM_FLAGS_COMMON|SYSDEFS)|TUKLIB_(?:COMMON|CPUCORES|EXIT|GETTEXT|INTEGER|MBSTR|OPEN_STDXXX|PHYSMEM|PROGNAME)|LZMA|_GETOPT(?:_INT)?|_MD5|_SPEC_MEM_IO|_MSC_INTTYPES)_H_?(?:=\S*)?$">
+<example>
+-DLZMA_ALONE_DECODER_H,
+-DLZMA_BLOCK_DECODER_H,
+-DLZMA_BLOCK_ENCODER_H,
+-DLZMA_CHECK_H,
+-DLZMA_COMMON_H,
+-DLZMA_DELTA_COMMON_H,
+-DLZMA_DELTA_DECODER_H,
+-DLZMA_DELTA_ENCODER_H,
+-DLZMA_DELTA_PRIVATE_H,
+-DLZMA_FASTPOS_H,
+-DLZMA_FILTER_COMMON_H,
+-DLZMA_FILTER_DECODER_H,
+-DLZMA_FILTER_ENCODER_H,
+-DLZMA_H,
+-DLZMA_INDEX_ENCODER_H,
+-DLZMA_INDEX_H,
+-DLZMA_LZMA2_DECODER_H,
+-DLZMA_LZMA2_ENCODER_H,
+-DLZMA_LZMA_COMMON_H,
+-DLZMA_LZMA_DECODER_H,
+-DLZMA_LZMA_ENCODER_H,
+-DLZMA_LZMA_ENCODER_PRIVATE_H,
+-DLZMA_LZ_DECODER_H,
+-DLZMA_LZ_ENCODER_H,
+-DLZMA_LZ_ENCODER_HASH_H,
+-DLZMA_PRICE_H,
+-DLZMA_RANGE_COMMON_H,
+-DLZMA_RANGE_DECODER_H,
+-DLZMA_RANGE_ENCODER_H,
+-DLZMA_SIMPLE_CODER_H,
+-DLZMA_SIMPLE_DECODER_H,
+-DLZMA_SIMPLE_ENCODER_H,
+-DLZMA_SIMPLE_PRIVATE_H,
+-DLZMA_STREAM_DECODER_H,
+-DLZMA_STREAM_ENCODER_H,
+-DLZMA_STREAM_FLAGS_COMMON_H,
+-DLZMA_SYSDEFS_H,
+-DTUKLIB_COMMON_H,
+-DTUKLIB_CPUCORES_H,
+-DTUKLIB_EXIT_H,
+-DTUKLIB_GETTEXT_H,
+-DTUKLIB_INTEGER_H,
+-DTUKLIB_MBSTR_H,
+-DTUKLIB_OPEN_STDXXX_H,
+-DTUKLIB_PHYSMEM_H,
+-DTUKLIB_PROGNAME_H,
+-D_GETOPT_H,
+-D_GETOPT_INT_H,
+-D_MD5_H,
+-D_SPEC_MEM_IO_H,
+-D_MSC_INTTYPES_H_
+</example>
+These macros are guards against multiple inclusion of header files.  Setting
+them explicitly is forbidden.
+</flag>
+
+<flag name="lzma_attr" class="forbidden" regexp="[-/]Dlzma_(?:nothrow|attribute|attr_(?:const|pure|warn_unused_result))(?:=\S*)?$">
+<example>
+-Dlzma_attr_const=XXX,
+-Dlzma_attr_pure=XXX,
+-Dlzma_attr_warn_unused_result=XXX,
+-Dlzma_attribute=XXX,
+-Dlzma_nothrow=XXX
+</example>
+These macros define compiler-specific attributes and may not be set for a
+reportable run.
+</flag>
+
+<flag name="hw_stuff" class="forbidden" regexp="[-/]D(?:HW_PHYSMEM64|TUKLIB_PHYSMEM_(?:AIX|GETINVENT_R|GETSYSINFO|PSTAT_GETSTATIC|SYSCONF|SYSCTL|SYSINFO)|TUKLIB_CPUCORES_(?:PSTAT_GETDYNAMIC|SYSCONF|SYSCTL)|_SC_NPROCESSORS_ONLN)(?:=\S*)?$">
+<example>
+-DHW_PHYSMEM64=XXX,
+-DTUKLIB_PHYSMEM_AIX=XXX,
+-DTUKLIB_PHYSMEM_GETINVENT_R=XXX,
+-DTUKLIB_PHYSMEM_GETSYSINFO=XXX,
+-DTUKLIB_PHYSMEM_PSTAT_GETSTATIC=XXX,
+-DTUKLIB_PHYSMEM_SYSCONF=XXX,
+-DTUKLIB_PHYSMEM_SYSCTL=XXX,
+-DTUKLIB_PHYSMEM_SYSINFO=XXX,
+-DTUKLIB_CPUCORES_PSTAT_GETDYNAMIC=XXX,
+-DTUKLIB_CPUCORES_SYSCONF=XXX,
+-DTUKLIB_CPUCORES_SYSCTL=XXX,
+-D_SC_NPROCESSORS_ONLN=XXX
+</example>
+These macros control how certain hardware-specific information is obtained.
+They are not used in the benchmark code and may not be set for reportable runs.
+</flag>
+
+<flag name="D__GETOPT_PREFIX" class="forbidden">
+This macro sets the prefix that should be used for the bundled getopt()
+function.  Since the included getopt() is always used, it is not possible to
+set this to anything other than its default value.
+</flag>
+
+<flag name="unused_time_stat" class="forbidden" regexp="[-/]DHAVE_(?:FUTIMEN?S|FUTIMESAT|UTIMES?|STRUCT_STAT_ST_(?:ATIMENSEC|ATIMESPEC_TV_NSEC|ATIM_ST__TIM_TV_NSEC|ATIM_TV_NSEC|UATIME))(?:=\S*)?$">
+<example>
+-DHAVE_FUTIMENS,
+-DHAVE_FUTIMES,
+-DHAVE_FUTIMESAT,
+-DHAVE_UTIME,
+-DHAVE_UTIMES,
+-DHAVE_STRUCT_STAT_ST_ATIMENSEC,
+-DHAVE_STRUCT_STAT_ST_ATIMESPEC_TV_NSEC,
+-DHAVE_STRUCT_STAT_ST_ATIM_ST__TIM_TV_NSEC,
+-DHAVE_STRUCT_STAT_ST_ATIM_TV_NSEC,
+-DHAVE_STRUCT_STAT_ST_UATIME
+</example>
+These macros all indicate the presence of functions or structure members that
+are not used in the benchmark version of the source code.  They have no effect
+on the compiled code and may not be set for a reportable run.
+</flag>
+
+<flag name="lzma_version" class="forbidden" regexp="[-/]DLZMA_VERSION_(?:COMMIT|STABILITY|STABILITY_(?:ALPHA|BENCHMARK|BETA|STABLE))(?:=\S*)?$">
+<example>
+-DLZMA_VERSION_COMMIT=XXX,
+-DLZMA_VERSION_STABILITY=XXX,
+-DLZMA_VERSION_STABILITY_ALPHA=XXX,
+-DLZMA_VERSION_STABILITY_BENCHMARK=XXX,
+-DLZMA_VERSION_STABILITY_BETA=XXX,
+-DLZMA_VERSION_STABILITY_STABLE=XXX
+</example>
+These macros are used to control the version strings output by XZ.  They may
+not be changed from their default values.
+</flag>
+
+<flag name="lzma_internal" class="forbidden" regexp="[-/]D(?:LZMA_(?:API|API_(?:CALL|IMPORT|STATIC)|H_INTERNAL(?:_RC)?|VLI_MAX|BLOCK_HEADER_SIZE_MAX)|TUKLIB_(?:GNUC_REQ|DECLS_(?:BEGIN|END)|SYMBOL(?:_PREFIX)?)|ARRAY_SIZE|FULL_DISTANCES_BITS)(?:=\S*)?$">
+<example>
+-DLZMA_API=XXX,
+-DLZMA_API_CALL=XXX,
+-DLZMA_API_IMPORT=XXX,
+-DLZMA_API_STATIC=XXX,
+-DLZMA_BLOCK_HEADER_SIZE_MAX=XXX,
+-DLZMA_H_INTERNAL=XXX,
+-DLZMA_H_INTERNAL_RC=XXX,
+-DLZMA_VLI_MAX=XXX,
+-DTUKLIB_GNUC_REQ=XXX,
+-DTUKLIB_DECLS_BEGIN=XXX,
+-DTUKLIB_DECLS_END=XXX,
+-DTUKLIB_SYMBOL=XXX,
+-DTUKLIB_SYMBOL_PREFIX=XXX,
+-DARRAY_SIZE=XXX,
+-DFULL_DISTANCES_BITS=XX
+</example>
+These macros are used internally by XZ and may not be set manually.
+</flag>
+
+<flag name="nls_junk" class="forbidden" regexp="[-/]D(?:ENABLE_NLS|TUKLIB_GETTEXT)(?:=\S*)?$">
+<example>
+-DENABLE_NLS,
+-DTUKLIB_GETTEXT=N
+</example>
+These macros control XZ's use of localization functions.  They have no function
+in the benchmark version of the sources and may not be set explicitly.
+</flag>
+
+<flag name="DSIZEOF_SIZE_T" class="forbidden">
+This macro indicates the value of sizeof(size_t).  It is set automatically
+based on the data model flag (SPEC_P64, SPEC_LP64, SPEC_ILP64) and may not be
+set manually.  The default value is 4 for 32-bit systems and 8 for 64-bit
+systems.
+</flag>
+
+<flag name="DBUFSIZ" class="forbidden">
+This macro contains the size in bytes of some internal buffers used in the XZ
+code.  It is set by the system header files and may not be set manually.
+</flag>
+
+<flag name="DIO_BUFFER_SIZE" class="forbidden">
+This macro contains the size in bytes of some internal buffers used in the XZ
+code.  It is set automatically based on the value of BUF_SIZE supplied by the
+system and may not be set manually.
+</flag>
+
+<flag name="set_in_config_h" class="forbidden" regexp="[-/][UD]HAVE_(?:INTTYPES|LIMITS|STDBOOL|STDINT|STRING)_H(?:=\S*)?\b">
+<example>
+-DHAVE_INTTYPES_H,
+-DHAVE_LIMITS_H,
+-DHAVE_STDBOOL_H,
+-DHAVE_STDINT_H,
+-DHAVE_STRING_H
+</example>
+These macros indicate the presence of several C99-standard header files.  They
+are set automatically and may not be set or unset manually.
+</flag>
+
+<flag name="break_run" class="forbidden" regexp="[-/]DHAVE_(?:MBRTOWC|WCWIDTH)(?:=\S*)?\b">
+<example>
+-DHAVE_MBRTOWC,
+-DHAVE_WCWIDTH
+</example>
+Setting these macros will cause the benchmark to fail to validate.
+</flag>
+
+<flag name="break_build" class="forbidden" regexp="[-/]D(?:HAVE_SMALL|__GNU_LIBRARY__|_LIBC|USE_NONOPTION_FLAGS|TEST|__need_getopt)(=\S*)?\b">
+<example>
+-DHAVE_SMALL,
+-D__GNU_LIBRARY__,
+-D_LIBC,
+-DUSE_NONOPTION_FLAGS,
+-DTEST,
+-D__need_getopt
+</example>
+Setting these macros will cause the benchmark to fail to build.
+</flag>
+
+<flag name="no_effect" class="forbidden" regexp="[-/]D(?:DLL_EXPORT|HAVE_(?:DECL_(?:GETENV|PROGRAM_INVOCATION_NAME)|OPTRESET|PTHREAD|SYS_(?:PARAM|TIME)_H|VISIBILITY)|USE_IN_LIBIO|_WIN32_WINNT|__DragonFly__|__FreeBSD__|__GNUC_MINOR__|__GNUC_PREREQ|__INTEL_COMPILER|__NetBSD__|__THROW|__digital__|__unix__|attribute_hidden|_WIN64)(=\S*)?\b">
+<example>
+-DDLL_EXPORT,
+-DHAVE_DECL_GETENV,
+-DHAVE_DECL_PROGRAM_INVOCATION_NAME,
+-DHAVE_OPTRESET,
+-DHAVE_PTHREAD,
+-DHAVE_SYS_PARAM_H,
+-DHAVE_SYS_TIME_H,
+-DHAVE_VISIBILITY,
+-DUSE_IN_LIBIO,
+-D_WIN32_WINNT,
+-D__DragonFly__,
+-D__FreeBSD__,
+-D__GNUC_MINOR__=XXX,
+-D__GNUC_PREREQ=XXX,
+-D__INTEL_COMPILER,
+-D__NetBSD__,
+-D__THROW=XXX,
+-D__digital__,
+-D__unix__,
+-Dattribute_hidden=XXX
+-D_WIN64
+</example>
+Setting these macros will have no effect on the compiled code.  They may not be
+set for reportable runs.
+</flag>
+
+<flag name="set_by_system" class="forbidden" regexp="[-/]D_(?:MSC_VER|SCO_DS|_BIG_ENDIAN__|_INTERIX|_MINGW32__|_MSDOS__|_OS2__|_STDC_CONSTANT_MACROS|_STDC_LIMIT_MACROS|_STDC_FORMAT_MACROS|_VMS)(?:=\S*)?\b">
+<example>
+-D_MSC_VER=XXX,
+-D_SCO_DS=XXX,
+-D__BIG_ENDIAN__=XXX,
+-D__INTERIX=XXX,
+-D__MINGW32__=XXX,
+-D__MSDOS__=XXX,
+-D__OS2__=XXX,
+-D__STDC_CONSTANT_MACROS=XXX,
+-D__STDC_LIMIT_MACROS=XXX,
+-D__STDC_FORMAT_MACROS,
+-D__VMS=XXX
+</example>
+If set, these macros must be set by the compilation system.  They may not be
+set manually for reportable runs.
+</flag>
+
+<flag name="sys_consts" class="forbidden" regexp="[-/]D(?:_?S_I(?:EXEC|FBLK|FIFO|FLNK|FMT|FSOCK|READ|RGRP|ROTH|RUSR|RWXG|RWXO|RWXU|SBLK|SCHR|SDIR|SFIFO|SGID|SLNK|SREG|SSOCK|SUID|SVTX|WRITE)|O_(?:ACCMODE|APPEND|EXCL|LARGEFILE|NDELAY|NONBLOCK|RDONLY|WRONLY|TEXT|TRUNC)|_?SIG(?:ARRAYSIZE|ABRT|ALRM|BUS|CHLD|CLD|CONT|DANGER|EMT|FPE|GRANT|HUP|ILL|INFO|INT|IO|IOT|KILL|LOST|LWP|MAX|MSG|PHONE|PIPE|POLL|PROF|PWR|QUIT|RETRACT|SAK|SEGV|SOUND|STOP|SYS|TERM|TRAP|TSTP|TTIN|TTOU|URG|USR1|USR2|VTALRM|WAITING|WINCH|WIND|XCPU|XFSZ|_ERR|_IGN|_MAX))(?:=\S*)?\b">
+This constant, if defined, must be defined by a system header file.  Setting
+it explicitly is not allowed.
+<example>
+-DS_IEXEC=XXX,
+-DS_IFBLK=XXX,
+-DS_IFIFO=XXX,
+-DS_IFLNK=XXX,
+-DS_IFMT=XXX,
+-DS_IFSOCK=XXX,
+-DS_IREAD=XXX,
+-DS_IRGRP=XXX,
+-DS_IROTH=XXX,
+-DS_IRUSR=XXX,
+-DS_IRWXG=XXX,
+-DS_IRWXO=XXX,
+-DS_IRWXU=XXX,
+-DS_ISBLK=XXX,
+-DS_ISCHR=XXX,
+-DS_ISDIR=XXX,
+-DS_ISFIFO=XXX,
+-DS_ISGID=XXX,
+-DS_ISLNK=XXX,
+-DS_ISREG=XXX,
+-DS_ISSOCK=XXX,
+-DS_ISUID=XXX,
+-DS_ISVTX=XXX,
+-DS_IWRITE=XXX,
+-D_S_IFLNK=XXX,
+-D_S_IFMT=XXX,
+-D_S_IFSOCK=XXX,
+-D_S_ISLNK=XXX,
+-D_S_ISSOCK=XXX,
+-DO_ACCMODE=XXX,
+-DO_APPEND=XXX,
+-DO_EXCL=XXX,
+-DO_LARGEFILE=XXX,
+-DO_NDELAY=XXX,
+-DO_NONBLOCK=XXX,
+-DO_RDONLY=XXX,
+-DO_WRONLY=XXX,
+-DO_TEXT=XXX,
+-DO_TRUNC=XXX,
+-DSIGARRAYSIZE=XXX,
+-D_SIG_MAX=XXX,
+-DSIGABRT=XXX,
+-DSIGALRM=XXX,
+-DSIGBUS=XXX,
+-DSIGCHLD=XXX,
+-DSIGCLD=XXX,
+-DSIGCONT=XXX,
+-DSIGDANGER=XXX,
+-DSIGEMT=XXX,
+-DSIGFPE=XXX,
+-DSIGGRANT=XXX,
+-DSIGHUP=XXX,
+-DSIGILL=XXX,
+-DSIGINFO=XXX,
+-DSIGINT=XXX,
+-DSIGIO=XXX,
+-DSIGIOT=XXX,
+-DSIGKILL=XXX,
+-DSIGLOST=XXX,
+-DSIGLWP=XXX,
+-DSIGMAX=XXX,
+-DSIGMSG=XXX,
+-DSIGPHONE=XXX,
+-DSIGPIPE=XXX,
+-DSIGPOLL=XXX,
+-DSIGPROF=XXX,
+-DSIGPWR=XXX,
+-DSIGQUIT=XXX,
+-DSIGRETRACT=XXX,
+-DSIGSAK=XXX,
+-DSIGSEGV=XXX,
+-DSIGSOUND=XXX,
+-DSIGSTOP=XXX,
+-DSIGSYS=XXX,
+-DSIGTERM=XXX,
+-DSIGTRAP=XXX,
+-DSIGTSTP=XXX,
+-DSIGTTIN=XXX,
+-DSIGTTOU=XXX,
+-DSIGURG=XXX,
+-DSIGUSR1=XXX,
+-DSIGUSR2=XXX,
+-DSIGVTALRM=XXX,
+-DSIGWAITING=XXX,
+-DSIGWINCH=XXX,
+-DSIGWIND=XXX,
+-DSIGXCPU=XXX,
+-DSIGXFSZ=XXX,
+-DSIG_ERR=XXX,
+-DSIG_IGN=XXX,
+-DSIG_MAX=XXX
+</example>
+</flag>
+
+<flag name="DXZ_BINARY" class="forbidden">
+This macro contains the name of the XZ binary used by pxz.  It is not used in
+the benchmark version of the source and may not be set explicitly.
+</flag>
+
+<flag name="D_OPENMP" class="forbidden">
+This macro must be set by the compilation system when building the benchmark
+with OpenMP parallelization.  It may not be set explicitly.
+</flag>
+
+<flag name="D__bool_true_false_are_defined" class="forbidden">
+This macro, if set, must be set by the stdbool.h header file included with
+the compilation system.  It may not be set explicitly.
+</flag>
+
+<!-- ***********************************************************************
+   - Mandatory flags
+   -->
+<flag name="DSPEC_XZ" class="mandatory">
+This flag indicates that the benchmark should be built to run in the
+CPU2017 harness.  Without the flag, there is no hope that the benchmark
+will work.
+</flag>
+
+<flag name="DHAVE_CONFIG_H" class="mandatory">
+This flag indicates to the benchmark code that the config.h file should
+be included.
+</flag>
+
+<flag name="xz_mandatory_includes" class="mandatory" regexp="-I(?:common|liblzma/[a-z]+)(?=\s|$)">
+<example>
+-Icommon,
+-Iliblzma/api,
+-Iliblzma/lzma,
+-Iliblzma/common,
+-Iliblzma/check,
+-Iliblzma/simple,
+-Iliblzma/delta,
+-Iliblzma/lz,
+-Iliblzma/rangecoder
+</example>
+These flags specify locations for the compiler to search for header files.
+</flag>
+
+</flagsdescription>

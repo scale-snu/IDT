@@ -1,0 +1,762 @@
+Deep Sjeng version 3.2 SPEC, Copyright (C) 2000-2009 Gian-Carlo Pascutto
+Allocated 150000000 hash entries, totalling 7200000000 bytes.
+Analyzing 16 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R |    |    |    | *Q | *B |    | *K |
+  +----+----+----+----+----+----+----+----+
+7 |    | *B |    |    |    |    | *P |    |
+  +----+----+----+----+----+----+----+----+
+6 | *P |    |    | *P | *R |    |    | *P |
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | *N |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+4 |  P | *N | *P |    |  N |    |  N |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |  R |  P |
+  +----+----+----+----+----+----+----+----+
+2 |    |  B |    |    |    |  P |  P |    |
+  +----+----+----+----+----+----+----+----+
+1 |    |  B |    |  Q |  R |    |  K |    |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Middlegame phase.
+Time for move : 99999999
+ 3     -32     0      614  Qd4 ??
+ 3     -21     0     1181  Qd4 Rc8 a5 Qf7 
+ 3     -16     0     2362  Qf3 Qh5 a5 Rae8 
+ 3     -16     0     2737  Qf3 Qh5 a5 Rae8 
+ 4     -16     0     3166  Qf3 Qh5 a5 Rae8 
+ 4     -16     0     4078  Qf3 Qh5 a5 Rae8 
+ 5     -42     0     7676  Qf3 a5 Qf5 Qg6 Qf3 Rae8 
+ 5     -31     0     9124  Qd4 Rc8 Ne3 Nxe3 Rgxe3 Qxa4 
+ 5     -31     0    12546  Qd4 Rc8 Ne3 Nxe3 Rgxe3 Qxa4 
+ 6     -20     0    16981  Qd4 Rc8 Rf3 h5 Ne3 Nxe3 Rfxe3 Qxa4 
+ 6     -20     0    18873  Qd4 Rc8 Rf3 h5 Ne3 Nxe3 Rfxe3 Qxa4 
+ 7     -23     0    25424  Qd4 Rc8 Rf3 a5 Rc1 Ba6 Rf5 
+ 7     -23     0    32035  Qd4 Rc8 Rf3 a5 Rc1 Ba6 Rf5 
+ 8     -30     0    45908  Qd4 Rc8 Rf3 h5 Ne3 Nxe3 Rfxe3 Qxa4 f4 d5 
+ 8     -30     0    56551  Qd4 Rc8 Rf3 h5 Ne3 Nxe3 Rfxe3 Qxa4 f4 d5 
+ 9     -35     0   143218  Qd4 Rc8 Ne3 Nxe3 Rexe3 Qd7 Nc3 Rf6 Ne4 Rf5 
+ 9     -35     0   161821  Qd4 Rc8 Ne3 Nxe3 Rexe3 Qd7 Nc3 Rf6 Ne4 Rf5 
+10     -65     0   306222  Qd4 ??
+10     -32     0   392933  Qd4 Rc8 Ne3 Nxe3 Rexe3 Qe7 Nd2 Rxe3 Rxe3 Qf7 a5 d5 Nf3 
+10     -32     0   419334  Qd4 Rc8 Ne3 Nxe3 Rexe3 Qe7 Nd2 Rxe3 Rxe3 Qf7 a5 d5 Nf3 
+11      -2     0  1083868  Qd4 !!
+11     -23     0  1191880  Qd4 Rc8 Nxh6 c3 Nf5 Rc7 Bxc3 Nxc3 Rxc3 Rxc3 Qxb4 Qc8 f3 Rc4 Qb3 d5 Bd3 Bc5+ Kh1 
+11     -23     0  1254518  Qd4 Rc8 Nxh6 c3 Nf5 Rc7 Bxc3 Nxc3 Rxc3 Rxc3 Qxb4 Qc8 f3 Rc4 Qb3 d5 Bd3 Bc5+ Kh1 
+12     -53     0  1904328  Qd4 ??
+12    -163     0  2247001  Qd4 c3 Bxc3 Nxc3 Qxc3 Bxe4 Bxe4 Rxe4 Rxe4 Qxe4 Nxh6 Qb1+ Kh2 Re8 Nf7+ Kg8 Nh6+ Kh7 Nf7 Re1 
+12    -163     0  2367865  Qd4 c3 Bxc3 Nxc3 Qxc3 Bxe4 Bxe4 Rxe4 Rxe4 Qxe4 Nxh6 Qb1+ Kh2 Re8 Nf7+ Kg8 Nh6+ Kh7 Nf7 Re1 
+12     -91     0  3383392  Ne3 Nxe3 Rgxe3 Nd5 R3e2 Nf4 Re3 Qf7 Qd4 d5 Nc5 Bxc5 Qxc5 Rxe3 Rxe3 d4 Bxd4 Bxg2 
+12     -91     0  5107007  Ne3 Nxe3 Rgxe3 Nd5 R3e2 Nf4 Re3 Qf7 Qd4 d5 Nc5 Bxc5 Qxc5 Rxe3 Rxe3 d4 Bxd4 Bxg2 
+13    -112     0  5719310  Ne3 Nxe3 Rgxe3 Nd5 R3e2 Nf4 Re3 Qf7 Qd4 d5 Nc5 Bxc5 Qxc5 Rae8 Re5 Rxe5 Bxe5 d4 Bxg7+ Kxg7 Qxd4+ Kf8 Rxe8+ Kxe8 
+13    -112     0  7111491  Ne3 Nxe3 Rgxe3 Nd5 R3e2 Nf4 Re3 Qf7 Qd4 d5 Nc5 Bxc5 Qxc5 Rae8 Re5 Rxe5 Bxe5 d4 Bxg7+ Kxg7 Qxd4+ Kf8 Rxe8+ Kxe8 
+14     -91     0  9173195  Ne3 Nxe3 Rexe3 Bxe4 Qg4 Rg6 Qxe4 Qxe4 Bxe4 Rxg3 Bxa8 Rxe3 fxe3 a5 Bc3 Be7 Be4 Bf6 Bxb4 axb4 
+14     -91     0 10121045  Ne3 Nxe3 Rexe3 Bxe4 Qg4 Rg6 Qxe4 Qxe4 Bxe4 Rxg3 Bxa8 Rxe3 fxe3 a5 Bc3 Be7 Be4 Bf6 Bxb4 axb4 
+15     -61     0 15046179  Ne3 !!
+15     -48     0 19306184  Ne3 Nxe3 Rexe3 Bxe4 Qg4 Qg6 Bxe4 Qxg4 Rxg4 Rb8 Bc3 d5 Bxb4 Rxb4 Bxd5 Rb1+ Kh2 Rxe3 fxe3 c3 Rc4 Bd6+ g3 Rb2+ Bg2 Be5 Rc5 Bf6 Kg1 Rb1+ Kh2 g6 Rc8+ Kh7 Rc7+ Bg7 
+15     -48     0 21564685  Ne3 Nxe3 Rexe3 Bxe4 Qg4 Qg6 Bxe4 Qxg4 Rxg4 Rb8 Bc3 d5 Bxb4 Rxb4 Bxd5 Rb1+ Kh2 Rxe3 fxe3 c3 Rc4 Bd6+ g3 Rb2+ Bg2 Be5 Rc5 Bf6 Kg1 Rb1+ Kh2 g6 Rc8+ Kh7 Rc7+ Bg7 
+16     -18     0 37820185  Ne3 !!
+16     -78     0 43996273  Ne3 ??
+16     -86     0 47610524  Ne3 Nxe3 Rexe3 Bxe4 Qg4 Rg6 Qf4 d5 Bxe4 dxe4 Rxe4 Qc6 Rxc4 Qd6 Rxg6 Qxg6 Rxb4 Bxb4 Qxb4 Re8 Bc3 Qd3 Qb2 Qd1+ Kh2 Qd6+ g3 Qe7 Kg2 
+16     -86     0 53841711  Ne3 Nxe3 Rexe3 Bxe4 Qg4 Rg6 Qf4 d5 Bxe4 dxe4 Rxe4 Qc6 Rxc4 Qd6 Rxg6 Qxg6 Rxb4 Bxb4 Qxb4 Re8 Bc3 Qd3 Qb2 Qd1+ Kh2 Qd6+ g3 Qe7 Kg2 
+16     -86     0 58245072  Ne3 Nxe3 Rexe3 Bxe4 Qg4 Rg6 Qf4 d5 Bxe4 dxe4 Rxe4 Qc6 Rxc4 Qd6 Rxg6 Qxg6 Rxb4 Bxb4 Qxb4 Re8 Bc3 Qd3 Qb2 Qd1+ Kh2 Qd6+ g3 Qe7 Kg2 
+
+Nodes: 58245072 (62.65% qnodes)
+
+Analyzing 16 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R |    |    |    |    | *R | *K |    |
+  +----+----+----+----+----+----+----+----+
+7 | *P | *P |    | *N |    | *P |    | *P |
+  +----+----+----+----+----+----+----+----+
+6 |    | *N | *Q |  P |    |    | *P |    |
+  +----+----+----+----+----+----+----+----+
+5 |    |    | *B |    |  P |    |  B |    |
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    |  N |  Q |    |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |  B |    |    |    |  P |    |    |
+  +----+----+----+----+----+----+----+----+
+2 |  P |  P |    |    |  K |    |    |  P |
+  +----+----+----+----+----+----+----+----+
+1 |    |    |  R |    |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Middlegame phase.
+Time for move : 99999999
+ 3    -284     0      986  Kf1 Nd5 Qg4 Qb5+ Bc4 
+ 3    -284     0     3073  Kf1 Nd5 Qg4 Qb5+ Bc4 
+ 4    -284     0     3751  Kf1 Nd5 Qg4 Qb5+ Bc4 
+ 4    -284     0     5629  Kf1 Nd5 Qg4 Qb5+ Bc4 
+ 5    -254     0     8265  Kf1 !!
+ 5    -314     0    11288  Kf1 ??
+ 5    -336     0    12397  Kf1 Qb5+ Kg2 Qe2+ Kg3 Bd4 Nf6+ Nxf6 Qxd4 
+ 5    -267     0    16062  Bh6 Qb5+ Kd1 Qd3+ Ke1 Bg1 Bxf8 Rxf8 
+ 5    -242     0    21751  a4 Rac8 Bh6 Nxa4 Bxa4 Qxa4 Bxf8 Nxf8 
+ 5    -242     0    22446  a4 Rac8 Bh6 Nxa4 Bxa4 Qxa4 Bxf8 Nxf8 
+ 6    -212     0    24383  a4 !!
+ 6    -173     0    30100  a4 Rac8 Bh6 Nd5 Bxd5 Qxd5 Bxf8 Kxf8 
+ 6    -173     0    31301  a4 Rac8 Bh6 Nd5 Bxd5 Qxd5 Bxf8 Kxf8 
+ 7    -182     0    39958  a4 Rac8 Bh6 Nd5 Bxd5 Qxd5 Rxc5 Rxc5 Nxc5 Nxc5 Bxf8 Kxf8 
+ 7    -182     0    43968  a4 Rac8 Bh6 Nd5 Bxd5 Qxd5 Rxc5 Rxc5 Nxc5 Nxc5 Bxf8 Kxf8 
+ 8    -152     0    72115  a4 !!
+ 8    -144     0    98021  a4 Rac8 Bh6 Rcd8 Bxf8 Rxf8 Qh6 Nd5 Nxc5 Nxc5 
+ 8    -144     0   102926  a4 Rac8 Bh6 Rcd8 Bxf8 Rxf8 Qh6 Nd5 Nxc5 Nxc5 
+ 9    -174     0   127354  a4 ??
+ 9    -206     0   172280  a4 Rac8 Bh6 Nxa4 Bxa4 Qa6+ Ke1 Bb4+ Kf2 Rxc1 Qxc1 Qxa4 Bxf8 Kxf8 Qc8+ Kg7 
+ 9    -206     0   187859  a4 Rac8 Bh6 Nxa4 Bxa4 Qa6+ Ke1 Bb4+ Kf2 Rxc1 Qxc1 Qxa4 Bxf8 Kxf8 Qc8+ Kg7 
+ 9    -206     0   205021  a4 Rac8 Bh6 Nxa4 Bxa4 Qa6+ Ke1 Bb4+ Kf2 Rxc1 Qxc1 Qxa4 Bxf8 Kxf8 Qc8+ Kg7 
+10    -176     0   551504  a4 !!
+10    -236     0  1467340  a4 ??
+10    -259     0  2004329  a4 Nxa4 Nf6+ Nxf6 Qxa4 b5 Qf4 Nd7 Bh6 a5 Bxf8 Rxf8 Qe4 Qc8 
+10    -259     0  2128581  a4 Nxa4 Nf6+ Nxf6 Qxa4 b5 Qf4 Nd7 Bh6 a5 Bxf8 Rxf8 Qe4 Qc8 
+10    -259     0  2233368  a4 Nxa4 Nf6+ Nxf6 Qxa4 b5 Qf4 Nd7 Bh6 a5 Bxf8 Rxf8 Qe4 Qc8 
+11    -229     0  2560177  a4 !!
+11    -210     0  4919139  a4 Nxa4 Nf6+ Nxf6 Bxf6 Qb5+ Qc4 Qxc4+ Rxc4 b5 Rc2 Bb6 Bd5 Nc5 Bxa8 Rxa8 Ke3 Nd7+ Ke4 Nxf6+ exf6 Rd8 Rc6 Kf8 Kd5 Ke8 
+11    -210     0  5061323  a4 Nxa4 Nf6+ Nxf6 Bxf6 Qb5+ Qc4 Qxc4+ Rxc4 b5 Rc2 Bb6 Bd5 Nc5 Bxa8 Rxa8 Ke3 Nd7+ Ke4 Nxf6+ exf6 Rd8 Rc6 Kf8 Kd5 Ke8 
+12    -240     0  6647436  a4 ??
+12    -180     0  8965574  a4 Nxa4 Nf6+ Nxf6 Bxa4 b5 Qxf6 bxa4 Bh6 Qb5+ Ke1 Bb4+ Kf2 Qb6+ Kg2 Rac8 Qg7# 
+12     -62     0 11064956  a4 Rae8 Bh6 Nxa4 Bxa4 Qa6+ Kd2 Bb4+ Ke3 Bxd6 Nxd6 Rxe5+ Kf2 Qb6+ Kg2 Qxd6 Bxd7 Re2+ Kf1 Qxf4 Bxf4 Rxb2 
+12     -62     0 11151787  a4 Rae8 Bh6 Nxa4 Bxa4 Qa6+ Kd2 Bb4+ Ke3 Bxd6 Nxd6 Rxe5+ Kf2 Qb6+ Kg2 Qxd6 Bxd7 Re2+ Kf1 Qxf4 Bxf4 Rxb2 
+13     -58     0 14909442  a4 Nxa4 Nf6+ Nxf6 Bxa4 Qa6+ Qc4 Qxc4+ Rxc4 Bxd6 Bxf6 Bb8 Rb4 a6 Rxb7 Rc8 Bb3 Rc7 Bd5 Rxb7 Bxb7 Ra7 Bc6 Rc7 
+13     -58     0 15091766  a4 Nxa4 Nf6+ Nxf6 Bxa4 Qa6+ Qc4 Qxc4+ Rxc4 Bxd6 Bxf6 Bb8 Rb4 a6 Rxb7 Rc8 Bb3 Rc7 Bd5 Rxb7 Bxb7 Ra7 Bc6 Rc7 
+14     -88     0 17106124  a4 ??
+14     -93     0 20905856  a4 Nxa4 Nf6+ Nxf6 Bxa4 Qa6+ Qc4 Qxc4+ Rxc4 Bxd6 Bxf6 Bb8 Rb4 a6 Rxb7 Ra7 Rb3 Rc8 Rc3 Rac7 Kd3 Rc5 f4 Ba7 Bb3 Bb6 Rxc5 Bxc5 
+14     -93     0 21495152  a4 Nxa4 Nf6+ Nxf6 Bxa4 Qa6+ Qc4 Qxc4+ Rxc4 Bxd6 Bxf6 Bb8 Rb4 a6 Rxb7 Ra7 Rb3 Rc8 Rc3 Rac7 Kd3 Rc5 f4 Ba7 Bb3 Bb6 Rxc5 Bxc5 
+14     -93     0 21983865  a4 Nxa4 Nf6+ Nxf6 Bxa4 Qa6+ Qc4 Qxc4+ Rxc4 Bxd6 Bxf6 Bb8 Rb4 a6 Rxb7 Ra7 Rb3 Rc8 Rc3 Rac7 Kd3 Rc5 f4 Ba7 Bb3 Bb6 Rxc5 Bxc5 
+15     -63     0 31320319  a4 !!
+15     -66     0 34189004  a4 Nxa4 Nf6+ Nxf6 Bxa4 Qa6+ Qc4 Qxc4+ Rxc4 Bxd6 Bxf6 Bb8 f4 a6 Be7 b5 Bxf8 Bxe5 fxe5 Kxf8 Bxb5 axb5 Rc5 Ra5 Kf3 Ke8 h4 Kd7 b4 Ra2 Rxb5 
+15     -66     0 37869472  a4 Nxa4 Nf6+ Nxf6 Bxa4 Qa6+ Qc4 Qxc4+ Rxc4 Bxd6 Bxf6 Bb8 f4 a6 Be7 b5 Bxf8 Bxe5 fxe5 Kxf8 Bxb5 axb5 Rc5 Ra5 Kf3 Ke8 h4 Kd7 b4 Ra2 Rxb5 
+16     -95     0 55274425  a4 Nxa4 Nf6+ Nxf6 Bxa4 Qa6+ Qc4 Qxc4+ Rxc4 Bxd6 Bxf6 Bb8 Bd7 h5 f4 Kh7 Rb4 a5 Rxb7 Ra7 Bc6 Rxb7 Bxb7 Ba7 Bd5 Rb8 b3 Kg8 Kf3 Rc8 Bc4 
+16     -95     0 59151359  a4 Nxa4 Nf6+ Nxf6 Bxa4 Qa6+ Qc4 Qxc4+ Rxc4 Bxd6 Bxf6 Bb8 Bd7 h5 f4 Kh7 Rb4 a5 Rxb7 Ra7 Bc6 Rxb7 Bxb7 Ba7 Bd5 Rb8 b3 Kg8 Kf3 Rc8 Bc4 
+
+Nodes: 59151359 (58.94% qnodes)
+
+Analyzing 16 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R |    |    | *Q | *K |    |    | *R |
+  +----+----+----+----+----+----+----+----+
+7 | *P | *P | *P |    | *B |    | *P | *P |
+  +----+----+----+----+----+----+----+----+
+6 |    |    | *N |    | *P |    |    |    |
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | *P |  P |    | *N |    |
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |  P |    |    | *B |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |    |  P |  B |    |  N |  N |    |
+  +----+----+----+----+----+----+----+----+
+2 |  P |  P |    |    |    |    |  P |  P |
+  +----+----+----+----+----+----+----+----+
+1 |  R |    |  B |  Q |  K |    |    |  R |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Opening phase.
+Time for move : 99999999
+ 3     -43     0      750  O-O ??
+ 3     -18     0     1153  O-O Nxf3+ Rxf3 Bxf3 Qxf3 
+ 3     -10     0     1733  Bxg5 Bxg5 h3 Bf4 
+ 3     -10     0     2353  Bxg5 Bxg5 h3 Bf4 
+ 4     -11     0     3161  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 
+ 4     -11     0     5561  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 
+ 5       1     0     8798  Bxg5 Bxg5 Qb3 Bxf3 gxf3 Qc8 Qa3 Be3 
+ 5       1     0     9543  Bxg5 Bxg5 Qb3 Bxf3 gxf3 Qc8 Qa3 Be3 
+ 6      31     0    11662  Bxg5 !!
+ 6      35     0    13203  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Kc2 O-O 
+ 6      35     0    14196  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Kc2 O-O 
+ 7      35     0    16333  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Kc2 O-O 
+ 7      35     0    21839  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Kc2 O-O 
+ 8      58     0    31092  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Bg6+ Kd7 Qb3 Kc8 Kc2 
+ 8      58     0    33574  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Bg6+ Kd7 Qb3 Kc8 Kc2 
+ 9      56     0    85090  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Bf4+ Kc2 Raf8 Qe2 Kc8 Qb5 Be3 
+ 9      56     0    92018  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Bf4+ Kc2 Raf8 Qe2 Kc8 Qb5 Be3 
+10      57     0   201398  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Raf8 Qb3 Kc8 Kc2 Rf4 Bd3 Rxh1 Rxh1 Rxg4 
+10      57     0   254780  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Raf8 Qb3 Kc8 Kc2 Rf4 Bd3 Rxh1 Rxh1 Rxg4 
+11      49     0   459068  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Raf8 Qb3 Kc8 Kc2 Qf7 Raf1 Qf4 Kb1 Qxg4 
+11      49     0   495980  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Raf8 Qb3 Kc8 Kc2 Qf7 Raf1 Qf4 Kb1 Qxg4 
+12      49     0  1247935  Bxg5 Bxg5 h3 Bxf3 Qxf3 Qe7 Qh5+ Kd7 h4 Bf4 O-O g5 Ne2 Be3+ Kh1 Kc8 Rf7 
+12      49     0  1321354  Bxg5 Bxg5 h3 Bxf3 Qxf3 Qe7 Qh5+ Kd7 h4 Bf4 O-O g5 Ne2 Be3+ Kh1 Kc8 Rf7 
+13      30     0  2441024  Bxg5 Bxg5 h3 Bxf3 Qxf3 Qe7 Qh5+ Kd7 h4 Bf4 Qg4 Bxg3+ Qxg3 Raf8 O-O-O Kc8 Rdf1 g6 Bb5 Rxf1+ Rxf1 Rf8 Rxf8+ Qxf8 Qg5 Qf2 Bxc6 bxc6 
+13      41     0  4073389  h3 Bxf3 gxf3 Nf7 f4 g6 Rg1 Qd7 Bd2 O-O-O Qe2 Rde8 O-O-O Rhf8 Kb1 a6 
+13      41     0  4074107  h3 Bxf3 gxf3 Nf7 f4 g6 Rg1 Qd7 Bd2 O-O-O Qe2 Rde8 O-O-O Rhf8 Kb1 a6 
+14      40     0  5455288  h3 Bxf3 gxf3 Nf7 f4 g6 Rg1 Qd7 Be3 O-O-O Qe2 Rhf8 O-O-O Rde8 Kb1 Kb8 Qf3 
+14      40     0  5681348  h3 Bxf3 gxf3 Nf7 f4 g6 Rg1 Qd7 Be3 O-O-O Qe2 Rhf8 O-O-O Rde8 Kb1 Kb8 Qf3 
+15      47     0  8915002  h3 Bxf3 gxf3 Nf7 f4 Bh4 Rg1 O-O Be3 Nh6 Qf3 Nf5 Bxf5 Rxf5 O-O-O Bxg3 Qxg3 g6 Kb1 Qe7 Rg2 Raf8 
+15      47     0  9568416  h3 Bxf3 gxf3 Nf7 f4 Bh4 Rg1 O-O Be3 Nh6 Qf3 Nf5 Bxf5 Rxf5 O-O-O Bxg3 Qxg3 g6 Kb1 Qe7 Rg2 Raf8 
+16      47     0 20040514  h3 Bxf3 gxf3 Nf7 f4 Qd7 b4 Bh4 Qg4 Bxg3+ Qxg3 g6 Qh4 Qe7 Qxe7+ Nxe7 Rg1 Kd7 Rb1 Nf5 Ke2 Rhg8 Bb2 a6 
+16      47     0 21847547  h3 Bxf3 gxf3 Nf7 f4 Qd7 b4 Bh4 Qg4 Bxg3+ Qxg3 g6 Qh4 Qe7 Qxe7+ Nxe7 Rg1 Kd7 Rb1 Nf5 Ke2 Rhg8 Bb2 a6 
+
+Nodes: 21847547 (64.91% qnodes)
+
+Analyzing 16 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R |    | *B |    | *K | *B |    | *R |
+  +----+----+----+----+----+----+----+----+
+7 |    | *P |    | *N |    | *P | *P | *P |
+  +----+----+----+----+----+----+----+----+
+6 | *P |    |    | *P | *P | *N |    |    |
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |  B |  B |
+  +----+----+----+----+----+----+----+----+
+4 |    |    | *Q |  N |  P |    |    |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |    |  N |    |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+2 |  P |  P |  P |    |    |  P |  P |  P |
+  +----+----+----+----+----+----+----+----+
+1 |  R |    |    |  Q |    |  R |  K |    |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Opening phase.
+Time for move : 99999999
+ 3     100     0      587  Be2 ??
+ 3      89     0      851  Be2 Qb4 Rb1 Ne5 
+ 3      89     0     1267  Be2 Qb4 Rb1 Ne5 
+ 3      89     0     1668  Be2 Qb4 Rb1 Ne5 
+ 4      89     0     2045  Be2 Qb4 Rb1 Ne5 
+ 4      90     0     3010  Bf3 Ne5 Be2 Qc5 
+ 4      90     0     3241  Bf3 Ne5 Be2 Qc5 
+ 5      60     0     4876  Bf3 ??
+ 5      57     0     6380  Bf3 h6 Be3 Be7 Be2 
+ 5      76     0     7688  Be2 Qb4 Rb1 e5 Bxf6 Nxf6 
+ 5      76     0     8438  Be2 Qb4 Rb1 e5 Bxf6 Nxf6 
+ 6      46     0    11204  Be2 ??
+ 6      42     0    14359  Be2 Qb4 Rb1 e5 Nf5 Nxe4 Nd5 
+ 6      68     0    21690  Bf3 Be7 a3 O-O Be2 Qc5 
+ 6      68     0    23443  Bf3 Be7 a3 O-O Be2 Qc5 
+ 7      48     0    28592  Bf3 Be7 a3 O-O Qd3 Qc5 Bd2 Ne5 
+ 7      74     0    37158  Be2 Qb4 Rb1 Be7 a3 Qc5 Qd2 O-O 
+ 7      74     0    40795  Be2 Qb4 Rb1 Be7 a3 Qc5 Qd2 O-O 
+ 8      65     0    53793  Be2 Qb4 Rb1 Be7 Qd2 Ne5 a3 Qb6 Na4 
+ 8      65     0    61504  Be2 Qb4 Rb1 Be7 Qd2 Ne5 a3 Qb6 Na4 
+ 9      68     0    78363  Be2 Qb4 Rb1 Be7 Qd2 h6 a3 Qc5 Bf4 Ne5 
+ 9      68     0    87424  Be2 Qb4 Rb1 Be7 Qd2 h6 a3 Qc5 Bf4 Ne5 
+10      56     0   377735  Be2 Qc7 Nb3 Be7 Qd4 O-O Rad1 h6 Be3 Ne5 
+10      56     0   404760  Be2 Qc7 Nb3 Be7 Qd4 O-O Rad1 h6 Be3 Ne5 
+11      55     0   642008  Be2 Qc7 Nb3 Be7 Qd4 e5 Qe3 h6 Bh4 O-O f4 Ng4 
+11      55     0   695996  Be2 Qc7 Nb3 Be7 Qd4 e5 Qe3 h6 Bh4 O-O f4 Ng4 
+12      52     0  1086331  Be2 Qc7 Nb3 Be7 Qd4 O-O Rad1 h6 Be3 Ne5 f4 Nc6 Qb6 Qxb6 Bxb6 
+12      52     0  1188946  Be2 Qc7 Nb3 Be7 Qd4 O-O Rad1 h6 Be3 Ne5 f4 Nc6 Qb6 Qxb6 Bxb6 
+13      41     0  2298515  Be2 Qc7 Nb3 Be7 Qd4 O-O Rad1 h6 Be3 Ne5 f4 Nc6 Qb6 Qxb6 Bxb6 Bd7 
+13      41     0  2608237  Be2 Qc7 Nb3 Be7 Qd4 O-O Rad1 h6 Be3 Ne5 f4 Nc6 Qb6 Qxb6 Bxb6 Bd7 
+14      40     0  7429967  Be2 Qc7 Nb3 Be7 Qd4 O-O Rad1 h6 Bh4 e5 Qb4 Nc5 f4 exf4 Rxf4 Be6 
+14      40     0  8599128  Be2 Qc7 Nb3 Be7 Qd4 O-O Rad1 h6 Bh4 e5 Qb4 Nc5 f4 exf4 Rxf4 Be6 
+15      48     0 22460716  Be2 Qc7 Qd3 Nc5 Qe3 Be7 Nb3 h6 Bf4 Nxb3 axb3 e5 Bg3 O-O Rfd1 Kh8 Kh1 Bd7 
+15      48     0 23897118  Be2 Qc7 Qd3 Nc5 Qe3 Be7 Nb3 h6 Bf4 Nxb3 axb3 e5 Bg3 O-O Rfd1 Kh8 Kh1 Bd7 
+16      45     0 32509958  Be2 Qc7 Qd3 Nc5 Qe3 Be7 Nb3 h6 Bh4 Nxb3 axb3 Bd7 Rfd1 O-O Qd4 Bc6 Bxf6 Bxf6 Qxd6 
+16      45     0 36292152  Be2 Qc7 Qd3 Nc5 Qe3 Be7 Nb3 h6 Bh4 Nxb3 axb3 Bd7 Rfd1 O-O Qd4 Bc6 Bxf6 Bxf6 Qxd6 
+
+Nodes: 36292152 (66.63% qnodes)
+
+Analyzing 16 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R |    |    | *Q | *R | *B |    | *K |
+  +----+----+----+----+----+----+----+----+
+7 |    | *P |    | *B |    |    | *P |    |
+  +----+----+----+----+----+----+----+----+
+6 | *P |    |    | *P | *P | *N |    | *P |
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |  N |  P |    |    |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |  B |  N |    |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+2 |  P |  P |  P |    |    |    |  Q |  P |
+  +----+----+----+----+----+----+----+----+
+1 |    |  K |    |    |    |  R |  R |    |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Middlegame phase.
+Time for move : 99999999
+ 3      75     0      616  Qg6 Qb6 Nf3 Rec8 
+ 3      75     0      836  Qg6 Qb6 Nf3 Rec8 
+ 4      75     0     1191  Qg6 Qb6 Nf3 Rec8 
+ 4      75     0     2047  Qg6 Qb6 Nf3 Rec8 
+ 5      63     0     5378  Qg6 Rc8 Nde2 d5 Nf4 
+ 5      63     0     9341  Qg6 Rc8 Nde2 d5 Nf4 
+ 6      64     0    12053  Qg6 Rc8 Nde2 Qa5 Nf4 Rc5 
+ 6      64     0    13111  Qg6 Rc8 Nde2 Qa5 Nf4 Rc5 
+ 7      74     0    21848  Qg6 Qb6 Rxf6 Qxd4 Rf7 Re7 Rf3 Qd2 
+ 7      74     0    24608  Qg6 Qb6 Rxf6 Qxd4 Rf7 Re7 Rf3 Qd2 
+ 8      74     0    36056  Qg6 Rc8 h4 Rc5 a3 Re7 Rf2 d5 
+ 8      74     0    38616  Qg6 Rc8 h4 Rc5 a3 Re7 Rf2 d5 
+ 9      69     0    89962  Qg6 Rc8 h4 Rc5 Ka1 Rh5 Nf3 Qa5 a3 Rc5 
+ 9      69     0    98496  Qg6 Rc8 h4 Rc5 Ka1 Rh5 Nf3 Qa5 a3 Rc5 
+10      74     0   306423  Qg6 Qe7 Na4 Qd8 Rf3 Rc8 Ne2 Qc7 Nac3 d5 exd5 exd5 Bxd5 Nxd5 Nxd5 Qxh2 
+10      74     0   325243  Qg6 Qe7 Na4 Qd8 Rf3 Rc8 Ne2 Qc7 Nac3 d5 exd5 exd5 Bxd5 Nxd5 Nxd5 Qxh2 
+11      64     0   470177  Qg6 Qe7 Na4 Qd8 Rf3 Rc8 Nc3 Rc5 Na4 Ra5 Nc3 Rc5 
+11      64     0   696066  Qg6 Qe7 Na4 Qd8 Rf3 Rc8 Nc3 Rc5 Na4 Ra5 Nc3 Rc5 
+12      80     0  1074966  Qg6 Qe7 Na4 Qd8 Rf3 Rc8 Nc3 Rc5 Na4 Ra5 Nc3 Rc5 
+12      80     0  1164061  Qg6 Qe7 Na4 Qd8 Rf3 Rc8 Nc3 Rc5 Na4 Ra5 Nc3 Rc5 
+13      76     0  2719640  Qg6 Qe7 Na4 Qd8 a3 Rc8 Ka1 b5 Nc3 Rc5 Rg3 Qe7 Rh3 Rec8 Rxh6+ gxh6 Rxf6 Bg7 
+13     110     0  5203110  Nce2 !!
+13     110     0  5734401  Nce2 g5 h4 g4 Nf4 Bg7 Ndxe6 Qc8 Ng6+ Kh7 Nxg7 Kxg7 Qf2 Qd8 h5 Bb5 e5 dxe5 
+13     110     0  5758998  Nce2 g5 h4 g4 Nf4 Bg7 Ndxe6 Qc8 Ng6+ Kh7 Nxg7 Kxg7 Qf2 Qd8 h5 Bb5 e5 dxe5 
+14     140     0  7749471  Nce2 !!
+14     149     0 12473714  Nce2 e5 Nf5 g5 Bf7 Rc8 Nc3 b5 h4 g4 Nd5 Nxd5 exd5 Rc4 Bxe8 Qxe8 b3 Rb4 Qg3 
+14     149     0 12547024  Nce2 e5 Nf5 g5 Bf7 Rc8 Nc3 b5 h4 g4 Nd5 Nxd5 exd5 Rc4 Bxe8 Qxe8 b3 Rb4 Qg3 
+15     146     0 16114495  Nce2 e5 Nf5 g5 Bf7 Rc8 Bxe8 Bxe8 h4 Ba4 Nc3 Rxc3 bxc3 Bc6 hxg5 Nxe4 Qh2 Bb5 gxh6 Bxf1 Rxf1 Nxc3+ Ka1 
+15     146     0 16334186  Nce2 e5 Nf5 g5 Bf7 Rc8 Bxe8 Bxe8 h4 Ba4 Nc3 Rxc3 bxc3 Bc6 hxg5 Nxe4 Qh2 Bb5 gxh6 Bxf1 Rxf1 Nxc3+ Ka1 
+16     145     0 21384099  Nce2 e5 Nf5 g5 Bf7 Rc8 Bxe8 Bxe8 h4 Ba4 Nc3 Rxc3 bxc3 Bc6 hxg5 Nxe4 Qh3 Qa5 Kb2 Bd5 a3 Qb6+ Ka1 Qc5 c4 Bxc4 
+16     145     0 23212845  Nce2 e5 Nf5 g5 Bf7 Rc8 Bxe8 Bxe8 h4 Ba4 Nc3 Rxc3 bxc3 Bc6 hxg5 Nxe4 Qh3 Qa5 Kb2 Bd5 a3 Qb6+ Ka1 Qc5 c4 Bxc4 
+
+Nodes: 23212845 (63.78% qnodes)
+
+Analyzing 15 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R | *N | *B | *Q | *K |    |    | *R |
+  +----+----+----+----+----+----+----+----+
+7 |    | *P |    |    |    | *P | *P | *P |
+  +----+----+----+----+----+----+----+----+
+6 | *P |    |    |    |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+5 |    |  N | *P |  P | *P |    |    |    |
+  +----+----+----+----+----+----+----+----+
+4 |  Q |  P |  P |    |  P |    | *N |    |
+  +----+----+----+----+----+----+----+----+
+3 |  P |    |    |    |    |  N |    |    |
+  +----+----+----+----+----+----+----+----+
+2 |    |    |    |    |  K | *B |  P |  P |
+  +----+----+----+----+----+----+----+----+
+1 |  R |    |  B |    |    |  B |    |  R |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Opening phase.
+Time for move : 99999999
+ 3      65     0      984  O-O Nxe5 Qf6 
+ 3      65     0     1466  O-O Nxe5 Qf6 
+ 4      38     0     3409  O-O Kd3 f5 Kc3 fxe4 
+ 4      38     0     5118  O-O Kd3 f5 Kc3 fxe4 
+ 5       8     0     7240  O-O ??
+ 5    -216     0     8533  O-O h3 Nc6 hxg4 Bxg4 Kxf2 axb5 Qxb5 
+ 5      27     0    13898  Nd7 Nd6+ Kf8 Ng5 Kg8 Ngxf7 
+ 5      27     0    16846  Nd7 Nd6+ Kf8 Ng5 Kg8 Ngxf7 
+ 6      -3     0    18725  Nd7 ??
+ 6      11     0    36776  Nd7 Nd6+ Ke7 Bg5+ f6 h3 Nb6 Qb3 Qxd6 hxg4 
+ 6      11     0    39870  Nd7 Nd6+ Ke7 Bg5+ f6 h3 Nb6 Qb3 Qxd6 hxg4 
+ 7     -19     0    66556  Nd7 ??
+ 7     -74     0   103749  Nd7 Nd6+ Kf8 h3 Nb6 Qe8+ Qxe8 Nxe8 Kxe8 hxg4 Bd4 Nxd4 cxd4 
+ 7     -74     0   110371  Nd7 Nd6+ Kf8 h3 Nb6 Qe8+ Qxe8 Nxe8 Kxe8 hxg4 Bd4 Nxd4 cxd4 
+ 7     -26     0   128144  Nc6 h3 Bd7 Nd6+ Kf8 dxc6 Bxc6 Nxb7 
+ 7     -26     0   130359  Nc6 h3 Bd7 Nd6+ Kf8 dxc6 Bxc6 Nxb7 
+ 8     -56     0   140598  Nc6 ??
+ 8     -77     0   194500  Nc6 h3 axb5 Qxa8 Nd4+ Kd1 Nf6 Bg5 O-O bxc5 Nb3 Ra2 
+ 8     -77     0   206211  Nc6 h3 axb5 Qxa8 Nd4+ Kd1 Nf6 Bg5 O-O bxc5 Nb3 Ra2 
+ 8     -77     0   260599  Nc6 h3 axb5 Qxa8 Nd4+ Kd1 Nf6 Bg5 O-O bxc5 Nb3 Ra2 
+ 9    -104     0   330781  Nc6 h3 axb5 Qxa8 Nd4+ Kd1 Nf6 Bg5 O-O bxc5 Nb3 Ra2 Bxc5 Nxe5 bxc4 Bxc4 
+ 9    -100     0   456442  Nd7 Nd6+ Kf8 h3 Nb6 Qe8+ Qxe8 Nxe8 Kxe8 hxg4 Bd4 Nxd4 cxd4 Kf3 Na4 Bd3 Nc3 c5 f6 Bd2 Bd7 
+ 9    -100     0   472608  Nd7 Nd6+ Kf8 h3 Nb6 Qe8+ Qxe8 Nxe8 Kxe8 hxg4 Bd4 Nxd4 cxd4 Kf3 Na4 Bd3 Nc3 c5 f6 Bd2 Bd7 
+10     -76     0   657449  Nd7 Nd6+ Kf8 h3 Nb6 Qe8+ Qxe8 Nxe8 Kxe8 hxg4 Bd4 Nxd4 cxd4 Kf3 Na4 Bd3 Nc3 Rh5 f6 Bd2 g6 Rhh1 
+10     -76     0   689689  Nd7 Nd6+ Kf8 h3 Nb6 Qe8+ Qxe8 Nxe8 Kxe8 hxg4 Bd4 Nxd4 cxd4 Kf3 Na4 Bd3 Nc3 Rh5 f6 Bd2 g6 Rhh1 
+11     -93     0  1034159  Nd7 Nd6+ Kf8 h3 Nb6 Qe8+ Qxe8 Nxe8 Kxe8 hxg4 Bd4 Nxd4 cxd4 Kf3 Na4 Bd2 Bd7 c5 Bb5 Rh5 f6 g5 Kf7 gxf6 Kxf6 
+11     -93     0  1127699  Nd7 Nd6+ Kf8 h3 Nb6 Qe8+ Qxe8 Nxe8 Kxe8 hxg4 Bd4 Nxd4 cxd4 Kf3 Na4 Bd2 Bd7 c5 Bb5 Rh5 f6 g5 Kf7 gxf6 Kxf6 
+12     -88     0  2174970  Nd7 Nd6+ Kf8 h3 Nb6 Qe8+ Qxe8 Nxe8 Kxe8 hxg4 Bd4 Nxd4 cxd4 Kf3 Na4 Bd2 Bd7 c5 Bb5 Rh5 f6 g5 Rf8 Bxb5+ axb5 Rxh7 fxg5+ Ke2 
+12     -88     0  2361137  Nd7 Nd6+ Kf8 h3 Nb6 Qe8+ Qxe8 Nxe8 Kxe8 hxg4 Bd4 Nxd4 cxd4 Kf3 Na4 Bd2 Bd7 c5 Bb5 Rh5 f6 g5 Rf8 Bxb5+ axb5 Rxh7 fxg5+ Ke2 
+13    -118     0  4080553  Nd7 ??
+13    -116     0  5285018  Nd7 Nd6+ Kf8 h3 Nb6 Nxb7 Bxb7 Qc2 cxb4 hxg4 Bc5 axb4 Bxb4 Nxe5 Qe7 Rb1 a5 Bb2 Rc8 Bd4 Kg8 Kf3 
+13    -116     0  9746012  Nd7 Nd6+ Kf8 h3 Nb6 Nxb7 Bxb7 Qc2 cxb4 hxg4 Bc5 axb4 Bxb4 Nxe5 Qe7 Rb1 a5 Bb2 Rc8 Bd4 Kg8 Kf3 
+14    -113     0 17680525  Nd7 Nd6+ Kf8 h3 Nb6 Nxb7 Bxb7 Qc2 cxb4 hxg4 Bc5 axb4 Bxb4 Nxe5 Bd6 Ba3 Kg8 Bxd6 Qxd6 Rb1 Re8 c5 Qxe5 Rxb6 Qxe4+ Qxe4 Rxe4+ Kf3 Bxd5 Bxa6 
+14    -113     0 18581950  Nd7 Nd6+ Kf8 h3 Nb6 Nxb7 Bxb7 Qc2 cxb4 hxg4 Bc5 axb4 Bxb4 Nxe5 Bd6 Ba3 Kg8 Bxd6 Qxd6 Rb1 Re8 c5 Qxe5 Rxb6 Qxe4+ Qxe4 Rxe4+ Kf3 Bxd5 Bxa6 
+15    -111     0 29051357  Nd7 Nd6+ Kf8 h3 Nb6 Nxb7 Bxb7 Qc2 cxb4 hxg4 Bc5 axb4 Bxb4 Nxe5 Qe7 Rb1 a5 Bb2 Rc8 Bd4 Kg8 Bxb6 Qxe5 Bxa5 Bxa5 Rxb7 Qd4 Kf3 
+15    -111     0 31017643  Nd7 Nd6+ Kf8 h3 Nb6 Nxb7 Bxb7 Qc2 cxb4 hxg4 Bc5 axb4 Bxb4 Nxe5 Qe7 Rb1 a5 Bb2 Rc8 Bd4 Kg8 Bxb6 Qxe5 Bxa5 Bxa5 Rxb7 Qd4 Kf3 
+
+Nodes: 31017643 (66.90% qnodes)
+
+Analyzing 17 plies...
+  +----+----+----+----+----+----+----+----+
+8 |    | *R |    | *B | *K |    |    | *R |
+  +----+----+----+----+----+----+----+----+
+7 |    |    |  R |    |    | *P | *P | *P |
+  +----+----+----+----+----+----+----+----+
+6 | *P |    |    |    | *P |    |    |    |
+  +----+----+----+----+----+----+----+----+
+5 |    | *B |    |    |  P |    |    | *Q |
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    |  Q |  P |    |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |  N |    |    |    |
+  +----+----+----+----+----+----+----+----+
+2 |    |  B |    |    |    |    |  P |  P |
+  +----+----+----+----+----+----+----+----+
+1 |    |    |    |  R |    |    |  K |    |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Opening phase.
+Time for move : 99999999
+ 3      77     0      473  g4 ??
+ 3     -77     0      861  g4 Qh3 Rxd8+ Rxd8 
+ 3     -77     0     1532  g4 Qh3 Rxd8+ Rxd8 
+ 3     -55     0     2744  Rb7 Rxb7 Qxb7 O-O 
+ 3     -39     0     4151  Rc3 O-O Ba3 
+ 3       0     0     5266  Rxd8+ Rxd8 Qb4 Rd7 
+ 3       0     0     5316  Rxd8+ Rxd8 Qb4 Rd7 
+ 4     -30     0     5742  Rxd8+ ??
+ 4      -7     0     6285  Rxd8+ Rxd8 Qb4 Qh4 Ba3 
+ 4      -7     0     6897  Rxd8+ Rxd8 Qb4 Qh4 Ba3 
+ 5       0     0     8018  Rxd8+ Rxd8 Qb4 Rd7 Rc8+ Rd8 Rc7 
+ 5       0     0     9092  Rxd8+ Rxd8 Qb4 Rd7 Rc8+ Rd8 Rc7 
+ 6       0     0    10706  Rxd8+ Rxd8 Qb4 Rd7 Rc8+ Rd8 Rc7 
+ 6       0     0    11928  Rxd8+ Rxd8 Qb4 Rd7 Rc8+ Rd8 Rc7 
+ 7      30     0    14852  Rxd8+ !!
+ 7      15     0    20084  Rxd8+ Rxd8 Qb4 Rd7 Rc8+ Rd8 Ba3 Kd7 Rc4 Qh4 g3 
+ 7      15     0    23829  Rxd8+ Rxd8 Qb4 Rd7 Rc8+ Rd8 Ba3 Kd7 Rc4 Qh4 g3 
+ 8     -15     0    50448  Rxd8+ ??
+ 8     -37     0   156208  Rxd8+ Kxd8 Rc2 Ke8 Qb4 a5 Qd6 Rd8 Qc7 
+ 8       0     0   169147  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+ 8       0     0   176636  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+ 9       0     0   195485  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+ 9       0     0   217273  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+10       0     0   263098  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+10       0     0   312694  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+11       0     0   412344  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+11       0     0   505003  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+12       0     0   660270  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+12       0     0   862688  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+13       0     0  1367241  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+13       0     0  1829253  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+14       0     0  2784773  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+14       0     0  4025984  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+15       0     0  5852396  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+15       0     0  8216017  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+16       0     0 11347199  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+16       0     0 17885028  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+17       0     0 25393059  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+17       0     0 33643463  Rb7 Rxb7 Rxd8+ Kxd8 Qxb7 Qe2 Qb8+ Kd7 Qb7+ Kd8 
+
+Nodes: 33643463 (49.11% qnodes)
+
+Analyzing 16 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R |    |    |    | *R | *B | *K |    |
+  +----+----+----+----+----+----+----+----+
+7 | *P | *P | *Q |    |    | *P | *P | *P |
+  +----+----+----+----+----+----+----+----+
+6 |    |    | *B |    | *P |  B |    |    |
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    |    |    |  Q |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |  P |    |  B |    |    |    |  P |
+  +----+----+----+----+----+----+----+----+
+2 |  P |    |  P |    |    |  P |  P |    |
+  +----+----+----+----+----+----+----+----+
+1 |  R |    |    |  R |    |    |  K |    |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Middlegame phase.
+Time for move : 99999999
+ 3      59     0      989  c4 ??
+ 3      57     0     1150  c4 Kh8 Bc3 
+ 3      60     0     2266  Qg5 h6 Qg4 
+ 3      60     0     2927  Qg5 h6 Qg4 
+ 4      72     0     3633  Qg5 e5 c4 e4 
+ 4      72     0     3996  Qg5 e5 c4 e4 
+ 5      42     0     5055  Qg5 ??
+ 5      38     0     6117  Qg5 h6 Qg4 Kh8 Bc3 
+ 5      59     0     8771  c4 e5 Qg5 e4 Be2 
+ 5      74     0    13364  Re1 Qb6 c4 Kh8 Bd4 
+ 5      74     0    14506  Re1 Qb6 c4 Kh8 Bd4 
+ 6      72     0    24497  Re1 Rac8 Bd4 Qa5 Re5 Qd2 Bxa7 
+ 6      72     0    25792  Re1 Rac8 Bd4 Qa5 Re5 Qd2 Bxa7 
+ 7      68     0    42637  Re1 Qd6 Rad1 Qa3 Be4 Bxe4 Rxe4 Qxa2 
+ 7      68     0    50927  Re1 Qd6 Rad1 Qa3 Be4 Bxe4 Rxe4 Qxa2 
+ 8      70     0    67301  Re1 Qd6 Be5 Qd5 Be4 Qc5 Bxc6 Qxc6 c4 
+ 8      70     0    77042  Re1 Qd6 Be5 Qd5 Be4 Qc5 Bxc6 Qxc6 c4 
+ 9      62     0   110422  Re1 Qd6 Be5 Qc5 c4 Rad8 Rad1 f5 Qg5 
+ 9      62     0   165674  Re1 Qd6 Be5 Qc5 c4 Rad8 Rad1 f5 Qg5 
+10      52     0   309341  Re1 Qd6 Re5 Qb4 c4 Qd2 Be4 Bxe4 Rxe4 
+10      52     0   398539  Re1 Qd6 Re5 Qb4 c4 Qd2 Be4 Bxe4 Rxe4 
+11      57     0   757615  Re1 g6 Rad1 Be7 Qh4 Rad8 c4 Bxf6 Qxf6 Qe7 Qe5 Qh4 
+11      57     0   855640  Re1 g6 Rad1 Be7 Qh4 Rad8 c4 Bxf6 Qxf6 Qe7 Qe5 Qh4 
+12      56     0  1317814  Re1 g6 Qd4 Qd6 Qxd6 Bxd6 Rad1 Be7 Bxe7 Rxe7 Be4 Rb8 Bxc6 bxc6 Rd4 e5 
+12      56     0  1666552  Re1 g6 Qd4 Qd6 Qxd6 Bxd6 Rad1 Be7 Bxe7 Rxe7 Be4 Rb8 Bxc6 bxc6 Rd4 e5 
+13      47     0  1978035  Re1 g6 Qd4 Qd6 Qxd6 Bxd6 Rad1 Be7 Bxe7 Rxe7 Be4 Bxe4 Rxe4 e5 c4 Rc8 
+13      47     0  2855055  Re1 g6 Qd4 Qd6 Qxd6 Bxd6 Rad1 Be7 Bxe7 Rxe7 Be4 Bxe4 Rxe4 e5 c4 Rc8 
+14      37     0  3845813  Re1 g6 Qd4 Qd6 Qxd6 Bxd6 Rad1 Be7 Bxe7 Rxe7 Be4 Bxe4 Rxe4 e5 c4 f5 Re3 
+14      37     0  6080838  Re1 g6 Qd4 Qd6 Qxd6 Bxd6 Rad1 Be7 Bxe7 Rxe7 Be4 Bxe4 Rxe4 e5 c4 f5 Re3 
+15      34     0  9848816  Re1 g6 Qd4 Qd6 Qxd6 Bxd6 Rad1 Be7 Bxe7 Rxe7 Be4 Bxe4 Rxe4 e5 c4 f5 Ree1 e4 Rd6 Rc8 
+15      67     0 18422410  Bxh7+ !!
+15      81     0 131680839  Bxh7+ Kxh7 Qh5+ Kg8 Rd4 Bf3 gxf3 Qxc2 Rd7 Qg6+ Qxg6 fxg6 Bg5 b5 Rc1 Rec8 Rxc8 Rxc8 Rxa7 Rc2 a4 bxa4 bxa4 Bb4 Bf4 
+15      81     0 132129780  Bxh7+ Kxh7 Qh5+ Kg8 Rd4 Bf3 gxf3 Qxc2 Rd7 Qg6+ Qxg6 fxg6 Bg5 b5 Rc1 Rec8 Rxc8 Rxc8 Rxa7 Rc2 a4 bxa4 bxa4 Bb4 Bf4 
+16      68     0 146945685  Bxh7+ Kxh7 Qh5+ Kg8 Rd4 Bf3 gxf3 Qxc2 Rd7 Qg6+ Qxg6 fxg6 Bg5 b5 Rc1 a5 Rcc7 Rec8 Rb7 Rc2 Rxb5 Rxa2 Kg2 Rc8 Re5 Rc5 Bf4 a4 
+16      68     0 148192338  Bxh7+ Kxh7 Qh5+ Kg8 Rd4 Bf3 gxf3 Qxc2 Rd7 Qg6+ Qxg6 fxg6 Bg5 b5 Rc1 a5 Rcc7 Rec8 Rb7 Rc2 Rxb5 Rxa2 Kg2 Rc8 Re5 Rc5 Bf4 a4 
+
+Nodes: 148192338 (60.97% qnodes)
+
+Analyzing 16 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R |    |    |    |    | *R |    | *K |
+  +----+----+----+----+----+----+----+----+
+7 |    |    |    |    | *B | *P | *P | *B |
+  +----+----+----+----+----+----+----+----+
+6 |    |    | *N |    | *P |    |    | *P |
+  +----+----+----+----+----+----+----+----+
+5 | *P |    | *N |    |  P |    |    |    |
+  +----+----+----+----+----+----+----+----+
+4 |    | *P |    | *P |    |  B |  N |  P |
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |  P |    |  N |  P |    |
+  +----+----+----+----+----+----+----+----+
+2 | *Q |  P |    |    |  Q |  P |  B |    |
+  +----+----+----+----+----+----+----+----+
+1 |    |    |  R |  R |    |    |  K |    |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Middlegame phase.
+Time for move : 99999999
+ 3    -162     0     1101  Kh1 ??
+ 3    -162     0     1303  Kh1 Qb3 Bf1 Rac8 
+ 3    -159     0     1861  Nfh2 Rac8 Nf3 
+ 3    -159     0     2610  Nfh2 Rac8 Nf3 
+ 4    -162     0     3625  Nfh2 Rfc8 Nf3 a4 Rc4 
+ 4    -162     0     4509  Nfh2 Rfc8 Nf3 a4 Rc4 
+ 5    -192     0     6042  Nfh2 ??
+ 5    -192     0     6534  Nfh2 Rfc8 Nf3 Qb3 Bf1 a4 Rc4 
+ 5    -133     0     8761  Nf6 gxf6 exf6 Bxd3 Rxd3 Nxd3 fxe7 
+ 5    -133     0     8997  Nf6 gxf6 exf6 Bxd3 Rxd3 Nxd3 fxe7 
+ 6    -133     0    10516  Nf6 gxf6 exf6 Bxd3 Rxd3 Nxd3 fxe7 
+ 6    -133     0    11849  Nf6 gxf6 exf6 Bxd3 Rxd3 Nxd3 fxe7 
+ 7    -103     0    16715  Nf6 !!
+ 7     -63     0    46948  Nf6 Bf5 g4 Bxd3 Rxd3 gxf6 Bxh6 Nxd3 Qxd3 Nxe5 Nxe5 fxe5 Bxa8 Rxa8 
+ 7     -63     0    49000  Nf6 Bf5 g4 Bxd3 Rxd3 gxf6 Bxh6 Nxd3 Qxd3 Nxe5 Nxe5 fxe5 Bxa8 Rxa8 
+ 8     -33     0    75658  Nf6 !!
+ 8     -47     0   102205  Nf6 Bf5 Nd7 Nxd7 Rxc6 Qd5 Rc4 Bg4 Qe4 Qxe4 dxe4 Bc5 
+ 8     -47     0   105878  Nf6 Bf5 Nd7 Nxd7 Rxc6 Qd5 Rc4 Bg4 Qe4 Qxe4 dxe4 Bc5 
+ 9     -17     0   166537  Nf6 !!
+ 9     -44     0   221744  Nf6 Bf5 Nd7 Nxd7 Rxc6 Qd5 Ne1 Qb5 Rdc1 Rad8 g4 Bh7 h5 
+ 9     -44     0   226797  Nf6 Bf5 Nd7 Nxd7 Rxc6 Qd5 Ne1 Qb5 Rdc1 Rad8 g4 Bh7 h5 
+10     -35     0   387483  Nf6 Bf5 Nd7 Nxd7 Rxc6 Bg4 Rc7 Rfd8 Qc2 a4 Rc1 a3 bxa3 Qxc2 R1xc2 Rxa3 Nxd4 Rxd3 
+10     -14     0   417254  Rxc5 !!
+10      -3     0   595340  Rxc5 Bxc5 Rc1 Ba7 Rxc6 Rac8 Ra6 Rc7 Bd2 Qxb2 Rxa5 Rc1+ Ne1 
+10      -3     0   599029  Rxc5 Bxc5 Rc1 Ba7 Rxc6 Rac8 Ra6 Rc7 Bd2 Qxb2 Rxa5 Rc1+ Ne1 
+11       1     0   794821  Rxc5 Bxc5 Rc1 Ba7 Rxc6 Rac8 Ra6 Rc7 Nxh6 gxh6 Bxh6 Rg8 Bg5 Rg7 h5 Qa1+ Kh2 
+11       1     0   810139  Rxc5 Bxc5 Rc1 Ba7 Rxc6 Rac8 Ra6 Rc7 Nxh6 gxh6 Bxh6 Rg8 Bg5 Rg7 h5 Qa1+ Kh2 
+12      -2     0  1081826  Rxc5 Bxc5 Rc1 Ba7 Rxc6 Rac8 Ra6 Rc7 Ne1 Rfc8 Bf3 Qa1 Bd2 h5 Nh2 Qxb2 Bxh5 
+12      -2     0  1197849  Rxc5 Bxc5 Rc1 Ba7 Rxc6 Rac8 Ra6 Rc7 Ne1 Rfc8 Bf3 Qa1 Bd2 h5 Nh2 Qxb2 Bxh5 
+13     -15     0  2181930  Rxc5 Bxc5 Rc1 Ba7 Rxc6 a4 Bf1 Bf5 Ngh2 Rac8 Ra6 Bc5 g4 Bh7 Ne1 Qa1 Nhf3 
+13     -15     0  2424035  Rxc5 Bxc5 Rc1 Ba7 Rxc6 a4 Bf1 Bf5 Ngh2 Rac8 Ra6 Bc5 g4 Bh7 Ne1 Qa1 Nhf3 
+14      -7     0  4606995  Rxc5 Bxc5 Rc1 Ba7 Rxc6 a4 Qd1 Qxb2 Ne1 Qb3 Qxb3 axb3 Rc1 Rac8 Rb1 h5 Nh2 Rc3 Bd2 Bxd3 Nxd3 Rxd3 Bxb4 
+14      -7     0  5083080  Rxc5 Bxc5 Rc1 Ba7 Rxc6 a4 Qd1 Qxb2 Ne1 Qb3 Qxb3 axb3 Rc1 Rac8 Rb1 h5 Nh2 Rc3 Bd2 Bxd3 Nxd3 Rxd3 Bxb4 
+15     -11     0  7653918  Rxc5 Bxc5 Rc1 Ba7 Rxc6 a4 Qd1 Qxb2 Ne1 Qb3 Qxb3 axb3 Rc1 Rab8 Rb1 Rfc8 Rxb3 Rc3 Rb2 Bf5 Nh2 b3 g4 Bxd3 Nxd3 Rxd3 
+15       0     0 16841355  Nf6 Rac8 Nxh7 Kxh7 Ra1 Qb3 Nd2 Qxb2 Rdb1 Qc3 Rc1 Qb2 Rcb1 
+15       0     0 17172200  Nf6 Rac8 Nxh7 Kxh7 Ra1 Qb3 Nd2 Qxb2 Rdb1 Qc3 Rc1 Qb2 Rcb1 
+16      30     0 24933142  Nf6 !!
+16       0     0 49813481  Nf6 Ra6 Nxh7 Kxh7 Nd2 Qxb2 Rxc5 Bxc5 Bxc6 a4 Be4+ Kg8 Qg4 Kh8 Qh5 
+16       0     0 50561447  Nf6 Ra6 Nxh7 Kxh7 Nd2 Qxb2 Rxc5 Bxc5 Bxc6 a4 Be4+ Kg8 Qg4 Kh8 Qh5 
+
+Nodes: 50561447 (63.30% qnodes)
+
+Analyzing 16 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R |    | *B |    |    | *R | *K |    |
+  +----+----+----+----+----+----+----+----+
+7 |    | *P |    | *N | *B | *P | *P | *P |
+  +----+----+----+----+----+----+----+----+
+6 | *P | *Q |    | *P |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |  B |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+4 |  P |    |    |  N |  P |    |    |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |    |  N |    | *P |    |    |    |
+  +----+----+----+----+----+----+----+----+
+2 |    |  P |  P |    |    |    |  P |  P |
+  +----+----+----+----+----+----+----+----+
+1 |  R |    |    |  Q |    |  R |    |  K |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Middlegame phase.
+Time for move : 99999999
+ 3    -108     0      536  Nf5 ??
+ 3    -113     0      838  Nf5 Bf6 Bb3 Bxc3 bxc3 
+ 3    -113     0     1386  Nf5 Bf6 Bb3 Bxc3 bxc3 
+ 3    -113     0     1830  Nf5 Bf6 Bb3 Bxc3 bxc3 
+ 4    -113     0     2206  Nf5 Bf6 Bb3 Bxc3 bxc3 
+ 4     -83     0     3204  Bb3 !!
+ 4     -69     0     4587  Bb3 Bf6 Nd5 Qc5 c3 
+ 4     -69     0     4681  Bb3 Bf6 Nd5 Qc5 c3 
+ 5     -69     0     5930  Bb3 Bf6 Nd5 Qc5 c3 
+ 5     -69     0     6420  Bb3 Bf6 Nd5 Qc5 c3 
+ 6     -69     0     8745  Bb3 Bf6 Nd5 Qc5 Rf5 Be5 c3 
+ 6     -69     0    11747  Bb3 Bf6 Nd5 Qc5 Rf5 Be5 c3 
+ 7     -69     0    14579  Bb3 Bf6 Nd5 Qc5 Rf5 Be5 c3 
+ 7     -69     0    17303  Bb3 Bf6 Nd5 Qc5 Rf5 Be5 c3 
+ 8     -39     0    35772  Bb3 !!
+ 8     -41     0    48901  Bb3 Qc5 Nd5 Bg5 
+ 8     -41     0    53578  Bb3 Qc5 Nd5 Bg5 
+ 9     -43     0    70734  Bb3 Qc5 Nd5 Bg5 Rf5 h6 Ne7+ Bxe7 Rxc5 Nxc5 Qf3 Nxb3 cxb3 
+ 9     -43     0    86607  Bb3 Qc5 Nd5 Bg5 Rf5 h6 Ne7+ Bxe7 Rxc5 Nxc5 Qf3 Nxb3 cxb3 
+10     -35     0   170364  Bb3 Qc5 Nd5 Bg5 Rf5 Bh4 Nxe3 Ne5 Rf1 Bd7 Nd5 
+10     -35     0   204526  Bb3 Qc5 Nd5 Bg5 Rf5 Bh4 Nxe3 Ne5 Rf1 Bd7 Nd5 
+11     -24     0   566815  Bb3 Qc5 Nd5 Bg5 Rf5 Bd8 Nxe3 Ne5 Rh5 Kh8 Ndf5 Bxf5 Nxf5 
+11     -24     0   632637  Bb3 Qc5 Nd5 Bg5 Rf5 Bd8 Nxe3 Ne5 Rh5 Kh8 Ndf5 Bxf5 Nxf5 
+12     -17     0  1867822  Bb3 Nf6 Qd3 Qc5 h3 Nh5 Qxe3 Bh4 Nce2 Nf6 Nc3 Bg5 Qd3 Qe5 a5 
+12       6     0  2102058  Bxf7+ !!
+12      50     0  4772070  Bxf7+ Rxf7 Rxf7 Kxf7 Qh5+ Kg8 Qe8+ Bf8 Nd5 Qxd4 Ne7+ Kh8 Rf1 Qf6 Rxf6 gxf6 Kg1 Kg7 Nf5+ Kh8 Nxe3 Rb8 Nd5 Kg7 Qe6 h6 
+12      50     0  4788927  Bxf7+ Rxf7 Rxf7 Kxf7 Qh5+ Kg8 Qe8+ Bf8 Nd5 Qxd4 Ne7+ Kh8 Rf1 Qf6 Rxf6 gxf6 Kg1 Kg7 Nf5+ Kh8 Nxe3 Rb8 Nd5 Kg7 Qe6 h6 
+13      80     0  8389493  Bxf7+ !!
+13      67     0 15370435  Bxf7+ Rxf7 Rxf7 Bf6 Nd5 Qxb2 Rb1 e2 Nxe2 Qe5 Rxf6 Nxf6 Nxf6+ Qxf6 Qd5+ Kh8 Ng3 Qe5 Rd1 Qxd5 Rxd5 Bd7 a5 Re8 Rxd6 
+13     110     0 16128254  Rxf7 Rxf7 Bxf7+ Kh8 Nd5 Qxb2 Nxe7 Nf6 Rb1 Nxe4 Rxb2 Nf2+ Kg1 Nxd1 Rb1 Bg4 Bc4 Rf8 Rxb7 Nc3 Ne6 Bxe6 Bxe6 
+13     110     0 16130952  Rxf7 Rxf7 Bxf7+ Kh8 Nd5 Qxb2 Nxe7 Nf6 Rb1 Nxe4 Rxb2 Nf2+ Kg1 Nxd1 Rb1 Bg4 Bc4 Rf8 Rxb7 Nc3 Ne6 Bxe6 Bxe6 
+14     140     0 16906419  Rxf7 !!
+14     160     0 18185516  Rxf7 Rxf7 Bxf7+ Kh8 Nd5 Qxb2 Nxe7 Ne5 Nxc8 Ng4 Rb1 Nf2+ Kg1 Nxd1 Rxb2 Nxb2 Nxd6 Nxa4 e5 Nc3 Kf1 Rd8 Ke1 Ne4 N4f5 Nxd6 Nxd6 Rd7 Ke2 
+14     160     0 18370366  Rxf7 Rxf7 Bxf7+ Kh8 Nd5 Qxb2 Nxe7 Ne5 Nxc8 Ng4 Rb1 Nf2+ Kg1 Nxd1 Rxb2 Nxb2 Nxd6 Nxa4 e5 Nc3 Kf1 Rd8 Ke1 Ne4 N4f5 Nxd6 Nxd6 Rd7 Ke2 
+15     190     0 20847987  Rxf7 !!
+15     173     0 25790066  Rxf7 Rxf7 Bxf7+ Kh8 Nd5 Qxb2 Nxe7 Nc5 Qe1 Bg4 Nef5 Bxf5 Nxf5 Rf8 Bd5 e2 a5 Qxc2 Ng3 Nd3 Qxe2 Nf2+ Kg1 Qc3 Rf1 
+15     173     0 26397830  Rxf7 Rxf7 Bxf7+ Kh8 Nd5 Qxb2 Nxe7 Nc5 Qe1 Bg4 Nef5 Bxf5 Nxf5 Rf8 Bd5 e2 a5 Qxc2 Ng3 Nd3 Qxe2 Nf2+ Kg1 Qc3 Rf1 
+16     203     0 32293794  Rxf7 !!
+16     222     0 47103154  Rxf7 Rxf7 Bxf7+ Kh8 Nd5 Qxb2 Nxe7 Nc5 Qe1 Bg4 Nef5 Bxf5 Nxf5 Rf8 Bd5 e2 a5 h6 Ng3 Rf2 Bc4 Qe5 Bxe2 Nxe4 Bd3 Nxg3+ hxg3 Kg8 Rb1 Qxe1+ Rxe1 Kf8 c3 
+16     222     0 48864025  Rxf7 Rxf7 Bxf7+ Kh8 Nd5 Qxb2 Nxe7 Nc5 Qe1 Bg4 Nef5 Bxf5 Nxf5 Rf8 Bd5 e2 a5 h6 Ng3 Rf2 Bc4 Qe5 Bxe2 Nxe4 Bd3 Nxg3+ hxg3 Kg8 Rb1 Qxe1+ Rxe1 Kf8 c3 
+
+Nodes: 48864025 (58.72% qnodes)
+
+Analyzing 17 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R |    | *B |    |    |    | *K |    |
+  +----+----+----+----+----+----+----+----+
+7 | *P |    |    | *P |    | *N |  P |    |
+  +----+----+----+----+----+----+----+----+
+6 |    |    | *P | *Q | *R |    |  R | *P |
+  +----+----+----+----+----+----+----+----+
+5 |    | *P |    |    | *P |    |    |  P |
+  +----+----+----+----+----+----+----+----+
+4 |    |    |  B |    |  P | *N |  Q |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |  P |    |    |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+2 |  P |    |  P |  P |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+1 |    |  K |    |    |    |    |  R |    |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Middlegame phase.
+Time for move : 99999999
+ 3    -295     0      292  Bxe6 !!
+ 3    -292     0      528  Bxe6 dxe6 Rf6 Qxd2 
+ 3    -292     0      736  Bxe6 dxe6 Rf6 Qxd2 
+ 4    -292     0      908  Bxe6 dxe6 Rf6 Qxd2 
+ 4    -292     0     1282  Bxe6 dxe6 Rf6 Qxd2 
+ 5    -313     0     1957  Bxe6 dxe6 Rf6 Qxd2 Rf1 Ng5 
+ 5    -313     0     2214  Bxe6 dxe6 Rf6 Qxd2 Rf1 Ng5 
+ 6    -283     0     2938  Bxe6 !!
+ 6    -282     0     3635  Bxe6 dxe6 Rf6 Qxd2 Rd1 Qc3 
+ 6    -282     0     3977  Bxe6 dxe6 Rf6 Qxd2 Rd1 Qc3 
+ 7    -312     0     8570  Bxe6 ??
+ 7    -294     0    14127  Bxe6 dxe6 Rf6 Qe7 Qh4 Ng5 Rxh6 Kxg7 Rxg5+ Kxh6 
+ 7    -294     0    14486  Bxe6 dxe6 Rf6 Qe7 Qh4 Ng5 Rxh6 Kxg7 Rxg5+ Kxh6 
+ 8    -264     0    24553  Bxe6 !!
+ 8    -189     0    61120  Bxe6 Nxe6 d3 Qd4 Rf1 Nf4 Rf6 Ng5 Rxh6 
+ 8    -189     0    61891  Bxe6 Nxe6 d3 Qd4 Rf1 Nf4 Rf6 Ng5 Rxh6 
+ 9    -163     0   117376  Bxe6 dxe6 Rf6 Qe7 Qh4 Qc5 Qg4 Nh3 Rgf1 Nhg5 Rxh6 Nxh6 Qxg5 Nf7 Qg6 
+ 9    -163     0   118902  Bxe6 dxe6 Rf6 Qe7 Qh4 Qc5 Qg4 Nh3 Rgf1 Nhg5 Rxh6 Nxh6 Qxg5 Nf7 Qg6 
+10    -181     0   177301  Bxe6 Nxe6 Qf5 Bb7 Rf6 Qe7 c3 a5 Rf1 Nf4 d4 Kxg7 dxe5 
+10    -181     0   182210  Bxe6 Nxe6 Qf5 Bb7 Rf6 Qe7 c3 a5 Rf1 Nf4 d4 Kxg7 dxe5 
+11    -185     0   255273  Bxe6 Nxe6 Qf5 Bb7 Rf6 Qe7 Rf1 Nxg7 Qg4 Ng5 Rxh6 d5 d3 dxe4 dxe4 
+11    -185     0   267752  Bxe6 Nxe6 Qf5 Bb7 Rf6 Qe7 Rf1 Nxg7 Qg4 Ng5 Rxh6 d5 d3 dxe4 dxe4 
+12    -200     0   532005  Bxe6 Nxe6 Qf5 Bb7 Rf6 Qe7 Rf1 Nxg7 Qg4 Rf8 Qg6 d5 d3 b4 Ka1 
+12    -200     0   577534  Bxe6 Nxe6 Qf5 Bb7 Rf6 Qe7 Rf1 Nxg7 Qg4 Rf8 Qg6 d5 d3 b4 Ka1 
+13    -203     0   959190  Bxe6 Nxe6 Qf5 Bb7 Rf6 Qe7 Rf1 Nxg7 Qg4 Rf8 Qg6 d5 d3 b4 Kc1 a5 Kb1 
+13    -203     0  1038828  Bxe6 Nxe6 Qf5 Bb7 Rf6 Qe7 Rf1 Nxg7 Qg4 Rf8 Qg6 d5 d3 b4 Kc1 a5 Kb1 
+14    -173     0  3388210  Bxe6 !!
+14    -139     0  5284983  Bxe6 Nxe6 Qh4 Qc7 Qf6 Qd8 Qxf7+ Kxf7 g8=Q+ Qxg8 Rxg8 Bb7 R8g6 c5 d3 Rh8 Rf1+ Nf4 Kb2 b4 a4 bxa3+ Kxa3 
+14    -139     0  5380456  Bxe6 Nxe6 Qh4 Qc7 Qf6 Qd8 Qxf7+ Kxf7 g8=Q+ Qxg8 Rxg8 Bb7 R8g6 c5 d3 Rh8 Rf1+ Nf4 Kb2 b4 a4 bxa3+ Kxa3 
+15    -134     0  7992026  Bxe6 dxe6 Rf6 Qe7 Qh4 Bb7 Rxf4 Qxh4 Rxh4 Ng5 Rhg4 Kxg7 Rf1 Rg8 d3 c5 Kb2 Rd8 Rg3 a5 Kc3 
+15    -134     0  8270961  Bxe6 dxe6 Rf6 Qe7 Qh4 Bb7 Rxf4 Qxh4 Rxh4 Ng5 Rhg4 Kxg7 Rf1 Rg8 d3 c5 Kb2 Rd8 Rg3 a5 Kc3 
+16    -147     0 10828359  Bxe6 dxe6 Rf6 Qe7 Qh4 Bb7 Rxf4 Qxh4 Rxh4 Ng5 Rf1 Kxg7 d3 c5 Kb2 Rd8 Kc3 b4+ Kb2 Bc6 Rg4 Be8 Rh4 Bf7 a4 
+16    -147     0 11383162  Bxe6 dxe6 Rf6 Qe7 Qh4 Bb7 Rxf4 Qxh4 Rxh4 Ng5 Rf1 Kxg7 d3 c5 Kb2 Rd8 Kc3 b4+ Kb2 Bc6 Rg4 Be8 Rh4 Bf7 a4 
+17    -147     0 15880321  Bxe6 dxe6 Rf6 Qe7 Qh4 Bb7 Rxf4 Qxh4 Rxh4 Ng5 Rf1 Kxg7 d3 c5 Kb2 Rd8 Kc3 b4+ Kb2 Bc6 Rg4 Be8 Rh4 Bf7 a4 
+17    -147     0 16768003  Bxe6 dxe6 Rf6 Qe7 Qh4 Bb7 Rxf4 Qxh4 Rxh4 Ng5 Rf1 Kxg7 d3 c5 Kb2 Rd8 Kc3 b4+ Kb2 Bc6 Rg4 Be8 Rh4 Bf7 a4 
+
+Nodes: 16768003 (56.66% qnodes)
+
+Analyzing 17 plies...
+  +----+----+----+----+----+----+----+----+
+8 |    |    |    | *R |    |    | *K |    |
+  +----+----+----+----+----+----+----+----+
+7 | *P | *P |    |    | *N | *P | *P |    |
+  +----+----+----+----+----+----+----+----+
+6 |    |    | *R | *Q | *P |    |    | *P |
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    |
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |  P |  Q |    |    |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |  B |  R |    |    |    |  P |    |
+  +----+----+----+----+----+----+----+----+
+2 |  P |  P |    |    |    |  P |    |  P |
+  +----+----+----+----+----+----+----+----+
+1 |    |    |    |  R |    |    |  K |    |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Middlegame phase.
+Time for move : 99999999
+ 3      -3     0     1434  Rdc8 Rc5 Rxc5 dxc5 Qxc5 Qxb7 
+ 3      -3     0     1957  Rdc8 Rc5 Rxc5 dxc5 Qxc5 Qxb7 
+ 4       4     0     3216  Rdc8 Rc5 Nf5 a3 
+ 4      14     0     4816  Nf5 Rc4 Rxc4 Bxc4 Qb4 
+ 4      14     0     4964  Nf5 Rc4 Rxc4 Bxc4 Qb4 
+ 5       7     0     7672  Nf5 Ba4 Rb6 d5 Rxb2 dxe6 
+ 5       7     0    11149  Nf5 Ba4 Rb6 d5 Rxb2 dxe6 
+ 6     -23     0    19085  Nf5 ??
+ 6     -15     0    21047  Nf5 d5 Rxc3 bxc3 Qe7 c4 b6 
+ 6     -12     0    24384  Rxc3 bxc3 Nd5 Qd3 b5 a4 b4 Bxd5 exd5 cxb4 Qxb4 
+ 6     -11     0    42434  Kh8 Qf3 f6 Qe4 Rb6 g4 
+ 6      -2     0    51805  Nd5 Bxd5 exd5 Qe5 Rxc3 bxc3 a6 g4 
+ 6       2     0    55224  Qb4 a3 Qb5 Rdc1 Rxc3 Rxc3 Nf5 
+ 6       2     0    55364  Qb4 a3 Qb5 Rdc1 Rxc3 Rxc3 Nf5 
+ 7      -8     0    61978  Qb4 a3 Qb5 Bc2 f5 Qh4 Rd7 Rxc6 Nxc6 
+ 7       1     0    75938  Nd5 Bxd5 exd5 Qe3 Rxc3 Qxc3 Qa6 Qc7 Re8 Rc1 
+ 7       1     0    76518  Nd5 Bxd5 exd5 Qe3 Rxc3 Qxc3 Qa6 Qc7 Re8 Rc1 
+ 8       5     0    87546  Nd5 Bxd5 exd5 Qe3 Rxc3 Qxc3 Re8 Re1 Rxe1+ Qxe1 Qc6 Qe3 
+ 8       5     0    94550  Nd5 Bxd5 exd5 Qe3 Rxc3 Qxc3 Re8 Re1 Rxe1+ Qxe1 Qc6 Qe3 
+ 9      -3     0   110886  Nd5 Bxd5 exd5 Qe3 Rxc3 Qxc3 Re8 Re1 Rxe1+ Qxe1 Qc6 Qe3 Qb5 
+ 9       9     0   225792  Qb4 Qh4 Re8 Rxc6 Nxc6 Qf4 Rc8 Rc1 Rd8 Rc4 
+ 9       9     0   230253  Qb4 Qh4 Re8 Rxc6 Nxc6 Qf4 Rc8 Rc1 Rd8 Rc4 
+10      -8     0   451512  Qb4 Bc2 Nf5 d5 Qxe4 Bxe4 Rxc3 bxc3 Nd6 dxe6 fxe6 Rd4 Kf7 
+10      -1     0   511157  Nd5 Bxd5 exd5 Qe3 Rxc3 Qxc3 Re8 Re1 Rxe1+ Qxe1 Qc6 b4 f5 Qe7 Qc1+ Kg2 
+10      -1     0   577000  Nd5 Bxd5 exd5 Qe3 Rxc3 Qxc3 Re8 Re1 Rxe1+ Qxe1 Qc6 b4 f5 Qe7 Qc1+ Kg2 
+11      22     0  1086833  Nd5 Rxc6 Qxc6 f3 Qb6 Kg2 Nf6 Qe5 Rc8 Re1 Qc6 a3 
+11      22     0  1110082  Nd5 Rxc6 Qxc6 f3 Qb6 Kg2 Nf6 Qe5 Rc8 Re1 Qc6 a3 
+12      18     0  2154371  Nd5 Rxc6 Qxc6 Qe5 Qb6 Kg2 Nb4 Qe4 Qc6 Qxc6 Nxc6 d5 
+12      18     0  2229850  Nd5 Rxc6 Qxc6 Qe5 Qb6 Kg2 Nb4 Qe4 Qc6 Qxc6 Nxc6 d5 
+13      17     0  3477156  Nd5 Rc2 a6 Rxc6 Qxc6 Qf3 Qb6 Qh5 Nf6 Qc5 
+13      17     0  3696795  Nd5 Rc2 a6 Rxc6 Qxc6 Qf3 Qb6 Qh5 Nf6 Qc5 
+14      24     0  6629364  Nd5 Rc2 a6 Rxc6 Qxc6 Qf3 Qb6 Qd3 Nf6 f3 Qb4 Qc3 Qd6 Qc5 Qxc5 dxc5 Rc8 
+14      24     0  6929332  Nd5 Rc2 a6 Rxc6 Qxc6 Qf3 Qb6 Qd3 Nf6 f3 Qb4 Qc3 Qd6 Qc5 Qxc5 dxc5 Rc8 
+15      11     0 12946694  Nd5 Rxc6 Qxc6 Bc2 g6 Bb3 Rc8 Qf3 Kg7 Kg2 Qd7 a3 b6 Qe4 Nf6 Qe5 Qc6+ f3 
+15      28     0 33047943  Rb6 a3 Nd5 Bxd5 Qxd5 Qc2 a6 Rc8 Rd6 Rd3 g6 a4 Rxc8 Qxc8+ Rd8 Qc7 e5 Rb3 
+15      28     0 33071418  Rb6 a3 Nd5 Bxd5 Qxd5 Qc2 a6 Rc8 Rd6 Rd3 g6 a4 Rxc8 Qxc8+ Rd8 Qc7 e5 Rb3 
+16      24     0 42413499  Rb6 Qc2 Rb4 Rc4 Rxc4 Qxc4 Qd7 Qd3 Nd5 Kg2 Nf6 f3 Qd6 Qb5 b6 Qe5 Qc6 Re1 Kh8 a3 Rc8 h3 
+16      24     0 42967578  Rb6 Qc2 Rb4 Rc4 Rxc4 Qxc4 Qd7 Qd3 Nd5 Kg2 Nf6 f3 Qd6 Qb5 b6 Qe5 Qc6 Re1 Kh8 a3 Rc8 h3 
+17      26     0 59337622  Rb6 Qc2 Rb4 Rc4 Rxc4 Qxc4 Qd7 Qd3 Nd5 Kg2 Nf6 f3 Qc6 Kg1 a6 
+17      26     0 60404098  Rb6 Qc2 Rb4 Rc4 Rxc4 Qxc4 Qd7 Qd3 Nd5 Kg2 Nf6 f3 Qc6 Kg1 a6 
+
+Nodes: 60404098 (63.35% qnodes)
+

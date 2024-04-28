@@ -1,0 +1,30 @@
+#Makeconf - created from Tools/Makefile and Macros.intel_generic_linux
+
+FC            := ifort
+CC            := icc
+LD	      := $(FC)
+NETCDF_PATH   := /ctmp8/hans/soft/intel
+INC_NETCDF    := $(NETCDF_PATH)/include
+LIB_NETCDF    := $(NETCDF_PATH)/lib
+MOD_NETCDF    := 
+USER_CPPDEFS  := -DSPEC_WORDS_LITTLEENDIAN -DSPEC_CASE_FLAG -DSPEC_LINUX -DSPEC_LP64 -DLINUX -DX86_64 -DIFORT
+CPPDEFS       := $(USER_CPPDEFS) -DBENCHMARK -D'ROMS_HEADER="benchmark.h"' -DNestedGrids=1 -D'SVN_REV="405M"' -DSPEC -DNDEBUG -DNO_GETTIMEOFDAY
+FIXEDFLAGS    := -132
+FREEFLAGS     := -FR
+DEBUG         := -g
+XOMP           := 
+#XOMP           := -openmp
+#FFLAGS_BASE   := 
+#FFLAGS_OPT    := -O3 -xSSE4.2
+FFLAGS_OPT     := -heap-arrays -fp-model precise -ip -O3 -xW $(XOMP)
+#FFLAGS_OPT    := -O0
+FFLAGS        := $(CPPDEFS) $(DEBUG) $(FFLAGS_BASE) $(FFLAGS_OPT)
+CFLAGS        := $(CPPDEFS) $(DEBUG) $(FFLAGS_OPT)
+LDFLAGS       := $(DEBUG) $(FFLAGS_BASE) $(FFLAGS_OPT) $(LIB_NETCDF)/libnetcdf.a
+AR            := ar
+MOD_SUFFIX    := mod
+INCLDIR       := -I. -I$(INC_NETCDF) 
+#       The rest is used by Makefile.depends only
+CPP             = cpp
+CPPFLAGS        = -P -C -N -traditional $(CPPDEFS)
+

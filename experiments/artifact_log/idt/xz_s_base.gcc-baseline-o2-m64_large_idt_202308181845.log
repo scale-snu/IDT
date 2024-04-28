@@ -1,0 +1,130 @@
+SPEC CPU XZ driver: input=cpu2006docs.tar.xz insize=6643
+Loading Input Data
+Compressed size: 1287176; Uncompressed size: 9041920
+SPEC CPU XZ driver: input=cpu2006docs.tar.xz insize=6643
+Loading Input Data
+Compressed size: 1287176; Uncompressed size: 9041920
+SPEC CPU XZ driver: input=cpu2006docs.tar.xz insize=6643
+Loading Input Data
+Compressed size: 1287176; Uncompressed size: 9041920
+SPEC CPU XZ driver: input=cpu2006docs.tar.xz insize=6643
+Loading Input Data
+Compressed size: 1287176; Uncompressed size: 9041920
+SHA-512 of decompressed data compared successfully!
+SHA-512 of decompressed data compared successfully!
+SHA-512 of decompressed data compared successfully!
+SHA-512 of decompressed data compared successfully!
+SPEC CPU XZ driver: input=cpu2006docs.tar.xz insize=6643
+Loading Input Data
+Compressed size: 1287176; Uncompressed size: 9041920
+SHA-512 of decompressed data compared successfully!
+work available for up to 6965690368 / 13631488 => 512 threads
+context size per thread: 13312 KB
+work available for up to 6965690368 / 13631488 => 512 threads
+context size per thread: 13312 KB
+work available for up to 6965690368 / 13631488 => 512 threads
+context size per thread: 13312 KB
+work available for up to 6965690368 / 13631488 => 512 threads
+context size per thread: 13312 KB
+work available for up to 6965690368 / 13631488 => 512 threads
+context size per thread: 13312 KB
+Compressed data 1111795472 bytes in length
+Compressed data 1111795472 bytes in length
+Compressed data 1111795472 bytes in length
+Compressed data 1111795472 bytes in length
+Compressed data 1111795472 bytes in length
+SHA-512 of input file: 5eec56e04269bcb81dd120f2f81299e973341e4a2579c146ccea7af4a74fbf7049966dd7fb91d6fbecfa2238d096a6ead91379e4a0c9bf11d5ec7d0472f369bf
+Input data 6965690368 bytes in length
+Compressing Input Data, level 4
+Compressed data is between 1036078272 and 1111795472 bytes in length
+Finished compressing data
+Uncompressing previously compressed data
+Uncompressed data 6965690368 bytes in length
+Uncompressed data compared correctly
+Tested 6643 MiB buffer: OK!
+SHA-512 of input file: 5eec56e04269bcb81dd120f2f81299e973341e4a2579c146ccea7af4a74fbf7049966dd7fb91d6fbecfa2238d096a6ead91379e4a0c9bf11d5ec7d0472f369bf
+Input data 6965690368 bytes in length
+Compressing Input Data, level 4
+Compressed data is between 1036078272 and 1111795472 bytes in length
+Finished compressing data
+Uncompressing previously compressed data
+Uncompressed data 6965690368 bytes in length
+Uncompressed data compared correctly
+Tested 6643 MiB buffer: OK!
+SHA-512 of input file: 5eec56e04269bcb81dd120f2f81299e973341e4a2579c146ccea7af4a74fbf7049966dd7fb91d6fbecfa2238d096a6ead91379e4a0c9bf11d5ec7d0472f369bf
+Input data 6965690368 bytes in length
+Compressing Input Data, level 4
+Compressed data is between 1036078272 and 1111795472 bytes in length
+Finished compressing data
+Uncompressing previously compressed data
+Uncompressed data 6965690368 bytes in length
+Uncompressed data compared correctly
+Tested 6643 MiB buffer: OK!
+SHA-512 of input file: 5eec56e04269bcb81dd120f2f81299e973341e4a2579c146ccea7af4a74fbf7049966dd7fb91d6fbecfa2238d096a6ead91379e4a0c9bf11d5ec7d0472f369bf
+Input data 6965690368 bytes in length
+Compressing Input Data, level 4
+Compressed data is between 1036078272 and 1111795472 bytes in length
+Finished compressing data
+Uncompressing previously compressed data
+Uncompressed data 6965690368 bytes in length
+Uncompressed data compared correctly
+Tested 6643 MiB buffer: OK!
+SHA-512 of input file: 5eec56e04269bcb81dd120f2f81299e973341e4a2579c146ccea7af4a74fbf7049966dd7fb91d6fbecfa2238d096a6ead91379e4a0c9bf11d5ec7d0472f369bf
+Input data 6965690368 bytes in length
+Compressing Input Data, level 4
+Compressed data is between 1036078272 and 1111795472 bytes in length
+Finished compressing data
+Uncompressing previously compressed data
+Uncompressed data 6965690368 bytes in length
+Uncompressed data compared correctly
+Tested 6643 MiB buffer: OK!
+Execution File:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+Num of Programs:  5
+Program Path:     /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:cpu2006docs.tar.xz
+option1:cpu2006docs.tar.xz
+i:2, argv[6]:6643
+option2:6643
+i:3, argv[7]:055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae
+option3:055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae
+i:4, argv[8]:1036078272
+option4:1036078272
+i:5, argv[9]:1111795472
+option5:1111795472
+i:6, argv[10]:4
+option6:4
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+Core: 1
+Directory [1]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+Core: 2
+Directory [2]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+Core: 3
+Directory [3]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+Core: 4
+Directory [4]:   /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 14097
+Process Start
+Wait PID: 14099
+Wait PID: 14101
+Wait PID: 14102
+Wait PID: 14103
+Execution Time (4) => 1152563951006.00 ns
+Execution Time (0) => 1159582858569.00 ns
+Execution Time (8) => 1163650749791.00 ns
+Execution Time (12) => 1180370683963.00 ns
+Execution Time (16) => 1199024909694.00 ns
+('Full Command: ', '/scale/cal/home/ybmoon/migration/workloads/gap-spec-wrapper/second-wrapper/second_wrapper 0 5 /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/ /home/ybmoon/workloads/cpu2017/benchspec/CPU/657.xz_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/xz_s_base.gcc-baseline-o2-m64  cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4 ')
+execution_time 1199.53 (s)

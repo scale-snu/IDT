@@ -1,0 +1,99 @@
+Generating edge list... done.
+Creating graph...done.
+Running bfs 0...done
+Running bfs 1...done
+Running bfs 2...done
+Running bfs 3...done
+Running bfs 4...done
+Running bfs 5...done
+Running bfs 6...done
+Running bfs 7...done
+Running bfs 8...done
+Running bfs 9...done
+Running bfs 10...done
+Running bfs 11...done
+Running bfs 12...done
+Running bfs 13...done
+Running bfs 14...done
+Running bfs 15...done
+Running bfs 16...done
+Running bfs 17...done
+Running bfs 18...done
+Running bfs 19...done
+Running bfs 20...done
+Running bfs 21...done
+Running bfs 22...done
+Running bfs 23...done
+Running bfs 24...done
+Running bfs 25...done
+Running bfs 26...done
+Running bfs 27...done
+Running bfs 28...done
+Running bfs 29...done
+Running bfs 30...done
+Running bfs 31...done
+Running bfs 32...done
+Running bfs 33...done
+Running bfs 34...done
+Running bfs 35...done
+Running bfs 36...done
+Running bfs 37...done
+Running bfs 38...done
+Running bfs 39...done
+Running bfs 40...done
+Running bfs 41...done
+Running bfs 42...done
+Running bfs 43...done
+Running bfs 44...done
+Running bfs 45...done
+Running bfs 46...done
+Running bfs 47...done
+Running bfs 48...done
+Running bfs 49...done
+Running bfs 50...done
+Running bfs 51...done
+Running bfs 52...done
+Running bfs 53...done
+Running bfs 54...done
+Running bfs 55...done
+Running bfs 56...done
+Running bfs 57...done
+Running bfs 58...done
+Running bfs 59...done
+Running bfs 60...done
+Running bfs 61...done
+Running bfs 62...done
+Running bfs 63...done
+SCALE: 27
+nvtx: 134217728
+edgefactor: 23
+terasize: 4.93921239040000029e-02
+A: 5.69999999999999951e-01
+B: 1.90000000000000002e-01
+C: 1.90000000000000002e-01
+D: 5.00000000000000444e-02
+generation_time: 1.04382313667999995e+02
+construction_time: 8.86057936777000009e+02
+nbfs: 64
+min_time: 1.03235030600000011e+00
+firstquartile_time: 1.10806078475000014e+00
+median_time: 1.17206532600000002e+00
+thirdquartile_time: 1.41785317950000000e+00
+max_time: 1.88100853299999993e+00
+mean_time: 1.24687574935937495e+00
+stddev_time: 1.78093704993573132e-01
+min_nedge: 3.08700774400000000e+09
+firstquartile_nedge: 3.08700774400000000e+09
+median_nedge: 3.08700774400000000e+09
+thirdquartile_nedge: 3.08700774400000000e+09
+max_nedge: 3.08700774400000000e+09
+mean_nedge: 3.08700774400000000e+09
+stddev_nedge: 0.00000000000000000e+00
+min_TEPS: 1.64114499740017939e+09
+firstquartile_TEPS: 2.19404628364378691e+09
+median_TEPS: 2.65249967814855862e+09
+thirdquartile_TEPS: 2.82122322229388952e+09
+max_TEPS: 2.99027154451194572e+09
+harmonic_mean_TEPS: 2.47579419648353529e+09
+harmonic_stddev_TEPS: 4.45522514864851311e+07
+execution_time 1098.90 (s)

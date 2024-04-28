@@ -1,0 +1,12 @@
+install.sh
+make.sh
+build.sh
+tags
+Module.symvers
+
+include/config/auto.conf
+include/config/auto.conf.cmd
+include/generated/autoconf.h
+include/generated/compile.h
+.config.old
+.version

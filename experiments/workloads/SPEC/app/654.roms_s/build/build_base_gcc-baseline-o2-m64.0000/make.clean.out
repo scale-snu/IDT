@@ -1,0 +1,5 @@
+rm -rf *.o  ocean_benchmark1.log
+find . \( -name \*.o -o -name '*.fppized.f*' -o -name '*.i' -o -name '*.mod' \) -print | xargs rm -rf
+rm -rf sroms
+rm -rf sroms.exe
+rm -rf core

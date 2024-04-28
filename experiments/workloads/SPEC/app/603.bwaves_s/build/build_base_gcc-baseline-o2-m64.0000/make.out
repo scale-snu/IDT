@@ -1,0 +1,17 @@
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DSPEC_LP64 jacobian_lam.F -o jacobian_lam.fppized.f
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DSPEC_LP64 flow_lam.F -o flow_lam.fppized.f
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DSPEC_LP64 fill1.F -o fill1.fppized.f
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DSPEC_LP64 fill2.F -o fill2.fppized.f
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DSPEC_LP64 flux_lam.F -o flux_lam.fppized.f
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DSPEC_LP64 block_solver.F -o block_solver.fppized.f
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DSPEC_LP64 shell_lam.F -o shell_lam.fppized.f
+/usr/bin/gfortran-7    -m64 -c -o fill1.fppized.o -g -O2 -fopt-info -fopenmp fill1.fppized.f
+/usr/bin/gfortran-7    -m64 -c -o fill2.fppized.o -g -O2 -fopt-info -fopenmp fill2.fppized.f
+/usr/bin/gfortran-7    -m64 -c -o flow_lam.fppized.o -g -O2 -fopt-info -fopenmp flow_lam.fppized.f
+/usr/bin/gfortran-7    -m64 -c -o jacobian_lam.fppized.o -g -O2 -fopt-info -fopenmp jacobian_lam.fppized.f
+/usr/bin/gfortran-7    -m64 -c -o block_solver.fppized.o -g -O2 -fopt-info -fopenmp block_solver.fppized.f
+/usr/bin/gfortran-7    -m64 -c -o flux_lam.fppized.o -g -O2 -fopt-info -fopenmp flux_lam.fppized.f
+/usr/bin/gfortran-7    -m64 -c -o shell_lam.fppized.o -g -O2 -fopt-info -fopenmp shell_lam.fppized.f
+shell_lam.fppized.f:85:0: note: loop turned into non-loop; it never loops.
+shell_lam.fppized.f:85:0: note: loop with 5 iterations completely unrolled
+/usr/bin/gfortran-7    -m64      -g -O2 -fopt-info        -fopenmp -DSPEC_OPENMP  block_solver.fppized.o flow_lam.fppized.o flux_lam.fppized.o jacobian_lam.fppized.o shell_lam.fppized.o fill1.fppized.o fill2.fppized.o                      -o speed_bwaves  

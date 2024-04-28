@@ -1,0 +1,5660 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="generator" content="SPEC CPU2017 Tools  (flags v5178)" />
+<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+<style type="text/css" id="internalScreen" media="screen">
+<!--
+body {
+  margin:  1em;
+  border:  0;
+  padding: 0;
+  background: white;
+  color:      black;
+  font-family: "Times Roman", times, serif;
+}
+
+.tt {
+  font-family: monospace;
+}
+
+div.flagClass > h2 {
+  border-bottom: 1px dotted black;
+  width: 80%;
+  font-family: sans-serif;
+}
+
+div.flagDesc {
+  clear: both;
+  background-color: rgb(255, 245, 220);
+  border: 1px solid blue; /* XXX This is for debugging */ 
+  margin: 0 auto;
+  width: 90%;
+}
+
+li.flagName {
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: block;
+  margin: 0.5em 0 0.5em 0;
+  font-size: 125%;
+  white-space: nowrap;
+}
+
+/* (presumably short) informationals all get grouped together near the top
+ * of the flag description block.
+ */
+.flagOrigin, .flagDescClass, .flagDescCompiler, .flagDescRE, .flagDescParallel, .flagVar {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  float: left;
+  padding: 0.25em;
+  margin: 0 0 0.25em 0;
+}
+
+.flagDescClass::before {
+  content: "Flag Class: ";
+}
+.flagDescCompiler::before {
+  content: "Compilers that recognize this flag: ";
+}
+.flagDescRE::before {
+  content: "Regular Expression: ";
+}
+.flagDescParallel::before {
+  content: "Indicates automatic parallelization: ";
+}
+.flagVar::before {
+  content: "Found In: ";
+}
+
+span.flagDescInc {
+  border-bottom: 1px solid black;
+}
+
+/* The description text stands alone. */
+.descText {
+  clear: both;
+  padding: 0.5em 1em 0.5em 1em;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0.5em 0 0.5em 0;
+}
+
+/* This is a separate class so that in the print style sheet it can
+ * be ignored.
+ * Also, 'style="clear:both;"' is longer than 'class="clear"'
+ */
+.clear {
+  clear: both;
+}
+
+/* This is really for the link _to_ the flag report */
+li.unknown > a:link, a:visited { text-decoration: none; }
+
+.monospace {
+  font-family: Courier, "Courier New", monospace;
+}
+
+ul.flagDescList {
+  clear: both;
+  list-style-type: none;
+}
+
+/* Arrange for each flag description to have some headroom. */
+ul.flagDescList > li {
+  margin: 2em 0 0 0;
+}
+
+ul.flagDesc {
+  list-style-type: none;
+}
+
+div.flagTOC {
+  border: 1px solid white;
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  width: 95%;
+}
+
+ul.flagTOC {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.flagTOC > li {
+  border: thin dotted lightgray;
+  margin: 0 1em 0 0;
+  padding: 0.25em 0 0.25em 0;
+  float: left;
+  display: inline-block; /* Fix IE bug; compliant browsers will ignore this */
+  width: 22.3%;
+  min-height: 1.5em;
+  overflow: hidden; /* If the table gets squeezed too much, don't let the
+                     * text overlap
+                     */
+}
+
+ul.flagTOC > li > a {
+   color:blue;
+   text-decoration:none;
+}
+
+ul.SubMenu li {
+  border: 1px solid white; /* rgb(211, 211, 211); */
+}
+
+ul.SubMenu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  border: 1px solid black;
+  background-color: white;
+  margin: 0 0 0 2em;
+  padding: 0.25em 5em 0.25em 0.5em;
+  white-space: nowrap;
+}
+
+li:hover > ul.SubMenu, ul.SubMenu:hover {
+  display: block;
+}
+
+ul.SubMenu > li:hover, ul.flagTOC > li:hover {
+  background-color: rgb(176, 196, 238); /* lightsteelgray... almost */
+  border: 1px solid rgb(128, 128, 128);
+}
+
+
+.resultpage a:link, .resultpage a:visited {
+  text-decoration: none;
+  border-bottom: 1px dashed black;
+  color: inherit;
+}
+
+.resultpage {
+  margin: auto;
+  padding: 0;
+  width: 1000px;
+}
+
+.resultpage_landscape {
+  width: 1200px;
+}
+
+div.logo {
+  float: left;
+  width: 38px;
+  height: 57px;
+}
+
+.titlebarcontainer, .resultstable, .ncsection {
+  border: solid 1px;
+  width: 100%;
+  float: left;
+}
+
+.ncsection {
+  background-color: white;
+  color: black;
+}
+
+.titlebar {
+  float: left;
+  padding: 0em 1em 0em 1em;
+  text-align: center;
+  width: 91%;
+}
+
+div.titlebar > h1, div.titlebar > p {
+  margin: 0 1em 0 1em;
+}
+
+div.ncsection {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.systembar {
+  width: 65%;
+  font-size: 150%;
+  margin: 0;
+}
+
+td.systembar {
+  padding: 0.2em;
+}
+
+.metricbar {
+  margin: 0;
+  font-size: 120%;
+}
+
+/* CSS for the old-style div-based systembar */
+
+div.systembar {
+  float: left;
+  padding: 0.1em;
+  border-right: solid 1px black;
+}
+
+div.metricbar {
+  padding: 0.1em;
+  float: right;
+  width: 33%;
+  height: 50%;
+}
+
+.base, .metricbar#base {
+  background-color: #c8c8c8;
+  color: black;
+}
+
+.peak, .metricbar#peak {
+  background-color: transparent;
+  color: #2626b3;       /* peak blue */
+}
+
+.metricbar p {
+  margin: 0;
+  padding: 0.2em;
+}
+
+.datebar p, .systembar p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Datebar stuff for older results */
+.datebar p {
+  float: left;
+  border-left: solid 1px black;
+}
+
+span.item {
+  float: left;
+  margin: 0;
+  padding: 0.1em 0 0.1em 0.5em;
+}
+
+span.value {
+  float: right;
+  padding: 0.1em 0.5em 0.1em 0;
+}
+
+div.datebar {
+  width: 100%;
+  float: left;
+  min-height: 100%;
+  border: solid 1px black;
+}
+
+p#test_sponsor         { width: 48%; }
+p#tester               { width: 48%; }
+p#license_num          { width: 24%; }
+p#test_date            { width: 23%; }
+p#hw_avail, p#sw_avail { width: 25%; }
+
+/* Table-based datebar and systembar on newer results */
+table.datebar, table.titlebarcontainer {
+  float: left;
+  width: 100%;
+  min-height: 100%;
+  border-collapse: collapse;
+  border: solid 1px black;
+  table-layout: fixed;
+}
+
+table.datebar th {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 0.5em;
+  padding: 0 0.5em 0 0.25em;
+}
+
+table.datebar td {
+  text-align: left;
+  padding: 0 0.5em 0 0;
+}
+
+table.titlebarcontainer tr {
+  vertical-align: top;
+}
+table.titlebarcontainer td {
+  border-right: 1px solid black;
+}
+
+th#license_num          { width: 17%; }
+th#test_sponsor         { width: 17%; }
+th#tester               { width: 17%; }
+th#test_date            { width: 22%; }
+th#hw_avail             { width: 22%; }
+th#sw_avail             { width: 22%; }
+td#license_num_val      { width: 52%; }
+td#test_sponsor_val     { width: 52%; }
+td#tester_val           { width: 52%; }
+td#test_date_val        { width: 13%; white-space: nowrap; }
+td#hw_avail_val         { width: 13%; white-space: nowrap; }
+td#sw_avail_val         { width: 13%; white-space: nowrap; }
+
+
+div.graph {
+  width: 100%
+  margin: auto;
+}
+
+div.sysdesc > h2 {
+  text-align: center;
+  background-color: #c8c8c8;
+  color: black;
+  padding: 0.5em 0 0.5em 0;
+  margin: 0;
+} 
+  
+div.sysdesc {
+  margin: 0.5em 0 0.5em 0;
+}
+
+div.infobox, div.sysdesc {
+  float: left;
+  width: 100%;
+  padding: 0;
+  border: solid 1px black;
+}
+
+div.infobox table {
+  width: 49%;
+  float: left;
+}
+
+div.infobox table tr {
+  vertical-align: top;
+}
+
+div.infobox table#Hardware,
+div.infobox table#BenchmarkSoftware {
+  width: 50%;
+  border-right: 1px solid black;
+}
+
+div.infobox table#Systems {
+  width: 100%;
+}
+
+div.infobox table#Power {
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+div.infobox table#Systems tbody th {
+  width: 20%;
+}
+
+div.infobox thead th {
+  font-size: 200%;
+}
+
+div.infobox tbody th {
+  text-align: left;
+}
+
+.resultstable h2, div.notes h2 {
+  text-align: center;
+  margin: 0.1em;
+}
+
+div.notes h3 {
+  margin: 0.1em;
+}
+
+div.notes table {
+  width: 100%;
+}
+
+div.notes table tr td {
+  text-align: right;
+  vertical-align: top;
+}
+
+/* Alas, IE6... if only you didn't suck so much...
+div.notes table tr td + td {
+*/
+div.notes table td.al {
+  text-align: left;
+  width: 85%;
+}
+
+div.notes table tr td {
+  padding-bottom: 1em;
+}
+
+div.notes table.portability tr td {
+  padding: 0em;
+}
+
+div.notes table.portability {
+  padding: 1em;
+}
+
+.resultstable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.resultstable th.basecol, .resultstable th.peakcol {
+  padding: 0.1em;
+  font-size: 90%;
+}
+
+.resultstable th {
+  border: solid 2px black;
+}
+
+.resultstable td {
+  border: solid 1px #b8b8b8;
+}
+
+td.bm, th.bm { 
+  border-right: solid 2px black;
+  border-left: solid 2px black;
+}
+
+td.l_edge { 
+  border-left: solid 2px black;
+}
+
+td.r_edge { 
+  border-right: solid 2px black;
+}
+
+.resultstable tfoot td {
+  text-align: center;
+  border: solid 2px black;
+}
+
+tr.table_metrics > td {
+  text-align: right;
+}
+
+th.basecol {
+  background-color: #c8c8c8;
+  color: black;
+}
+td.basecol {
+  text-align: right;
+  background-color: transparent;
+  color: black;
+}
+
+th.peakcol {
+  text-align: center;
+}
+
+.peakcol {
+  background-color: transparent;
+  color: #2626b3;       /* peak blue */
+  text-align: right;
+}
+
+td.bm {
+  /* Basically, the benchmark name and copies columns */
+  background-color: #c8c8c8;
+  color: black;
+}
+
+span.selected {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.selected a:link, .selected a:visited {
+  border-bottom: 0;
+}
+
+div.notes {
+  width: 100%;
+  float: left;
+  border: solid 1px black;
+}
+
+div.flagfooter {
+  text-align: center;
+}
+
+div.errors {
+  border: solid 2px red;
+}
+div.errors h2 {
+  background-color: transparent;
+  color: red;
+}
+
+div.footer {
+  border: none;
+}
+
+/* People find the "double underline" confusing.  And Safari 1.3 doesn't deal
+ * well with attempting to disable the border for userflag links.  So just
+ * give up and don't decorate user flags specially.
+********************
+span.userflag {
+  text-decoration: underline;
+}
+
+.userflag a:link {
+  border-bottom: 0;
+}
+********************
+*/
+
+/* Keep flags from being wrapped */
+span.userflag, span.flagtext {
+  white-space: nowrap;
+}
+/* Most of the screen-specific CSS is also the common CSS */
+
+/* Style for the non-image W3C marking at the bottom of the page, courtesy of
+ * Marek Prokop (http://www.sovavsiti.cz/css/w3c_buttons.html)
+ */
+.w3cbutton3 {
+  margin: 1em 1em 0 0;
+  width: 9em;
+  border: 1px solid #ccc;
+  font-family: helvetica,arial,sans-serif;
+  font-size: 70%;
+  font-weight: bold;
+  float: left;
+}
+.w3cbutton3 a {
+  display: block;
+  width: 100%;
+}
+.w3cbutton3 a:link,
+.w3cbutton3 a:visited,
+.w3cbutton3 a:hover {
+  background-color: #fc6;
+  color: #000;
+  text-decoration: none;
+  border-bottom: none;
+}
+.w3cbutton3 span.w3c {
+  padding: 0 0.4em;
+  background-color: #fff;
+  color: #0c479d;
+}
+
+-->
+</style>
+<style type="text/css" id="internalPrint" media="print">
+<!--
+body {
+  margin:  1em;
+  border:  0;
+  padding: 0;
+  background: white;
+  color:      black;
+  font-family: "Times Roman", times, serif;
+}
+
+.tt {
+  font-family: monospace;
+}
+
+div.flagClass > h2 {
+  border-bottom: 1px dotted black;
+  width: 80%;
+  font-family: sans-serif;
+}
+
+div.flagDesc {
+  clear: both;
+  background-color: rgb(255, 245, 220);
+  border: 1px solid blue; /* XXX This is for debugging */ 
+  margin: 0 auto;
+  width: 90%;
+}
+
+li.flagName {
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: block;
+  margin: 0.5em 0 0.5em 0;
+  font-size: 125%;
+  white-space: nowrap;
+}
+
+/* (presumably short) informationals all get grouped together near the top
+ * of the flag description block.
+ */
+.flagOrigin, .flagDescClass, .flagDescCompiler, .flagDescRE, .flagDescParallel, .flagVar {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  float: left;
+  padding: 0.25em;
+  margin: 0 0 0.25em 0;
+}
+
+.flagDescClass::before {
+  content: "Flag Class: ";
+}
+.flagDescCompiler::before {
+  content: "Compilers that recognize this flag: ";
+}
+.flagDescRE::before {
+  content: "Regular Expression: ";
+}
+.flagDescParallel::before {
+  content: "Indicates automatic parallelization: ";
+}
+.flagVar::before {
+  content: "Found In: ";
+}
+
+span.flagDescInc {
+  border-bottom: 1px solid black;
+}
+
+/* The description text stands alone. */
+.descText {
+  clear: both;
+  padding: 0.5em 1em 0.5em 1em;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0.5em 0 0.5em 0;
+}
+
+/* This is a separate class so that in the print style sheet it can
+ * be ignored.
+ * Also, 'style="clear:both;"' is longer than 'class="clear"'
+ */
+.clear {
+  clear: both;
+}
+
+/* This is really for the link _to_ the flag report */
+li.unknown > a:link, a:visited { text-decoration: none; }
+
+.monospace {
+  font-family: Courier, "Courier New", monospace;
+}
+
+ul.flagDescList {
+  clear: both;
+  list-style-type: none;
+}
+
+/* Arrange for each flag description to have some headroom. */
+ul.flagDescList > li {
+  margin: 2em 0 0 0;
+}
+
+ul.flagDesc {
+  list-style-type: none;
+}
+
+div.flagTOC {
+  border: 1px solid white;
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  width: 95%;
+}
+
+ul.flagTOC {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.flagTOC > li {
+  border: thin dotted lightgray;
+  margin: 0 1em 0 0;
+  padding: 0.25em 0 0.25em 0;
+  float: left;
+  display: inline-block; /* Fix IE bug; compliant browsers will ignore this */
+  width: 22.3%;
+  min-height: 1.5em;
+  overflow: hidden; /* If the table gets squeezed too much, don't let the
+                     * text overlap
+                     */
+}
+
+ul.flagTOC > li > a {
+   color:blue;
+   text-decoration:none;
+}
+
+ul.SubMenu li {
+  border: 1px solid white; /* rgb(211, 211, 211); */
+}
+
+ul.SubMenu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  border: 1px solid black;
+  background-color: white;
+  margin: 0 0 0 2em;
+  padding: 0.25em 5em 0.25em 0.5em;
+  white-space: nowrap;
+}
+
+li:hover > ul.SubMenu, ul.SubMenu:hover {
+  display: block;
+}
+
+ul.SubMenu > li:hover, ul.flagTOC > li:hover {
+  background-color: rgb(176, 196, 238); /* lightsteelgray... almost */
+  border: 1px solid rgb(128, 128, 128);
+}
+
+
+.resultpage a:link, .resultpage a:visited {
+  text-decoration: none;
+  border-bottom: 1px dashed black;
+  color: inherit;
+}
+
+.resultpage {
+  margin: auto;
+  padding: 0;
+  width: 1000px;
+}
+
+.resultpage_landscape {
+  width: 1200px;
+}
+
+div.logo {
+  float: left;
+  width: 38px;
+  height: 57px;
+}
+
+.titlebarcontainer, .resultstable, .ncsection {
+  border: solid 1px;
+  width: 100%;
+  float: left;
+}
+
+.ncsection {
+  background-color: white;
+  color: black;
+}
+
+.titlebar {
+  float: left;
+  padding: 0em 1em 0em 1em;
+  text-align: center;
+  width: 91%;
+}
+
+div.titlebar > h1, div.titlebar > p {
+  margin: 0 1em 0 1em;
+}
+
+div.ncsection {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.systembar {
+  width: 65%;
+  font-size: 150%;
+  margin: 0;
+}
+
+td.systembar {
+  padding: 0.2em;
+}
+
+.metricbar {
+  margin: 0;
+  font-size: 120%;
+}
+
+/* CSS for the old-style div-based systembar */
+
+div.systembar {
+  float: left;
+  padding: 0.1em;
+  border-right: solid 1px black;
+}
+
+div.metricbar {
+  padding: 0.1em;
+  float: right;
+  width: 33%;
+  height: 50%;
+}
+
+.base, .metricbar#base {
+  background-color: #c8c8c8;
+  color: black;
+}
+
+.peak, .metricbar#peak {
+  background-color: transparent;
+  color: #2626b3;       /* peak blue */
+}
+
+.metricbar p {
+  margin: 0;
+  padding: 0.2em;
+}
+
+.datebar p, .systembar p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Datebar stuff for older results */
+.datebar p {
+  float: left;
+  border-left: solid 1px black;
+}
+
+span.item {
+  float: left;
+  margin: 0;
+  padding: 0.1em 0 0.1em 0.5em;
+}
+
+span.value {
+  float: right;
+  padding: 0.1em 0.5em 0.1em 0;
+}
+
+div.datebar {
+  width: 100%;
+  float: left;
+  min-height: 100%;
+  border: solid 1px black;
+}
+
+p#test_sponsor         { width: 48%; }
+p#tester               { width: 48%; }
+p#license_num          { width: 24%; }
+p#test_date            { width: 23%; }
+p#hw_avail, p#sw_avail { width: 25%; }
+
+/* Table-based datebar and systembar on newer results */
+table.datebar, table.titlebarcontainer {
+  float: left;
+  width: 100%;
+  min-height: 100%;
+  border-collapse: collapse;
+  border: solid 1px black;
+  table-layout: fixed;
+}
+
+table.datebar th {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 0.5em;
+  padding: 0 0.5em 0 0.25em;
+}
+
+table.datebar td {
+  text-align: left;
+  padding: 0 0.5em 0 0;
+}
+
+table.titlebarcontainer tr {
+  vertical-align: top;
+}
+table.titlebarcontainer td {
+  border-right: 1px solid black;
+}
+
+th#license_num          { width: 17%; }
+th#test_sponsor         { width: 17%; }
+th#tester               { width: 17%; }
+th#test_date            { width: 22%; }
+th#hw_avail             { width: 22%; }
+th#sw_avail             { width: 22%; }
+td#license_num_val      { width: 52%; }
+td#test_sponsor_val     { width: 52%; }
+td#tester_val           { width: 52%; }
+td#test_date_val        { width: 13%; white-space: nowrap; }
+td#hw_avail_val         { width: 13%; white-space: nowrap; }
+td#sw_avail_val         { width: 13%; white-space: nowrap; }
+
+
+div.graph {
+  width: 100%
+  margin: auto;
+}
+
+div.sysdesc > h2 {
+  text-align: center;
+  background-color: #c8c8c8;
+  color: black;
+  padding: 0.5em 0 0.5em 0;
+  margin: 0;
+} 
+  
+div.sysdesc {
+  margin: 0.5em 0 0.5em 0;
+}
+
+div.infobox, div.sysdesc {
+  float: left;
+  width: 100%;
+  padding: 0;
+  border: solid 1px black;
+}
+
+div.infobox table {
+  width: 49%;
+  float: left;
+}
+
+div.infobox table tr {
+  vertical-align: top;
+}
+
+div.infobox table#Hardware,
+div.infobox table#BenchmarkSoftware {
+  width: 50%;
+  border-right: 1px solid black;
+}
+
+div.infobox table#Systems {
+  width: 100%;
+}
+
+div.infobox table#Power {
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+div.infobox table#Systems tbody th {
+  width: 20%;
+}
+
+div.infobox thead th {
+  font-size: 200%;
+}
+
+div.infobox tbody th {
+  text-align: left;
+}
+
+.resultstable h2, div.notes h2 {
+  text-align: center;
+  margin: 0.1em;
+}
+
+div.notes h3 {
+  margin: 0.1em;
+}
+
+div.notes table {
+  width: 100%;
+}
+
+div.notes table tr td {
+  text-align: right;
+  vertical-align: top;
+}
+
+/* Alas, IE6... if only you didn't suck so much...
+div.notes table tr td + td {
+*/
+div.notes table td.al {
+  text-align: left;
+  width: 85%;
+}
+
+div.notes table tr td {
+  padding-bottom: 1em;
+}
+
+div.notes table.portability tr td {
+  padding: 0em;
+}
+
+div.notes table.portability {
+  padding: 1em;
+}
+
+.resultstable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.resultstable th.basecol, .resultstable th.peakcol {
+  padding: 0.1em;
+  font-size: 90%;
+}
+
+.resultstable th {
+  border: solid 2px black;
+}
+
+.resultstable td {
+  border: solid 1px #b8b8b8;
+}
+
+td.bm, th.bm { 
+  border-right: solid 2px black;
+  border-left: solid 2px black;
+}
+
+td.l_edge { 
+  border-left: solid 2px black;
+}
+
+td.r_edge { 
+  border-right: solid 2px black;
+}
+
+.resultstable tfoot td {
+  text-align: center;
+  border: solid 2px black;
+}
+
+tr.table_metrics > td {
+  text-align: right;
+}
+
+th.basecol {
+  background-color: #c8c8c8;
+  color: black;
+}
+td.basecol {
+  text-align: right;
+  background-color: transparent;
+  color: black;
+}
+
+th.peakcol {
+  text-align: center;
+}
+
+.peakcol {
+  background-color: transparent;
+  color: #2626b3;       /* peak blue */
+  text-align: right;
+}
+
+td.bm {
+  /* Basically, the benchmark name and copies columns */
+  background-color: #c8c8c8;
+  color: black;
+}
+
+span.selected {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.selected a:link, .selected a:visited {
+  border-bottom: 0;
+}
+
+div.notes {
+  width: 100%;
+  float: left;
+  border: solid 1px black;
+}
+
+div.flagfooter {
+  text-align: center;
+}
+
+div.errors {
+  border: solid 2px red;
+}
+div.errors h2 {
+  background-color: transparent;
+  color: red;
+}
+
+div.footer {
+  border: none;
+}
+
+/* People find the "double underline" confusing.  And Safari 1.3 doesn't deal
+ * well with attempting to disable the border for userflag links.  So just
+ * give up and don't decorate user flags specially.
+********************
+span.userflag {
+  text-decoration: underline;
+}
+
+.userflag a:link {
+  border-bottom: 0;
+}
+********************
+*/
+
+/* Keep flags from being wrapped */
+span.userflag, span.flagtext {
+  white-space: nowrap;
+}
+/* Classes that contain links - useless on paper */
+.flagTOC, .SubMenu, .NoPrint {
+  display: none;
+}
+
+/* Don't decorate links - they're not clickable */
+a {
+  text-decoration: none;
+  background: inherit;
+  color: inherit;
+}
+
+.resultpage {
+  width: 100%;
+}
+
+.w3cbutton3 {
+  display: none;
+}
+-->
+</style>
+<title>638.imagick_s Flags</title>
+</head><body>
+<h1>638.imagick_s Flags</h1>
+
+
+<p>These are flags that appear in the benchmark sources, categorized as to
+   whether they are portability candidates, mandatory, or forbidden.</p>
+
+<div class="NoPrint">
+<h3>Sections</h3>
+<p>Selecting one of the following will take you directly to that section:</p>
+<ul>
+<li><a href="#Section_portability">Portability Flags</a></li>
+<li><a href="#Section_forbidden">Forbidden Flags</a></li>
+</ul>
+</div>
+
+<hr />
+
+<div class="flagClass" id="portability">
+<h2><a name="Section_portability" id="Section_portability">Portability Flags</a></h2>
+<div class="flagTOC">
+<ul class="flagTOC">
+ <li><a href="#b638.imagick_s_D_magickcore_const">-D_magickcore_const</a></li>
+ <li><a href="#b638.imagick_s_D_magickcore_inline">-D_magickcore_inline</a></li>
+ <li><a href="#b638.imagick_s_D_magickcore_restrict">-D_magickcore_restrict</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_DIR_SEPARATOR_CHAR">-DMAGICKCORE_DIR_SEPARATOR_CHAR</a></li>
+ <li><a href="#b638.imagick_s_noC99math">-DSPEC_NO_ACOSH,
+  -DSPEC_NO_ASINH,
+  -DSPEC_NO_ATANH</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+
+<ul class="flagDescList">
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_D_magickcore_const" id="b638.imagick_s_D_magickcore_const">-D_magickcore_const</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]D_magickcore_const(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+_magickcore_const, set if you need to change how const is dealt with, in
+MagickCore.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_D_magickcore_inline" id="b638.imagick_s_D_magickcore_inline">-D_magickcore_inline</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]D_magickcore_inline(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+_magickcore_inline, set if you need to define inline, in MagickCore.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_D_magickcore_restrict" id="b638.imagick_s_D_magickcore_restrict">-D_magickcore_restrict</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]D_magickcore_restrict(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+_magickcore_restrict, set if you need to adjust how restrict is used,
+in magick-config.h and MagickCore.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_DIR_SEPARATOR_CHAR" id="b638.imagick_s_DMAGICKCORE_DIR_SEPARATOR_CHAR">-DMAGICKCORE_DIR_SEPARATOR_CHAR</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_DIR_SEPARATOR_CHAR(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+Can be used to change the default directory pathname separator character, if
+you're trying to port the benchmark to some bizarro system that claims to
+support POSIX but doesn't use '/' as the directory separator character.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_noC99math" id="b638.imagick_s_noC99math">
+  -DSPEC_NO_ACOSH,
+  -DSPEC_NO_ASINH,
+  -DSPEC_NO_ATANH
+</a></li>
+<li class="flagDescRE"><span class="tt">[-/]DSPEC_NO_(?:ACOSH|ASINH|ATANH|ISNAN)\b</span></li>
+<li class="descText">
+<p>
+These macros are used to indicate the UNavailablilty of some standard C99 math
+functions.  Unless explicitly disabled, these functions are assumed to be
+available.
+</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+
+</div>
+<hr />
+<div class="flagClass" id="forbidden">
+<h2><a name="Section_forbidden" id="Section_forbidden">Forbidden Flags</a></h2>
+<div class="flagTOC">
+<ul class="flagTOC">
+ <li><a href="#b638.imagick_s_DAC_APPLE_UNIVERSAL_BUILD">-DAC_APPLE_UNIVERSAL_BUILD</a></li>
+ <li><a href="#b638.imagick_s_DCLK_TCK">-DCLK_TCK</a></li>
+ <li><a href="#b638.imagick_s_DCLOCK_REALTIME_HR">-DCLOCK_REALTIME_HR</a></li>
+ <li><a href="#b638.imagick_s_DDEBUG_ELLIPSE">-DDEBUG_ELLIPSE</a></li>
+ <li><a href="#b638.imagick_s_DDEBUG_HIT_MISS">-DDEBUG_HIT_MISS</a></li>
+ <li><a href="#b638.imagick_s_DDEBUG_NO_PIXEL_HIT">-DDEBUG_NO_PIXEL_HIT</a></li>
+ <li><a href="#b638.imagick_s_DDEBUG_OPT_FRAME">-DDEBUG_OPT_FRAME</a></li>
+ <li><a href="#b638.imagick_s_DDISABLE_SIOUX">-DDISABLE_SIOUX</a></li>
+ <li><a href="#b638.imagick_s_DDRAW_BINARY_IMPLEMENTATION">-DDRAW_BINARY_IMPLEMENTATION</a></li>
+ <li><a href="#b638.imagick_s_DEILSEQ">-DEILSEQ</a></li>
+ <li><a href="#b638.imagick_s_DEWA">-DEWA</a></li>
+ <li><a href="#b638.imagick_s_DEWA_CLAMP">-DEWA_CLAMP</a></li>
+ <li><a href="#b638.imagick_s_DFC_VERSION">-DFC_VERSION</a></li>
+ <li><a href="#b638.imagick_s_DFILTER_DIRECT">-DFILTER_DIRECT</a></li>
+ <li><a href="#b638.imagick_s_DFILTER_LUT">-DFILTER_LUT</a></li>
+ <li><a href="#b638.imagick_s_DFT_OPEN_PATHNAME">-DFT_OPEN_PATHNAME</a></li>
+ <li><a href="#b638.imagick_s_DFastClassify">-DFastClassify</a></li>
+ <li><a href="#b638.imagick_s_DForgetGravity">-DForgetGravity</a></li>
+ <li><a href="#b638.imagick_s_DGetMagickModule">-DGetMagickModule</a></li>
+ <li><a href="#b638.imagick_s_DLCMS_VERSION">-DLCMS_VERSION</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_BUILD_MODULES">-DMAGICKCORE_BUILD_MODULES</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_BZLIB_DELEGATE">-DMAGICKCORE_BZLIB_DELEGATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_CIPHER_SUPPORT">-DMAGICKCORE_CIPHER_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_CODER_PATH">-DMAGICKCORE_CODER_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_CODER_RELATIVE_PATH">-DMAGICKCORE_CODER_RELATIVE_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_CONFIGURE_PATH">-DMAGICKCORE_CONFIGURE_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_CONFIGURE_RELATIVE_PATH">-DMAGICKCORE_CONFIGURE_RELATIVE_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_DEBUG">-DMAGICKCORE_DEBUG</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_DOCUMENTATION_PATH">-DMAGICKCORE_DOCUMENTATION_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_EXCLUDE_DEPRECATED">-DMAGICKCORE_EXCLUDE_DEPRECATED</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_EXECUTABLE_PATH">-DMAGICKCORE_EXECUTABLE_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_FFTW_DELEGATE">-DMAGICKCORE_FFTW_DELEGATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_FILTER_PATH">-DMAGICKCORE_FILTER_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_FILTER_RELATIVE_PATH">-DMAGICKCORE_FILTER_RELATIVE_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_FONTCONFIG_DELEGATE">-DMAGICKCORE_FONTCONFIG_DELEGATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_FREETYPE_DELEGATE">-DMAGICKCORE_FREETYPE_DELEGATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_GS_DELEGATE">-DMAGICKCORE_GS_DELEGATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_ARM_LIMITS_H">-DMAGICKCORE_HAVE_ARM_LIMITS_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_CABS">-DMAGICKCORE_HAVE_CABS</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_CARG">-DMAGICKCORE_HAVE_CARG</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_CIMAG">-DMAGICKCORE_HAVE_CIMAG</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_CLOCK">-DMAGICKCORE_HAVE_CLOCK</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_CLOCK_GETTIME">-DMAGICKCORE_HAVE_CLOCK_GETTIME</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_CL_CL_H">-DMAGICKCORE_HAVE_CL_CL_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_COMPLEX_H">-DMAGICKCORE_HAVE_COMPLEX_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_CREAL">-DMAGICKCORE_HAVE_CREAL</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_DECL_PREAD">-DMAGICKCORE_HAVE_DECL_PREAD</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_DECL_PWRITE">-DMAGICKCORE_HAVE_DECL_PWRITE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_DECL_STRLCPY">-DMAGICKCORE_HAVE_DECL_STRLCPY</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_DECL_VSNPRINTF">-DMAGICKCORE_HAVE_DECL_VSNPRINTF</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_ERRNO_H">-DMAGICKCORE_HAVE_ERRNO_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_EXECVP">-DMAGICKCORE_HAVE_EXECVP</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_FCNTL_H">-DMAGICKCORE_HAVE_FCNTL_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_FLOOR">-DMAGICKCORE_HAVE_FLOOR</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_FSEEKO">-DMAGICKCORE_HAVE_FSEEKO</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_FTIME">-DMAGICKCORE_HAVE_FTIME</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_FTRUNCATE">-DMAGICKCORE_HAVE_FTRUNCATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_GETCWD">-DMAGICKCORE_HAVE_GETCWD</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_GETDTABLESIZE">-DMAGICKCORE_HAVE_GETDTABLESIZE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_GETEXECNAME">-DMAGICKCORE_HAVE_GETEXECNAME</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_GETPAGESIZE">-DMAGICKCORE_HAVE_GETPAGESIZE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_GETPID">-DMAGICKCORE_HAVE_GETPID</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_GETRLIMIT">-DMAGICKCORE_HAVE_GETRLIMIT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_GETRUSAGE">-DMAGICKCORE_HAVE_GETRUSAGE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_GETTIMEOFDAY">-DMAGICKCORE_HAVE_GETTIMEOFDAY</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_GMTIME_R">-DMAGICKCORE_HAVE_GMTIME_R</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_INTMAX_T">-DMAGICKCORE_HAVE_INTMAX_T</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_INTPTR_T">-DMAGICKCORE_HAVE_INTPTR_T</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_INTTYPES_H">-DMAGICKCORE_HAVE_INTTYPES_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_J0">-DMAGICKCORE_HAVE_J0</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_J1">-DMAGICKCORE_HAVE_J1</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_LCMS2_H">-DMAGICKCORE_HAVE_LCMS2_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_LCMS_LCMS2_H">-DMAGICKCORE_HAVE_LCMS_LCMS2_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_LCMS_LCMS_H">-DMAGICKCORE_HAVE_LCMS_LCMS_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_LIMITS_H">-DMAGICKCORE_HAVE_LIMITS_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_LOCALTIME_R">-DMAGICKCORE_HAVE_LOCALTIME_R</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_LONG_DOUBLE">-DMAGICKCORE_HAVE_LONG_DOUBLE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_LONG_LONG_INT">-DMAGICKCORE_HAVE_LONG_LONG_INT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_MACH_O_DYLD_H">-DMAGICKCORE_HAVE_MACH_O_DYLD_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_MBSTATE_T">-DMAGICKCORE_HAVE_MBSTATE_T</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_MEMMOVE">-DMAGICKCORE_HAVE_MEMMOVE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_MEMORY_H">-DMAGICKCORE_HAVE_MEMORY_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_MEMSET">-DMAGICKCORE_HAVE_MEMSET</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_MKSTEMP">-DMAGICKCORE_HAVE_MKSTEMP</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_MMAP">-DMAGICKCORE_HAVE_MMAP</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_NAMESPACES">-DMAGICKCORE_HAVE_NAMESPACES</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_NAMESPACE_STD">-DMAGICKCORE_HAVE_NAMESPACE_STD</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_NANOSLEEP">-DMAGICKCORE_HAVE_NANOSLEEP</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_NDIR_H">-DMAGICKCORE_HAVE_NDIR_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_NEWLOCALE">-DMAGICKCORE_HAVE_NEWLOCALE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_OPENCL_CL_H">-DMAGICKCORE_HAVE_OPENCL_CL_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_PCLOSE">-DMAGICKCORE_HAVE_PCLOSE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_POLL">-DMAGICKCORE_HAVE_POLL</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_POPEN">-DMAGICKCORE_HAVE_POPEN</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_POSIX_MEMALIGN">-DMAGICKCORE_HAVE_POSIX_MEMALIGN</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE__ALIGNED_MALLOC">-DMAGICKCORE_HAVE__ALIGNED_MALLOC</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_POW">-DMAGICKCORE_HAVE_POW</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_PREAD">-DMAGICKCORE_HAVE_PREAD</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_PROCESS_H">-DMAGICKCORE_HAVE_PROCESS_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_PWRITE">-DMAGICKCORE_HAVE_PWRITE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_RAISE">-DMAGICKCORE_HAVE_RAISE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_READDIR_R">-DMAGICKCORE_HAVE_READDIR_R</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_READLINK">-DMAGICKCORE_HAVE_READLINK</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SELECT">-DMAGICKCORE_HAVE_SELECT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SETVBUF">-DMAGICKCORE_HAVE_SETVBUF</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SIGACTION">-DMAGICKCORE_HAVE_SIGACTION</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SIGEMPTYSET">-DMAGICKCORE_HAVE_SIGEMPTYSET</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SQRT">-DMAGICKCORE_HAVE_SQRT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STDARG_H">-DMAGICKCORE_HAVE_STDARG_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STDINT_H">-DMAGICKCORE_HAVE_STDINT_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STDLIB_H">-DMAGICKCORE_HAVE_STDLIB_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STD_LIBS">-DMAGICKCORE_HAVE_STD_LIBS</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRCASECMP">-DMAGICKCORE_HAVE_STRCASECMP</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRCHR">-DMAGICKCORE_HAVE_STRCHR</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRCSPN">-DMAGICKCORE_HAVE_STRCSPN</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRDUP">-DMAGICKCORE_HAVE_STRDUP</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRERROR">-DMAGICKCORE_HAVE_STRERROR</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRERROR_R">-DMAGICKCORE_HAVE_STRERROR_R</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRINGIZE">-DMAGICKCORE_HAVE_STRINGIZE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRINGS_H">-DMAGICKCORE_HAVE_STRINGS_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRING_H">-DMAGICKCORE_HAVE_STRING_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRLCPY">-DMAGICKCORE_HAVE_STRLCPY</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRNCASECMP">-DMAGICKCORE_HAVE_STRNCASECMP</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRPBRK">-DMAGICKCORE_HAVE_STRPBRK</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRRCHR">-DMAGICKCORE_HAVE_STRRCHR</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRSPN">-DMAGICKCORE_HAVE_STRSPN</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRSTR">-DMAGICKCORE_HAVE_STRSTR</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRTOD">-DMAGICKCORE_HAVE_STRTOD</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRTOD_L">-DMAGICKCORE_HAVE_STRTOD_L</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRTOL">-DMAGICKCORE_HAVE_STRTOL</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_STRTOUL">-DMAGICKCORE_HAVE_STRTOUL</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYMLINK">-DMAGICKCORE_HAVE_SYMLINK</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYSCONF">-DMAGICKCORE_HAVE_SYSCONF</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_DIR_H">-DMAGICKCORE_HAVE_SYS_DIR_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_MMAN_H">-DMAGICKCORE_HAVE_SYS_MMAN_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_NDIR_H">-DMAGICKCORE_HAVE_SYS_NDIR_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_PARAM_H">-DMAGICKCORE_HAVE_SYS_PARAM_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_RESOURCE_H">-DMAGICKCORE_HAVE_SYS_RESOURCE_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_SELECT_H">-DMAGICKCORE_HAVE_SYS_SELECT_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_SOCKET_H">-DMAGICKCORE_HAVE_SYS_SOCKET_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_STAT_H">-DMAGICKCORE_HAVE_SYS_STAT_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_SYSLIMITS_H">-DMAGICKCORE_HAVE_SYS_SYSLIMITS_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_TIMEB_H">-DMAGICKCORE_HAVE_SYS_TIMEB_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_TIMES_H">-DMAGICKCORE_HAVE_SYS_TIMES_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_TIME_H">-DMAGICKCORE_HAVE_SYS_TIME_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_TYPES_H">-DMAGICKCORE_HAVE_SYS_TYPES_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SYS_WAIT_H">-DMAGICKCORE_HAVE_SYS_WAIT_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_TEMPNAM">-DMAGICKCORE_HAVE_TEMPNAM</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_TIFFCONF_H">-DMAGICKCORE_HAVE_TIFFCONF_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_TIMES">-DMAGICKCORE_HAVE_TIMES</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_UINTMAX_T">-DMAGICKCORE_HAVE_UINTMAX_T</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_UINTPTR_T">-DMAGICKCORE_HAVE_UINTPTR_T</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_UNISTD_H">-DMAGICKCORE_HAVE_UNISTD_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_UNSIGNED_LONG_LONG_INT">-DMAGICKCORE_HAVE_UNSIGNED_LONG_LONG_INT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_USELOCALE">-DMAGICKCORE_HAVE_USELOCALE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_USLEEP">-DMAGICKCORE_HAVE_USLEEP</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_VFPRINTF">-DMAGICKCORE_HAVE_VFPRINTF</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_VFPRINTF_L">-DMAGICKCORE_HAVE_VFPRINTF_L</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_VPRINTF">-DMAGICKCORE_HAVE_VPRINTF</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_VSNPRINTF">-DMAGICKCORE_HAVE_VSNPRINTF</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_VSNPRINTF_L">-DMAGICKCORE_HAVE_VSNPRINTF_L</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_VSPRINTF">-DMAGICKCORE_HAVE_VSPRINTF</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_WCHAR_H">-DMAGICKCORE_HAVE_WCHAR_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_WINTHREADS">-DMAGICKCORE_HAVE_WINTHREADS</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_XLOCALE_H">-DMAGICKCORE_HAVE_XLOCALE_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE__EXIT">-DMAGICKCORE_HAVE__EXIT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE__NSGETEXECUTABLEPATH">-DMAGICKCORE_HAVE__NSGETEXECUTABLEPATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE__WFOPEN">-DMAGICKCORE_HAVE__WFOPEN</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE___ATTRIBUTE__">-DMAGICKCORE_HAVE___ATTRIBUTE__</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HDRI_SUPPORT">-DMAGICKCORE_HDRI_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_INSTALLED_SUPPORT">-DMAGICKCORE_INSTALLED_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_LCMS_DELEGATE">-DMAGICKCORE_LCMS_DELEGATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_LIBRARY_PATH">-DMAGICKCORE_LIBRARY_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_LIBRARY_RELATIVE_PATH">-DMAGICKCORE_LIBRARY_RELATIVE_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_LQR_DELEGATE">-DMAGICKCORE_LQR_DELEGATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_LTDL_DELEGATE">-DMAGICKCORE_LTDL_DELEGATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_MODULES_SUPPORT">-DMAGICKCORE_MODULES_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_NAMESPACE_PREFIX">-DMAGICKCORE_NAMESPACE_PREFIX</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_OPENCL_SUPPORT">-DMAGICKCORE_OPENCL_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_OPENMP_SUPPORT">-DMAGICKCORE_OPENMP_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_PACKAGE_BUGREPORT">-DMAGICKCORE_PACKAGE_BUGREPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_PACKAGE">-DMAGICKCORE_PACKAGE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_PACKAGE_NAME">-DMAGICKCORE_PACKAGE_NAME</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_PACKAGE_STRING">-DMAGICKCORE_PACKAGE_STRING</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_PACKAGE_TARNAME">-DMAGICKCORE_PACKAGE_TARNAME</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_PACKAGE_URL">-DMAGICKCORE_PACKAGE_URL</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_PACKAGE_VERSION">-DMAGICKCORE_PACKAGE_VERSION</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_VERSION">-DMAGICKCORE_VERSION</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_POSIX_SUPPORT">-DMAGICKCORE_POSIX_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKWAND_POSIX_SUPPORT">-DMAGICKWAND_POSIX_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_QUANTUM_DEPTH">-DMAGICKCORE_QUANTUM_DEPTH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_QUANTUM_DEPTH_OBSOLETE_IN_H">-DMAGICKCORE_QUANTUM_DEPTH_OBSOLETE_IN_H</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_RETSIGTYPE">-DMAGICKCORE_RETSIGTYPE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SELECT_TYPE_ARG1">-DMAGICKCORE_SELECT_TYPE_ARG1</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SELECT_TYPE_ARG234">-DMAGICKCORE_SELECT_TYPE_ARG234</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SELECT_TYPE_ARG5">-DMAGICKCORE_SELECT_TYPE_ARG5</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SHARE_PATH">-DMAGICKCORE_SHARE_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SHARE_RELATIVE_PATH">-DMAGICKCORE_SHARE_RELATIVE_PATH</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_OFF_T">-DMAGICKCORE_SIZEOF_OFF_T</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_INT">-DMAGICKCORE_SIZEOF_SIGNED_INT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_LONG">-DMAGICKCORE_SIZEOF_SIGNED_LONG</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_LONG_LONG">-DMAGICKCORE_SIZEOF_SIGNED_LONG_LONG</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_SHORT">-DMAGICKCORE_SIZEOF_SIGNED_SHORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_SIZE_T">-DMAGICKCORE_SIZEOF_SIZE_T</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_SSIZE_T">-DMAGICKCORE_SIZEOF_SSIZE_T</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_INT">-DMAGICKCORE_SIZEOF_UNSIGNED_INT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_INTP">-DMAGICKCORE_SIZEOF_UNSIGNED_INTP</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_LONG">-DMAGICKCORE_SIZEOF_UNSIGNED_LONG</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_LONG_LONG">-DMAGICKCORE_SIZEOF_UNSIGNED_LONG_LONG</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_SHORT">-DMAGICKCORE_SIZEOF_UNSIGNED_SHORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_STDC_HEADERS">-DMAGICKCORE_STDC_HEADERS</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_THREAD_SUPPORT">-DMAGICKCORE_THREAD_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_TIFF_DELEGATE">-DMAGICKCORE_TIFF_DELEGATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_WINDOWS_SUPPORT">-DMAGICKCORE_WINDOWS_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_WORDS_BIGENDIAN">-DMAGICKCORE_WORDS_BIGENDIAN</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_ZLIB_DELEGATE">-DMAGICKCORE_ZLIB_DELEGATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE__FILE_OFFSET_BITS">-DMAGICKCORE__FILE_OFFSET_BITS</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE__OPENCL">-DMAGICKCORE__OPENCL</a></li>
+ <li><a href="#b638.imagick_s_DMagickDLLCall">-DMagickDLLCall</a></li>
+ <li><a href="#b638.imagick_s_DMaxTextExtent">-DMaxTextExtent</a></li>
+ <li><a href="#b638.imagick_s_DPRE_R4_ICCCM">-DPRE_R4_ICCCM</a></li>
+ <li><a href="#b638.imagick_s_DPRE_R5_ICCCM">-DPRE_R5_ICCCM</a></li>
+ <li><a href="#b638.imagick_s_DPRE_R6_ICCCM">-DPRE_R6_ICCCM</a></li>
+ <li><a href="#b638.imagick_s_DPWinGravity">-DPWinGravity</a></li>
+ <li><a href="#b638.imagick_s_DP_tmpdir">-DP_tmpdir</a></li>
+ <li><a href="#b638.imagick_s_DPixelCacheThreshold">-DPixelCacheThreshold</a></li>
+ <li><a href="#b638.imagick_s_DSA_INTERRUPT">-DSA_INTERRUPT</a></li>
+ <li><a href="#b638.imagick_s_DSSIZE_MAX">-DSSIZE_MAX</a></li>
+ <li><a href="#b638.imagick_s_DSTDC_HEADERS">-DSTDC_HEADERS</a></li>
+ <li><a href="#b638.imagick_s_DSTDIN_FILENO">-DSTDIN_FILENO</a></li>
+ <li><a href="#b638.imagick_s_DTARGET_OS_IPHONE">-DTARGET_OS_IPHONE</a></li>
+ <li><a href="#b638.imagick_s_DTMP_MAX">-DTMP_MAX</a></li>
+ <li><a href="#b638.imagick_s_DWIN32">-DWIN32</a></li>
+ <li><a href="#b638.imagick_s_DWIN64">-DWIN64</a></li>
+ <li><a href="#b638.imagick_s_DWORDS_BIGENDIAN">-DWORDS_BIGENDIAN</a></li>
+ <li><a href="#b638.imagick_s_DWindows95">-DWindows95</a></li>
+ <li><a href="#b638.imagick_s_DX11_PREFERENCES_PATH">-DX11_PREFERENCES_PATH</a></li>
+ <li><a href="#b638.imagick_s_DXS_VERSION">-DXS_VERSION</a></li>
+ <li><a href="#b638.imagick_s_DXlibSpecificationRelease">-DXlibSpecificationRelease</a></li>
+ <li><a href="#b638.imagick_s_Daccess">-Daccess</a></li>
+ <li><a href="#b638.imagick_s_Dchdir">-Dchdir</a></li>
+ <li><a href="#b638.imagick_s_Dchsize">-Dchsize</a></li>
+ <li><a href="#b638.imagick_s_Dclose">-Dclose</a></li>
+ <li><a href="#b638.imagick_s_Dclosedir">-Dclosedir</a></li>
+ <li><a href="#b638.imagick_s_DcmsFLAGS_BLACKPOINTCOMPENSATION">-DcmsFLAGS_BLACKPOINTCOMPENSATION</a></li>
+ <li><a href="#b638.imagick_s_Dconst">-Dconst</a></li>
+ <li><a href="#b638.imagick_s_Dfdopen">-Dfdopen</a></li>
+ <li><a href="#b638.imagick_s_Dfileno">-Dfileno</a></li>
+ <li><a href="#b638.imagick_s_Dfprintf_l">-Dfprintf_l</a></li>
+ <li><a href="#b638.imagick_s_Dfseek">-Dfseek</a></li>
+ <li><a href="#b638.imagick_s_Dfstat">-Dfstat</a></li>
+ <li><a href="#b638.imagick_s_Dfsync">-Dfsync</a></li>
+ <li><a href="#b638.imagick_s_Dft_encoding_latin_1">-Dft_encoding_latin_1</a></li>
+ <li><a href="#b638.imagick_s_Dftell">-Dftell</a></li>
+ <li><a href="#b638.imagick_s_Dftruncate">-Dftruncate</a></li>
+ <li><a href="#b638.imagick_s_Dgetcwd">-Dgetcwd</a></li>
+ <li><a href="#b638.imagick_s_Dgetpid">-Dgetpid</a></li>
+ <li><a href="#b638.imagick_s_Dgs_main_instance_DEFINED">-Dgs_main_instance_DEFINED</a></li>
+ <li><a href="#b638.imagick_s_Dhypot">-Dhypot</a></li>
+ <li><a href="#b638.imagick_s_Dinline">-Dinline</a></li>
+ <li><a href="#b638.imagick_s_Disatty">-Disatty</a></li>
+ <li><a href="#b638.imagick_s_Dlocale_t">-Dlocale_t</a></li>
+ <li><a href="#b638.imagick_s_Dlt_dlclose">-Dlt_dlclose</a></li>
+ <li><a href="#b638.imagick_s_Dlt_dlerror">-Dlt_dlerror</a></li>
+ <li><a href="#b638.imagick_s_Dlt_dlexit">-Dlt_dlexit</a></li>
+ <li><a href="#b638.imagick_s_Dlt_dlinit">-Dlt_dlinit</a></li>
+ <li><a href="#b638.imagick_s_Dlt_dlopen">-Dlt_dlopen</a></li>
+ <li><a href="#b638.imagick_s_Dlt_dlsetsearchpath">-Dlt_dlsetsearchpath</a></li>
+ <li><a href="#b638.imagick_s_Dlt_dlsym">-Dlt_dlsym</a></li>
+ <li><a href="#b638.imagick_s_Dmagick_attribute">-Dmagick_attribute</a></li>
+ <li><a href="#b638.imagick_s_Dmkdir">-Dmkdir</a></li>
+ <li><a href="#b638.imagick_s_Dmmap">-Dmmap</a></li>
+ <li><a href="#b638.imagick_s_Dmsync">-Dmsync</a></li>
+ <li><a href="#b638.imagick_s_Dmunmap">-Dmunmap</a></li>
+ <li><a href="#b638.imagick_s_Dopen">-Dopen</a></li>
+ <li><a href="#b638.imagick_s_Dopendir">-Dopendir</a></li>
+ <li><a href="#b638.imagick_s_Dpclose">-Dpclose</a></li>
+ <li><a href="#b638.imagick_s_Dpopen">-Dpopen</a></li>
+ <li><a href="#b638.imagick_s_Dread">-Dread</a></li>
+ <li><a href="#b638.imagick_s_Dreaddir">-Dreaddir</a></li>
+ <li><a href="#b638.imagick_s_Drestrict">-Drestrict</a></li>
+ <li><a href="#b638.imagick_s_Dseekdir">-Dseekdir</a></li>
+ <li><a href="#b638.imagick_s_Dsetmode">-Dsetmode</a></li>
+ <li><a href="#b638.imagick_s_Dspawnvp">-Dspawnvp</a></li>
+ <li><a href="#b638.imagick_s_Dstat">-Dstat</a></li>
+ <li><a href="#b638.imagick_s_Dstrcasecmp">-Dstrcasecmp</a></li>
+ <li><a href="#b638.imagick_s_Dstrncasecmp">-Dstrncasecmp</a></li>
+ <li><a href="#b638.imagick_s_Dstrtod_l">-Dstrtod_l</a></li>
+ <li><a href="#b638.imagick_s_Dsysconf">-Dsysconf</a></li>
+ <li><a href="#b638.imagick_s_Dtelldir">-Dtelldir</a></li>
+ <li><a href="#b638.imagick_s_Dtempnam">-Dtempnam</a></li>
+ <li><a href="#b638.imagick_s_Dvfprintf_l">-Dvfprintf_l</a></li>
+ <li><a href="#b638.imagick_s_Dvms">-Dvms</a></li>
+ <li><a href="#b638.imagick_s_Dvsnprintf">-Dvsnprintf</a></li>
+ <li><a href="#b638.imagick_s_Dvsnprintf_l">-Dvsnprintf_l</a></li>
+ <li><a href="#b638.imagick_s_Dwrite">-Dwrite</a></li>
+ <li><a href="#b638.imagick_s_Dwstat">-Dwstat</a></li>
+ <li><a href="#b638.imagick_s_DKEY_WOW64_32KEY">-DKEY_WOW64_32KEY</a></li>
+ <li><a href="#b638.imagick_s_DProvideDllMain">-DProvideDllMain</a></li>
+ <li><a href="#b638.imagick_s_bench_implicit">-D_CH_=XXX,
+-D__CHAR_UNSIGNED__=XXX,
+-D_DEBUG=XXX,
+-D_DLL=XXX,
+-D_LIB=XXX,
+-D_MAGICKCORE_POSIX_SUPPORT_VERSION=XXX,
+-D_MAGICKDLL_=XXX,
+-D_MAGICKLIB_=XXX,
+-D_MAGICKMOD_=XXX,
+-D_POSIX_PTHREAD_SEMANTICS=XXX,
+-DMAGICK_PIXEL_BGRA,
+-DMAGICK_PIXEL_RGBA,
+-DMAGICK_TARGET_CPU=XXX,
+-D_DARWIN_USE_64_BIT_INODE,
+-DMAGICKWAND_WINDOWS_SUPPORT</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_CLPERFMARKER">-DMAGICKCORE_CLPERFMARKER</a></li>
+ <li><a href="#b638.imagick_s_C99math">-DMAGICKCORE_HAVE_ACOSH,
+  -DMAGICKCORE_HAVE_ASINH,
+  -DMAGICKCORE_HAVE_ATANH,
+  -DMAGICKCORE_HAVE_ISNAN</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_POSIX_FALLOCATE">-DMAGICKCORE_HAVE_POSIX_FALLOCATE</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_HAVE_SOCKET">-DMAGICKCORE_HAVE_SOCKET</a></li>
+ <li><a href="#b638.imagick_s_DMAGICKCORE_ZERO_CONFIGURATION_SUPPORT">-DMAGICKCORE_ZERO_CONFIGURATION_SUPPORT</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+
+<ul class="flagDescList">
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DAC_APPLE_UNIVERSAL_BUILD" id="b638.imagick_s_DAC_APPLE_UNIVERSAL_BUILD">-DAC_APPLE_UNIVERSAL_BUILD</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DAC_APPLE_UNIVERSAL_BUILD(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+AC_APPLE_UNIVERSAL_BUILD, to set WORDS_BIGENDIAN, see magick-config.h
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DCLK_TCK" id="b638.imagick_s_DCLK_TCK">-DCLK_TCK</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DCLK_TCK(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+CLK_TCK, used in internal timers in magick_timer.c, do not mess with.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DCLOCK_REALTIME_HR" id="b638.imagick_s_DCLOCK_REALTIME_HR">-DCLOCK_REALTIME_HR</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DCLOCK_REALTIME_HR(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+CLOCK_REALTIME_HR, see magick-config.h
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DDEBUG_ELLIPSE" id="b638.imagick_s_DDEBUG_ELLIPSE">-DDEBUG_ELLIPSE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DDEBUG_ELLIPSE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+DEBUG_ELLIPSE, turn on debug information, see magick_resample.c, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DDEBUG_HIT_MISS" id="b638.imagick_s_DDEBUG_HIT_MISS">-DDEBUG_HIT_MISS</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DDEBUG_HIT_MISS(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+DEBUG_HIT_MISS, used with DEBUG_ELLIPSE in magick_resample.c, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DDEBUG_NO_PIXEL_HIT" id="b638.imagick_s_DDEBUG_NO_PIXEL_HIT">-DDEBUG_NO_PIXEL_HIT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DDEBUG_NO_PIXEL_HIT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+DEBUG_NO_PIXEL_HIT, turns non-hit pixels red, in magick_resample.c, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DDEBUG_OPT_FRAME" id="b638.imagick_s_DDEBUG_OPT_FRAME">-DDEBUG_OPT_FRAME</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DDEBUG_OPT_FRAME(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+DEBUG_OPT_FRAME, turns on debug writes in magick_layer.c, do not change
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DDISABLE_SIOUX" id="b638.imagick_s_DDISABLE_SIOUX">-DDISABLE_SIOUX</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DDISABLE_SIOUX(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+DISABLE_SIOUX, used with macintosh define, not currently tested for omp2012.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DDRAW_BINARY_IMPLEMENTATION" id="b638.imagick_s_DDRAW_BINARY_IMPLEMENTATION">-DDRAW_BINARY_IMPLEMENTATION</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DDRAW_BINARY_IMPLEMENTATION(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+DRAW_BINARY_IMPLEMENTATION, enables feature using DrawPatternPath in
+wand_drawing-wand.c, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DEILSEQ" id="b638.imagick_s_DEILSEQ">-DEILSEQ</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DEILSEQ(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+EILSEQ, sets error for illegal sequence, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DEWA" id="b638.imagick_s_DEWA">-DEWA</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DEWA(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+EWA, use clamped EWA, in magick_resample.c, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DEWA_CLAMP" id="b638.imagick_s_DEWA_CLAMP">-DEWA_CLAMP</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DEWA_CLAMP(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+EWA_CLAMP, use EWA Clamping form Nicolas Robidoux, see magick_resample.c, do not
+change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DFC_VERSION" id="b638.imagick_s_DFC_VERSION">-DFC_VERSION</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DFC_VERSION(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+FC_VERSION, decisions based upon font version available, not used,
+do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DFILTER_DIRECT" id="b638.imagick_s_DFILTER_DIRECT">-DFILTER_DIRECT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DFILTER_DIRECT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+FILTER_DIRECT, sets WLUT_WIDTH value when not defined, in magick_resample.c,
+do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DFILTER_LUT" id="b638.imagick_s_DFILTER_LUT">-DFILTER_LUT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DFILTER_LUT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+FILTER_LUT, use LUT rather than direct filter calls, in magick_resample.c,
+do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DFT_OPEN_PATHNAME" id="b638.imagick_s_DFT_OPEN_PATHNAME">-DFT_OPEN_PATHNAME</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DFT_OPEN_PATHNAME(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+FT_OPEN_PATHNAME, sets variable in magick_annotate.c, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DFastClassify" id="b638.imagick_s_DFastClassify">-DFastClassify</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DFastClassify(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+FastClassify, sets quick values if set in magick_segment.c, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DForgetGravity" id="b638.imagick_s_DForgetGravity">-DForgetGravity</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DForgetGravity(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+ForgetGravity, sets enum type GravityType in geometry.h, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DGetMagickModule" id="b638.imagick_s_DGetMagickModule">-DGetMagickModule</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DGetMagickModule(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+GetMagickModule, sets debug information in log.h, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DLCMS_VERSION" id="b638.imagick_s_DLCMS_VERSION">-DLCMS_VERSION</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DLCMS_VERSION(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+LCMS_VERSION, for use with LCMS, not used, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_BUILD_MODULES" id="b638.imagick_s_DMAGICKCORE_BUILD_MODULES">-DMAGICKCORE_BUILD_MODULES</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_BUILD_MODULES(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_BUILD_MODULES, in studio.h, do not define, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_BZLIB_DELEGATE" id="b638.imagick_s_DMAGICKCORE_BZLIB_DELEGATE">-DMAGICKCORE_BZLIB_DELEGATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_BZLIB_DELEGATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_BZLIB_DELEGATE, set to 0, see magick-config.h, not used in benchmark.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_CIPHER_SUPPORT" id="b638.imagick_s_DMAGICKCORE_CIPHER_SUPPORT">-DMAGICKCORE_CIPHER_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_CIPHER_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_CIPHER_SUPPORT, set to 1, see magick-config.h, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_CODER_PATH" id="b638.imagick_s_DMAGICKCORE_CODER_PATH">-DMAGICKCORE_CODER_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_CODER_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_CODER_PATH, set in magick-config.h, not used
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_CODER_RELATIVE_PATH" id="b638.imagick_s_DMAGICKCORE_CODER_RELATIVE_PATH">-DMAGICKCORE_CODER_RELATIVE_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_CODER_RELATIVE_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_CODER_RELATIVE_PATH, set in magick-config.h, not used
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_CONFIGURE_PATH" id="b638.imagick_s_DMAGICKCORE_CONFIGURE_PATH">-DMAGICKCORE_CONFIGURE_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_CONFIGURE_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_CONFIGURE_PATH, set in magick-config.h, not used
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_CONFIGURE_RELATIVE_PATH" id="b638.imagick_s_DMAGICKCORE_CONFIGURE_RELATIVE_PATH">-DMAGICKCORE_CONFIGURE_RELATIVE_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_CONFIGURE_RELATIVE_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_CONFIGURE_RELATIVE_PATH, set in magick-config.h, not used
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_DEBUG" id="b638.imagick_s_DMAGICKCORE_DEBUG">-DMAGICKCORE_DEBUG</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_DEBUG(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_DEBUG, used in magick_semaphore.c for debug, do not use for
+benchmark.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_DOCUMENTATION_PATH" id="b638.imagick_s_DMAGICKCORE_DOCUMENTATION_PATH">-DMAGICKCORE_DOCUMENTATION_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_DOCUMENTATION_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_DOCUMENTATION_PATH, set in magick-config.h, not used for benchmark,
+do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_EXCLUDE_DEPRECATED" id="b638.imagick_s_DMAGICKCORE_EXCLUDE_DEPRECATED">-DMAGICKCORE_EXCLUDE_DEPRECATED</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_EXCLUDE_DEPRECATED(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_EXCLUDE_DEPRECATED, removes deprecated functions, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_EXECUTABLE_PATH" id="b638.imagick_s_DMAGICKCORE_EXECUTABLE_PATH">-DMAGICKCORE_EXECUTABLE_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_EXECUTABLE_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_EXECUTABLE_PATH, sets path for executables, not used by benchmark.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_FFTW_DELEGATE" id="b638.imagick_s_DMAGICKCORE_FFTW_DELEGATE">-DMAGICKCORE_FFTW_DELEGATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_FFTW_DELEGATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_FFTW_DELEGATE, in magick-config.h, set if you have FFTW, do not
+change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_FILTER_PATH" id="b638.imagick_s_DMAGICKCORE_FILTER_PATH">-DMAGICKCORE_FILTER_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_FILTER_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_FILTER_PATH, location of filter modules, not used, do not mess with.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_FILTER_RELATIVE_PATH" id="b638.imagick_s_DMAGICKCORE_FILTER_RELATIVE_PATH">-DMAGICKCORE_FILTER_RELATIVE_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_FILTER_RELATIVE_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_FILTER_RELATIVE_PATH, location of filter modules, do not mess with.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_FONTCONFIG_DELEGATE" id="b638.imagick_s_DMAGICKCORE_FONTCONFIG_DELEGATE">-DMAGICKCORE_FONTCONFIG_DELEGATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_FONTCONFIG_DELEGATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_FONTCONFIG_DELEGATEi, undefined, not used for benchmark,
+in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_FREETYPE_DELEGATE" id="b638.imagick_s_DMAGICKCORE_FREETYPE_DELEGATE">-DMAGICKCORE_FREETYPE_DELEGATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_FREETYPE_DELEGATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_FREETYPE_DELEGATE, set if using FreeType, benchmark does not, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_GS_DELEGATE" id="b638.imagick_s_DMAGICKCORE_GS_DELEGATE">-DMAGICKCORE_GS_DELEGATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_GS_DELEGATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_GS_DELEGATE, set if using GhostSCript, benchmark does not, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_ARM_LIMITS_H" id="b638.imagick_s_DMAGICKCORE_HAVE_ARM_LIMITS_H">-DMAGICKCORE_HAVE_ARM_LIMITS_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_ARM_LIMITS_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_ARM_LIMITS_H, set if have arm/limits.h, not part of benchmark,
+in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_CABS" id="b638.imagick_s_DMAGICKCORE_HAVE_CABS">-DMAGICKCORE_HAVE_CABS</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_CABS(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_CABS, set to assume cabs function exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_CARG" id="b638.imagick_s_DMAGICKCORE_HAVE_CARG">-DMAGICKCORE_HAVE_CARG</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_CARG(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_CARG, set to assume carg function exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_CIMAG" id="b638.imagick_s_DMAGICKCORE_HAVE_CIMAG">-DMAGICKCORE_HAVE_CIMAG</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_CIMAG(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_CIMAG, set to assume cimag function exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_CLOCK" id="b638.imagick_s_DMAGICKCORE_HAVE_CLOCK">-DMAGICKCORE_HAVE_CLOCK</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_CLOCK(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_CLOCK, set to assume clock function exixts, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_CLOCK_GETTIME" id="b638.imagick_s_DMAGICKCORE_HAVE_CLOCK_GETTIME">-DMAGICKCORE_HAVE_CLOCK_GETTIME</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_CLOCK_GETTIME(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_CLOCK_GETTIME, set to assume clock_gettime exists,
+in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_CL_CL_H" id="b638.imagick_s_DMAGICKCORE_HAVE_CL_CL_H">-DMAGICKCORE_HAVE_CL_CL_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_CL_CL_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_CL_CL_H, set to assume cl.h is not available, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_COMPLEX_H" id="b638.imagick_s_DMAGICKCORE_HAVE_COMPLEX_H">-DMAGICKCORE_HAVE_COMPLEX_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_COMPLEX_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_COMPLEX_H, set to assume complex.h is available, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_CREAL" id="b638.imagick_s_DMAGICKCORE_HAVE_CREAL">-DMAGICKCORE_HAVE_CREAL</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_CREAL(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_CREAL, set to assume creal function exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_DECL_PREAD" id="b638.imagick_s_DMAGICKCORE_HAVE_DECL_PREAD">-DMAGICKCORE_HAVE_DECL_PREAD</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_DECL_PREAD(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_DECL_PREAD, set to assume pread is available, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_DECL_PWRITE" id="b638.imagick_s_DMAGICKCORE_HAVE_DECL_PWRITE">-DMAGICKCORE_HAVE_DECL_PWRITE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_DECL_PWRITE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_DECL_PWRITE, set to assume pwrite is available, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_DECL_STRLCPY" id="b638.imagick_s_DMAGICKCORE_HAVE_DECL_STRLCPY">-DMAGICKCORE_HAVE_DECL_STRLCPY</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_DECL_STRLCPY(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_DECL_STRLCPY, set to assume strlcpy is declared, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_DECL_VSNPRINTF" id="b638.imagick_s_DMAGICKCORE_HAVE_DECL_VSNPRINTF">-DMAGICKCORE_HAVE_DECL_VSNPRINTF</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_DECL_VSNPRINTF(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_DECL_VSNPRINTF, set to assume vsnprintf is declared, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_ERRNO_H" id="b638.imagick_s_DMAGICKCORE_HAVE_ERRNO_H">-DMAGICKCORE_HAVE_ERRNO_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_ERRNO_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_ERRNO_H, set to assume errno.h is available, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_EXECVP" id="b638.imagick_s_DMAGICKCORE_HAVE_EXECVP">-DMAGICKCORE_HAVE_EXECVP</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_EXECVP(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_EXECVP, set to assume execvp function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_FCNTL_H" id="b638.imagick_s_DMAGICKCORE_HAVE_FCNTL_H">-DMAGICKCORE_HAVE_FCNTL_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_FCNTL_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_FCNTL_H, set to assume fcntl.h is availabl, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_FLOOR" id="b638.imagick_s_DMAGICKCORE_HAVE_FLOOR">-DMAGICKCORE_HAVE_FLOOR</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_FLOOR(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_FLOOR, set to assume floor function exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_FSEEKO" id="b638.imagick_s_DMAGICKCORE_HAVE_FSEEKO">-DMAGICKCORE_HAVE_FSEEKO</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_FSEEKO(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_FSEEKO, set to assume fseeko function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_FTIME" id="b638.imagick_s_DMAGICKCORE_HAVE_FTIME">-DMAGICKCORE_HAVE_FTIME</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_FTIME(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_FTIME, set to assume ftime function exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_FTRUNCATE" id="b638.imagick_s_DMAGICKCORE_HAVE_FTRUNCATE">-DMAGICKCORE_HAVE_FTRUNCATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_FTRUNCATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_FTRUNCATE, set to assume ftruncate function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_GETCWD" id="b638.imagick_s_DMAGICKCORE_HAVE_GETCWD">-DMAGICKCORE_HAVE_GETCWD</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_GETCWD(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_GETCWD, set to assume getcwd function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_GETDTABLESIZE" id="b638.imagick_s_DMAGICKCORE_HAVE_GETDTABLESIZE">-DMAGICKCORE_HAVE_GETDTABLESIZE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_GETDTABLESIZE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_GETDTABLESIZE, set to assume getdtablesize function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_GETEXECNAME" id="b638.imagick_s_DMAGICKCORE_HAVE_GETEXECNAME">-DMAGICKCORE_HAVE_GETEXECNAME</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_GETEXECNAME(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_GETEXECNAME, set to assume no getexecname function, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_GETPAGESIZE" id="b638.imagick_s_DMAGICKCORE_HAVE_GETPAGESIZE">-DMAGICKCORE_HAVE_GETPAGESIZE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_GETPAGESIZE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_GETPAGESIZE, set to assume getpagesize function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_GETPID" id="b638.imagick_s_DMAGICKCORE_HAVE_GETPID">-DMAGICKCORE_HAVE_GETPID</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_GETPID(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_GETPID, set to assume getpid function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_GETRLIMIT" id="b638.imagick_s_DMAGICKCORE_HAVE_GETRLIMIT">-DMAGICKCORE_HAVE_GETRLIMIT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_GETRLIMIT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_GETRLIMIT, set to assume getrlimit function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_GETRUSAGE" id="b638.imagick_s_DMAGICKCORE_HAVE_GETRUSAGE">-DMAGICKCORE_HAVE_GETRUSAGE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_GETRUSAGE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_GETRUSAGE, set to assume getrusage function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_GETTIMEOFDAY" id="b638.imagick_s_DMAGICKCORE_HAVE_GETTIMEOFDAY">-DMAGICKCORE_HAVE_GETTIMEOFDAY</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_GETTIMEOFDAY(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_GETTIMEOFDAY, set to assume gettimeofday function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_GMTIME_R" id="b638.imagick_s_DMAGICKCORE_HAVE_GMTIME_R">-DMAGICKCORE_HAVE_GMTIME_R</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_GMTIME_R(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_GMTIME_R, set to assume gmtime_r function exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_INTMAX_T" id="b638.imagick_s_DMAGICKCORE_HAVE_INTMAX_T">-DMAGICKCORE_HAVE_INTMAX_T</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_INTMAX_T(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_INTMAX_T, set to assume intmax_t type exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_INTPTR_T" id="b638.imagick_s_DMAGICKCORE_HAVE_INTPTR_T">-DMAGICKCORE_HAVE_INTPTR_T</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_INTPTR_T(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_INTPTR_T, set to assume intptr_t type exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_INTTYPES_H" id="b638.imagick_s_DMAGICKCORE_HAVE_INTTYPES_H">-DMAGICKCORE_HAVE_INTTYPES_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_INTTYPES_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_INTTYPES_H, set to assume inttypes.h available, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_J0" id="b638.imagick_s_DMAGICKCORE_HAVE_J0">-DMAGICKCORE_HAVE_J0</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_J0(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_J0, assumes function j0 exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_J1" id="b638.imagick_s_DMAGICKCORE_HAVE_J1">-DMAGICKCORE_HAVE_J1</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_J1(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_J1, assumes function j1 exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_LCMS2_H" id="b638.imagick_s_DMAGICKCORE_HAVE_LCMS2_H">-DMAGICKCORE_HAVE_LCMS2_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_LCMS2_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_LCMS2_H, does not have lcms2.h, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_LCMS_LCMS2_H" id="b638.imagick_s_DMAGICKCORE_HAVE_LCMS_LCMS2_H">-DMAGICKCORE_HAVE_LCMS_LCMS2_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_LCMS_LCMS2_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_LCMS_LCMS2_H, does not have lcms2/lcms2.h, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_LCMS_LCMS_H" id="b638.imagick_s_DMAGICKCORE_HAVE_LCMS_LCMS_H">-DMAGICKCORE_HAVE_LCMS_LCMS_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_LCMS_LCMS_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_LCMS_LCMS_H, does not have lcms/lcms.h, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_LIMITS_H" id="b638.imagick_s_DMAGICKCORE_HAVE_LIMITS_H">-DMAGICKCORE_HAVE_LIMITS_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_LIMITS_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_LIMITS_H, assumes limits.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_LOCALTIME_R" id="b638.imagick_s_DMAGICKCORE_HAVE_LOCALTIME_R">-DMAGICKCORE_HAVE_LOCALTIME_R</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_LOCALTIME_R(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_LOCALTIME_R, assumes function localtime_r exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_LONG_DOUBLE" id="b638.imagick_s_DMAGICKCORE_HAVE_LONG_DOUBLE">-DMAGICKCORE_HAVE_LONG_DOUBLE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_LONG_DOUBLE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_LONG_DOUBLE, assumes type long double exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_LONG_LONG_INT" id="b638.imagick_s_DMAGICKCORE_HAVE_LONG_LONG_INT">-DMAGICKCORE_HAVE_LONG_LONG_INT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_LONG_LONG_INT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_LONG_LONG_INT, says type long long int exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_MACH_O_DYLD_H" id="b638.imagick_s_DMAGICKCORE_HAVE_MACH_O_DYLD_H">-DMAGICKCORE_HAVE_MACH_O_DYLD_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_MACH_O_DYLD_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_MACH_O_DYLD_H, mach-o/dyld.h is assumed not available, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_MBSTATE_T" id="b638.imagick_s_DMAGICKCORE_HAVE_MBSTATE_T">-DMAGICKCORE_HAVE_MBSTATE_T</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_MBSTATE_T(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_MBSTATE_T, wchar.h declares mbstate_t, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_MEMMOVE" id="b638.imagick_s_DMAGICKCORE_HAVE_MEMMOVE">-DMAGICKCORE_HAVE_MEMMOVE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_MEMMOVE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_MEMMOVE, function memmove exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_MEMORY_H" id="b638.imagick_s_DMAGICKCORE_HAVE_MEMORY_H">-DMAGICKCORE_HAVE_MEMORY_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_MEMORY_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_MEMORY_H, include memory.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_MEMSET" id="b638.imagick_s_DMAGICKCORE_HAVE_MEMSET">-DMAGICKCORE_HAVE_MEMSET</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_MEMSET(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_MEMSET, function memset exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_MKSTEMP" id="b638.imagick_s_DMAGICKCORE_HAVE_MKSTEMP">-DMAGICKCORE_HAVE_MKSTEMP</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_MKSTEMP(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_MKSTEMP, function mkstemp exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_MMAP" id="b638.imagick_s_DMAGICKCORE_HAVE_MMAP">-DMAGICKCORE_HAVE_MMAP</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_MMAP(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_MMAP, function mmap works, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_NAMESPACES" id="b638.imagick_s_DMAGICKCORE_HAVE_NAMESPACES">-DMAGICKCORE_HAVE_NAMESPACES</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_NAMESPACES(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_NAMESPACES, compiler implements namespaces, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_NAMESPACE_STD" id="b638.imagick_s_DMAGICKCORE_HAVE_NAMESPACE_STD">-DMAGICKCORE_HAVE_NAMESPACE_STD</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_NAMESPACE_STD(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_NAMESPACE_STD, g++ supports namespace std, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_NANOSLEEP" id="b638.imagick_s_DMAGICKCORE_HAVE_NANOSLEEP">-DMAGICKCORE_HAVE_NANOSLEEP</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_NANOSLEEP(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_NANOSLEEP, no nanosleep function used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_NDIR_H" id="b638.imagick_s_DMAGICKCORE_HAVE_NDIR_H">-DMAGICKCORE_HAVE_NDIR_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_NDIR_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_NDIR_H, include ndir.h not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_NEWLOCALE" id="b638.imagick_s_DMAGICKCORE_HAVE_NEWLOCALE">-DMAGICKCORE_HAVE_NEWLOCALE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_NEWLOCALE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_NEWLOCALE, newlocale function not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_OPENCL_CL_H" id="b638.imagick_s_DMAGICKCORE_HAVE_OPENCL_CL_H">-DMAGICKCORE_HAVE_OPENCL_CL_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_OPENCL_CL_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_OPENCL_CL_H, include opencl/cl.h not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_PCLOSE" id="b638.imagick_s_DMAGICKCORE_HAVE_PCLOSE">-DMAGICKCORE_HAVE_PCLOSE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_PCLOSE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_PCLOSE, function pclose exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_POLL" id="b638.imagick_s_DMAGICKCORE_HAVE_POLL">-DMAGICKCORE_HAVE_POLL</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_POLL(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_POLL, function poll exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_POPEN" id="b638.imagick_s_DMAGICKCORE_HAVE_POPEN">-DMAGICKCORE_HAVE_POPEN</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_POPEN(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_POPEN, function popen exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_POSIX_MEMALIGN" id="b638.imagick_s_DMAGICKCORE_HAVE_POSIX_MEMALIGN">-DMAGICKCORE_HAVE_POSIX_MEMALIGN</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_POSIX_MEMALIGN(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_POSIX_MEMALIGN, posix_memalign() not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE__ALIGNED_MALLOC" id="b638.imagick_s_DMAGICKCORE_HAVE__ALIGNED_MALLOC">-DMAGICKCORE_HAVE__ALIGNED_MALLOC</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE__ALIGNED_MALLOC(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE__ALIGNED_MALLOC, _aligned_malloc() not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_POW" id="b638.imagick_s_DMAGICKCORE_HAVE_POW">-DMAGICKCORE_HAVE_POW</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_POW(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_POW, function pow exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_PREAD" id="b638.imagick_s_DMAGICKCORE_HAVE_PREAD">-DMAGICKCORE_HAVE_PREAD</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_PREAD(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_PREAD, function pread exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_PROCESS_H" id="b638.imagick_s_DMAGICKCORE_HAVE_PROCESS_H">-DMAGICKCORE_HAVE_PROCESS_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_PROCESS_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_PROCESS_H, process.h not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_PWRITE" id="b638.imagick_s_DMAGICKCORE_HAVE_PWRITE">-DMAGICKCORE_HAVE_PWRITE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_PWRITE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_PWRITE, function pwrite exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_RAISE" id="b638.imagick_s_DMAGICKCORE_HAVE_RAISE">-DMAGICKCORE_HAVE_RAISE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_RAISE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_RAISE, function raise exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_READDIR_R" id="b638.imagick_s_DMAGICKCORE_HAVE_READDIR_R">-DMAGICKCORE_HAVE_READDIR_R</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_READDIR_R(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_READDIR_R, function readdir_r exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_READLINK" id="b638.imagick_s_DMAGICKCORE_HAVE_READLINK">-DMAGICKCORE_HAVE_READLINK</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_READLINK(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_READLINK, function readlink exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SELECT" id="b638.imagick_s_DMAGICKCORE_HAVE_SELECT">-DMAGICKCORE_HAVE_SELECT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SELECT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SELECT, function select exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SETVBUF" id="b638.imagick_s_DMAGICKCORE_HAVE_SETVBUF">-DMAGICKCORE_HAVE_SETVBUF</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SETVBUF(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SETVBUF, function setvbuf exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SIGACTION" id="b638.imagick_s_DMAGICKCORE_HAVE_SIGACTION">-DMAGICKCORE_HAVE_SIGACTION</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SIGACTION(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SIGACTION, function sigaction exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SIGEMPTYSET" id="b638.imagick_s_DMAGICKCORE_HAVE_SIGEMPTYSET">-DMAGICKCORE_HAVE_SIGEMPTYSET</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SIGEMPTYSET(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SIGEMPTYSET, function sigemptyset exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SQRT" id="b638.imagick_s_DMAGICKCORE_HAVE_SQRT">-DMAGICKCORE_HAVE_SQRT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SQRT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SQRT, function sqrt exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STDARG_H" id="b638.imagick_s_DMAGICKCORE_HAVE_STDARG_H">-DMAGICKCORE_HAVE_STDARG_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STDARG_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STDARG, include stdarg.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STDINT_H" id="b638.imagick_s_DMAGICKCORE_HAVE_STDINT_H">-DMAGICKCORE_HAVE_STDINT_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STDINT_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STDINT, include stdint.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STDLIB_H" id="b638.imagick_s_DMAGICKCORE_HAVE_STDLIB_H">-DMAGICKCORE_HAVE_STDLIB_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STDLIB_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STDLIB, include stdlib.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STD_LIBS" id="b638.imagick_s_DMAGICKCORE_HAVE_STD_LIBS">-DMAGICKCORE_HAVE_STD_LIBS</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STD_LIBS(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STD_LIBS, ISO C++ standard library, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRCASECMP" id="b638.imagick_s_DMAGICKCORE_HAVE_STRCASECMP">-DMAGICKCORE_HAVE_STRCASECMP</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRCASECMP(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRCASECMP, function strcasecmp exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRCHR" id="b638.imagick_s_DMAGICKCORE_HAVE_STRCHR">-DMAGICKCORE_HAVE_STRCHR</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRCHR(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRCHR, function strchr exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRCSPN" id="b638.imagick_s_DMAGICKCORE_HAVE_STRCSPN">-DMAGICKCORE_HAVE_STRCSPN</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRCSPN(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRCSPN, function strcspn exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRDUP" id="b638.imagick_s_DMAGICKCORE_HAVE_STRDUP">-DMAGICKCORE_HAVE_STRDUP</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRDUP(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRDUP, function strdup exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRERROR" id="b638.imagick_s_DMAGICKCORE_HAVE_STRERROR">-DMAGICKCORE_HAVE_STRERROR</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRERROR(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRERROR, function strerror exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRERROR_R" id="b638.imagick_s_DMAGICKCORE_HAVE_STRERROR_R">-DMAGICKCORE_HAVE_STRERROR_R</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRERROR_R(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRERROR_R, function strerror_r exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRINGIZE" id="b638.imagick_s_DMAGICKCORE_HAVE_STRINGIZE">-DMAGICKCORE_HAVE_STRINGIZE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRINGIZE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRINGIZE, cpp supports ANSI # stringizing operator, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRINGS_H" id="b638.imagick_s_DMAGICKCORE_HAVE_STRINGS_H">-DMAGICKCORE_HAVE_STRINGS_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRINGS_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRINGS, include strings.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRING_H" id="b638.imagick_s_DMAGICKCORE_HAVE_STRING_H">-DMAGICKCORE_HAVE_STRING_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRING_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRING, include string.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRLCPY" id="b638.imagick_s_DMAGICKCORE_HAVE_STRLCPY">-DMAGICKCORE_HAVE_STRLCPY</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRLCPY(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRLCPY, function strlcpy exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRNCASECMP" id="b638.imagick_s_DMAGICKCORE_HAVE_STRNCASECMP">-DMAGICKCORE_HAVE_STRNCASECMP</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRNCASECMP(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRNCASECMP, function strncasecmp exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRPBRK" id="b638.imagick_s_DMAGICKCORE_HAVE_STRPBRK">-DMAGICKCORE_HAVE_STRPBRK</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRPBRK(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRPBRK, function strpbrk exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRRCHR" id="b638.imagick_s_DMAGICKCORE_HAVE_STRRCHR">-DMAGICKCORE_HAVE_STRRCHR</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRRCHR(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRRCHR, function strrchr exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRSPN" id="b638.imagick_s_DMAGICKCORE_HAVE_STRSPN">-DMAGICKCORE_HAVE_STRSPN</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRSPN(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRSPN, function strspn exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRSTR" id="b638.imagick_s_DMAGICKCORE_HAVE_STRSTR">-DMAGICKCORE_HAVE_STRSTR</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRSTR(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRSTR, function strstr exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRTOD" id="b638.imagick_s_DMAGICKCORE_HAVE_STRTOD">-DMAGICKCORE_HAVE_STRTOD</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRTOD(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRTOD, function strtod exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRTOD_L" id="b638.imagick_s_DMAGICKCORE_HAVE_STRTOD_L">-DMAGICKCORE_HAVE_STRTOD_L</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRTOD_L(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRTOD_L, don't use strtod_l function, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRTOL" id="b638.imagick_s_DMAGICKCORE_HAVE_STRTOL">-DMAGICKCORE_HAVE_STRTOL</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRTOL(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRTOL, function strtol exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_STRTOUL" id="b638.imagick_s_DMAGICKCORE_HAVE_STRTOUL">-DMAGICKCORE_HAVE_STRTOUL</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_STRTOUL(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STRTOUL, function strtoul exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYMLINK" id="b638.imagick_s_DMAGICKCORE_HAVE_SYMLINK">-DMAGICKCORE_HAVE_SYMLINK</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYMLINK(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SYMLINK, function symlink exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYSCONF" id="b638.imagick_s_DMAGICKCORE_HAVE_SYSCONF">-DMAGICKCORE_HAVE_SYSCONF</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYSCONF(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SYSCONF, function sysconf exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_DIR_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_DIR_H">-DMAGICKCORE_HAVE_SYS_DIR_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_DIR_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_DIR, include sys/dir.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_MMAN_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_MMAN_H">-DMAGICKCORE_HAVE_SYS_MMAN_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_MMAN_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_MMAN, include sys/mman.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_NDIR_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_NDIR_H">-DMAGICKCORE_HAVE_SYS_NDIR_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_NDIR_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SYS_NDIR_H, sys/ndir.h not assumed, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_PARAM_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_PARAM_H">-DMAGICKCORE_HAVE_SYS_PARAM_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_PARAM_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_PARAM, include sys/param.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_RESOURCE_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_RESOURCE_H">-DMAGICKCORE_HAVE_SYS_RESOURCE_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_RESOURCE_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_RESOURCE, include sys/resource.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_SELECT_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_SELECT_H">-DMAGICKCORE_HAVE_SYS_SELECT_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_SELECT_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SELECT, include sys/select.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_SOCKET_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_SOCKET_H">-DMAGICKCORE_HAVE_SYS_SOCKET_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_SOCKET_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SOCKET, include sys/socket.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_STAT_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_STAT_H">-DMAGICKCORE_HAVE_SYS_STAT_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_STAT_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_STAT, include sys/stat.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_SYSLIMITS_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_SYSLIMITS_H">-DMAGICKCORE_HAVE_SYS_SYSLIMITS_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_SYSLIMITS_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_SYSLIMITS, include sys/syslimits.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_TIMEB_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_TIMEB_H">-DMAGICKCORE_HAVE_SYS_TIMEB_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_TIMEB_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_TIMEB, include sys/timeb.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_TIMES_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_TIMES_H">-DMAGICKCORE_HAVE_SYS_TIMES_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_TIMES_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_TIMES, include sys/times.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_TIME_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_TIME_H">-DMAGICKCORE_HAVE_SYS_TIME_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_TIME_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_TIME, include sys/time.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_TYPES_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_TYPES_H">-DMAGICKCORE_HAVE_SYS_TYPES_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_TYPES_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_TYPES, include sys/types.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SYS_WAIT_H" id="b638.imagick_s_DMAGICKCORE_HAVE_SYS_WAIT_H">-DMAGICKCORE_HAVE_SYS_WAIT_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SYS_WAIT_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_WAIT, include sys/wait.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_TEMPNAM" id="b638.imagick_s_DMAGICKCORE_HAVE_TEMPNAM">-DMAGICKCORE_HAVE_TEMPNAM</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_TEMPNAM(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_TEMPNAM, function tempnam exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_TIFFCONF_H" id="b638.imagick_s_DMAGICKCORE_HAVE_TIFFCONF_H">-DMAGICKCORE_HAVE_TIFFCONF_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_TIFFCONF_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_TIFFCONF_H, keep undefined, not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_TIMES" id="b638.imagick_s_DMAGICKCORE_HAVE_TIMES">-DMAGICKCORE_HAVE_TIMES</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_TIMES(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_TIMES, function times exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_UINTMAX_T" id="b638.imagick_s_DMAGICKCORE_HAVE_UINTMAX_T">-DMAGICKCORE_HAVE_UINTMAX_T</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_UINTMAX_T(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_UINTMAX_T, type uintmax_t exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_UINTPTR_T" id="b638.imagick_s_DMAGICKCORE_HAVE_UINTPTR_T">-DMAGICKCORE_HAVE_UINTPTR_T</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_UINTPTR_T(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_UINTPTR_T, type uintptr_t exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_UNISTD_H" id="b638.imagick_s_DMAGICKCORE_HAVE_UNISTD_H">-DMAGICKCORE_HAVE_UNISTD_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_UNISTD_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_UNISTD, include unistd.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_UNSIGNED_LONG_LONG_INT" id="b638.imagick_s_DMAGICKCORE_HAVE_UNSIGNED_LONG_LONG_INT">-DMAGICKCORE_HAVE_UNSIGNED_LONG_LONG_INT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_UNSIGNED_LONG_LONG_INT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_UNSIGNED_LONG_LONG_INT, type unsigned long long int exists, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_USELOCALE" id="b638.imagick_s_DMAGICKCORE_HAVE_USELOCALE">-DMAGICKCORE_HAVE_USELOCALE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_USELOCALE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_USELOCALE, function uselocale not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_USLEEP" id="b638.imagick_s_DMAGICKCORE_HAVE_USLEEP">-DMAGICKCORE_HAVE_USLEEP</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_USLEEP(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_USLEEP, function usleep exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_VFPRINTF" id="b638.imagick_s_DMAGICKCORE_HAVE_VFPRINTF">-DMAGICKCORE_HAVE_VFPRINTF</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_VFPRINTF(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_VFPRINTF, function vfprintf exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_VFPRINTF_L" id="b638.imagick_s_DMAGICKCORE_HAVE_VFPRINTF_L">-DMAGICKCORE_HAVE_VFPRINTF_L</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_VFPRINTF_L(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_VFPRINTF_L, function vfprintf_l not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_VPRINTF" id="b638.imagick_s_DMAGICKCORE_HAVE_VPRINTF">-DMAGICKCORE_HAVE_VPRINTF</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_VPRINTF(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_VPRINTF, function vprintf exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_VSNPRINTF" id="b638.imagick_s_DMAGICKCORE_HAVE_VSNPRINTF">-DMAGICKCORE_HAVE_VSNPRINTF</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_VSNPRINTF(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_VSNPRINTF, function vsnprintf exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_VSNPRINTF_L" id="b638.imagick_s_DMAGICKCORE_HAVE_VSNPRINTF_L">-DMAGICKCORE_HAVE_VSNPRINTF_L</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_VSNPRINTF_L(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_VSNPRINTF_L, function vsnprintf_l not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_VSPRINTF" id="b638.imagick_s_DMAGICKCORE_HAVE_VSPRINTF">-DMAGICKCORE_HAVE_VSPRINTF</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_VSPRINTF(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_VSPRINTF, function vsprintf exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_WCHAR_H" id="b638.imagick_s_DMAGICKCORE_HAVE_WCHAR_H">-DMAGICKCORE_HAVE_WCHAR_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_WCHAR_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_WCHAR, include wchar.h exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_WINTHREADS" id="b638.imagick_s_DMAGICKCORE_HAVE_WINTHREADS">-DMAGICKCORE_HAVE_WINTHREADS</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_WINTHREADS(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_WINTHREADS, not used, not windows threads.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_XLOCALE_H" id="b638.imagick_s_DMAGICKCORE_HAVE_XLOCALE_H">-DMAGICKCORE_HAVE_XLOCALE_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_XLOCALE_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE_XLOCALE_H, include xlocale.h not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE__EXIT" id="b638.imagick_s_DMAGICKCORE_HAVE__EXIT">-DMAGICKCORE_HAVE__EXIT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE__EXIT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE__EXIT, function _exit exists, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE__NSGETEXECUTABLEPATH" id="b638.imagick_s_DMAGICKCORE_HAVE__NSGETEXECUTABLEPATH">-DMAGICKCORE_HAVE__NSGETEXECUTABLEPATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE__NSGETEXECUTABLEPATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE__NSGETEXECUTABLEPATH, not used for benchmark, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE__WFOPEN" id="b638.imagick_s_DMAGICKCORE_HAVE__WFOPEN">-DMAGICKCORE_HAVE__WFOPEN</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE__WFOPEN(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE__WFOPEN, function _wfopen not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE___ATTRIBUTE__" id="b638.imagick_s_DMAGICKCORE_HAVE___ATTRIBUTE__">-DMAGICKCORE_HAVE___ATTRIBUTE__</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE___ATTRIBUTE__(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HAVE___ATTRIBUTE__, __attribute__ not used in benchmark, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HDRI_SUPPORT" id="b638.imagick_s_DMAGICKCORE_HDRI_SUPPORT">-DMAGICKCORE_HDRI_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HDRI_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_HDRI_SUPPORT, not used in becnhmark, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_INSTALLED_SUPPORT" id="b638.imagick_s_DMAGICKCORE_INSTALLED_SUPPORT">-DMAGICKCORE_INSTALLED_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_INSTALLED_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_INSTALLED_SUPPORT, not used for benchmark, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_LCMS_DELEGATE" id="b638.imagick_s_DMAGICKCORE_LCMS_DELEGATE">-DMAGICKCORE_LCMS_DELEGATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_LCMS_DELEGATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_LCMS_DELEGATE, do not use LCMS library, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_LIBRARY_PATH" id="b638.imagick_s_DMAGICKCORE_LIBRARY_PATH">-DMAGICKCORE_LIBRARY_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_LIBRARY_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_LIBRARY_PATH, set path, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_LIBRARY_RELATIVE_PATH" id="b638.imagick_s_DMAGICKCORE_LIBRARY_RELATIVE_PATH">-DMAGICKCORE_LIBRARY_RELATIVE_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_LIBRARY_RELATIVE_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_LIBRARY_RELATIVE_PATH, set relative path, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_LQR_DELEGATE" id="b638.imagick_s_DMAGICKCORE_LQR_DELEGATE">-DMAGICKCORE_LQR_DELEGATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_LQR_DELEGATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_LQR_DELEGATE, do not use LQR library, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_LTDL_DELEGATE" id="b638.imagick_s_DMAGICKCORE_LTDL_DELEGATE">-DMAGICKCORE_LTDL_DELEGATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_LTDL_DELEGATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_LTDL_DELEGATE, do not use libltdl, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_MODULES_SUPPORT" id="b638.imagick_s_DMAGICKCORE_MODULES_SUPPORT">-DMAGICKCORE_MODULES_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_MODULES_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_MODULES_SUPPORT, not used.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_NAMESPACE_PREFIX" id="b638.imagick_s_DMAGICKCORE_NAMESPACE_PREFIX">-DMAGICKCORE_NAMESPACE_PREFIX</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_NAMESPACE_PREFIX(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_NAMESPACE_PREFIX, sets api prefix, not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_OPENCL_SUPPORT" id="b638.imagick_s_DMAGICKCORE_OPENCL_SUPPORT">-DMAGICKCORE_OPENCL_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_OPENCL_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_OPENCL_SUPPORT, not doing opencl.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_OPENMP_SUPPORT" id="b638.imagick_s_DMAGICKCORE_OPENMP_SUPPORT">-DMAGICKCORE_OPENMP_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_OPENMP_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_OPENMP_SUPPORT, openmp, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_PACKAGE_BUGREPORT" id="b638.imagick_s_DMAGICKCORE_PACKAGE_BUGREPORT">-DMAGICKCORE_PACKAGE_BUGREPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_PACKAGE_BUGREPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_PACKAGE_BUGREPORT, where to send bugs, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_PACKAGE" id="b638.imagick_s_DMAGICKCORE_PACKAGE">-DMAGICKCORE_PACKAGE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_PACKAGE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_PACKAGE, name of package, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_PACKAGE_NAME" id="b638.imagick_s_DMAGICKCORE_PACKAGE_NAME">-DMAGICKCORE_PACKAGE_NAME</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_PACKAGE_NAME(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_PACKAGE_NAME, name of package, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_PACKAGE_STRING" id="b638.imagick_s_DMAGICKCORE_PACKAGE_STRING">-DMAGICKCORE_PACKAGE_STRING</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_PACKAGE_STRING(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_PACKAGE_STRING, full name of package, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_PACKAGE_TARNAME" id="b638.imagick_s_DMAGICKCORE_PACKAGE_TARNAME">-DMAGICKCORE_PACKAGE_TARNAME</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_PACKAGE_TARNAME(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_PACKAGE_TARNAME, name of tar file, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_PACKAGE_URL" id="b638.imagick_s_DMAGICKCORE_PACKAGE_URL">-DMAGICKCORE_PACKAGE_URL</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_PACKAGE_URL(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_PACKAGE_URL, package url, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_PACKAGE_VERSION" id="b638.imagick_s_DMAGICKCORE_PACKAGE_VERSION">-DMAGICKCORE_PACKAGE_VERSION</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_PACKAGE_VERSION(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_PACKAGE_VERSION, package version, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_VERSION" id="b638.imagick_s_DMAGICKCORE_VERSION">-DMAGICKCORE_VERSION</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_VERSION(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_VERSION, version, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_POSIX_SUPPORT" id="b638.imagick_s_DMAGICKCORE_POSIX_SUPPORT">-DMAGICKCORE_POSIX_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_POSIX_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_POSIX_SUPPORT, posix assumed, in MagickCore.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKWAND_POSIX_SUPPORT" id="b638.imagick_s_DMAGICKWAND_POSIX_SUPPORT">-DMAGICKWAND_POSIX_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKWAND_POSIX_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKWAND_POSIX_SUPPORT, posix assumed, in MagickWand.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_QUANTUM_DEPTH" id="b638.imagick_s_DMAGICKCORE_QUANTUM_DEPTH">-DMAGICKCORE_QUANTUM_DEPTH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_QUANTUM_DEPTH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_QUANTUM_DEPTH, pixel quantum is 16, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_QUANTUM_DEPTH_OBSOLETE_IN_H" id="b638.imagick_s_DMAGICKCORE_QUANTUM_DEPTH_OBSOLETE_IN_H">-DMAGICKCORE_QUANTUM_DEPTH_OBSOLETE_IN_H</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_QUANTUM_DEPTH_OBSOLETE_IN_H(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_QUANTUM_DEPTH_OBSOLETE_IN_H, pixel quantum is 16, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_RETSIGTYPE" id="b638.imagick_s_DMAGICKCORE_RETSIGTYPE">-DMAGICKCORE_RETSIGTYPE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_RETSIGTYPE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_RETSIGTYPE, set signal handlers return as void, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SELECT_TYPE_ARG1" id="b638.imagick_s_DMAGICKCORE_SELECT_TYPE_ARG1">-DMAGICKCORE_SELECT_TYPE_ARG1</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SELECT_TYPE_ARG1(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SELECT_TYPE_ARG1, select arg 1 in type int, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SELECT_TYPE_ARG234" id="b638.imagick_s_DMAGICKCORE_SELECT_TYPE_ARG234">-DMAGICKCORE_SELECT_TYPE_ARG234</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SELECT_TYPE_ARG234(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SELECT_TYPE_ARG234, select args 2, 3, 4 are type (fd_set *), in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SELECT_TYPE_ARG5" id="b638.imagick_s_DMAGICKCORE_SELECT_TYPE_ARG5">-DMAGICKCORE_SELECT_TYPE_ARG5</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SELECT_TYPE_ARG5(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SELECT_TYPE_ARG5, select arg 5 type (struct timeval *), in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SHARE_PATH" id="b638.imagick_s_DMAGICKCORE_SHARE_PATH">-DMAGICKCORE_SHARE_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SHARE_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SHARE_PATH, path name, not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SHARE_RELATIVE_PATH" id="b638.imagick_s_DMAGICKCORE_SHARE_RELATIVE_PATH">-DMAGICKCORE_SHARE_RELATIVE_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SHARE_RELATIVE_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SHARE_RELATIVE_PATH, path name, not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_OFF_T" id="b638.imagick_s_DMAGICKCORE_SIZEOF_OFF_T">-DMAGICKCORE_SIZEOF_OFF_T</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_OFF_T(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_OFF_T, size of off_t is 8, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_INT" id="b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_INT">-DMAGICKCORE_SIZEOF_SIGNED_INT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_SIGNED_INT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_SIGNED_INT, size of signed int is 4, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_LONG" id="b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_LONG">-DMAGICKCORE_SIZEOF_SIGNED_LONG</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_SIGNED_LONG(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_SIGNED_LONG, size of signed long is 4, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_LONG_LONG" id="b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_LONG_LONG">-DMAGICKCORE_SIZEOF_SIGNED_LONG_LONG</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_SIGNED_LONG_LONG(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_SIGNED_LONG_LONG, size of signed long long is 8, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_SHORT" id="b638.imagick_s_DMAGICKCORE_SIZEOF_SIGNED_SHORT">-DMAGICKCORE_SIZEOF_SIGNED_SHORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_SIGNED_SHORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_SIGNED_SHORT, size of signed short is 2, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_SIZE_T" id="b638.imagick_s_DMAGICKCORE_SIZEOF_SIZE_T">-DMAGICKCORE_SIZEOF_SIZE_T</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_SIZE_T(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_SIZE_T, size of size_t is 4, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_SSIZE_T" id="b638.imagick_s_DMAGICKCORE_SIZEOF_SSIZE_T">-DMAGICKCORE_SIZEOF_SSIZE_T</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_SSIZE_T(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_SSIZE_T, size of ssize_t is 4, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_INT" id="b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_INT">-DMAGICKCORE_SIZEOF_UNSIGNED_INT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_UNSIGNED_INT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_UNSIGNED_INT, size of unsigned int is 4, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_INTP" id="b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_INTP">-DMAGICKCORE_SIZEOF_UNSIGNED_INTP</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_UNSIGNED_INTP(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_UNSIGNED_INTP, size of unsigned int* is 4, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_LONG" id="b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_LONG">-DMAGICKCORE_SIZEOF_UNSIGNED_LONG</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_UNSIGNED_LONG(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_UNSIGNED_LONG, size of unsigned long is 4, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_LONG_LONG" id="b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_LONG_LONG">-DMAGICKCORE_SIZEOF_UNSIGNED_LONG_LONG</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_UNSIGNED_LONG_LONG(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_UNSIGNED_LONG_LONG, size of unsigned long long is 8, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_SHORT" id="b638.imagick_s_DMAGICKCORE_SIZEOF_UNSIGNED_SHORT">-DMAGICKCORE_SIZEOF_UNSIGNED_SHORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_SIZEOF_UNSIGNED_SHORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_SIZEOF_UNSIGNED_SHORT, size of unsigned short is 2, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_STDC_HEADERS" id="b638.imagick_s_DMAGICKCORE_STDC_HEADERS">-DMAGICKCORE_STDC_HEADERS</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_STDC_HEADERS(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_STDC_HEADERS, ansi c headers, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_THREAD_SUPPORT" id="b638.imagick_s_DMAGICKCORE_THREAD_SUPPORT">-DMAGICKCORE_THREAD_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_THREAD_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_THREAD_SUPPORT, have posix threads, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_TIFF_DELEGATE" id="b638.imagick_s_DMAGICKCORE_TIFF_DELEGATE">-DMAGICKCORE_TIFF_DELEGATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_TIFF_DELEGATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_TIFF_DELEGATE not using tiff, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_WINDOWS_SUPPORT" id="b638.imagick_s_DMAGICKCORE_WINDOWS_SUPPORT">-DMAGICKCORE_WINDOWS_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_WINDOWS_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_WINDOWS_SUPPORT, windows support, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_WORDS_BIGENDIAN" id="b638.imagick_s_DMAGICKCORE_WORDS_BIGENDIAN">-DMAGICKCORE_WORDS_BIGENDIAN</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_WORDS_BIGENDIAN(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_WORDS_BIGENDIAN, system endianess, shouldn't be needed, in
+magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_ZLIB_DELEGATE" id="b638.imagick_s_DMAGICKCORE_ZLIB_DELEGATE">-DMAGICKCORE_ZLIB_DELEGATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_ZLIB_DELEGATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE_ZLIB_DELEGATE, not using ZLIB, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE__FILE_OFFSET_BITS" id="b638.imagick_s_DMAGICKCORE__FILE_OFFSET_BITS">-DMAGICKCORE__FILE_OFFSET_BITS</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE__FILE_OFFSET_BITS(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE__FILE_OFFSET_BITS, set file offset to 64, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE__OPENCL" id="b638.imagick_s_DMAGICKCORE__OPENCL">-DMAGICKCORE__OPENCL</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE__OPENCL(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MAGICKCORE__OPENCL, not used, in magick-config.h.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMagickDLLCall" id="b638.imagick_s_DMagickDLLCall">-DMagickDLLCall</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMagickDLLCall(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MagickDLLCall, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMaxTextExtent" id="b638.imagick_s_DMaxTextExtent">-DMaxTextExtent</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMaxTextExtent(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+MaxTextExtent, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DPRE_R4_ICCCM" id="b638.imagick_s_DPRE_R4_ICCCM">-DPRE_R4_ICCCM</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DPRE_R4_ICCCM(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+PRE_R4_ICCCM, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DPRE_R5_ICCCM" id="b638.imagick_s_DPRE_R5_ICCCM">-DPRE_R5_ICCCM</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DPRE_R5_ICCCM(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+PRE_R5_ICCCM, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DPRE_R6_ICCCM" id="b638.imagick_s_DPRE_R6_ICCCM">-DPRE_R6_ICCCM</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DPRE_R6_ICCCM(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+PRE_R6_ICCCM, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DPWinGravity" id="b638.imagick_s_DPWinGravity">-DPWinGravity</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DPWinGravity(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+PWinGravity, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DP_tmpdir" id="b638.imagick_s_DP_tmpdir">-DP_tmpdir</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DP_tmpdir(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+P_tmpdir, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DPixelCacheThreshold" id="b638.imagick_s_DPixelCacheThreshold">-DPixelCacheThreshold</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DPixelCacheThreshold(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+PixelCacheThreshold, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DSA_INTERRUPT" id="b638.imagick_s_DSA_INTERRUPT">-DSA_INTERRUPT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DSA_INTERRUPT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+SA_INTERRUPT, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DSSIZE_MAX" id="b638.imagick_s_DSSIZE_MAX">-DSSIZE_MAX</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DSSIZE_MAX(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+SSIZE_MAX, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DSTDC_HEADERS" id="b638.imagick_s_DSTDC_HEADERS">-DSTDC_HEADERS</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DSTDC_HEADERS(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+STDC_HEADERS, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DSTDIN_FILENO" id="b638.imagick_s_DSTDIN_FILENO">-DSTDIN_FILENO</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DSTDIN_FILENO(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+STDIN_FILENO, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DTARGET_OS_IPHONE" id="b638.imagick_s_DTARGET_OS_IPHONE">-DTARGET_OS_IPHONE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DTARGET_OS_IPHONE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+TARGET_OS_IPHONE, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DTMP_MAX" id="b638.imagick_s_DTMP_MAX">-DTMP_MAX</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DTMP_MAX(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+TMP_MAX, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DWIN32" id="b638.imagick_s_DWIN32">-DWIN32</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DWIN32(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+WIN32, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DWIN64" id="b638.imagick_s_DWIN64">-DWIN64</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DWIN64(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+WIN64, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DWORDS_BIGENDIAN" id="b638.imagick_s_DWORDS_BIGENDIAN">-DWORDS_BIGENDIAN</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DWORDS_BIGENDIAN(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+WORDS_BIGENDIAN, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DWindows95" id="b638.imagick_s_DWindows95">-DWindows95</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DWindows95(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+Windows95, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DX11_PREFERENCES_PATH" id="b638.imagick_s_DX11_PREFERENCES_PATH">-DX11_PREFERENCES_PATH</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DX11_PREFERENCES_PATH(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+X11_PREFERENCES_PATH, not used.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DXS_VERSION" id="b638.imagick_s_DXS_VERSION">-DXS_VERSION</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DXS_VERSION(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+XS_VERSION, not used.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DXlibSpecificationRelease" id="b638.imagick_s_DXlibSpecificationRelease">-DXlibSpecificationRelease</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DXlibSpecificationRelease(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+XlibSpecificationRelease, not sued.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Daccess" id="b638.imagick_s_Daccess">-Daccess</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Daccess(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+access, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dchdir" id="b638.imagick_s_Dchdir">-Dchdir</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dchdir(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+chdir, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dchsize" id="b638.imagick_s_Dchsize">-Dchsize</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dchsize(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+chsize, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dclose" id="b638.imagick_s_Dclose">-Dclose</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dclose(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+close, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dclosedir" id="b638.imagick_s_Dclosedir">-Dclosedir</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dclosedir(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+closedir, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DcmsFLAGS_BLACKPOINTCOMPENSATION" id="b638.imagick_s_DcmsFLAGS_BLACKPOINTCOMPENSATION">-DcmsFLAGS_BLACKPOINTCOMPENSATION</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DcmsFLAGS_BLACKPOINTCOMPENSATION(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+cmsFLAGS_BLACKPOINTCOMPENSATION, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dconst" id="b638.imagick_s_Dconst">-Dconst</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dconst(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+const, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dfdopen" id="b638.imagick_s_Dfdopen">-Dfdopen</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dfdopen(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+fdopen, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dfileno" id="b638.imagick_s_Dfileno">-Dfileno</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dfileno(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+fileno, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dfprintf_l" id="b638.imagick_s_Dfprintf_l">-Dfprintf_l</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dfprintf_l(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+fprintf_l, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dfseek" id="b638.imagick_s_Dfseek">-Dfseek</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dfseek(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+fseek, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dfstat" id="b638.imagick_s_Dfstat">-Dfstat</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dfstat(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+fstat, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dfsync" id="b638.imagick_s_Dfsync">-Dfsync</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dfsync(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+fsync, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dft_encoding_latin_1" id="b638.imagick_s_Dft_encoding_latin_1">-Dft_encoding_latin_1</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dft_encoding_latin_1(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+ft_encoding_latin_1, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dftell" id="b638.imagick_s_Dftell">-Dftell</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dftell(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+ftell, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dftruncate" id="b638.imagick_s_Dftruncate">-Dftruncate</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dftruncate(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+ftruncate, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dgetcwd" id="b638.imagick_s_Dgetcwd">-Dgetcwd</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dgetcwd(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+getcwd, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dgetpid" id="b638.imagick_s_Dgetpid">-Dgetpid</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dgetpid(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+getpid, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dgs_main_instance_DEFINED" id="b638.imagick_s_Dgs_main_instance_DEFINED">-Dgs_main_instance_DEFINED</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dgs_main_instance_DEFINED(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+gs_main_instance_DEFINED, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dhypot" id="b638.imagick_s_Dhypot">-Dhypot</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dhypot(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+hypot, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dinline" id="b638.imagick_s_Dinline">-Dinline</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dinline(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+inline, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Disatty" id="b638.imagick_s_Disatty">-Disatty</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Disatty(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+isatty, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dlocale_t" id="b638.imagick_s_Dlocale_t">-Dlocale_t</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dlocale_t(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+locale_t, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dlt_dlclose" id="b638.imagick_s_Dlt_dlclose">-Dlt_dlclose</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dlt_dlclose(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+lt_dlclose, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dlt_dlerror" id="b638.imagick_s_Dlt_dlerror">-Dlt_dlerror</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dlt_dlerror(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+lt_dlerror, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dlt_dlexit" id="b638.imagick_s_Dlt_dlexit">-Dlt_dlexit</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dlt_dlexit(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+lt_dlexit, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dlt_dlinit" id="b638.imagick_s_Dlt_dlinit">-Dlt_dlinit</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dlt_dlinit(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+lt_dlinit, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dlt_dlopen" id="b638.imagick_s_Dlt_dlopen">-Dlt_dlopen</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dlt_dlopen(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+lt_dlopen, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dlt_dlsetsearchpath" id="b638.imagick_s_Dlt_dlsetsearchpath">-Dlt_dlsetsearchpath</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dlt_dlsetsearchpath(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+lt_dlsetsearchpath, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dlt_dlsym" id="b638.imagick_s_Dlt_dlsym">-Dlt_dlsym</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dlt_dlsym(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+lt_dlsym, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dmagick_attribute" id="b638.imagick_s_Dmagick_attribute">-Dmagick_attribute</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dmagick_attribute(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+magick_attribute, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dmkdir" id="b638.imagick_s_Dmkdir">-Dmkdir</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dmkdir(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+mkdir, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dmmap" id="b638.imagick_s_Dmmap">-Dmmap</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dmmap(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+mmap, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dmsync" id="b638.imagick_s_Dmsync">-Dmsync</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dmsync(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+msync, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dmunmap" id="b638.imagick_s_Dmunmap">-Dmunmap</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dmunmap(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+munmap, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dopen" id="b638.imagick_s_Dopen">-Dopen</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dopen(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+open, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dopendir" id="b638.imagick_s_Dopendir">-Dopendir</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dopendir(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+opendir, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dpclose" id="b638.imagick_s_Dpclose">-Dpclose</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dpclose(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+pclose, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dpopen" id="b638.imagick_s_Dpopen">-Dpopen</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dpopen(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+popen, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dread" id="b638.imagick_s_Dread">-Dread</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dread(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+read, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dreaddir" id="b638.imagick_s_Dreaddir">-Dreaddir</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dreaddir(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+readdir, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Drestrict" id="b638.imagick_s_Drestrict">-Drestrict</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Drestrict(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+restrict, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dseekdir" id="b638.imagick_s_Dseekdir">-Dseekdir</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dseekdir(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+seekdir, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dsetmode" id="b638.imagick_s_Dsetmode">-Dsetmode</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dsetmode(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+setmode, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dspawnvp" id="b638.imagick_s_Dspawnvp">-Dspawnvp</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dspawnvp(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+spawnvp, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dstat" id="b638.imagick_s_Dstat">-Dstat</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dstat(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+stat, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dstrcasecmp" id="b638.imagick_s_Dstrcasecmp">-Dstrcasecmp</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dstrcasecmp(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+strcasecmp, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dstrncasecmp" id="b638.imagick_s_Dstrncasecmp">-Dstrncasecmp</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dstrncasecmp(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+strncasecmp, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dstrtod_l" id="b638.imagick_s_Dstrtod_l">-Dstrtod_l</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dstrtod_l(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+strtod_l, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dsysconf" id="b638.imagick_s_Dsysconf">-Dsysconf</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dsysconf(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+sysconf, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dtelldir" id="b638.imagick_s_Dtelldir">-Dtelldir</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dtelldir(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+telldir, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dtempnam" id="b638.imagick_s_Dtempnam">-Dtempnam</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dtempnam(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+tempnam, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dvfprintf_l" id="b638.imagick_s_Dvfprintf_l">-Dvfprintf_l</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dvfprintf_l(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+vfprintf_l, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dvms" id="b638.imagick_s_Dvms">-Dvms</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dvms(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+vms, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dvsnprintf" id="b638.imagick_s_Dvsnprintf">-Dvsnprintf</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dvsnprintf(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+vsnprintf, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dvsnprintf_l" id="b638.imagick_s_Dvsnprintf_l">-Dvsnprintf_l</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dvsnprintf_l(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+vsnprintf_l , do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dwrite" id="b638.imagick_s_Dwrite">-Dwrite</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dwrite(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+write, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_Dwstat" id="b638.imagick_s_Dwstat">-Dwstat</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]Dwstat(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+wstat, do not change.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DKEY_WOW64_32KEY" id="b638.imagick_s_DKEY_WOW64_32KEY">-DKEY_WOW64_32KEY</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DKEY_WOW64_32KEY(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+This macro is not used in the benchmark sources and may not be set.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DProvideDllMain" id="b638.imagick_s_DProvideDllMain">-DProvideDllMain</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DProvideDllMain(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+This macro is defined when building ImageMagick DLLs on Windows.  It is not used
+  in the benchmark sources and may not be set.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_bench_implicit" id="b638.imagick_s_bench_implicit">
+-D_CH_=XXX,
+-D__CHAR_UNSIGNED__=XXX,
+-D_DEBUG=XXX,
+-D_DLL=XXX,
+-D_LIB=XXX,
+-D_MAGICKCORE_POSIX_SUPPORT_VERSION=XXX,
+-D_MAGICKDLL_=XXX,
+-D_MAGICKLIB_=XXX,
+-D_MAGICKMOD_=XXX,
+-D_POSIX_PTHREAD_SEMANTICS=XXX,
+-DMAGICK_PIXEL_BGRA,
+-DMAGICK_PIXEL_RGBA,
+-DMAGICK_TARGET_CPU=XXX,
+-D_DARWIN_USE_64_BIT_INODE,
+-DMAGICKWAND_WINDOWS_SUPPORT
+</a></li>
+<li class="flagDescRE"><span class="tt">[-/]D(?:MAGICK_PIXEL_(?:BGRA|RGBA)|_CH_|__CHAR_UNSIGNED__|_DEBUG|_DLL|_LIB|_MAGICKCORE_POSIX_SUPPORT_VERSION|_MAGICKDLL_|_MAGICKLIB_|_MAGICKMOD_|_POSIX_PTHREAD_SEMANTICS|MAGICK_TARGET_CPU|_DARWIN_USE_64_BIT_INODE|MAGICKWAND_WINDOWS_SUPPORT)(?:=\S*)?\b</span></li>
+<li class="descText">
+<p>
+These flags are set implicitly by the benchmark sources and may not be
+set explicitly.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_CLPERFMARKER" id="b638.imagick_s_DMAGICKCORE_CLPERFMARKER">-DMAGICKCORE_CLPERFMARKER</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_CLPERFMARKER(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+This macro is used to enable OpenCL perf markers, and may not be used for reportable runs.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_C99math" id="b638.imagick_s_C99math">
+  -DMAGICKCORE_HAVE_ACOSH,
+  -DMAGICKCORE_HAVE_ASINH,
+  -DMAGICKCORE_HAVE_ATANH,
+  -DMAGICKCORE_HAVE_ISNAN
+</a></li>
+<li class="flagDescRE"><span class="tt">[-/]DMAGICKCORE_HAVE_(?:ACOSH|ASINH|ATANH|ISNAN)\b</span></li>
+<li class="descText">
+<p>
+These macros are used to indicate the availablilty of some standard C99 math
+functions.  Unless explicitly disabled by their SPEC_NO_whatever counterparts,
+they are defined by default.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_POSIX_FALLOCATE" id="b638.imagick_s_DMAGICKCORE_HAVE_POSIX_FALLOCATE">-DMAGICKCORE_HAVE_POSIX_FALLOCATE</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_POSIX_FALLOCATE(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+This macro causes the posix_fallocate() function to be used in a couple of
+  places; in the benchmark the only effect might be to slow execution down
+  a little bit.  It may not be used for reportable runs.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_HAVE_SOCKET" id="b638.imagick_s_DMAGICKCORE_HAVE_SOCKET">-DMAGICKCORE_HAVE_SOCKET</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_HAVE_SOCKET(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+This macro causes the distributed pixel cache server to be enabled.  The
+  benchmark should not use any kind of pixel cache other than in main memory,
+  but this option still may not be used for a reportable run.
+</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="flagDesc">
+<ul class="flagDesc">
+<li class="flagName"><a name="b638.imagick_s_DMAGICKCORE_ZERO_CONFIGURATION_SUPPORT" id="b638.imagick_s_DMAGICKCORE_ZERO_CONFIGURATION_SUPPORT">-DMAGICKCORE_ZERO_CONFIGURATION_SUPPORT</a></li>
+<li class="flagDescRE"><span class="tt">(?:^|(?&lt;=\s))[-/]DMAGICKCORE_ZERO_CONFIGURATION_SUPPORT(?:\([^\)]+\))?(?:=\S*)?(?=\s|$)</span></li>
+<li class="descText">
+<p>
+The MAGICKCORE_ZERO_CONFIGURATION_SUPPORT causes the memory allocation
+  routines to change completely.  It may not be used in a reportable run.
+</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+
+</div>
+<hr />
+</body>
+</html>

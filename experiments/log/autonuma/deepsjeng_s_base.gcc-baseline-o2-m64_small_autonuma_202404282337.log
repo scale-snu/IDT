@@ -1,0 +1,139 @@
+Execution File:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Num of Programs:  4
+Program Path:     /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:ref.txt
+option1:ref.txt
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 1
+Directory [1]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 2
+Directory [2]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 3
+Directory [3]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Process Start
+Process Start
+Process Start
+Execution END: -1
+Execution Time (2) => 498825.00 ns
+Execution File:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Num of Programs:  4
+Program Path:     /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:ref.txt
+option1:ref.txt
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 1
+Directory [1]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 2
+Directory [2]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 3
+Directory [3]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Process Start
+Process Start
+Process Start
+Execution END: -1
+Execution Time (6) => 491059.00 ns
+Execution File:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Num of Programs:  4
+Program Path:     /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:ref.txt
+option1:ref.txt
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 1
+Directory [1]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 2
+Directory [2]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 3
+Directory [3]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 35269
+Execution END: -1
+Execution Time (10) => 607918.00 ns
+Execution File:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Num of Programs:  4
+Program Path:     /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:ref.txt
+option1:ref.txt
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 1
+Directory [1]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 2
+Directory [2]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 3
+Directory [3]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 35269
+Wait PID: 35270
+Execution END: -1
+Execution Time (14) => 474831.00 ns
+Execution File:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Num of Programs:  4
+Program Path:     /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+Progarm Options:  /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+i:1, argv[5]:ref.txt
+option1:ref.txt
+tmp_node: 0
+Local DRAM Allocation
+Core: 0
+Directory [0]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 1
+Directory [1]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 2
+Directory [2]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Core: 3
+Directory [3]:   /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/
+exe_path: /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64
+Process Start
+Process Start
+Process Start
+Process Start
+Wait PID: 35269
+Wait PID: 35270
+Execution Time (0) => 711047.00 ns
+Execution Time (4) => 712787.00 ns
+Wait PID: 35272
+Wait PID: 35273
+Execution Time (8) => 804014.00 ns
+Execution Time (12) => 674516.00 ns
+('Full Command: ', '/scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/second_wrapper 0 4 /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/ /scale/cal/home-interns/jschang0215/IDT/experiments/workloads/SPEC/app/631.deepsjeng_s/run/run_base_refspeed_gcc-baseline-o2-m64.0000/deepsjeng_s_base.gcc-baseline-o2-m64  ref.txt ')
+execution_time 0.36 (s)

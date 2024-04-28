@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <link rel="STYLESHEET" href="https://www.spec.org/cpu2017/Docs/css/cpudocs.css" type="text/css" />
+<title>631.deepsjeng_s: SPEC CPU2017 Benchmark Description</title>
+</head>
+<body>
+<div style="text-align: center">
+<h1>631.deepsjeng_s<br />
+SPEC CPU2017 Benchmark Description</h1>
+</div>
+
+<h3>Benchmark Name</h3>
+
+<p>631.deepsjeng_s</p>
+
+
+<h3>Benchmark Authors</h3>
+
+<p>Gian-Carlo Pascutto &lt;gcp &#x5b;at&#x5d; sjeng.org&gt;
+</p>
+
+
+<h3>Benchmark Program General Category</h3>
+
+<p>Artificial Intelligence (alpha-beta tree search &amp; pattern
+recognition)</p>
+
+
+<h3>Benchmark Description</h3>
+
+<p>631.deepsjeng_s is based on Deep Sjeng WC2008, the 2008 World Computer Speed-Chess Champion.
+Deep Sjeng is a rewrite of the older Sjeng-Free program, focused on obtaining
+the highest possible playing strength.</p>
+
+<p>It attempts to find the best move via a combination of alpha-beta tree
+searching, advanced move ordering, ositional evaluation and heuristic forward 
+pruning. Practically, it will explore the tree of variations resulting from a 
+given position to a given base depth, extending interesting variations
+but discarding doubtful or irrelevant ones. From this tree the
+optimal line of play for both players ("principal variation") is
+determined, as well as a score reflecting the balance of power
+between the two.</p>
+
+<p>
+Specific advances since the previous version include the use of bitboards
+based on Kindergarten/Magic attack calculators, an evaluation function
+with much deeper positional understanding, and a search function that is
+significantly better at discarding irrelevant subtrees. The overall program
+structure has been optimized for speed as well, dropping support for everything
+besides classical chess.
+</p>
+
+<p>The rate version of the benchmark is compiled with <tt>SMALL_MEMORY</tt>.
+It was observed to require around 700 MiB of memory during pre-release testing
+on one of SPEC's Linux systems.  </p>
+
+<p>The speed version is compiled with <tt>BIG_MEMORY</tt>, and uses around 10x
+as much memory as the rate version.  Having more memory allows more
+information to be stored about every position, notably if there are threats,
+or if there is only one good move. This information then causes some positions
+to be investigated deeper, which means it will take longer to reach the same
+search depth, but the result will be more accurate.</p>
+
+
+<h3>Input Description</h3>
+
+<p>Both the rate and speed versions use the same inputs, a textfile containing
+alternations of:</p>
+
+<ol>
+<li>a chess position in the standard Forsyth-Edwards Notation
+(FEN) with optional Extended Position Description (EPD) tags, and
+</li>
+
+<li>the depth to which this position should be analyzed, in
+half-moves (ply depth).</li>
+</ol>
+
+
+<h3>Output Description</h3>
+
+<p>The output consists, per position, of some side information (textual
+display of the chessboard, phase of the game, used parameters...) followed by
+the output from the tree searching module as it progresses. This is formatted
+as follows:</p>
+
+<ol>
+<li>Attained depth in half-moves (plies)</li>
+
+<li>Score for the player that is to move, in equivalents of 1/100ths
+pawn</li>
+
+<li>Number of positions investigated</li>
+
+<li>The optimal line of play ("principle variation").</li>
+</ol>
+
+<p>The output is validated against a SPEC-supplied set of expected outputs.
+Note that the expected output differs between the rate and speed versions.</p>
+
+
+<h3>Programming Language</h3>
+
+<p>C++</p>
+
+
+<h3>Known portability issues</h3>
+
+<p>None.</p>
+
+<h3 id="license">Sources and Licensing</h3>
+
+<p>Deep Sjeng (which became 631.deepsjeng_s) is licensed directly to SPEC by the author, Gian-Carlo Pascutto.</p>
+
+
+<h3>References</h3>
+
+<ul>
+<li>Sjeng 11.2 &amp; Deep Sjeng: <a href=
+"http://www.sjeng.org/">http://www.sjeng.org</a></li>
+
+<li>Portable Game Notation Specification (including FEN/EPD):
+<a href=
+"http://www.tim-mann.org/Standard">http://www.tim-mann.org/Standard</a></li>
+
+<li>Kindergarten/Magic bitboards: <a href="http://chessprogramming.wikispaces.com/Kindergarten+Bitboards">Chess Programming Wiki article</a></li>
+</ul>
+
+
+
+
+</body>
+</html>

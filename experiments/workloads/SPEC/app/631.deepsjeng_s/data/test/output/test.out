@@ -1,0 +1,58 @@
+Deep Sjeng version 3.2 SPEC, Copyright (C) 2000-2009 Gian-Carlo Pascutto
+Allocated 150000000 hash entries, totalling 7200000000 bytes.
+Analyzing 15 plies...
+  +----+----+----+----+----+----+----+----+
+8 | *R |    |    | *Q | *K |    |    | *R |
+  +----+----+----+----+----+----+----+----+
+7 | *P | *P | *P |    | *B |    | *P | *P |
+  +----+----+----+----+----+----+----+----+
+6 |    |    | *N |    | *P |    |    |    |
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | *P |  P |    | *N |    |
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |  P |    |    | *B |    |
+  +----+----+----+----+----+----+----+----+
+3 |    |    |  P |  B |    |  N |  N |    |
+  +----+----+----+----+----+----+----+----+
+2 |  P |  P |    |    |    |    |  P |  P |
+  +----+----+----+----+----+----+----+----+
+1 |  R |    |  B |  Q |  K |    |    |  R |
+  +----+----+----+----+----+----+----+----+
+
+     a    b    c    d    e    f    g    h
+
+Opening phase.
+Time for move : 99999999
+ 3     -43     0      750  O-O ??
+ 3     -18     0     1153  O-O Nxf3+ Rxf3 Bxf3 Qxf3 
+ 3     -10     0     1733  Bxg5 Bxg5 h3 Bf4 
+ 3     -10     0     2353  Bxg5 Bxg5 h3 Bf4 
+ 4     -11     0     3161  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 
+ 4     -11     0     5561  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 
+ 5       1     0     8798  Bxg5 Bxg5 Qb3 Bxf3 gxf3 Qc8 Qa3 Be3 
+ 5       1     0     9543  Bxg5 Bxg5 Qb3 Bxf3 gxf3 Qc8 Qa3 Be3 
+ 6      31     0    11662  Bxg5 !!
+ 6      35     0    13203  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Kc2 O-O 
+ 6      35     0    14196  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Kc2 O-O 
+ 7      35     0    16333  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Kc2 O-O 
+ 7      35     0    21839  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Kc2 O-O 
+ 8      58     0    31092  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Bg6+ Kd7 Qb3 Kc8 Kc2 
+ 8      58     0    33574  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 h6 Bg6+ Kd7 Qb3 Kc8 Kc2 
+ 9      56     0    85090  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Bf4+ Kc2 Raf8 Qe2 Kc8 Qb5 Be3 
+ 9      56     0    92018  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Bf4+ Kc2 Raf8 Qe2 Kc8 Qb5 Be3 
+10      57     0   201398  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Raf8 Qb3 Kc8 Kc2 Rf4 Bd3 Rxh1 Rxh1 Rxg4 
+10      57     0   254780  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Raf8 Qb3 Kc8 Kc2 Rf4 Bd3 Rxh1 Rxh1 Rxg4 
+11      49     0   459068  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Raf8 Qb3 Kc8 Kc2 Qf7 Raf1 Qf4 Kb1 Qxg4 
+11      49     0   495980  Bxg5 Bxg5 h3 Bf4 hxg4 Bxg3+ Kd2 Qe7 Bg6+ Kd7 Bxh7 Raf8 Qb3 Kc8 Kc2 Qf7 Raf1 Qf4 Kb1 Qxg4 
+12      49     0  1247935  Bxg5 Bxg5 h3 Bxf3 Qxf3 Qe7 Qh5+ Kd7 h4 Bf4 O-O g5 Ne2 Be3+ Kh1 Kc8 Rf7 
+12      49     0  1321354  Bxg5 Bxg5 h3 Bxf3 Qxf3 Qe7 Qh5+ Kd7 h4 Bf4 O-O g5 Ne2 Be3+ Kh1 Kc8 Rf7 
+13      30     0  2441024  Bxg5 Bxg5 h3 Bxf3 Qxf3 Qe7 Qh5+ Kd7 h4 Bf4 Qg4 Bxg3+ Qxg3 Raf8 O-O-O Kc8 Rdf1 g6 Bb5 Rxf1+ Rxf1 Rf8 Rxf8+ Qxf8 Qg5 Qf2 Bxc6 bxc6 
+13      41     0  4073389  h3 Bxf3 gxf3 Nf7 f4 g6 Rg1 Qd7 Bd2 O-O-O Qe2 Rde8 O-O-O Rhf8 Kb1 a6 
+13      41     0  4074107  h3 Bxf3 gxf3 Nf7 f4 g6 Rg1 Qd7 Bd2 O-O-O Qe2 Rde8 O-O-O Rhf8 Kb1 a6 
+14      40     0  5455288  h3 Bxf3 gxf3 Nf7 f4 g6 Rg1 Qd7 Be3 O-O-O Qe2 Rhf8 O-O-O Rde8 Kb1 Kb8 Qf3 
+14      40     0  5681348  h3 Bxf3 gxf3 Nf7 f4 g6 Rg1 Qd7 Be3 O-O-O Qe2 Rhf8 O-O-O Rde8 Kb1 Kb8 Qf3 
+15      47     0  8915002  h3 Bxf3 gxf3 Nf7 f4 Bh4 Rg1 O-O Be3 Nh6 Qf3 Nf5 Bxf5 Rxf5 O-O-O Bxg3 Qxg3 g6 Kb1 Qe7 Rg2 Raf8 
+15      47     0  9568416  h3 Bxf3 gxf3 Nf7 f4 Bh4 Rg1 O-O Be3 Nh6 Qf3 Nf5 Bxf5 Rxf5 O-O-O Bxg3 Qxg3 g6 Kb1 Qe7 Rg2 Raf8 
+
+Nodes: 9568416 (65.27% qnodes)
+

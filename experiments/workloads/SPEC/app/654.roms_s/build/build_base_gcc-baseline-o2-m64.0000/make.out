@@ -1,0 +1,589 @@
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_kinds.F90 -o mod_kinds.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 bbl.F90 -o bbl.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_bbl.F90 -o mod_bbl.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_sediment.F90 -o mod_sediment.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_stepping.F90 -o mod_stepping.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_strings.F90 -o mod_strings.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_parallel.F90 -o mod_parallel.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_iounits.F90 -o mod_iounits.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 bc_2d.F90 -o bc_2d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 exchange_2d.F90 -o exchange_2d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_param.F90 -o mod_param.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_grid.F90 -o mod_grid.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_ocean.F90 -o mod_ocean.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_forces.F90 -o mod_forces.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 bc_3d.F90 -o bc_3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_scalars.F90 -o mod_scalars.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 conv_2d.F90 -o conv_2d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 bvf_mix.F90 -o bvf_mix.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 bc_bry2d.F90 -o bc_bry2d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 bc_bry3d.F90 -o bc_bry3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 exchange_3d.F90 -o exchange_3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 conv_bry2d.F90 -o conv_bry2d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 diag.F90 -o diag.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 bulk_flux.F90 -o bulk_flux.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 conv_3d.F90 -o conv_3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_mixing.F90 -o mod_mixing.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 conv_bry3d.F90 -o conv_bry3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_eclight.F90 -o mod_eclight.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_sources.F90 -o mod_sources.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 strings.F90 -o strings.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_biology.F90 -o mod_biology.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mp_exchange.F90 -o mp_exchange.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_clima.F90 -o mod_clima.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 frc_adjust.F90 -o frc_adjust.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 forcing.F90 -o forcing.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_coupling.F90 -o mod_coupling.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_boundary.F90 -o mod_boundary.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_obs.F90 -o mod_obs.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_ncparam.F90 -o mod_ncparam.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 distribute.F90 -o distribute.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_data.F90 -o get_data.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_tides.F90 -o mod_tides.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 analytical.F90 -o analytical.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_idata.F90 -o get_idata.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 gls_prestep.F90 -o gls_prestep.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nf_fread3d.F90 -o nf_fread3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 tkebc_im.F90 -o tkebc_im.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nf_fread4d.F90 -o nf_fread4d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 gls_corstep.F90 -o gls_corstep.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 hmixing.F90 -o hmixing.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 ini_fields.F90 -o ini_fields.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 t3dbc_im.F90 -o t3dbc_im.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_depth.F90 -o set_depth.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 u2dbc_im.F90 -o u2dbc_im.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 u3dbc_im.F90 -o u3dbc_im.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 v2dbc_im.F90 -o v2dbc_im.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 v3dbc_im.F90 -o v3dbc_im.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 zetabc.F90 -o zetabc.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_eoscoef.F90 -o mod_eoscoef.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_massflux.F90 -o set_massflux.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_netcdf.F90 -o mod_netcdf.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 initial.F90 -o initial.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 stiffness.F90 -o stiffness.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 omega.F90 -o omega.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 rho_eos.F90 -o rho_eos.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 metrics.F90 -o metrics.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 state_addition.F90 -o state_addition.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 state_copy.F90 -o state_copy.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 ocean_coupler.F90 -o ocean_coupler.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 roms_export.F90 -o roms_export.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_fourdvar.F90 -o mod_fourdvar.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_coupler.F90 -o mod_coupler.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 roms_import.F90 -o roms_import.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_storage.F90 -o mod_storage.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wpoints.F90 -o wpoints.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 shapiro.F90 -o shapiro.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 lmd_swfrac.F90 -o lmd_swfrac.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 interp_floats.F90 -o interp_floats.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 lmd_bkpp.F90 -o lmd_bkpp.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 lmd_skpp.F90 -o lmd_skpp.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 lmd_vmix.F90 -o lmd_vmix.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 ini_adjust.F90 -o ini_adjust.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 main2d.F90 -o main2d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_diags.F90 -o mod_diags.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 oi_update.F90 -o oi_update.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 obc_adjust.F90 -o obc_adjust.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 dotproduct.F90 -o dotproduct.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_average.F90 -o mod_average.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 radiation_stress.F90 -o radiation_stress.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_avg.F90 -o set_avg.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_tides.F90 -o set_tides.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 obc_volcons.F90 -o obc_volcons.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wetdry.F90 -o wetdry.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_vbc.F90 -o set_vbc.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_floats.F90 -o mod_floats.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 utility.F90 -o utility.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 vwalk_floats.F90 -o vwalk_floats.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 step_floats.F90 -o step_floats.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 main3d.F90 -o main3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 biology.F90 -o biology.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_zeta.F90 -o set_zeta.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 prsgrd.F90 -o prsgrd.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 uv3dmix.F90 -o uv3dmix.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wvelocity.F90 -o wvelocity.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 t3dmix.F90 -o t3dmix.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 step2d.F90 -o step2d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 sediment.F90 -o sediment.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 pre_step3d.F90 -o pre_step3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 my25_prestep.F90 -o my25_prestep.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 rhs3d.F90 -o rhs3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 my25_corstep.F90 -o my25_corstep.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 sed_bed.F90 -o sed_bed.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 step3d_t.F90 -o step3d_t.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 step3d_uv.F90 -o step3d_uv.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 sed_surface.F90 -o sed_surface.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 sed_settling.F90 -o sed_settling.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 sed_fluxes.F90 -o sed_fluxes.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 sed_bedload.F90 -o sed_bedload.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 output.F90 -o output.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_2dfld.F90 -o set_2dfld.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 abort.F90 -o abort.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_3dfld.F90 -o set_3dfld.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mpdata_adiff.F90 -o mpdata_adiff.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 cgradient.F90 -o cgradient.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_data.F90 -o set_data.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 ocean_control.F90 -o ocean_control.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 back_cost.F90 -o back_cost.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nf_fread2d_bry.F90 -o nf_fread2d_bry.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nrutil.F90 -o nrutil.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nf_fread2d.F90 -o nf_fread2d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nf_fread3d_bry.F90 -o nf_fread3d_bry.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 state_initialize.F90 -o state_initialize.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 cost_grad.F90 -o cost_grad.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 state_dotprod.F90 -o state_dotprod.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nf_fwrite2d.F90 -o nf_fwrite2d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 state_scale.F90 -o state_scale.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nf_fwrite3d.F90 -o nf_fwrite3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 white_noise.F90 -o white_noise.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 propagator.F90 -o propagator.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 sum_grad.F90 -o sum_grad.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 state_product.F90 -o state_product.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 random_ic.F90 -o random_ic.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 posterior_var.F90 -o posterior_var.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 checkerror.F90 -o checkerror.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 checkadj.F90 -o checkadj.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 close_io.F90 -o close_io.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 checkvars.F90 -o checkvars.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 packing.F90 -o packing.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 congrad.F90 -o congrad.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 normalization.F90 -o normalization.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_var.F90 -o def_var.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_dim.F90 -o def_dim.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 zeta_balance.F90 -o zeta_balance.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_diags.F90 -o def_diags.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_gst.F90 -o def_gst.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_avg.F90 -o def_avg.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_floats.F90 -o def_floats.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_error.F90 -o def_error.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 checkdefs.F90 -o checkdefs.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 posterior.F90 -o posterior.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_impulse.F90 -o def_impulse.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_hessian.F90 -o def_hessian.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_rst.F90 -o def_rst.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_ini.F90 -o def_ini.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_lanczos.F90 -o def_lanczos.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_mod.F90 -o def_mod.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 extract_obs.F90 -o extract_obs.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_norm.F90 -o def_norm.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_tides.F90 -o def_tides.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 gasdev.F90 -o gasdev.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 frc_weak.F90 -o frc_weak.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_2dfldr.F90 -o get_2dfldr.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_station.F90 -o def_station.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_his.F90 -o def_his.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_2dfld.F90 -o get_2dfld.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_3dfld.F90 -o get_3dfld.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 extract_sta.F90 -o extract_sta.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_cycle.F90 -o get_cycle.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_3dfldr.F90 -o get_3dfldr.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 def_info.F90 -o def_info.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_gst.F90 -o get_gst.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_bounds.F90 -o get_bounds.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_date.F90 -o get_date.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 ran_state.F90 -o ran_state.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_ngfld.F90 -o get_ngfld.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_grid.F90 -o get_grid.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 grid_coords.F90 -o grid_coords.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_varcoords.F90 -o get_varcoords.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_ngfldr.F90 -o get_ngfldr.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 ludcmp.F90 -o ludcmp.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 ini_lanczos.F90 -o ini_lanczos.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 lubksb.F90 -o lubksb.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 interpolate.F90 -o interpolate.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 ran1.F90 -o ran1.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mp_routines.F90 -o mp_routines.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nf_fwrite3d_bry.F90 -o nf_fwrite3d_bry.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 obs_cost.F90 -o obs_cost.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nf_fwrite2d_bry.F90 -o nf_fwrite2d_bry.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 obs_depth.F90 -o obs_depth.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 nf_fwrite4d.F90 -o nf_fwrite4d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 obs_read.F90 -o obs_read.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 obs_initial.F90 -o obs_initial.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_2dfldr.F90 -o set_2dfldr.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 rep_matrix.F90 -o rep_matrix.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 obs_write.F90 -o obs_write.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 regrid.F90 -o regrid.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_diags.F90 -o set_diags.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_3dfldr.F90 -o set_3dfldr.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_ngfld.F90 -o set_ngfld.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_ngfldr.F90 -o set_ngfldr.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 stats_modobs.F90 -o stats_modobs.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_weights.F90 -o set_weights.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 get_state.F90 -o get_state.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 set_scoord.F90 -o set_scoord.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 timers.F90 -o timers.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_diags.F90 -o wrt_diags.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_nesting.F90 -o mod_nesting.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_floats.F90 -o wrt_floats.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_avg.F90 -o wrt_avg.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_gst.F90 -o wrt_gst.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_error.F90 -o wrt_error.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_impulse.F90 -o wrt_impulse.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_hessian.F90 -o wrt_hessian.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_bbl.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_bbl.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_tides.F90 -o wrt_tides.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_ini.F90 -o wrt_ini.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_kinds.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_kinds.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 mod_arrays.F90 -o mod_arrays.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o bbl.fppized.o -I. -g -O2 -fopt-info -fopenmp bbl.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_station.F90 -o wrt_station.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_rst.F90 -o wrt_rst.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_sediment.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_sediment.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o conv_2d.fppized.o -I. -g -O2 -fopt-info -fopenmp conv_2d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_strings.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_strings.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o bvf_mix.fppized.o -I. -g -O2 -fopt-info -fopenmp bvf_mix.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o conv_bry3d.fppized.o -I. -g -O2 -fopt-info -fopenmp conv_bry3d.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 master.F90 -o master.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_his.F90 -o wrt_his.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mp_exchange.fppized.o -I. -g -O2 -fopt-info -fopenmp mp_exchange.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o distribute.fppized.o -I. -g -O2 -fopt-info -fopenmp distribute.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_boundary.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_boundary.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o conv_3d.fppized.o -I. -g -O2 -fopt-info -fopenmp conv_3d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o conv_bry2d.fppized.o -I. -g -O2 -fopt-info -fopenmp conv_bry2d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_biology.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_biology.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 esmf_roms.F90 -o esmf_roms.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_eclight.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_eclight.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 wrt_info.F90 -o wrt_info.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o frc_adjust.fppized.o -I. -g -O2 -fopt-info -fopenmp frc_adjust.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_obs.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_obs.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o forcing.fppized.o -I. -g -O2 -fopt-info -fopenmp forcing.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_sources.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_sources.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_tides.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_tides.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_clima.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_clima.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o tkebc_im.fppized.o -I. -g -O2 -fopt-info -fopenmp tkebc_im.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o gls_prestep.fppized.o -I. -g -O2 -fopt-info -fopenmp gls_prestep.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o hmixing.fppized.o -I. -g -O2 -fopt-info -fopenmp hmixing.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o gls_corstep.fppized.o -I. -g -O2 -fopt-info -fopenmp gls_corstep.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_eoscoef.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_eoscoef.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_coupler.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_coupler.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_idata.fppized.o -I. -g -O2 -fopt-info -fopenmp get_idata.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o ocean_coupler.fppized.o -I. -g -O2 -fopt-info -fopenmp ocean_coupler.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o ini_adjust.fppized.o -I. -g -O2 -fopt-info -fopenmp ini_adjust.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_fourdvar.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_fourdvar.fppized.f90
+/home/ybmoon/cpu2017/bin/specperl /home/ybmoon/cpu2017/bin/harness/specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 inp_par.F90 -o inp_par.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o interp_floats.fppized.o -I. -g -O2 -fopt-info -fopenmp interp_floats.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o roms_import.fppized.o -I. -g -O2 -fopt-info -fopenmp roms_import.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wpoints.fppized.o -I. -g -O2 -fopt-info -fopenmp wpoints.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_storage.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_storage.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o roms_export.fppized.o -I. -g -O2 -fopt-info -fopenmp roms_export.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o dotproduct.fppized.o -I. -g -O2 -fopt-info -fopenmp dotproduct.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o oi_update.fppized.o -I. -g -O2 -fopt-info -fopenmp oi_update.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o lmd_bkpp.fppized.o -I. -g -O2 -fopt-info -fopenmp lmd_bkpp.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o strings.fppized.o -I. -g -O2 -fopt-info -fopenmp strings.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o obc_adjust.fppized.o -I. -g -O2 -fopt-info -fopenmp obc_adjust.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_diags.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_diags.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_avg.fppized.o -I. -g -O2 -fopt-info -fopenmp set_avg.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o radiation_stress.fppized.o -I. -g -O2 -fopt-info -fopenmp radiation_stress.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o obc_volcons.fppized.o -I. -g -O2 -fopt-info -fopenmp obc_volcons.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_floats.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_floats.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_average.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_average.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o main2d.fppized.o -I. -g -O2 -fopt-info -fopenmp main2d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o biology.fppized.o -I. -g -O2 -fopt-info -fopenmp biology.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wetdry.fppized.o -I. -g -O2 -fopt-info -fopenmp wetdry.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o my25_corstep.fppized.o -I. -g -O2 -fopt-info -fopenmp my25_corstep.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_tides.fppized.o -I. -g -O2 -fopt-info -fopenmp set_tides.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o vwalk_floats.fppized.o -I. -g -O2 -fopt-info -fopenmp vwalk_floats.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o sediment.fppized.o -I. -g -O2 -fopt-info -fopenmp sediment.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o step_floats.fppized.o -I. -g -O2 -fopt-info -fopenmp step_floats.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o my25_prestep.fppized.o -I. -g -O2 -fopt-info -fopenmp my25_prestep.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o sed_settling.fppized.o -I. -g -O2 -fopt-info -fopenmp sed_settling.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o sed_bedload.fppized.o -I. -g -O2 -fopt-info -fopenmp sed_bedload.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o sed_fluxes.fppized.o -I. -g -O2 -fopt-info -fopenmp sed_fluxes.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o sed_surface.fppized.o -I. -g -O2 -fopt-info -fopenmp sed_surface.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mpdata_adiff.fppized.o -I. -g -O2 -fopt-info -fopenmp mpdata_adiff.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o sed_bed.fppized.o -I. -g -O2 -fopt-info -fopenmp sed_bed.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o cost_grad.fppized.o -I. -g -O2 -fopt-info -fopenmp cost_grad.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o posterior_var.fppized.o -I. -g -O2 -fopt-info -fopenmp posterior_var.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o posterior.fppized.o -I. -g -O2 -fopt-info -fopenmp posterior.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o normalization.fppized.o -I. -g -O2 -fopt-info -fopenmp normalization.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o packing.fppized.o -I. -g -O2 -fopt-info -fopenmp packing.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o cgradient.fppized.o -I. -g -O2 -fopt-info -fopenmp cgradient.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o back_cost.fppized.o -I. -g -O2 -fopt-info -fopenmp back_cost.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o random_ic.fppized.o -I. -g -O2 -fopt-info -fopenmp random_ic.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o propagator.fppized.o -I. -g -O2 -fopt-info -fopenmp propagator.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o sum_grad.fppized.o -I. -g -O2 -fopt-info -fopenmp sum_grad.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o zeta_balance.fppized.o -I. -g -O2 -fopt-info -fopenmp zeta_balance.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o utility.fppized.o -I. -g -O2 -fopt-info -fopenmp utility.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o congrad.fppized.o -I. -g -O2 -fopt-info -fopenmp congrad.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_error.fppized.o -I. -g -O2 -fopt-info -fopenmp def_error.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_avg.fppized.o -I. -g -O2 -fopt-info -fopenmp def_avg.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_diags.fppized.o -I. -g -O2 -fopt-info -fopenmp def_diags.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_hessian.fppized.o -I. -g -O2 -fopt-info -fopenmp def_hessian.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_gst.fppized.o -I. -g -O2 -fopt-info -fopenmp def_gst.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_ini.fppized.o -I. -g -O2 -fopt-info -fopenmp def_ini.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_mod.fppized.o -I. -g -O2 -fopt-info -fopenmp def_mod.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_lanczos.fppized.o -I. -g -O2 -fopt-info -fopenmp def_lanczos.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_floats.fppized.o -I. -g -O2 -fopt-info -fopenmp def_floats.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_impulse.fppized.o -I. -g -O2 -fopt-info -fopenmp def_impulse.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_tides.fppized.o -I. -g -O2 -fopt-info -fopenmp def_tides.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o extract_obs.fppized.o -I. -g -O2 -fopt-info -fopenmp extract_obs.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_station.fppized.o -I. -g -O2 -fopt-info -fopenmp def_station.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_norm.fppized.o -I. -g -O2 -fopt-info -fopenmp def_norm.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o frc_weak.fppized.o -I. -g -O2 -fopt-info -fopenmp frc_weak.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_3dfldr.fppized.o -I. -g -O2 -fopt-info -fopenmp get_3dfldr.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o ini_lanczos.fppized.o -I. -g -O2 -fopt-info -fopenmp ini_lanczos.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_gst.fppized.o -I. -g -O2 -fopt-info -fopenmp get_gst.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_2dfldr.fppized.o -I. -g -O2 -fopt-info -fopenmp get_2dfldr.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_grid.fppized.o -I. -g -O2 -fopt-info -fopenmp get_grid.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_ngfldr.fppized.o -I. -g -O2 -fopt-info -fopenmp get_ngfldr.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o grid_coords.fppized.o -I. -g -O2 -fopt-info -fopenmp grid_coords.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o obs_cost.fppized.o -I. -g -O2 -fopt-info -fopenmp obs_cost.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o obs_depth.fppized.o -I. -g -O2 -fopt-info -fopenmp obs_depth.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o obs_initial.fppized.o -I. -g -O2 -fopt-info -fopenmp obs_initial.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o obs_write.fppized.o -I. -g -O2 -fopt-info -fopenmp obs_write.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o obs_read.fppized.o -I. -g -O2 -fopt-info -fopenmp obs_read.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mp_routines.fppized.o -I. -g -O2 -fopt-info -fopenmp mp_routines.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_2dfldr.fppized.o -I. -g -O2 -fopt-info -fopenmp set_2dfldr.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o rep_matrix.fppized.o -I. -g -O2 -fopt-info -fopenmp rep_matrix.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o lubksb.fppized.o -I. -g -O2 -fopt-info -fopenmp lubksb.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_3dfldr.fppized.o -I. -g -O2 -fopt-info -fopenmp set_3dfldr.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_diags.fppized.o -I. -g -O2 -fopt-info -fopenmp set_diags.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_ngfldr.fppized.o -I. -g -O2 -fopt-info -fopenmp set_ngfldr.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o stats_modobs.fppized.o -I. -g -O2 -fopt-info -fopenmp stats_modobs.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_diags.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_diags.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_error.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_error.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_avg.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_avg.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_gst.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_gst.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_floats.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_floats.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_ini.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_ini.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_hessian.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_hessian.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_nesting.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_nesting.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_impulse.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_impulse.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o esmf_roms.fppized.o -I. -g -O2 -fopt-info -fopenmp esmf_roms.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o ludcmp.fppized.o -I. -g -O2 -fopt-info -fopenmp ludcmp.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_station.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_station.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_tides.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_tides.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_param.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_param.fppized.f90
+mod_param.fppized.f90:1559:0: note: loop turned into non-loop; it never loops.
+mod_param.fppized.f90:1559:0: note: loop with 2 iterations completely unrolled
+mod_param.fppized.f90:1548:0: note: loop turned into non-loop; it never loops.
+mod_param.fppized.f90:1548:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o get_date.fppized.o -I. -g -O2 -fopt-info -fopenmp get_date.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o nrutil.fppized.o -I. -g -O2 -fopt-info -fopenmp nrutil.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_stepping.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_stepping.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_iounits.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_iounits.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o ran_state.fppized.o -I. -g -O2 -fopt-info -fopenmp ran_state.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o exchange_2d.fppized.o -I. -g -O2 -fopt-info -fopenmp exchange_2d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o state_scale.fppized.o -I. -g -O2 -fopt-info -fopenmp state_scale.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o state_initialize.fppized.o -I. -g -O2 -fopt-info -fopenmp state_initialize.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o ran1.fppized.o -I. -g -O2 -fopt-info -fopenmp ran1.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o exchange_3d.fppized.o -I. -g -O2 -fopt-info -fopenmp exchange_3d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o state_copy.fppized.o -I. -g -O2 -fopt-info -fopenmp state_copy.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o state_addition.fppized.o -I. -g -O2 -fopt-info -fopenmp state_addition.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_coupling.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_coupling.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o gasdev.fppized.o -I. -g -O2 -fopt-info -fopenmp gasdev.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o shapiro.fppized.o -I. -g -O2 -fopt-info -fopenmp shapiro.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_scalars.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_scalars.fppized.f90
+mod_scalars.fppized.f90:2356:0: note: loop turned into non-loop; it never loops.
+mod_scalars.fppized.f90:2356:0: note: loop with 5 iterations completely unrolled
+mod_scalars.fppized.f90:2257:0: note: loop turned into non-loop; it never loops.
+mod_scalars.fppized.f90:2257:0: note: loop with 2 iterations completely unrolled
+mod_scalars.fppized.f90:2311:0: note: loop turned into non-loop; it never loops.
+mod_scalars.fppized.f90:2311:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o mod_forces.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_forces.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_parallel.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_parallel.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_ocean.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_ocean.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o checkerror.fppized.o -I. -g -O2 -fopt-info -fopenmp checkerror.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o checkadj.fppized.o -I. -g -O2 -fopt-info -fopenmp checkadj.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o timers.fppized.o -I. -g -O2 -fopt-info -fopenmp timers.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o bc_bry2d.fppized.o -I. -g -O2 -fopt-info -fopenmp bc_bry2d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_zeta.fppized.o -I. -g -O2 -fopt-info -fopenmp set_zeta.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_weights.fppized.o -I. -g -O2 -fopt-info -fopenmp set_weights.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o bc_bry3d.fppized.o -I. -g -O2 -fopt-info -fopenmp bc_bry3d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_mixing.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_mixing.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o interpolate.fppized.o -I. -g -O2 -fopt-info -fopenmp interpolate.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o checkdefs.fppized.o -I. -g -O2 -fopt-info -fopenmp checkdefs.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o lmd_swfrac.fppized.o -I. -g -O2 -fopt-info -fopenmp lmd_swfrac.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_grid.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_grid.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o white_noise.fppized.o -I. -g -O2 -fopt-info -fopenmp white_noise.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o zetabc.fppized.o -I. -g -O2 -fopt-info -fopenmp zetabc.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o t3dbc_im.fppized.o -I. -g -O2 -fopt-info -fopenmp t3dbc_im.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o u3dbc_im.fppized.o -I. -g -O2 -fopt-info -fopenmp u3dbc_im.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o v3dbc_im.fppized.o -I. -g -O2 -fopt-info -fopenmp v3dbc_im.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o u2dbc_im.fppized.o -I. -g -O2 -fopt-info -fopenmp u2dbc_im.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o v2dbc_im.fppized.o -I. -g -O2 -fopt-info -fopenmp v2dbc_im.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o bc_2d.fppized.o -I. -g -O2 -fopt-info -fopenmp bc_2d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_arrays.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_arrays.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_massflux.fppized.o -I. -g -O2 -fopt-info -fopenmp set_massflux.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o stiffness.fppized.o -I. -g -O2 -fopt-info -fopenmp stiffness.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o bc_3d.fppized.o -I. -g -O2 -fopt-info -fopenmp bc_3d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_depth.fppized.o -I. -g -O2 -fopt-info -fopenmp set_depth.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o diag.fppized.o -I. -g -O2 -fopt-info -fopenmp diag.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_scoord.fppized.o -I. -g -O2 -fopt-info -fopenmp set_scoord.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_vbc.fppized.o -I. -g -O2 -fopt-info -fopenmp set_vbc.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_ncparam.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_ncparam.fppized.f90
+mod_ncparam.fppized.f90:1948:0: note: loop turned into non-loop; it never loops.
+mod_ncparam.fppized.f90:1948:0: note: loop with 5 iterations completely unrolled
+mod_ncparam.fppized.f90:1927:0: note: loop turned into non-loop; it never loops.
+mod_ncparam.fppized.f90:1927:0: note: loop with 5 iterations completely unrolled
+mod_ncparam.fppized.f90:1764:0: note: loop turned into non-loop; it never loops.
+mod_ncparam.fppized.f90:1764:0: note: loop with 2 iterations completely unrolled
+mod_ncparam.fppized.f90:1763:0: note: loop turned into non-loop; it never loops.
+mod_ncparam.fppized.f90:1763:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o omega.fppized.o -I. -g -O2 -fopt-info -fopenmp omega.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o rho_eos.fppized.o -I. -g -O2 -fopt-info -fopenmp rho_eos.fppized.f90
+rho_eos.fppized.f90:1550:0: note: loop turned into non-loop; it never loops.
+rho_eos.fppized.f90:1550:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o uv3dmix.fppized.o -I. -g -O2 -fopt-info -fopenmp uv3dmix.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_data.fppized.o -I. -g -O2 -fopt-info -fopenmp get_data.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o prsgrd.fppized.o -I. -g -O2 -fopt-info -fopenmp prsgrd.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o t3dmix.fppized.o -I. -g -O2 -fopt-info -fopenmp t3dmix.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_2dfld.fppized.o -I. -g -O2 -fopt-info -fopenmp set_2dfld.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wvelocity.fppized.o -I. -g -O2 -fopt-info -fopenmp wvelocity.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o ocean_control.fppized.o -I. -g -O2 -fopt-info -fopenmp ocean_control.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o bulk_flux.fppized.o -I. -g -O2 -fopt-info -fopenmp bulk_flux.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_3dfld.fppized.o -I. -g -O2 -fopt-info -fopenmp set_3dfld.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o state_dotprod.fppized.o -I. -g -O2 -fopt-info -fopenmp state_dotprod.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o state_product.fppized.o -I. -g -O2 -fopt-info -fopenmp state_product.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o master.fppized.o -I. -g -O2 -fopt-info -fopenmp master.fppized.f90
+master.fppized.f90:1279:0: note: loop turned into non-loop; it never loops.
+master.fppized.f90:1279:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o regrid.fppized.o -I. -g -O2 -fopt-info -fopenmp regrid.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_bounds.fppized.o -I. -g -O2 -fopt-info -fopenmp get_bounds.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o abort.fppized.o -I. -g -O2 -fopt-info -fopenmp abort.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o set_ngfld.fppized.o -I. -g -O2 -fopt-info -fopenmp set_ngfld.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o mod_netcdf.fppized.o -I. -g -O2 -fopt-info -fopenmp mod_netcdf.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o ini_fields.fppized.o -I. -g -O2 -fopt-info -fopenmp ini_fields.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o nf_fwrite2d.fppized.o -I. -g -O2 -fopt-info -fopenmp nf_fwrite2d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o output.fppized.o -I. -g -O2 -fopt-info -fopenmp output.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o nf_fread3d.fppized.o -I. -g -O2 -fopt-info -fopenmp nf_fread3d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o nf_fread4d.fppized.o -I. -g -O2 -fopt-info -fopenmp nf_fread4d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o nf_fread3d_bry.fppized.o -I. -g -O2 -fopt-info -fopenmp nf_fread3d_bry.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o nf_fread2d_bry.fppized.o -I. -g -O2 -fopt-info -fopenmp nf_fread2d_bry.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o nf_fwrite3d.fppized.o -I. -g -O2 -fopt-info -fopenmp nf_fwrite3d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o extract_sta.fppized.o -I. -g -O2 -fopt-info -fopenmp extract_sta.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o close_io.fppized.o -I. -g -O2 -fopt-info -fopenmp close_io.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o nf_fread2d.fppized.o -I. -g -O2 -fopt-info -fopenmp nf_fread2d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_dim.fppized.o -I. -g -O2 -fopt-info -fopenmp def_dim.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_cycle.fppized.o -I. -g -O2 -fopt-info -fopenmp get_cycle.fppized.f90
+get_cycle.fppized.f90:1318:0: note: loop turned into non-loop; it never loops.
+get_cycle.fppized.f90:1318:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o checkvars.fppized.o -I. -g -O2 -fopt-info -fopenmp checkvars.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o step3d_t.fppized.o -I. -g -O2 -fopt-info -fopenmp step3d_t.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o nf_fwrite2d_bry.fppized.o -I. -g -O2 -fopt-info -fopenmp nf_fwrite2d_bry.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o metrics.fppized.o -I. -g -O2 -fopt-info -fopenmp metrics.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o nf_fwrite3d_bry.fppized.o -I. -g -O2 -fopt-info -fopenmp nf_fwrite3d_bry.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_varcoords.fppized.o -I. -g -O2 -fopt-info -fopenmp get_varcoords.fppized.f90
+get_varcoords.fppized.f90:1335:0: note: loop turned into non-loop; it never loops.
+get_varcoords.fppized.f90:1335:0: note: loop with 2 iterations completely unrolled
+get_varcoords.fppized.f90:1350:0: note: loop turned into non-loop; it never loops.
+get_varcoords.fppized.f90:1350:0: note: loop with 3 iterations completely unrolled
+get_varcoords.fppized.f90:1296:0: note: loop turned into non-loop; it never loops.
+get_varcoords.fppized.f90:1296:0: note: loop with 2 iterations completely unrolled
+get_varcoords.fppized.f90:1311:0: note: loop turned into non-loop; it never loops.
+get_varcoords.fppized.f90:1311:0: note: loop with 3 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o nf_fwrite4d.fppized.o -I. -g -O2 -fopt-info -fopenmp nf_fwrite4d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_3dfld.fppized.o -I. -g -O2 -fopt-info -fopenmp get_3dfld.fppized.f90
+get_3dfld.fppized.f90:1599:0: note: loop turned into non-loop; it never loops.
+get_3dfld.fppized.f90:1599:0: note: loop with 2 iterations completely unrolled
+get_3dfld.fppized.f90:1556:0: note: loop turned into non-loop; it never loops.
+get_3dfld.fppized.f90:1556:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o get_ngfld.fppized.o -I. -g -O2 -fopt-info -fopenmp get_ngfld.fppized.f90
+get_ngfld.fppized.f90:1576:0: note: loop turned into non-loop; it never loops.
+get_ngfld.fppized.f90:1576:0: note: loop with 4 iterations completely unrolled
+get_ngfld.fppized.f90:1576:0: note: loop turned into non-loop; it never loops.
+get_ngfld.fppized.f90:1576:0: note: loop with 4 iterations completely unrolled
+get_ngfld.fppized.f90:1583:0: note: loop turned into non-loop; it never loops.
+get_ngfld.fppized.f90:1583:0: note: loop with 3 iterations completely unrolled
+get_ngfld.fppized.f90:1583:0: note: loop turned into non-loop; it never loops.
+get_ngfld.fppized.f90:1583:0: note: loop with 3 iterations completely unrolled
+get_ngfld.fppized.f90:1554:0: note: loop turned into non-loop; it never loops.
+get_ngfld.fppized.f90:1554:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o step3d_uv.fppized.o -I. -g -O2 -fopt-info -fopenmp step3d_uv.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_var.fppized.o -I. -g -O2 -fopt-info -fopenmp def_var.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o pre_step3d.fppized.o -I. -g -O2 -fopt-info -fopenmp pre_step3d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o def_rst.fppized.o -I. -g -O2 -fopt-info -fopenmp def_rst.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_rst.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_rst.fppized.f90
+wrt_rst.fppized.f90:1258:0: note: loop turned into non-loop; it never loops.
+wrt_rst.fppized.f90:1258:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o lmd_skpp.fppized.o -I. -g -O2 -fopt-info -fopenmp lmd_skpp.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o analytical.fppized.o -I. -g -O2 -fopt-info -fopenmp analytical.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_2dfld.fppized.o -I. -g -O2 -fopt-info -fopenmp get_2dfld.fppized.f90
+get_2dfld.fppized.f90:1619:0: note: loop turned into non-loop; it never loops.
+get_2dfld.fppized.f90:1619:0: note: loop with 2 iterations completely unrolled
+get_2dfld.fppized.f90:1580:0: note: loop turned into non-loop; it never loops.
+get_2dfld.fppized.f90:1580:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o wrt_his.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_his.fppized.f90
+wrt_his.fppized.f90:1256:0: note: loop turned into non-loop; it never loops.
+wrt_his.fppized.f90:1256:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o set_data.fppized.o -I. -g -O2 -fopt-info -fopenmp set_data.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o get_state.fppized.o -I. -g -O2 -fopt-info -fopenmp get_state.fppized.f90
+get_state.fppized.f90:1314:0: note: loop turned into non-loop; it never loops.
+get_state.fppized.f90:1314:0: note: loop with 5 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o initial.fppized.o -I. -g -O2 -fopt-info -fopenmp initial.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o lmd_vmix.fppized.o -I. -g -O2 -fopt-info -fopenmp lmd_vmix.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o wrt_info.fppized.o -I. -g -O2 -fopt-info -fopenmp wrt_info.fppized.f90
+wrt_info.fppized.f90:1513:0: note: loop turned into non-loop; it never loops.
+wrt_info.fppized.f90:1513:0: note: loop with 2 iterations completely unrolled
+wrt_info.fppized.f90:1505:0: note: loop turned into non-loop; it never loops.
+wrt_info.fppized.f90:1505:0: note: loop with 2 iterations completely unrolled
+wrt_info.fppized.f90:1500:0: note: loop turned into non-loop; it never loops.
+wrt_info.fppized.f90:1500:0: note: loop with 2 iterations completely unrolled
+wrt_info.fppized.f90:1493:0: note: loop turned into non-loop; it never loops.
+wrt_info.fppized.f90:1493:0: note: loop with 2 iterations completely unrolled
+wrt_info.fppized.f90:1488:0: note: loop turned into non-loop; it never loops.
+wrt_info.fppized.f90:1488:0: note: loop with 2 iterations completely unrolled
+wrt_info.fppized.f90:1403:0: note: loop turned into non-loop; it never loops.
+wrt_info.fppized.f90:1403:0: note: loop with 2 iterations completely unrolled
+wrt_info.fppized.f90:1349:0: note: loop turned into non-loop; it never loops.
+wrt_info.fppized.f90:1349:0: note: loop with 2 iterations completely unrolled
+wrt_info.fppized.f90:1333:0: note: loop turned into non-loop; it never loops.
+wrt_info.fppized.f90:1333:0: note: loop with 2 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o def_info.fppized.o -I. -g -O2 -fopt-info -fopenmp def_info.fppized.f90
+def_info.fppized.f90:2314:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:2314:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:2129:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:2129:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:2114:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:2114:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:2157:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:2157:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:2143:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:2143:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:2058:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:2058:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:2043:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:2043:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:2032:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:2032:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:2018:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:2018:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:2004:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:2004:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:1982:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:1982:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:1855:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:1855:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:1779:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:1779:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:1758:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:1758:0: note: loop with 2 iterations completely unrolled
+def_info.fppized.f90:1308:0: note: loop turned into non-loop; it never loops.
+def_info.fppized.f90:1308:0: note: loop with 7 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o def_his.fppized.o -I. -g -O2 -fopt-info -fopenmp def_his.fppized.f90
+def_his.fppized.f90:1421:0: note: loop turned into non-loop; it never loops.
+def_his.fppized.f90:1421:0: note: loop with 2 iterations completely unrolled
+def_his.fppized.f90:1386:0: note: loop turned into non-loop; it never loops.
+def_his.fppized.f90:1386:0: note: loop with 7 iterations completely unrolled
+/usr/bin/gfortran-7    -m64 -c -o step2d.fppized.o -I. -g -O2 -fopt-info -fopenmp step2d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o rhs3d.fppized.o -I. -g -O2 -fopt-info -fopenmp rhs3d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o main3d.fppized.o -I. -g -O2 -fopt-info -fopenmp main3d.fppized.f90
+/usr/bin/gfortran-7    -m64 -c -o inp_par.fppized.o -I. -g -O2 -fopt-info -fopenmp inp_par.fppized.f90
+inp_par.fppized.f90:2417:0: note: loop turned into non-loop; it never loops.
+inp_par.fppized.f90:2417:0: note: loop with 2 iterations completely unrolled
+inp_par.fppized.f90:1674:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1734:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1741:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1752:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1823:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1835:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1851:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1867:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1882:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1891:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1896:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:1957:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:2201:0: note: loop turned into non-loop; it never loops
+inp_par.fppized.f90:2409:0: note: loop turned into non-loop; it never loops
+/usr/bin/gfortran-7    -m64      -g -O2 -fopt-info        -fopenmp -DSPEC_OPENMP  bbl.fppized.o bc_2d.fppized.o exchange_2d.fppized.o mod_param.fppized.o mod_kinds.fppized.o mod_grid.fppized.o mod_scalars.fppized.o mod_bbl.fppized.o mod_forces.fppized.o mod_ocean.fppized.o mod_sediment.fppized.o mod_parallel.fppized.o mod_iounits.fppized.o mod_strings.fppized.o mod_stepping.fppized.o mp_exchange.fppized.o bc_3d.fppized.o exchange_3d.fppized.o bc_bry2d.fppized.o bc_bry3d.fppized.o bulk_flux.fppized.o mod_mixing.fppized.o bvf_mix.fppized.o conv_2d.fppized.o conv_3d.fppized.o conv_bry2d.fppized.o conv_bry3d.fppized.o diag.fppized.o analytical.fppized.o distribute.fppized.o mod_ncparam.fppized.o mod_biology.fppized.o mod_eclight.fppized.o mod_boundary.fppized.o mod_clima.fppized.o mod_sources.fppized.o mod_netcdf.fppized.o strings.fppized.o forcing.fppized.o mod_coupling.fppized.o frc_adjust.fppized.o get_data.fppized.o mod_obs.fppized.o get_idata.fppized.o mod_tides.fppized.o nf_fread3d.fppized.o nf_fread4d.fppized.o gls_corstep.fppized.o tkebc_im.fppized.o gls_prestep.fppized.o hmixing.fppized.o ini_fields.fppized.o set_depth.fppized.o t3dbc_im.fppized.o u2dbc_im.fppized.o u3dbc_im.fppized.o v2dbc_im.fppized.o v3dbc_im.fppized.o zetabc.fppized.o initial.fppized.o ini_adjust.fppized.o mod_fourdvar.fppized.o state_addition.fppized.o state_copy.fppized.o metrics.fppized.o ocean_coupler.fppized.o mod_coupler.fppized.o roms_export.fppized.o roms_import.fppized.o omega.fppized.o rho_eos.fppized.o mod_eoscoef.fppized.o set_massflux.fppized.o stiffness.fppized.o wpoints.fppized.o mod_storage.fppized.o interp_floats.fppized.o lmd_bkpp.fppized.o shapiro.fppized.o lmd_skpp.fppized.o lmd_swfrac.fppized.o lmd_vmix.fppized.o main2d.fppized.o dotproduct.fppized.o obc_adjust.fppized.o oi_update.fppized.o radiation_stress.fppized.o mod_diags.fppized.o set_avg.fppized.o mod_average.fppized.o set_tides.fppized.o set_vbc.fppized.o step2d.fppized.o obc_volcons.fppized.o wetdry.fppized.o step_floats.fppized.o mod_floats.fppized.o vwalk_floats.fppized.o utility.fppized.o main3d.fppized.o biology.fppized.o my25_corstep.fppized.o my25_prestep.fppized.o rhs3d.fppized.o pre_step3d.fppized.o prsgrd.fppized.o t3dmix.fppized.o uv3dmix.fppized.o sediment.fppized.o sed_bed.fppized.o sed_bedload.fppized.o sed_fluxes.fppized.o sed_settling.fppized.o sed_surface.fppized.o set_zeta.fppized.o step3d_t.fppized.o mpdata_adiff.fppized.o step3d_uv.fppized.o wvelocity.fppized.o output.fppized.o set_data.fppized.o set_2dfld.fppized.o set_3dfld.fppized.o abort.fppized.o ocean_control.fppized.o back_cost.fppized.o cgradient.fppized.o nf_fread2d.fppized.o nf_fread2d_bry.fppized.o nf_fread3d_bry.fppized.o state_dotprod.fppized.o state_initialize.fppized.o state_scale.fppized.o cost_grad.fppized.o normalization.fppized.o nf_fwrite2d.fppized.o nf_fwrite3d.fppized.o white_noise.fppized.o nrutil.fppized.o packing.fppized.o posterior.fppized.o posterior_var.fppized.o state_product.fppized.o propagator.fppized.o random_ic.fppized.o sum_grad.fppized.o zeta_balance.fppized.o checkadj.fppized.o checkdefs.fppized.o checkerror.fppized.o checkvars.fppized.o close_io.fppized.o congrad.fppized.o def_avg.fppized.o def_var.fppized.o def_diags.fppized.o def_dim.fppized.o def_error.fppized.o def_floats.fppized.o def_gst.fppized.o def_hessian.fppized.o def_his.fppized.o def_impulse.fppized.o def_info.fppized.o def_ini.fppized.o def_lanczos.fppized.o def_mod.fppized.o def_norm.fppized.o def_rst.fppized.o def_station.fppized.o def_tides.fppized.o extract_obs.fppized.o extract_sta.fppized.o frc_weak.fppized.o gasdev.fppized.o get_2dfld.fppized.o get_2dfldr.fppized.o get_3dfld.fppized.o get_3dfldr.fppized.o get_bounds.fppized.o get_cycle.fppized.o get_date.fppized.o get_grid.fppized.o get_gst.fppized.o get_ngfld.fppized.o get_ngfldr.fppized.o get_state.fppized.o get_varcoords.fppized.o grid_coords.fppized.o interpolate.fppized.o ini_lanczos.fppized.o inp_par.fppized.o ran_state.fppized.o lubksb.fppized.o ludcmp.fppized.o mp_routines.fppized.o nf_fwrite2d_bry.fppized.o nf_fwrite3d_bry.fppized.o nf_fwrite4d.fppized.o obs_cost.fppized.o obs_depth.fppized.o obs_initial.fppized.o obs_read.fppized.o obs_write.fppized.o ran1.fppized.o regrid.fppized.o rep_matrix.fppized.o set_2dfldr.fppized.o set_3dfldr.fppized.o set_diags.fppized.o set_ngfld.fppized.o set_ngfldr.fppized.o set_scoord.fppized.o set_weights.fppized.o stats_modobs.fppized.o timers.fppized.o wrt_avg.fppized.o wrt_diags.fppized.o wrt_error.fppized.o wrt_floats.fppized.o wrt_gst.fppized.o wrt_hessian.fppized.o wrt_his.fppized.o wrt_impulse.fppized.o wrt_info.fppized.o wrt_ini.fppized.o wrt_rst.fppized.o wrt_station.fppized.o wrt_tides.fppized.o mod_arrays.fppized.o mod_nesting.fppized.o esmf_roms.fppized.o master.fppized.o                      -o sroms  

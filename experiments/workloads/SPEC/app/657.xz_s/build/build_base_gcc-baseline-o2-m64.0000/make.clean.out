@@ -1,0 +1,5 @@
+rm -rf *.o  IMG_2560.cr2-40-4.out input.combined-40-8.out
+find . \( -name \*.o -o -name '*.fppized.f*' -o -name '*.i' -o -name '*.mod' \) -print | xargs rm -rf
+rm -rf xz_s
+rm -rf xz_s.exe
+rm -rf core

@@ -1,0 +1,179 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+   <link rel="STYLESHEET" href="https://www.spec.org/cpu2017/Docs/css/cpudocs.css" type="text/css" />
+   <style type="text/css">
+table.ref    {margin-left: 3em;}
+table.ref th {font-family:serif;font-weight:bold;vertical-align:middle;text-align:right;}
+table.ref td {font-family:monospace;text-align:right;}
+   </style>
+   <title>657.xz_s: SPEC CPU2017 Benchmark Description</title>
+<meta name="generator" content="Cloyce+VIM 7.2" />
+<meta name="revision"
+      content="$Id: xz.html 5820 2017-06-22 15:26:34Z CloyceS $" />
+</head>
+
+<body>
+<div style="text-align: center">
+<h1>657.xz_s<br />
+SPEC CPU2017 Benchmark Description</h1>
+</div>
+
+<h3>Benchmark Name</h3>
+<p>657.xz_s</p>
+
+<h3>Benchmark Author</h3>
+<p>Lasse Collin &lt;lasse.collin at tukaani.org&gt; is the author of XZ Utils</p>
+
+<p>Igor Pavlov wrote key portions of the compression algorithm, according to the <a href="#ref">references</a>.</p>
+
+<p>Jindrich Novy wrote <samp class="snugr">pxz</samp>, which is used by the SPEC version to provide parallelism when multiple
+OpenMP threads are available.</p>
+
+<h3>Benchmark Program General Category</h3>
+<p>Data compression</p>
+
+<h3>Benchmark Description</h3>
+<p>657.xz_s is based directly on Lasse Collin's XZ Utils 5.0.5, with these differences: it incorporates <samp
+   class="snugr">pxz</samp>; performs no file I/O other than reading the input; does all compression and decompression
+entirely in memory; and prefers generic portable routines rather than platform-specific routines.  As usual for SPEC CPU, the
+intent is to measure the compute-intensive portion of a real application, while minimizing IO; thereby focusing on the
+performance of the CPU, memory, and compiler.</p>
+
+
+<h3>Input Description</h3>
+
+<p>Inputs for 657.xz_s are XZ-compressed files containing the data that will be compressed during the test.  The reference
+(timed) workloads use three components: a tar archive of HTML documentation and some supporting images; a database of ClamAV
+malware signatures; and an input file with combined text and image data.  All three have highly compressible sections and
+incompressible sections.</p>
+
+<p>Parameters for each test are taken from the command line.  In order, they are:</p>
+<ol>
+  <li>filename -- name of the compressed input file</li>
+  <li>input buffer size in MiB -- size to perform compression on</li>
+  <li>SHA-512 hash of input contents -- the input files are compressed; this allows for verification that the decompression was performed properly</li>
+  <li>minimum compressed size -- expected minimum size of compressed data; may be set to -1 to disable compressed size checking</li>
+  <li>maximum compressed size -- expected maximum size of compressed data; only used if minimum compressed size is &gt;= 0</li>
+  <li>compression level -- a number from 0-9, optionally followed by an "e" for "extreme" compression mode</li>
+</ol>
+
+<table class="ref">
+   <tr>
+      <td style="border-top:none;font-family:sans;text-align:left" colspan="5">The <samp>refrate</samp> workload (for
+         <!-- encoded to prevent auto-replacement --> &#53;57.&#120;z_r) is invoked with these parameters:</td>
+   </tr>
+   <tr>
+      <th>Input file</th> <th>Buffer<br />(MiB)</th> <th>Minimum </th> <th>Maximum </th> <th>Compression<br />level</th>
+   </tr>
+   <tr>
+      <td>cld.tar.xz</td>
+      <td>160</td>
+      <td>59,796,407</td>
+      <td>61,004,416</td>
+      <td>6</td>
+   </tr>
+   <tr>
+      <td>cpu2006docs.tar.xz</td>
+      <td>250</td>
+      <td>23,047,774</td>
+      <td>23,513,385</td>
+      <td>6e</td>
+   </tr>
+   <tr>
+      <td>input.combined.xz</td>
+      <td>250</td>
+      <td>40,401,484</td>
+      <td>41,217,675</td>
+      <td>7</td>
+   </tr>
+   <tr>
+      <td style="border-top:none;font-family:sans;text-align:left; padding-top:1em;" colspan="5">
+      The <samp>refspeed</samp> workload (for  <!-- encoded to prevent auto-replacement --> &#54;57.&#120;z_s) uses:
+      </td>
+   </tr>
+   <tr>
+      <th>Input file</th> <th>Buffer<br />(MiB)</th> <th>Minimum </th> <th>Maximum </th> <th>Compression<br />level</th>
+   </tr>
+   <tr>
+      <td>cpu2006docs.tar.xz</td>
+      <td>6643</td>
+      <td>1,036,078,272</td>
+      <td>1,111,795,472</td>
+      <td>4</td>
+   </tr>
+   <tr>
+      <td>cld.tar.xz</td>
+      <td>1400</td>
+      <td>536,995,164</td>
+      <td>539,938,872</td>
+      <td>8</td>
+   </tr>
+</table>
+
+<p>Command lines are constructed by the run harness from the contents of the <tt>control</tt> file.  Adding new workloads is
+quite simple; it's just a file of data to be compressed and an entry for that file in the <tt>control</tt> file.</p>
+
+<p>Each input set is initially decompressed and the SHA-512 sum of the
+decompression is verified against the one specified on the command line.
+Then that input is duplicated (or truncated) until its size matches what
+was requested on the command line.  It's then compressed using the XZ
+preset ("compression level") requested on the command line.  Verification of
+compressed size is output, if compressed size checking is enabled.  (Compressed
+data size may vary slightly depending on the number of threads used to do
+compression.)  That compressed data is then decompressed and its SHA-512
+sum calculated and compared to the one generated during the initial load.
+Doing the comparison in this way reduces the verification-related memory
+access for the benchmark, as well as its memory footprint.
+</p>
+
+<p class="snugbot"><b>About memory usage:</b>  The second parameter selects the size of a buffer that will be the input to
+the compression phase.  The total virtual memory used by the benchmark will be larger.  On one particular
+platform tested by SPEC, the total memory for &#53;57.&#120;z_r <!-- encoded to prevent auto-replacement --> and
+&#54;57.&#120;z_s was about</p>
+<pre class="l2snugish">(2 * the buffer size) + (0.5 to 1.0 GiB)</pre>
+<p class="snugtop">Your usage may vary, depending on
+(among other things): compiler options, operating system, and the number of OpenMP threads.  </p>
+
+
+
+<h3>Output Description</h3>
+<p>The output files provide a brief outline of what the benchmark is doing as
+it runs.  Output sizes for each compression and decompression are printed to
+facilitate validation, and the results of decompression are compared with the
+input data to ensure that they match.</p>
+
+
+<h3>Programming Language</h3>
+<p>ISO C99</p>
+
+<h3>Threading Model</h3>
+<p>OpenMP for speed workload</p>
+
+<h3>Known portability issues</h3>
+<p>None</p>
+
+<h3 id="license">Sources and Licensing</h3>
+
+<p>The benchmark is based on XZ Utils 5.0.5, which is Public Domain.  It includes a modified version of Jindrich Novy's
+<a href="https://github.com/jnovy/pxz">pxz</a>, which is licensed under GPLv2 or later.  SPEC started from <samp>pxz</samp>
+revision <samp class="snugr"><a href="https://github.com/jnovy/pxz/tree/ae808463c2950edfdedb8fb49f95006db0a18667">ae80846</a></samp>
+from 18 October 2014.  Additional components added by SPEC are mentioned at
+<a href="https://www.spec.org/cpu2017/Docs/licenses.html#bmk657.xz_s">SPEC CPU2017 Licenses</a>.
+</p>
+
+
+<h3 id="ref">References</h3>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Lempel-Ziv-Markov_chain_algorithm">"Lempel-Ziv-Markov_chain_algorithm"</a> on <a href="http://wikipedia.org">Wikipedia</a></li>
+<li><a href="http://www.tukaani.org/xz/">XZ Utils</a> home page</li>
+<li><a href="http://www.7-zip.org/">7-Zip</a> home page</li>
+</ul>
+
+<p>Last updated: $Date: 2017-06-22 11:26:34 -0400 (Thu, 22 Jun 2017) $</p>
+
+<p style="margin:40em 2em;">&nbsp;</p>
+</body>
+</html>
