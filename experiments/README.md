@@ -31,7 +31,7 @@ Note that all benchmark binaries are built in `workloads/` directory. There is n
   * Breadth-First Search (BFS)
   * PageRank (PR)
   * Betweenness Centrality (BC)
-  * To use GAPBS, please download `twitter.sg` used for GAPBS in `worklaods/GAPBS/gapbs-data/twitter.tar.gz`.
+  * To use GAPBS, please <ins>download</ins> `twitter.sg` <ins>used for GAPBS as</ins> `worklaods/GAPBS/gapbs-data/twitter.sg`.
 
 ## Description
 
