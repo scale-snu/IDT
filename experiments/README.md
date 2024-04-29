@@ -55,3 +55,5 @@ Run experiment with `sudo ./run.sh`
    ```bash
    bash run-core.sh --benchmark xz --wss large ${SCHEME} ${TIER}
    ```
+
+3. Check benchmark exeuction time in `result/<SCHEME>` and execution logs in `log/<SCHEME>/`.
