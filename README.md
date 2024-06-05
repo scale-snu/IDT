@@ -9,6 +9,8 @@ This repository contains the RL model, Linux kernel, and experiment scripts. Ple
 * `linux/`: Linux kernel for region-granularity memory access monitoring and supporting demotion/promotion. <ins>The provided linux kernel should be built and installed.</ins>
 * `experiments/`: Experiment scripts used in the paper.
 
+The presentation slide for HPDC 2024 is in `[HPDC'24] IDT-Slide.pdf`.
+
 ## Hardware prerequisites
 We have tested on:
 
